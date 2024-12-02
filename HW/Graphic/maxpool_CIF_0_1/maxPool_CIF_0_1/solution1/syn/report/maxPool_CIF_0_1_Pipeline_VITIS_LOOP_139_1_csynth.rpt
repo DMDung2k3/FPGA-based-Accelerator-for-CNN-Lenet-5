@@ -1,0 +1,196 @@
+
+
+================================================================
+== Vitis HLS Report for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1'
+================================================================
+* Date:           Mon Oct 28 10:46:36 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        maxPool_CIF_0_1
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.735 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       34|       34|  0.340 us|  0.340 us|   34|   34|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_139_1  |       32|       32|         1|          1|          1|    32|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     28|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     27|    -|
+|Register         |        -|    -|       8|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       8|     55|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln139_fu_374_p2   |         +|   0|  0|  14|           6|           1|
+    |icmp_ln139_fu_368_p2  |      icmp|   0|  0|  14|           6|           7|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  28|          12|           8|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_1  |   9|          2|    6|         12|
+    |j_fu_68               |   9|          2|    6|         12|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|   13|         26|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |j_fu_68      |  6|   0|    6|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  8|   0|    8|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |               Source Object               |    C Type    |
++-----------------+-----+-----+------------+-------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1|  return value|
+|buf_15_address1  |  out|    5|   ap_memory|                                     buf_15|         array|
+|buf_15_ce1       |  out|    1|   ap_memory|                                     buf_15|         array|
+|buf_15_we1       |  out|    1|   ap_memory|                                     buf_15|         array|
+|buf_15_d1        |  out|   32|   ap_memory|                                     buf_15|         array|
+|buf_14_address1  |  out|    5|   ap_memory|                                     buf_14|         array|
+|buf_14_ce1       |  out|    1|   ap_memory|                                     buf_14|         array|
+|buf_14_we1       |  out|    1|   ap_memory|                                     buf_14|         array|
+|buf_14_d1        |  out|   32|   ap_memory|                                     buf_14|         array|
+|buf_13_address1  |  out|    5|   ap_memory|                                     buf_13|         array|
+|buf_13_ce1       |  out|    1|   ap_memory|                                     buf_13|         array|
+|buf_13_we1       |  out|    1|   ap_memory|                                     buf_13|         array|
+|buf_13_d1        |  out|   32|   ap_memory|                                     buf_13|         array|
+|buf_12_address1  |  out|    5|   ap_memory|                                     buf_12|         array|
+|buf_12_ce1       |  out|    1|   ap_memory|                                     buf_12|         array|
+|buf_12_we1       |  out|    1|   ap_memory|                                     buf_12|         array|
+|buf_12_d1        |  out|   32|   ap_memory|                                     buf_12|         array|
+|buf_11_address1  |  out|    5|   ap_memory|                                     buf_11|         array|
+|buf_11_ce1       |  out|    1|   ap_memory|                                     buf_11|         array|
+|buf_11_we1       |  out|    1|   ap_memory|                                     buf_11|         array|
+|buf_11_d1        |  out|   32|   ap_memory|                                     buf_11|         array|
+|buf_10_address1  |  out|    5|   ap_memory|                                     buf_10|         array|
+|buf_10_ce1       |  out|    1|   ap_memory|                                     buf_10|         array|
+|buf_10_we1       |  out|    1|   ap_memory|                                     buf_10|         array|
+|buf_10_d1        |  out|   32|   ap_memory|                                     buf_10|         array|
+|buf_9_address1   |  out|    5|   ap_memory|                                      buf_9|         array|
+|buf_9_ce1        |  out|    1|   ap_memory|                                      buf_9|         array|
+|buf_9_we1        |  out|    1|   ap_memory|                                      buf_9|         array|
+|buf_9_d1         |  out|   32|   ap_memory|                                      buf_9|         array|
+|buf_8_address1   |  out|    5|   ap_memory|                                      buf_8|         array|
+|buf_8_ce1        |  out|    1|   ap_memory|                                      buf_8|         array|
+|buf_8_we1        |  out|    1|   ap_memory|                                      buf_8|         array|
+|buf_8_d1         |  out|   32|   ap_memory|                                      buf_8|         array|
+|buf_7_address1   |  out|    5|   ap_memory|                                      buf_7|         array|
+|buf_7_ce1        |  out|    1|   ap_memory|                                      buf_7|         array|
+|buf_7_we1        |  out|    1|   ap_memory|                                      buf_7|         array|
+|buf_7_d1         |  out|   32|   ap_memory|                                      buf_7|         array|
+|buf_6_address1   |  out|    5|   ap_memory|                                      buf_6|         array|
+|buf_6_ce1        |  out|    1|   ap_memory|                                      buf_6|         array|
+|buf_6_we1        |  out|    1|   ap_memory|                                      buf_6|         array|
+|buf_6_d1         |  out|   32|   ap_memory|                                      buf_6|         array|
+|buf_5_address1   |  out|    5|   ap_memory|                                      buf_5|         array|
+|buf_5_ce1        |  out|    1|   ap_memory|                                      buf_5|         array|
+|buf_5_we1        |  out|    1|   ap_memory|                                      buf_5|         array|
+|buf_5_d1         |  out|   32|   ap_memory|                                      buf_5|         array|
+|buf_4_address1   |  out|    5|   ap_memory|                                      buf_4|         array|
+|buf_4_ce1        |  out|    1|   ap_memory|                                      buf_4|         array|
+|buf_4_we1        |  out|    1|   ap_memory|                                      buf_4|         array|
+|buf_4_d1         |  out|   32|   ap_memory|                                      buf_4|         array|
+|buf_3_address1   |  out|    5|   ap_memory|                                      buf_3|         array|
+|buf_3_ce1        |  out|    1|   ap_memory|                                      buf_3|         array|
+|buf_3_we1        |  out|    1|   ap_memory|                                      buf_3|         array|
+|buf_3_d1         |  out|   32|   ap_memory|                                      buf_3|         array|
+|buf_2_address1   |  out|    5|   ap_memory|                                      buf_2|         array|
+|buf_2_ce1        |  out|    1|   ap_memory|                                      buf_2|         array|
+|buf_2_we1        |  out|    1|   ap_memory|                                      buf_2|         array|
+|buf_2_d1         |  out|   32|   ap_memory|                                      buf_2|         array|
+|buf_1_address1   |  out|    5|   ap_memory|                                      buf_1|         array|
+|buf_1_ce1        |  out|    1|   ap_memory|                                      buf_1|         array|
+|buf_1_we1        |  out|    1|   ap_memory|                                      buf_1|         array|
+|buf_1_d1         |  out|   32|   ap_memory|                                      buf_1|         array|
+|buf_r_address1   |  out|    5|   ap_memory|                                      buf_r|         array|
+|buf_r_ce1        |  out|    1|   ap_memory|                                      buf_r|         array|
+|buf_r_we1        |  out|    1|   ap_memory|                                      buf_r|         array|
+|buf_r_d1         |  out|   32|   ap_memory|                                      buf_r|         array|
++-----------------+-----+-----+------------+-------------------------------------------+--------------+
+

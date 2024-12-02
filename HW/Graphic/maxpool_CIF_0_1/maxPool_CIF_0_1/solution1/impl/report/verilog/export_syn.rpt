@@ -1,0 +1,255 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon Oct 28 10:53:25 +0700 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         maxPool_CIF_0_1
+    * Solution:        solution1 (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              3606
+FF:               2477
+DSP:              8
+BRAM:             0
+URAM:             0
+SRL:              0
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 9.587       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                          | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                          | 3606 | 2477 | 8   |      |      |     |        |      |         |          |        |
+|   (inst)                                                                      | 207  | 1108 |     |      |      |     |        |      |         |          |        |
+|   acc_U                                                                       | 93   | 64   |     |      |      |     |        |      |         |          |        |
+|   buf_10_U                                                                    | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_11_U                                                                    | 56   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_12_U                                                                    | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_13_U                                                                    | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_14_U                                                                    | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_15_U                                                                    | 56   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_1_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_2_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_3_U                                                                     | 56   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_4_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_5_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_6_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_7_U                                                                     | 56   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_8_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_9_U                                                                     | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   buf_U                                                                       | 24   | 32   |     |      |      |     |        |      |         |          |        |
+|   grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536                        | 19   | 8    |     |      |      |     |        |      |         |          |        |
+|     (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536)                    | 2    | 6    |     |      |      |     |        |      |         |          |        |
+|   grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565       | 182  | 120  |     |      |      |     |        |      |         |          |        |
+|     (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565)   | 155  | 118  |     |      |      |     |        |      |         |          |        |
+|   grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603                       | 118  | 85   |     |      |      |     |        |      |         |          |        |
+|     (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603)                   | 71   | 83   |     |      |      |     |        |      |         |          |        |
+|   grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574     | 278  | 149  |     |      |      |     |        |      |         |          |        |
+|     (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574) | 272  | 147  |     |      |      |     |        |      |         |          |        |
+|   grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556                       | 66   | 99   |     |      |      |     |        |      |         |          |        |
+|     (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556)                   |      | 97   |     |      |      |     |        |      |         |          |        |
+|   mul_31ns_32ns_63_2_1_U69                                                    | 53   | 34   | 4   |      |      |     |        |      |         |          |        |
+|   mul_32ns_31ns_63_2_1_U70                                                    | 46   | 34   | 4   |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U71                                                      | 629  |      |     |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U72                                                      | 629  |      |     |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U73                                                      | 629  |      |     |      |      |     |        |      |         |          |        |
+|   regslice_both_in_r_U                                                        | 100  | 132  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_r_U                                                       | 45   | 132  |     |      |      |     |        |      |         |          |        |
++-------------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 6.78%  | OK     |
+| FD                                                        | 50%       | 2.33%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 2.57%  | OK     |
+| MUXF7                                                     | 15%       | 0.48%  | OK     |
+| DSP                                                       | 80%       | 3.64%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 3.64%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 55     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.29   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+-------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                | ENDPOINT PIN                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                               |                              |              |            |                |          DELAY |        DELAY |
++-------+-------+-------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.413 | KER_size_1_reg_995_reg[3]/C   | KER_bound_reg_1000_reg[31]/D |           12 |         57 |          9.612 |          4.777 |        4.835 |
+| Path2 | 0.413 | valIn_data_4_reg_924_reg[3]/C | KER_size_0_reg_942_reg[31]/D |           12 |         58 |          9.612 |          4.777 |        4.835 |
+| Path3 | 0.413 | KER_size_0_reg_942_reg[3]/C   | KER_size_1_reg_995_reg[31]/D |           12 |         57 |          9.612 |          4.777 |        4.835 |
+| Path4 | 0.518 | KER_size_1_reg_995_reg[3]/C   | KER_bound_reg_1000_reg[30]/D |           12 |         57 |          9.507 |          4.672 |        4.835 |
+| Path5 | 0.518 | valIn_data_4_reg_924_reg[3]/C | KER_size_0_reg_942_reg[30]/D |           12 |         58 |          9.507 |          4.672 |        4.835 |
++-------+-------+-------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path1 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | KER_size_1_reg_995_reg[3]                              | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_bound_reg_1000_reg[31]                             | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path2 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | valIn_data_4_reg_924_reg[3]                            | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_0_reg_942_reg[31]                             | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path3 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | KER_size_0_reg_942_reg[3]                              | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_1_reg_995_reg[31]                             | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path4 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | KER_size_1_reg_995_reg[3]                              | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_bound_reg_1000_reg[30]                             | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path5 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | valIn_data_4_reg_924_reg[3]                            | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_0_reg_942_reg[30]                             | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+------------------------------------------------------------------------+
+| Report Type              | Report Location                                                        |
++--------------------------+------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/maxPool_CIF_0_1_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/maxPool_CIF_0_1_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/maxPool_CIF_0_1_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/maxPool_CIF_0_1_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/maxPool_CIF_0_1_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/maxPool_CIF_0_1_utilization_hierarchical_synth.rpt |
++--------------------------+------------------------------------------------------------------------+
+
+

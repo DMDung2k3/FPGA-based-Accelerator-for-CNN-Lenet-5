@@ -1,0 +1,118 @@
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:7:
+./../hw_library/axi_dma_slave.h:45:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=IFM_size_0 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_slave.h:46:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=IFM_size_1 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_slave.h:47:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=IFM_bound core=Mul_LUT
+        ^
+./../hw_library/axi_dma_slave.h:59:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_slave.h:60:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_slave.h:61:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:8:
+./../hw_library/axi_dma_master.h:54:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=OFM_size_0 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_master.h:55:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=OFM_size_1 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_master.h:56:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=OFM_bound core=Mul_LUT
+        ^
+./../hw_library/axi_dma_master.h:70:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_master.h:71:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/axi_dma_master.h:72:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:9:
+./../hw_library/stream_convolution_slideWindow.h:105:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=IFMPadDimSqrt core=Mul_LUT
+        ^
+./../hw_library/stream_convolution_slideWindow.h:122:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=baseIterBound core=Mul_LUT
+        ^
+./../hw_library/stream_convolution_slideWindow.h:128:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=inElem core=RAM_S2P_LUTRAM
+        ^
+./../hw_library/stream_convolution_slideWindow.h:186:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/stream_convolution_slideWindow.h:187:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/stream_convolution_slideWindow.h:188:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:10:
+./../hw_library/fixed_point_stream_convolution.h:17:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=A core=RAM_S2P_LUTRAM
+        ^
+./../hw_library/fixed_point_stream_convolution.h:18:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=B core=RAM_S2P_BRAM
+        ^
+./../hw_library/fixed_point_stream_convolution.h:19:46: warning: unexpected pragma argument '(', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=A block (FACTOR / 4)=(FACTOR / 4) dim=2
+                                             ^
+./../hw_library/fixed_point_stream_convolution.h:20:46: warning: unexpected pragma argument '(', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS array_partition variable=B block (FACTOR / 4)=(FACTOR / 4) dim=2
+                                             ^
+./../hw_library/fixed_point_stream_convolution.h:146:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/fixed_point_stream_convolution.h:147:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/fixed_point_stream_convolution.h:148:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:11:
+./../hw_library/pool.h:120:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=buf core=RAM_2P_LUTRAM
+        ^
+./../hw_library/pool.h:122:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=acc core=RAM_2P_LUTRAM
+        ^
+./../hw_library/pool.h:191:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/pool.h:192:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/pool.h:193:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+In file included from LeNet_wrapper.cpp:1:
+In file included from ./LeNet_wrapper.h:12:
+./../hw_library/fully_connected.h:18:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=A core=RAM_S2P_BRAM
+        ^
+./../hw_library/fully_connected.h:19:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=B core=RAM_S2P_BRAM
+        ^
+./../hw_library/fully_connected.h:133:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_0 core=Mul_LUT
+        ^
+./../hw_library/fully_connected.h:134:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_size_1 core=Mul_LUT
+        ^
+./../hw_library/fully_connected.h:135:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=KER_bound core=Mul_LUT
+        ^
+35 warnings generated.

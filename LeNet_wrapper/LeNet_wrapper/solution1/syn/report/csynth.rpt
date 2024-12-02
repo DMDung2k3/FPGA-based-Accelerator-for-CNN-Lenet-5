@@ -1,0 +1,638 @@
+
+
+================================================================
+== Synthesis Summary Report of 'LeNet_wrapper'
+================================================================
++ General Information: 
+    * Date:           Sun Nov  3 13:43:04 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        LeNet_wrapper
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+------------+----------+-------------+--------------+-----+
+    |                              Modules                              |  Issue |       | Latency |  Latency  | Iteration|         |  Trip  |          |            |          |             |              |     |
+    |                              & Loops                              |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval|  Count | Pipelined|    BRAM    |    DSP   |      FF     |      LUT     | URAM|
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+------------+----------+-------------+--------------+-----+
+    |+ LeNet_wrapper*                                                   |  Timing|  -5.29|        -|          -|         -|        -|       -|  dataflow|  316 (112%)|  82 (37%)|  17608 (16%)|  61952 (116%)|    -|
+    | + AXI_DMA_SLAVE                                                   |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|           -|         -|    506 (~0%)|    6767 (12%)|    -|
+    |  + AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2                         |       -|   1.57|        -|          -|         -|        -|       -|        no|           -|         -|     67 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_63_2                                               |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  + AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1                         |       -|   1.57|        -|          -|         -|        -|       -|        no|           -|         -|     67 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_49_1                                               |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + SCIG_5u_1u_28u_20u_24u_0u_s                                     |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|      8 (2%)|   2 (~0%)|    883 (~0%)|     4633 (8%)|    -|
+    |  + SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6            |       -|   0.14|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_189_6                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  + SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1            |  Timing|  -2.57|        -|          -|         -|        -|       -|        no|      8 (2%)|         -|    408 (~0%)|     1119 (2%)|    -|
+    |   o VITIS_LOOP_123_1                                              |       -|   7.30|        -|          -|         4|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + SMM_1u_25u_20u_s                                                |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|      7 (2%)|   14 (6%)|    2263 (2%)|    6433 (12%)|    -|
+    |  + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2        |  Timing|  -1.02|      510|  5.100e+03|         -|      510|       -|        no|           -|         -|    281 (~0%)|     528 (~0%)|    -|
+    |   o VITIS_LOOP_78_1_VITIS_LOOP_79_2                               |       -|   7.30|      508|  5.080e+03|        10|        1|     500|       yes|           -|         -|            -|             -|    -|
+    |  + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7                       |       -|   0.08|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_149_7                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_96_3_VITIS_LOOP_102_4                               |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6                      |  Timing|  -0.65|       27|    270.000|         -|       27|       -|        no|           -|         -|     27 (~0%)|     303 (~0%)|    -|
+    |    o VITIS_LOOP_105_6                                             |       -|   7.30|       25|    250.000|         2|        1|      25|       yes|           -|         -|            -|             -|    -|
+    |   + SMM_1u_25u_20u_Pipeline_L2_L3                                 |       -|   0.27|        -|          -|         -|        -|       -|        no|           -|    4 (1%)|    672 (~0%)|     1395 (2%)|    -|
+    |    o L2_L3                                                        |       -|   7.30|        -|          -|        10|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + pool_2u_20u_24u_s                                               |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|           -|    8 (3%)|    2711 (2%)|    6829 (12%)|    -|
+    |  + pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1                      |       -|   1.61|       22|    220.000|         -|       22|       -|        no|           -|         -|      7 (~0%)|      53 (~0%)|    -|
+    |   o VITIS_LOOP_123_1                                              |       -|   7.30|       20|    200.000|         1|        1|      20|       yes|           -|         -|            -|             -|    -|
+    |  + pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13                     |       -|   0.08|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_194_13                                             |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_139_4_VITIS_LOOP_140_5                              |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12  |  Timing|  -0.09|        -|          -|         -|        -|       -|        no|           -|         -|    228 (~0%)|     451 (~0%)|    -|
+    |    o VITIS_LOOP_167_11_VITIS_LOOP_168_12                          |       -|   7.30|        -|          -|         3|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |   o VITIS_LOOP_141_6_VITIS_LOOP_142_7                             |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |    + pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9   |  Timing|  -1.29|        -|          -|         -|        -|       -|        no|           -|         -|    211 (~0%)|     440 (~0%)|    -|
+    |     o VITIS_LOOP_144_8_VITIS_LOOP_145_9                           |       -|   7.30|        -|          -|         3|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |    + pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10                   |       -|   1.61|       23|    230.000|         -|       23|       -|        no|           -|         -|    194 (~0%)|     200 (~0%)|    -|
+    |     o VITIS_LOOP_153_10                                           |       -|   7.30|       21|    210.000|         3|        1|      20|       yes|           -|         -|            -|             -|    -|
+    | + SCIG_5u_20u_12u_50u_8u_0u_s                                     |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|      8 (2%)|   2 (~0%)|    1252 (1%)|    6201 (11%)|    -|
+    |  + SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6            |       -|   0.14|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_189_6                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  + SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1            |  Timing|  -0.37|        -|          -|         -|        -|       -|        no|      8 (2%)|         -|    761 (~0%)|     2655 (4%)|    -|
+    |   o VITIS_LOOP_123_1                                              |      II|   7.30|        -|          -|        43|       20|       -|       yes|           -|         -|            -|             -|    -|
+    | + SMM_1u_500u_50u_s                                               |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|     22 (7%)|  23 (10%)|    2941 (2%)|    8196 (15%)|    -|
+    |  + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2       |  Timing|  -0.82|    25014|  2.501e+05|         -|    25014|       -|        no|           -|   2 (~0%)|    573 (~0%)|      738 (1%)|    -|
+    |   o VITIS_LOOP_78_1_VITIS_LOOP_79_2                               |       -|   7.30|    25012|  2.501e+05|        14|        1|   25000|       yes|           -|         -|            -|             -|    -|
+    |  + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7                      |       -|   0.08|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_149_7                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_96_3_VITIS_LOOP_102_4                               |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6                     |  Timing|  -0.49|      502|  5.020e+03|         -|      502|       -|        no|           -|         -|     45 (~0%)|     384 (~0%)|    -|
+    |    o VITIS_LOOP_105_6                                             |       -|   7.30|      500|  5.000e+03|         2|        1|     500|       yes|           -|         -|            -|             -|    -|
+    |   + SMM_1u_500u_50u_Pipeline_L2_L3                                |       -|   0.22|        -|          -|         -|        -|       -|        no|           -|    9 (4%)|    804 (~0%)|     2542 (4%)|    -|
+    |    o L2_L3                                                        |       -|   7.30|        -|          -|        19|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + pool_2u_50u_8u_s                                                |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|           -|    8 (3%)|    2121 (1%)|    6135 (11%)|    -|
+    |  + pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1                       |       -|   1.56|       52|    520.000|         -|       52|       -|        no|           -|         -|      8 (~0%)|      55 (~0%)|    -|
+    |   o VITIS_LOOP_123_1                                              |       -|   7.30|       50|    500.000|         1|        1|      50|       yes|           -|         -|            -|             -|    -|
+    |  + pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13                      |       -|   0.08|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_194_13                                             |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_139_4_VITIS_LOOP_140_5                              |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12   |  Timing|  -0.09|        -|          -|         -|        -|       -|        no|           -|         -|    190 (~0%)|     406 (~0%)|    -|
+    |    o VITIS_LOOP_167_11_VITIS_LOOP_168_12                          |       -|   7.30|        -|          -|         3|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |   o VITIS_LOOP_141_6_VITIS_LOOP_142_7                             |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |    + pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9    |  Timing|  -1.29|        -|          -|         -|        -|       -|        no|           -|         -|    213 (~0%)|     440 (~0%)|    -|
+    |     o VITIS_LOOP_144_8_VITIS_LOOP_145_9                           |       -|   7.30|        -|          -|         3|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |    + pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10                    |       -|   1.56|       53|    530.000|         -|       53|       -|        no|           -|         -|    123 (~0%)|     157 (~0%)|    -|
+    |     o VITIS_LOOP_153_10                                           |       -|   7.30|       51|    510.000|         3|        1|      50|       yes|           -|         -|            -|             -|    -|
+    | + FC_1u_800u_500u_s                                               |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|   257 (91%)|   15 (6%)|    1896 (1%)|     4863 (9%)|    -|
+    |  + FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2       |       -|   0.14|   400004|  4.000e+06|         -|   400004|       -|        no|           -|   1 (~0%)|    131 (~0%)|     319 (~0%)|    -|
+    |   o VITIS_LOOP_76_1_VITIS_LOOP_77_2                               |       -|   7.30|   400002|  4.000e+06|         4|        1|  400000|       yes|           -|         -|            -|             -|    -|
+    |  + FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7                      |       -|   0.14|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_136_7                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_92_3_VITIS_LOOP_97_4                                |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6                      |       -|   1.57|      803|  8.030e+03|         -|      803|       -|        no|           -|         -|     53 (~0%)|     140 (~0%)|    -|
+    |    o VITIS_LOOP_99_6                                              |       -|   7.30|      801|  8.010e+03|         3|        1|     800|       yes|           -|         -|            -|             -|    -|
+    |   + FC_1u_800u_500u_Pipeline_L2_L3                                |       -|   0.70|        -|          -|         -|        -|       -|        no|           -|   2 (~0%)|    333 (~0%)|     474 (~0%)|    -|
+    |    o L2_L3                                                        |       -|   7.30|        -|          -|         9|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + FC_1u_500u_10u_s                                                |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|           -|   10 (4%)|    1249 (1%)|     4329 (8%)|    -|
+    |  + FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2        |  Timing|  -0.67|     5002|  5.002e+04|         -|     5002|       -|        no|           -|         -|     30 (~0%)|     262 (~0%)|    -|
+    |   o VITIS_LOOP_76_1_VITIS_LOOP_77_2                               |       -|   7.30|     5000|  5.000e+04|         2|        1|    5000|       yes|           -|         -|            -|             -|    -|
+    |  + FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7                       |       -|   0.14|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     138 (~0%)|    -|
+    |   o VITIS_LOOP_136_7                                              |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  o VITIS_LOOP_92_3_VITIS_LOOP_97_4                                |       -|   7.30|        -|          -|         -|        -|       -|        no|           -|         -|            -|             -|    -|
+    |   + FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6                       |       -|   2.30|      502|  5.020e+03|         -|      502|       -|        no|           -|         -|     13 (~0%)|     118 (~0%)|    -|
+    |    o VITIS_LOOP_99_6                                              |       -|   7.30|      500|  5.000e+03|         2|        1|     500|       yes|           -|         -|            -|             -|    -|
+    |   + FC_1u_500u_10u_Pipeline_L2                                    |       -|   1.57|        -|          -|         -|        -|       -|        no|           -|         -|     35 (~0%)|     127 (~0%)|    -|
+    |    o L2                                                           |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    | + AXI_DMA_MASTER                                                  |  Timing|  -5.29|        -|          -|         -|        -|       -|        no|           -|         -|    510 (~0%)|    6954 (13%)|    -|
+    |  + AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2                        |       -|   1.57|        -|          -|         -|        -|       -|        no|           -|         -|     36 (~0%)|     179 (~0%)|    -|
+    |   o VITIS_LOOP_74_2                                               |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    |  + AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1                        |       -|   1.57|        -|          -|         -|        -|       -|        no|           -|         -|     36 (~0%)|     179 (~0%)|    -|
+    |   o VITIS_LOOP_58_1                                               |       -|   7.30|        -|          -|         2|        1|       -|       yes|           -|         -|            -|             -|    -|
+    +-------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+--------+----------+------------+----------+-------------+--------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+--------+--------+
+| Interface  | Direction | Register Mode | TDATA | TREADY | TVALID |
++------------+-----------+---------------+-------+--------+--------+
+| in_stream  | in        | both          | 64    | 1      | 1      |
+| out_stream | out       | both          | 64    | 1      | 1      |
++------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+------------------------+
+| Argument   | Direction | Datatype               |
++------------+-----------+------------------------+
+| in_stream  | in        | stream<AXI_DMA_IO, 0>& |
+| out_stream | out       | stream<AXI_DMA_IO, 0>& |
++------------+-----------+------------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| in_stream  | in_stream    | interface |
+| out_stream | out_stream   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| Name                                                             | DSP | Pragma | Variable     | Op  | Impl      | Latency |
++------------------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| + LeNet_wrapper                                                  | 82  |        |              |     |           |         |
+|  + AXI_DMA_SLAVE                                                 | 0   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U7                                         |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U9                                         |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U10                                        |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U8                                         |     | yes    | IFM_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U11                                        |     | yes    | IFM_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U12                                        |     | yes    | IFM_bound    | mul | fabric    | 0       |
+|   + AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2                       | 0   |        |              |     |           |         |
+|     i_19_fu_71_p2                                                |     |        | i_19         | add | fabric    | 0       |
+|   + AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1                       | 0   |        |              |     |           |         |
+|     i_20_fu_71_p2                                                |     |        | i_20         | add | fabric    | 0       |
+|  + SCIG_5u_1u_28u_20u_24u_0u_s                                   | 2   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U25                                        |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U26                                        |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U27                                        |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    mul_32s_15ns_32_2_1_U24                                       | 2   |        | mul36        | mul | auto      | 1       |
+|   + SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6          | 0   |        |              |     |           |         |
+|     i_12_fu_68_p2                                                |     |        | i_12         | add | fabric    | 0       |
+|   + SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1          | 0   |        |              |     |           |         |
+|     i_14_fu_234_p2                                               |     |        | i_14         | add | fabric    | 0       |
+|     inp_9_fu_292_p2                                              |     |        | inp_9        | add | fabric    | 0       |
+|     inp_j_5_fu_300_p2                                            |     |        | inp_j_5      | add | fabric    | 0       |
+|     inp_i_7_fu_317_p2                                            |     |        | inp_i_7      | add | fabric    | 0       |
+|     add_ln156_fu_356_p2                                          |     |        | add_ln156    | add | fabric    | 0       |
+|     sub_ln156_fu_382_p2                                          |     |        | sub_ln156    | sub | fabric    | 0       |
+|     kx_2_fu_400_p2                                               |     |        | kx_2         | add | fabric    | 0       |
+|     ky_2_fu_420_p2                                               |     |        | ky_2         | add | fabric    | 0       |
+|     ox_2_fu_445_p2                                               |     |        | ox_2         | add | fabric    | 0       |
+|     oy_3_fu_475_p2                                               |     |        | oy_3         | add | fabric    | 0       |
+|  + SMM_1u_25u_20u_s                                              | 14  |        |              |     |           |         |
+|    mul_32s_32s_32_2_1_U105                                       | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|    mul_32ns_32ns_64_2_1_U104                                     | 4   |        | bound11      | mul | auto      | 1       |
+|    add_ln96_fu_284_p2                                            |     |        | add_ln96     | add | fabric    | 0       |
+|    mul_32s_32s_32_2_1_U106                                       | 3   |        | mul_ln75     | mul | auto      | 1       |
+|    mul_32s_32s_32_2_1_U105                                       | 3   |        | mul_ln75_2   | mul | auto      | 1       |
+|    mul_32s_32s_32_1_1_U107                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U108                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U109                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|   + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6                     | 0   |        |              |     |           |         |
+|     add_ln105_fu_263_p2                                          |     |        | add_ln105    | add | fabric    | 0       |
+|     add_ln105_3_fu_316_p2                                        |     |        | add_ln105_3  | add | fabric    | 0       |
+|     add_ln105_4_fu_283_p2                                        |     |        | add_ln105_4  | add | fabric    | 0       |
+|   + SMM_1u_25u_20u_Pipeline_L2_L3                                | 4   |        |              |     |           |         |
+|     add_ln121_2_fu_631_p2                                        |     |        | add_ln121_2  | add | fabric    | 0       |
+|     add_ln121_fu_643_p2                                          |     |        | add_ln121    | add | fabric    | 0       |
+|     add_ln123_fu_683_p2                                          |     |        | add_ln123    | add | fabric    | 0       |
+|     mac_muladd_8s_8s_17s_17_4_1_U60                              | 1   |        | mul_ln127    | mul | dsp_slice | 3       |
+|     mul_8s_8s_16_1_1_U56                                         |     |        | mul_ln127_6  | mul | auto      | 0       |
+|     mul_4ns_6ns_9_1_1_U41                                        |     |        | mul_ln127_12 | mul | auto      | 0       |
+|     mac_muladd_8s_8s_16s_17_4_1_U58                              | 1   |        | mul_ln127_7  | mul | dsp_slice | 3       |
+|     mul_4ns_6ns_9_1_1_U42                                        |     |        | mul_ln127_13 | mul | auto      | 0       |
+|     mac_muladd_8s_8s_17s_17_4_1_U61                              | 1   |        | mul_ln127_8  | mul | dsp_slice | 3       |
+|     mul_5ns_7ns_11_1_1_U40                                       |     |        | mul_ln127_14 | mul | auto      | 0       |
+|     add_ln127_12_fu_891_p2                                       |     |        | add_ln127_12 | add | fabric    | 0       |
+|     mul_8s_8s_16_1_1_U57                                         |     |        | mul_ln127_9  | mul | auto      | 0       |
+|     mul_5ns_7ns_11_1_1_U43                                       |     |        | mul_ln127_15 | mul | auto      | 0       |
+|     add_ln127_13_fu_935_p2                                       |     |        | add_ln127_13 | add | fabric    | 0       |
+|     mac_muladd_8s_8s_16s_17_4_1_U59                              | 1   |        | mul_ln127_10 | mul | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16s_17_4_1_U58                              | 1   |        | add_ln127    | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_17s_17_4_1_U60                              | 1   |        | add_ln127_6  | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16s_17_4_1_U59                              | 1   |        | add_ln127_7  | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_17s_17_4_1_U61                              | 1   |        | add_ln127_8  | add | dsp_slice | 3       |
+|     add_ln127_9_fu_1288_p2                                       |     |        | add_ln127_9  | add | fabric    | 0       |
+|     sum_2_fu_1307_p2                                             |     |        | sum_2        | add | fabric    | 0       |
+|     add_ln124_fu_723_p2                                          |     |        | add_ln124    | add | fabric    | 0       |
+|     sub_ln130_fu_1321_p2                                         |     |        | sub_ln130    | sub | fabric    | 0       |
+|     sub_ln130_2_fu_1359_p2                                       |     |        | sub_ln130_2  | sub | fabric    | 0       |
+|   + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2      | 0   |        |              |     |           |         |
+|     add_ln78_2_fu_290_p2                                         |     |        | add_ln78_2   | add | fabric    | 0       |
+|     add_ln78_fu_368_p2                                           |     |        | add_ln78     | add | fabric    | 0       |
+|     mul_5ns_7ns_11_1_1_U87                                       |     |        | mul_ln79     | mul | auto      | 0       |
+|     add_ln84_fu_407_p2                                           |     |        | add_ln84     | add | fabric    | 0       |
+|     add_ln79_fu_349_p2                                           |     |        | add_ln79     | add | fabric    | 0       |
+|   + SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7                     | 0   |        |              |     |           |         |
+|     i_8_fu_68_p2                                                 |     |        | i_8          | add | fabric    | 0       |
+|  + pool_2u_20u_24u_s                                             | 8   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U170                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U171                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U172                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    mul_31ns_32ns_63_2_1_U168                                     | 4   |        | mul_ln138    | mul | auto      | 1       |
+|    mul_32ns_31ns_63_2_1_U169                                     | 4   |        | mul_ln138_2  | mul | auto      | 1       |
+|    add_ln139_fu_557_p2                                           |     |        | add_ln139    | add | fabric    | 0       |
+|    add_ln141_fu_568_p2                                           |     |        | add_ln141    | add | fabric    | 0       |
+|    add_ln142_fu_591_p2                                           |     |        | add_ln142    | add | fabric    | 0       |
+|   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1                    | 0   |        |              |     |           |         |
+|     add_ln123_fu_294_p2                                          |     |        | add_ln123    | add | fabric    | 0       |
+|   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13                   | 0   |        |              |     |           |         |
+|     i_4_fu_68_p2                                                 |     |        | i_4          | add | fabric    | 0       |
+|   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9   | 0   |        |              |     |           |         |
+|     add_ln144_fu_124_p2                                          |     |        | add_ln144    | add | fabric    | 0       |
+|     add_ln145_fu_165_p2                                          |     |        | add_ln145    | add | fabric    | 0       |
+|   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12 | 0   |        |              |     |           |         |
+|     add_ln167_2_fu_392_p2                                        |     |        | add_ln167_2  | add | fabric    | 0       |
+|     add_ln167_fu_404_p2                                          |     |        | add_ln167    | add | fabric    | 0       |
+|     add_ln168_fu_452_p2                                          |     |        | add_ln168    | add | fabric    | 0       |
+|   + pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10                   | 0   |        |              |     |           |         |
+|     add_ln153_fu_338_p2                                          |     |        | add_ln153    | add | fabric    | 0       |
+|  + SCIG_5u_20u_12u_50u_8u_0u_s                                   | 2   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U188                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U189                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U190                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    mul_32s_12ns_32_2_1_U187                                      | 2   |        | mul36        | mul | auto      | 1       |
+|   + SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6          | 0   |        |              |     |           |         |
+|     i_9_fu_68_p2                                                 |     |        | i_9          | add | fabric    | 0       |
+|   + SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1          | 0   |        |              |     |           |         |
+|     i_11_fu_827_p2                                               |     |        | i_11         | add | fabric    | 0       |
+|     mul71_fu_1170_p2                                             |     |        | mul71        | add | fabric    | 0       |
+|     add_ln141_fu_1236_p2                                         |     |        | add_ln141    | add | fabric    | 0       |
+|     add_ln141_1_fu_1251_p2                                       |     |        | add_ln141_1  | add | fabric    | 0       |
+|     add_ln141_2_fu_1266_p2                                       |     |        | add_ln141_2  | add | fabric    | 0       |
+|     add_ln141_3_fu_1281_p2                                       |     |        | add_ln141_3  | add | fabric    | 0       |
+|     add_ln141_4_fu_1296_p2                                       |     |        | add_ln141_4  | add | fabric    | 0       |
+|     add_ln141_5_fu_1311_p2                                       |     |        | add_ln141_5  | add | fabric    | 0       |
+|     add_ln141_6_fu_1326_p2                                       |     |        | add_ln141_6  | add | fabric    | 0       |
+|     add_ln141_7_fu_1341_p2                                       |     |        | add_ln141_7  | add | fabric    | 0       |
+|     add_ln141_8_fu_1356_p2                                       |     |        | add_ln141_8  | add | fabric    | 0       |
+|     add_ln141_9_fu_1371_p2                                       |     |        | add_ln141_9  | add | fabric    | 0       |
+|     add_ln141_10_fu_1386_p2                                      |     |        | add_ln141_10 | add | fabric    | 0       |
+|     add_ln141_11_fu_1401_p2                                      |     |        | add_ln141_11 | add | fabric    | 0       |
+|     add_ln141_12_fu_1416_p2                                      |     |        | add_ln141_12 | add | fabric    | 0       |
+|     add_ln141_13_fu_1430_p2                                      |     |        | add_ln141_13 | add | fabric    | 0       |
+|     add_ln141_14_fu_1440_p2                                      |     |        | add_ln141_14 | add | fabric    | 0       |
+|     add_ln141_15_fu_1450_p2                                      |     |        | add_ln141_15 | add | fabric    | 0       |
+|     inp_6_fu_857_p2                                              |     |        | inp_6        | add | fabric    | 0       |
+|     inp_j_3_fu_863_p2                                            |     |        | inp_j_3      | add | fabric    | 0       |
+|     inp_i_4_fu_880_p2                                            |     |        | inp_i_4      | add | fabric    | 0       |
+|     tmp_fu_958_p2                                                |     |        | tmp          | add | fabric    | 0       |
+|     tmp17_fu_984_p2                                              |     |        | tmp17        | sub | fabric    | 0       |
+|     thr_mul39_fu_1111_p2                                         |     |        | thr_mul39    | add | fabric    | 0       |
+|     add_ln159_fu_1509_p2                                         |     |        | add_ln159    | add | fabric    | 0       |
+|     add_ln159_1_fu_1524_p2                                       |     |        | add_ln159_1  | add | fabric    | 0       |
+|     add_ln159_2_fu_1539_p2                                       |     |        | add_ln159_2  | add | fabric    | 0       |
+|     add_ln159_3_fu_1554_p2                                       |     |        | add_ln159_3  | add | fabric    | 0       |
+|     add_ln159_4_fu_1569_p2                                       |     |        | add_ln159_4  | add | fabric    | 0       |
+|     add_ln159_5_fu_1584_p2                                       |     |        | add_ln159_5  | add | fabric    | 0       |
+|     add_ln159_6_fu_1599_p2                                       |     |        | add_ln159_6  | add | fabric    | 0       |
+|     add_ln159_7_fu_1614_p2                                       |     |        | add_ln159_7  | add | fabric    | 0       |
+|     add_ln159_8_fu_1629_p2                                       |     |        | add_ln159_8  | add | fabric    | 0       |
+|     add_ln159_9_fu_1644_p2                                       |     |        | add_ln159_9  | add | fabric    | 0       |
+|     add_ln159_10_fu_1659_p2                                      |     |        | add_ln159_10 | add | fabric    | 0       |
+|     add_ln159_11_fu_1674_p2                                      |     |        | add_ln159_11 | add | fabric    | 0       |
+|     add_ln159_12_fu_1689_p2                                      |     |        | add_ln159_12 | add | fabric    | 0       |
+|     add_ln159_13_fu_1704_p2                                      |     |        | add_ln159_13 | add | fabric    | 0       |
+|     add_ln159_14_fu_1719_p2                                      |     |        | add_ln159_14 | add | fabric    | 0       |
+|     add_ln159_15_fu_1734_p2                                      |     |        | add_ln159_15 | add | fabric    | 0       |
+|     kx_1_fu_1006_p2                                              |     |        | kx_1         | add | fabric    | 0       |
+|     ky_1_fu_1026_p2                                              |     |        | ky_1         | add | fabric    | 0       |
+|     ox_1_fu_1051_p2                                              |     |        | ox_1         | add | fabric    | 0       |
+|     oy_1_fu_1081_p2                                              |     |        | oy_1         | add | fabric    | 0       |
+|  + SMM_1u_500u_50u_s                                             | 23  |        |              |     |           |         |
+|    mul_32s_32s_32_2_1_U296                                       | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|    mul_32ns_8ns_39_2_1_U295                                      | 2   |        | bound4       | mul | auto      | 1       |
+|    mul_32ns_32ns_64_2_1_U294                                     | 4   |        | bound11      | mul | auto      | 1       |
+|    add_ln96_fu_334_p2                                            |     |        | add_ln96     | add | fabric    | 0       |
+|    mul_32s_32s_32_2_1_U297                                       | 3   |        | mul_ln75     | mul | auto      | 1       |
+|    mul_32s_32s_32_2_1_U296                                       | 3   |        | mul_ln75_1   | mul | auto      | 1       |
+|    mul_32s_32s_32_1_1_U298                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U299                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U300                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|   + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6                    | 0   |        |              |     |           |         |
+|     add_ln105_fu_351_p2                                          |     |        | add_ln105    | add | fabric    | 0       |
+|     add_ln105_1_fu_404_p2                                        |     |        | add_ln105_1  | add | fabric    | 0       |
+|     add_ln105_2_fu_371_p2                                        |     |        | add_ln105_2  | add | fabric    | 0       |
+|   + SMM_1u_500u_50u_Pipeline_L2_L3                               | 9   |        |              |     |           |         |
+|     add_ln121_1_fu_1391_p2                                       |     |        | add_ln121_1  | add | fabric    | 0       |
+|     add_ln121_fu_1476_p2                                         |     |        | add_ln121    | add | fabric    | 0       |
+|     mul_12s_7ns_12_1_1_U212                                      | 1   |        | mul_ln127_6  | mul | auto      | 0       |
+|     add_ln123_fu_1493_p2                                         |     |        | add_ln123    | add | fabric    | 0       |
+|     add_ln123_1_fu_1448_p2                                       |     |        | add_ln123_1  | add | fabric    | 0       |
+|     am_addmul_7ns_8ns_10ns_19_4_1_U228                           | 1   |        | add_ln123_2  | add | dsp_slice | 3       |
+|     add_ln123_3_fu_1498_p2                                       |     |        | add_ln123_3  | add | fabric    | 0       |
+|     am_addmul_7ns_7ns_9ns_17_4_1_U229                            | 1   |        | add_ln123_4  | add | dsp_slice | 3       |
+|     mul_7ns_9ns_15_1_1_U209                                      |     |        | mul_ln123    | mul | auto      | 0       |
+|     add_ln127_5_fu_1596_p2                                       |     |        | add_ln127_5  | add | fabric    | 0       |
+|     mac_muladd_8s_8s_17s_17_4_1_U232                             | 1   |        | mul_ln127    | mul | dsp_slice | 3       |
+|     am_addmul_7ns_7ns_9ns_17_4_1_U229                            | 1   |        | mul_ln127_7  | mul | dsp_slice | 3       |
+|     add_ln127_6_fu_1644_p2                                       |     |        | add_ln127_6  | add | fabric    | 0       |
+|     mul_8s_8s_16_1_1_U226                                        |     |        | mul_ln127_1  | mul | auto      | 0       |
+|     mul_8ns_10ns_17_1_1_U210                                     |     |        | mul_ln127_8  | mul | auto      | 0       |
+|     add_ln127_7_fu_1681_p2                                       |     |        | add_ln127_7  | add | fabric    | 0       |
+|     mac_muladd_8s_8s_16s_17_4_1_U230                             | 1   |        | mul_ln127_2  | mul | dsp_slice | 3       |
+|     am_addmul_7ns_8ns_10ns_19_4_1_U228                           | 1   |        | mul_ln127_9  | mul | dsp_slice | 3       |
+|     add_ln127_8_fu_1729_p2                                       |     |        | add_ln127_8  | add | fabric    | 0       |
+|     mac_muladd_8s_8s_17s_17_4_1_U233                             | 1   |        | mul_ln127_3  | mul | dsp_slice | 3       |
+|     mul_9ns_11ns_19_1_1_U211                                     | 1   |        | mul_ln127_10 | mul | auto      | 0       |
+|     add_ln127_9_fu_1766_p2                                       |     |        | add_ln127_9  | add | fabric    | 0       |
+|     mul_8s_8s_16_1_1_U227                                        |     |        | mul_ln127_4  | mul | auto      | 0       |
+|     mul_9ns_11ns_19_1_1_U213                                     | 1   |        | mul_ln127_11 | mul | auto      | 0       |
+|     add_ln127_10_fu_1803_p2                                      |     |        | add_ln127_10 | add | fabric    | 0       |
+|     mac_muladd_8s_8s_16s_17_4_1_U231                             | 1   |        | mul_ln127_5  | mul | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16s_17_4_1_U230                             | 1   |        | add_ln127    | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_17s_17_4_1_U232                             | 1   |        | add_ln127_1  | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16s_17_4_1_U231                             | 1   |        | add_ln127_2  | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_17s_17_4_1_U233                             | 1   |        | add_ln127_3  | add | dsp_slice | 3       |
+|     add_ln127_4_fu_2501_p2                                       |     |        | add_ln127_4  | add | fabric    | 0       |
+|     sum_1_fu_2520_p2                                             |     |        | sum_1        | add | fabric    | 0       |
+|     add_ln124_fu_1420_p2                                         |     |        | add_ln124    | add | fabric    | 0       |
+|     sub_ln130_fu_2534_p2                                         |     |        | sub_ln130    | sub | fabric    | 0       |
+|     sub_ln130_1_fu_2572_p2                                       |     |        | sub_ln130_1  | sub | fabric    | 0       |
+|   + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2     | 2   |        |              |     |           |         |
+|     add_ln78_1_fu_380_p2                                         |     |        | add_ln78_1   | add | fabric    | 0       |
+|     add_ln78_fu_457_p2                                           |     |        | add_ln78     | add | fabric    | 0       |
+|     mac_muladd_6ns_6ns_6ns_12_4_1_U273                           | 1   |        | mul_ln84     | mul | dsp_slice | 3       |
+|     mul_9ns_11ns_19_1_1_U272                                     | 1   |        | mul_ln79     | mul | auto      | 0       |
+|     mac_muladd_6ns_6ns_6ns_12_4_1_U273                           | 1   |        | add_ln84     | add | dsp_slice | 3       |
+|     add_ln79_fu_419_p2                                           |     |        | add_ln79     | add | fabric    | 0       |
+|   + SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7                    | 0   |        |              |     |           |         |
+|     i_6_fu_68_p2                                                 |     |        | i_6          | add | fabric    | 0       |
+|  + pool_2u_50u_8u_s                                              | 8   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U336                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U337                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U338                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    mul_31ns_32ns_63_2_1_U334                                     | 4   |        | mul_ln138    | mul | auto      | 1       |
+|    mul_32ns_31ns_63_2_1_U335                                     | 4   |        | mul_ln138_1  | mul | auto      | 1       |
+|    add_ln139_fu_801_p2                                           |     |        | add_ln139    | add | fabric    | 0       |
+|    add_ln141_fu_812_p2                                           |     |        | add_ln141    | add | fabric    | 0       |
+|    add_ln142_fu_835_p2                                           |     |        | add_ln142    | add | fabric    | 0       |
+|   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1                     | 0   |        |              |     |           |         |
+|     add_ln123_fu_134_p2                                          |     |        | add_ln123    | add | fabric    | 0       |
+|   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13                    | 0   |        |              |     |           |         |
+|     i_2_fu_68_p2                                                 |     |        | i_2          | add | fabric    | 0       |
+|   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9    | 0   |        |              |     |           |         |
+|     add_ln144_fu_124_p2                                          |     |        | add_ln144    | add | fabric    | 0       |
+|     add_ln145_fu_165_p2                                          |     |        | add_ln145    | add | fabric    | 0       |
+|   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12  | 0   |        |              |     |           |         |
+|     add_ln167_1_fu_216_p2                                        |     |        | add_ln167_1  | add | fabric    | 0       |
+|     add_ln167_fu_228_p2                                          |     |        | add_ln167    | add | fabric    | 0       |
+|     add_ln168_fu_268_p2                                          |     |        | add_ln168    | add | fabric    | 0       |
+|   + pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10                    | 0   |        |              |     |           |         |
+|     add_ln153_fu_170_p2                                          |     |        | add_ln153    | add | fabric    | 0       |
+|  + FC_1u_800u_500u_s                                             | 15  |        |              |     |           |         |
+|    mul_32s_32s_32_2_1_U366                                       | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|    mul_32ns_11ns_42_2_1_U365                                     | 2   |        | bound4       | mul | auto      | 1       |
+|    mul_32ns_32ns_64_2_1_U364                                     | 4   |        | bound11      | mul | auto      | 1       |
+|    add_ln92_fu_212_p2                                            |     |        | add_ln92     | add | fabric    | 0       |
+|    mul_32s_32s_32_2_1_U367                                       | 3   |        | mul_ln73     | mul | auto      | 1       |
+|    mul_32s_32s_32_2_1_U366                                       | 3   |        | mul_ln73_1   | mul | auto      | 1       |
+|    mul_32s_32s_32_1_1_U368                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U369                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U370                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|   + FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6                     | 0   |        |              |     |           |         |
+|     add_ln99_fu_108_p2                                           |     |        | add_ln99     | add | fabric    | 0       |
+|   + FC_1u_800u_500u_Pipeline_L2_L3                               | 2   |        |              |     |           |         |
+|     add_ln112_1_fu_157_p2                                        |     |        | add_ln112_1  | add | fabric    | 0       |
+|     add_ln112_fu_169_p2                                          |     |        | add_ln112    | add | fabric    | 0       |
+|     mac_muladd_19s_10ns_10ns_19_4_1_U346                         | 1   |        | mul_ln117_1  | mul | dsp_slice | 3       |
+|     mac_muladd_19s_10ns_10ns_19_4_1_U346                         | 1   |        | add_ln117    | add | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16ns_16_4_1_U347                            | 1   |        | mul_ln117    | mul | dsp_slice | 3       |
+|     mac_muladd_8s_8s_16ns_16_4_1_U347                            | 1   |        | sum_3        | add | dsp_slice | 3       |
+|     add_ln114_fu_201_p2                                          |     |        | add_ln114    | add | fabric    | 0       |
+|     sub_ln120_fu_267_p2                                          |     |        | sub_ln120    | sub | fabric    | 0       |
+|     sub_ln120_1_fu_287_p2                                        |     |        | sub_ln120_1  | sub | fabric    | 0       |
+|   + FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2     | 1   |        |              |     |           |         |
+|     add_ln76_1_fu_150_p2                                         |     |        | add_ln76_1   | add | fabric    | 0       |
+|     add_ln76_fu_162_p2                                           |     |        | add_ln76     | add | fabric    | 0       |
+|     mac_muladd_9ns_10ns_10ns_19_4_1_U354                         | 1   |        | mul_ln81     | mul | dsp_slice | 3       |
+|     mac_muladd_9ns_10ns_10ns_19_4_1_U354                         | 1   |        | add_ln81     | add | dsp_slice | 3       |
+|     add_ln77_fu_230_p2                                           |     |        | add_ln77     | add | fabric    | 0       |
+|   + FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7                    | 0   |        |              |     |           |         |
+|     i_16_fu_68_p2                                                |     |        | i_16         | add | fabric    | 0       |
+|  + FC_1u_500u_10u_s                                              | 10  |        |              |     |           |         |
+|    mul_32s_32s_32_2_1_U388                                       | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|    mul_32ns_32ns_64_2_1_U387                                     | 4   |        | bound4       | mul | auto      | 1       |
+|    add_ln92_fu_182_p2                                            |     |        | add_ln92     | add | fabric    | 0       |
+|    mul_32s_32s_32_2_1_U389                                       | 3   |        | mul_ln73     | mul | auto      | 1       |
+|    mul_32s_32s_32_2_1_U388                                       | 3   |        | mul_ln73_2   | mul | auto      | 1       |
+|    mul_32s_32s_32_1_1_U390                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U391                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U392                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|   + FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6                      | 0   |        |              |     |           |         |
+|     add_ln99_fu_66_p2                                            |     |        | add_ln99     | add | fabric    | 0       |
+|   + FC_1u_500u_10u_Pipeline_L2                                   | 0   |        |              |     |           |         |
+|     ib_2_fu_58_p2                                                |     |        | ib_2         | add | fabric    | 0       |
+|   + FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2      | 0   |        |              |     |           |         |
+|     add_ln76_2_fu_116_p2                                         |     |        | add_ln76_2   | add | fabric    | 0       |
+|     add_ln76_fu_128_p2                                           |     |        | add_ln76     | add | fabric    | 0       |
+|     add_ln77_fu_194_p2                                           |     |        | add_ln77     | add | fabric    | 0       |
+|   + FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7                     | 0   |        |              |     |           |         |
+|     i_18_fu_68_p2                                                |     |        | i_18         | add | fabric    | 0       |
+|  + AXI_DMA_MASTER                                                | 0   |        |              |     |           |         |
+|    mul_32s_32s_32_1_1_U403                                       |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U405                                       |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U406                                       |     | yes    | KER_bound    | mul | fabric    | 0       |
+|    sub56_fu_149_p2                                               |     |        | sub56        | add | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U404                                       |     | yes    | OFM_size_0   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U407                                       |     | yes    | OFM_size_1   | mul | fabric    | 0       |
+|    mul_32s_32s_32_1_1_U408                                       |     | yes    | OFM_bound    | mul | fabric    | 0       |
+|    sub_fu_163_p2                                                 |     |        | sub          | add | fabric    | 0       |
+|   + AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2                      | 0   |        |              |     |           |         |
+|     i_21_fu_81_p2                                                |     |        | i_21         | add | fabric    | 0       |
+|   + AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1                      | 0   |        |              |     |           |         |
+|     i_22_fu_81_p2                                                |     |        | i_22         | add | fabric    | 0       |
++------------------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------------------------------------------------+---------------+--------+------+------+--------+--------------------------------------------------------------------------+--------+---------+------------------+
+| Name                                                                          | Usage         | Type   | BRAM | URAM | Pragma | Variable                                                                 | Impl   | Latency | Bitwidth, Depth, |
+|                                                                               |               |        |      |      |        |                                                                          |        |         | Banks            |
++-------------------------------------------------------------------------------+---------------+--------+------+------+--------+--------------------------------------------------------------------------+--------+---------+------------------+
+| + LeNet_wrapper                                                               |               |        | 316  | 0    |        |                                                                          |        |         |                  |
+|   connect_0_U                                                                 | fifo channel  | stream | 2    |      |        | connect_0                                                                | memory | 0       | 32, 50, 1        |
+|   connect_1_U                                                                 | fifo channel  | stream | 2    |      |        | connect_1                                                                | memory | 0       | 32, 50, 1        |
+|   connect_2_U                                                                 | fifo channel  | stream |      |      |        | connect_2                                                                | srl    | 0       | 32, 2, 1         |
+|   connect_3_U                                                                 | fifo channel  | stream | 2    |      |        | connect_3                                                                | memory | 0       | 32, 50, 1        |
+|   connect_4_U                                                                 | fifo channel  | stream | 2    |      |        | connect_4                                                                | memory | 0       | 32, 50, 1        |
+|   connect_5_U                                                                 | fifo channel  | stream |      |      |        | connect_5                                                                | srl    | 0       | 32, 2, 1         |
+|   connect_6_U                                                                 | fifo channel  | stream | 2    |      |        | connect_6                                                                | memory | 0       | 32, 50, 1        |
+|   connect_7_U                                                                 | fifo channel  | stream | 2    |      |        | connect_7                                                                | memory | 0       | 32, 50, 1        |
+|   connect_8_U                                                                 | fifo channel  | stream | 2    |      |        | connect_8                                                                | memory | 0       | 32, 50, 1        |
+|  + SCIG_5u_1u_28u_20u_24u_0u_s                                                |               |        | 8    | 0    |        |                                                                          |        |         |                  |
+|   + SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1                       |               |        | 8    | 0    |        |                                                                          |        |         |                  |
+|     inputBuf_U                                                                | ram_s2p array |        | 8    |      |        | inputBuf                                                                 | auto   | 1       | 8, 10500, 1      |
+|  + SMM_1u_25u_20u_s                                                           |               |        | 7    | 0    |        |                                                                          |        |         |                  |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U    | ram_s2p       |        | 1    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10    | bram   | 1       | 8, 80, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11    | lutram | 1       | 8, 4, 1          |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U    | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10    | lutram | 1       | 8, 4, 1          |
+|  + pool_2u_20u_24u_s                                                          |               |        | 0    | 0    |        |                                                                          |        |         |                  |
+|    buf_U                                                                      | ram_2p array  |        |      |      | yes    | buf                                                                      | lutram | 1       | 32, 20, 1        |
+|    buf_1_U                                                                    | ram_2p array  |        |      |      | yes    | buf_1                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_2_U                                                                    | ram_2p array  |        |      |      | yes    | buf_2                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_3_U                                                                    | ram_2p array  |        |      |      | yes    | buf_3                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_4_U                                                                    | ram_2p array  |        |      |      | yes    | buf_4                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_5_U                                                                    | ram_2p array  |        |      |      | yes    | buf_5                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_6_U                                                                    | ram_2p array  |        |      |      | yes    | buf_6                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_7_U                                                                    | ram_2p array  |        |      |      | yes    | buf_7                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_8_U                                                                    | ram_2p array  |        |      |      | yes    | buf_8                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_9_U                                                                    | ram_2p array  |        |      |      | yes    | buf_9                                                                    | lutram | 1       | 32, 20, 1        |
+|    buf_10_U                                                                   | ram_2p array  |        |      |      | yes    | buf_10                                                                   | lutram | 1       | 32, 20, 1        |
+|    buf_11_U                                                                   | ram_2p array  |        |      |      | yes    | buf_11                                                                   | lutram | 1       | 32, 20, 1        |
+|    acc_U                                                                      | ram_2p array  |        |      |      | yes    | acc                                                                      | lutram | 1       | 32, 20, 1        |
+|  + SCIG_5u_20u_12u_50u_8u_0u_s                                                |               |        | 8    | 0    |        |                                                                          |        |         |                  |
+|    inElem_U                                                                   | ram_s2p array |        |      |      | yes    | inElem                                                                   | lutram | 1       | 8, 256, 1        |
+|   + SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1                       |               |        | 8    | 0    |        |                                                                          |        |         |                  |
+|     inputBuf_U                                                                | ram_t2p array |        | 8    |      |        | inputBuf                                                                 | auto   | 1       | 8, 10500, 1      |
+|  + SMM_1u_500u_50u_s                                                          |               |        | 22   | 0    |        |                                                                          |        |         |                  |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U     | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1     | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U       | ram_s2p       |        | 2    |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B       | bram   | 1       | 8, 2300, 1       |
+|    p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U | ram_s2p       |        | 2    |      | pragma | p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10 | bram   | 1       | 8, 2300, 1       |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U     | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1     | lutram | 1       | 8, 46, 1         |
+|    void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U       | ram_s2p       |        |      |      | pragma | void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A       | lutram | 1       | 8, 46, 1         |
+|    p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U | ram_s2p       |        |      |      | pragma | p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10 | lutram | 1       | 8, 46, 1         |
+|  + pool_2u_50u_8u_s                                                           |               |        | 0    | 0    |        |                                                                          |        |         |                  |
+|    buf_U                                                                      | ram_2p array  |        |      |      | yes    | buf                                                                      | lutram | 1       | 32, 50, 1        |
+|    buf_1_U                                                                    | ram_2p array  |        |      |      | yes    | buf_1                                                                    | lutram | 1       | 32, 50, 1        |
+|    buf_2_U                                                                    | ram_2p array  |        |      |      | yes    | buf_2                                                                    | lutram | 1       | 32, 50, 1        |
+|    buf_3_U                                                                    | ram_2p array  |        |      |      | yes    | buf_3                                                                    | lutram | 1       | 32, 50, 1        |
+|    acc_U                                                                      | ram_2p array  |        |      |      | yes    | acc                                                                      | lutram | 1       | 32, 50, 1        |
+|  + FC_1u_800u_500u_s                                                          |               |        | 257  | 0    |        |                                                                          |        |         |                  |
+|    B_U                                                                        | ram_s2p       |        | 256  |      | pragma | B                                                                        | bram   | 1       | 8, 400000, 1     |
+|    A_U                                                                        | ram_s2p       |        | 1    |      | pragma | A                                                                        | bram   | 1       | 8, 800, 1        |
++-------------------------------------------------------------------------------+---------------+--------+------+------+--------+--------------------------------------------------------------------------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Ignored Pragmas
++-----------------+--------------------+---------------------------------------------------------------+----------------------------------------------------+
+| Type            | Options            | Location                                                      | Messages                                           |
++-----------------+--------------------+---------------------------------------------------------------+----------------------------------------------------+
+| array_partition | variable=A block ( | ./../hw_library/fixed_point_stream_convolution.h:19 in smm, A | unexpected pragma argument '(', expects identifier |
+| array_partition | variable=B block ( | ./../hw_library/fixed_point_stream_convolution.h:20 in smm, B | unexpected pragma argument '(', expects identifier |
++-----------------+--------------------+---------------------------------------------------------------+----------------------------------------------------+
+
+* Pragmas with Warnings
++----------+-------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                             | Location                                                                    | Messages                                                                   |
++----------+-------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=OFM_size_0 core=Mul_LUT    | ./../hw_library/axi_dma_master.h:54 in axi_dma_master, OFM_size_0           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=OFM_size_1 core=Mul_LUT    | ./../hw_library/axi_dma_master.h:55 in axi_dma_master, OFM_size_1           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=OFM_bound core=Mul_LUT     | ./../hw_library/axi_dma_master.h:56 in axi_dma_master, OFM_bound            | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/axi_dma_master.h:70 in axi_dma_master, KER_size_0           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/axi_dma_master.h:71 in axi_dma_master, KER_size_1           | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/axi_dma_master.h:72 in axi_dma_master, KER_bound            | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=IFM_size_0 core=Mul_LUT    | ./../hw_library/axi_dma_slave.h:45 in axi_dma_slave, IFM_size_0             | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=IFM_size_1 core=Mul_LUT    | ./../hw_library/axi_dma_slave.h:46 in axi_dma_slave, IFM_size_1             | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=IFM_bound core=Mul_LUT     | ./../hw_library/axi_dma_slave.h:47 in axi_dma_slave, IFM_bound              | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/axi_dma_slave.h:59 in axi_dma_slave, KER_size_0             | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/axi_dma_slave.h:60 in axi_dma_slave, KER_size_1             | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/axi_dma_slave.h:61 in axi_dma_slave, KER_bound              | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=A core=RAM_S2P_LUTRAM      | ./../hw_library/fixed_point_stream_convolution.h:17 in smm, A               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=B core=RAM_S2P_BRAM        | ./../hw_library/fixed_point_stream_convolution.h:18 in smm, B               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/fixed_point_stream_convolution.h:146 in smm, KER_size_0     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/fixed_point_stream_convolution.h:147 in smm, KER_size_1     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/fixed_point_stream_convolution.h:148 in smm, KER_bound      | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=A core=RAM_S2P_BRAM        | ./../hw_library/fully_connected.h:18 in fc, A                               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=B core=RAM_S2P_BRAM        | ./../hw_library/fully_connected.h:19 in fc, B                               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/fully_connected.h:133 in fc, KER_size_0                     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/fully_connected.h:134 in fc, KER_size_1                     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/fully_connected.h:135 in fc, KER_bound                      | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=buf core=RAM_2P_LUTRAM     | ./../hw_library/pool.h:120 in pool, buf                                     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=acc core=RAM_2P_LUTRAM     | ./../hw_library/pool.h:122 in pool, acc                                     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/pool.h:191 in pool, KER_size_0                              | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/pool.h:192 in pool, KER_size_1                              | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/pool.h:193 in pool, KER_bound                               | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=IFMPadDimSqrt core=Mul_LUT | ./../hw_library/stream_convolution_slideWindow.h:105 in scig, IFMPadDimSqrt | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=baseIterBound core=Mul_LUT | ./../hw_library/stream_convolution_slideWindow.h:122 in scig, baseIterBound | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=inElem core=RAM_S2P_LUTRAM | ./../hw_library/stream_convolution_slideWindow.h:128 in scig, inElem        | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | ./../hw_library/stream_convolution_slideWindow.h:186 in scig, KER_size_0    | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | ./../hw_library/stream_convolution_slideWindow.h:187 in scig, KER_size_1    | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | ./../hw_library/stream_convolution_slideWindow.h:188 in scig, KER_bound     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+-------------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++------------+-------------------------------+------------------------------------------------------------------------+
+| Type       | Options                       | Location                                                               |
++------------+-------------------------------+------------------------------------------------------------------------+
+| pipeline   | II=1                          | ./../hw_library/axi_dma_master.h:59 in axi_dma_master                  |
+| pipeline   | II=1                          | ./../hw_library/axi_dma_master.h:75 in axi_dma_master                  |
+| pipeline   | II=1                          | ./../hw_library/axi_dma_slave.h:50 in axi_dma_slave                    |
+| pipeline   | II=1                          | ./../hw_library/axi_dma_slave.h:64 in axi_dma_slave                    |
+| pipeline   | II=1                          | ./../hw_library/fixed_point_stream_convolution.h:81 in smm             |
+| pipeline   | II=1                          | ./../hw_library/fixed_point_stream_convolution.h:107 in smm            |
+| pipeline   | II=1                          | ./../hw_library/fixed_point_stream_convolution.h:125 in smm            |
+| pipeline   | II=1                          | ./../hw_library/fixed_point_stream_convolution.h:150 in smm            |
+| pipeline   | II=1                          | ./../hw_library/fully_connected.h:78 in fc                             |
+| pipeline   | II=1                          | ./../hw_library/fully_connected.h:100 in fc                            |
+| pipeline   | II=1                          | ./../hw_library/fully_connected.h:115 in fc                            |
+| pipeline   | II=1                          | ./../hw_library/fully_connected.h:137 in fc                            |
+| unroll     |                               | ./../hw_library/pool.h:125 in pool                                     |
+| unroll     |                               | ./../hw_library/pool.h:131 in pool                                     |
+| pipeline   | II=1                          | ./../hw_library/pool.h:146 in pool                                     |
+| pipeline   | II=1                          | ./../hw_library/pool.h:154 in pool                                     |
+| pipeline   | II=1                          | ./../hw_library/pool.h:169 in pool                                     |
+| pipeline   | II=1                          | ./../hw_library/pool.h:195 in pool                                     |
+| pipeline   | II=1                          | ./../hw_library/stream_convolution_slideWindow.h:124 in scig           |
+| dependence | variable=inputBuf inter false | ./../hw_library/stream_convolution_slideWindow.h:125 in scig, inputBuf |
+| pipeline   | II=1                          | ./../hw_library/stream_convolution_slideWindow.h:190 in scig           |
+| dataflow   |                               | LeNet_wrapper.cpp:7 in lenet_wrapper                                   |
+| interface  | axis port=in_stream           | LeNet_wrapper.cpp:8 in lenet_wrapper, in_stream                        |
+| interface  | axis port=out_stream          | LeNet_wrapper.cpp:9 in lenet_wrapper, out_stream                       |
+| interface  | ap_ctrl_none port=return      | LeNet_wrapper.cpp:10 in lenet_wrapper, return                          |
+| stream     | variable=connect_8 depth=50   | LeNet_wrapper.cpp:14 in lenet_wrapper, connect_8                       |
+| stream     | variable=connect_7 depth=50   | LeNet_wrapper.cpp:15 in lenet_wrapper, connect_7                       |
+| stream     | variable=connect_6 depth=50   | LeNet_wrapper.cpp:16 in lenet_wrapper, connect_6                       |
+| stream     | variable=connect_4 depth=50   | LeNet_wrapper.cpp:18 in lenet_wrapper, connect_4                       |
+| stream     | variable=connect_3 depth=50   | LeNet_wrapper.cpp:19 in lenet_wrapper, connect_3                       |
+| stream     | variable=connect_1 depth=50   | LeNet_wrapper.cpp:21 in lenet_wrapper, connect_1                       |
+| stream     | variable=connect_0 depth=50   | LeNet_wrapper.cpp:22 in lenet_wrapper, connect_0                       |
++------------+-------------------------------+------------------------------------------------------------------------+
+
+* Inferred Pragmas
++---------------------------------------------------------------+-----------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Pragma                                                 | Inferred Pragma | Options                                                                                                 | Location                                                                                                                                       |
++---------------------------------------------------------------+-----------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+| pipeline ./../hw_library/fixed_point_stream_convolution.h:125 | array_partition | dim=2 type=cyclic factor=7 variable=_ZZ3SMMILj1ELj25ELj20EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A | variable void SMM<1u, 25u, 20u>(hls::stream<ap_int<32>, 0>&, hls::stream<ap_int<32>, 0>&, unsigned int, unsigned int, int)::A in lenet_wrapper |
++---------------------------------------------------------------+-----------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

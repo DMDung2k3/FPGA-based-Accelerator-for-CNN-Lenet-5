@@ -1,0 +1,98 @@
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: maxPool_3.cpp, Line: 77, Column: 0 }
+Function:        _Z15maxpool_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_146_3
+  - String:          ''' ('
+  - LoopLoc:         'maxPool_3.cpp:146:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          maxpool_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '64'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: maxPool_3.cpp, Line: 77, Column: 0 }
+Function:        _Z15maxpool_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_140_2
+  - String:          ''' ('
+  - LoopLoc:         'maxPool_3.cpp:140:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          maxpool_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_139_1
+  - String:          '> at '
+  - LoopLoc:         'maxPool_3.cpp:139:20'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: maxPool_3.cpp, Line: 135, Column: 6 }
+Function:        _Z15maxpool_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=buf'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxpool_CIF_0_3
+  - String:          ' '
+  - varLoc:          'maxPool_3.cpp:135:6'
+  - String:          ' '
+  - VarName:         buf
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: maxPool_3.cpp, Line: 135, Column: 6 }
+Function:        _Z15maxpool_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            buf
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: maxPool_3.cpp, Line: 135, Column: 6 }
+Function:        _Z15maxpool_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          buf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

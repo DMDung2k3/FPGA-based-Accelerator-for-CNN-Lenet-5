@@ -1,0 +1,546 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>9.589</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>9.589</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>9.589</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>0.411</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.411</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.411</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>0.411</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>64</BRAM>
+      <CLB>0</CLB>
+      <DSP>42</DSP>
+      <FF>1930</FF>
+      <LATCH>0</LATCH>
+      <LUT>3876</LUT>
+      <SRL>4</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="FC_CIF_0_1" DISPNAME="inst" RTLNAME="FC_CIF_0_1">
+      <SubModules count="76">FC_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U FC_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307 grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_444 grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_236 grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_520 mul_32ns_32ns_64_2_1_U178 mul_32s_32s_32_1_1_U181 mul_32s_32s_32_1_1_U182 mul_32s_32s_32_1_1_U183 mul_32s_32s_32_2_1_U179 mul_32s_32s_32_2_1_U180 p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31_0_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_25_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_26_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_27_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_28_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_29_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_30_U p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_31_U regslice_both_in_stream_a_U regslice_both_out_stream_U</SubModules>
+      <Resources BRAM="64" DSP="42" FF="1930" LUT="3876"/>
+      <LocalResources FF="866" LUT="175"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="rtl" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="stream_AXI_VAL_0_stream_AXI_VAL_0_B_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307" DEPTH="1" TYPE="function" MODULENAME="FC_CIF_0_1_Pipeline_L2_L3" DISPNAME="grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_Pipeline_L2_L3">
+      <SubModules count="17">flow_control_loop_pipe_sequential_init_U mac_muladd_16s_16s_32s_32_4_1_U51 mac_muladd_16s_16s_32s_32_4_1_U52 mac_muladd_16s_16s_32s_32_4_1_U53 mac_muladd_16s_16s_32s_32_4_1_U54 mac_muladd_16s_16s_32s_32_4_1_U55 mac_muladd_16s_16s_32s_32_4_1_U56 mac_muladd_16s_16s_32s_32_4_1_U57 mac_muladd_16s_16s_32s_32_4_1_U58 mac_muladd_16s_16s_32s_32_4_1_U59 mac_muladd_16s_16s_32s_32_4_1_U60 mac_muladd_16s_16s_32s_32_4_1_U61 mac_muladd_16s_16s_32s_32_4_1_U62 mac_muladd_16s_16s_32s_32_4_1_U63 mac_muladd_16s_16s_32s_32_4_1_U64 mac_muladd_16s_16s_32s_32_4_1_U65 mac_muladd_16s_16s_32s_32_4_1_U66</SubModules>
+      <Resources DSP="32" FF="499" LUT="475"/>
+      <LocalResources FF="497" LUT="465"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/flow_control_loop_pipe_sequential_init_U" BINDMODULE="FC_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="FC_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U51" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U51" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U51" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U51" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U52" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U52" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U52" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_12"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U52" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U53" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U53" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U53" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_20"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U53" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U54" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U54" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U54" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_27"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U54" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_26"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U55" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U55" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U55" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U55" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_18"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U56" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U56" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U56" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U56" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U57" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U57" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U57" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U57" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U58" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U58" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U58" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U58" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U59" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U59" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U59" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U59" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U60" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U60" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U60" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_9"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U60" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U61" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U61" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U61" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_11"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U61" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U62" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U62" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U62" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_17"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U62" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U63" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U63" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U63" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U63" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U64" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U64" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U64" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_22"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U64" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U65" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U65" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U65" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_23"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U65" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_22"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_L2_L3_fu_307/mac_muladd_16s_16s_32s_32_4_1_U66" BINDMODULE="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1" DEPTH="2" TYPE="resource" MODULENAME="mac_muladd_16s_16s_32s_32_4_1" DISPNAME="mac_muladd_16s_16s_32s_32_4_1_U66" RTLNAME="FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1">
+      <Resources DSP="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U66" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_30"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U66" SOURCE="fully_connected_1.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_444" DEPTH="1" TYPE="function" MODULENAME="FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2" DISPNAME="grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_444" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="121" LUT="225"/>
+      <LocalResources FF="119" LUT="214"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_444/flow_control_loop_pipe_sequential_init_U" BINDMODULE="FC_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="FC_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_236" DEPTH="1" TYPE="function" MODULENAME="FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6" DISPNAME="grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_236" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="13" LUT="135"/>
+      <LocalResources FF="11" LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_236/flow_control_loop_pipe_sequential_init_U" BINDMODULE="FC_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="FC_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="131"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_520" DEPTH="1" TYPE="function" MODULENAME="FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7" DISPNAME="grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_520" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="99" LUT="108"/>
+      <LocalResources FF="97"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_520/flow_control_loop_pipe_sequential_init_U" BINDMODULE="FC_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="FC_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="108"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32ns_32ns_64_2_1_U178" BINDMODULE="FC_CIF_0_1_mul_32ns_32ns_64_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U178" RTLNAME="FC_CIF_0_1_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="48"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U178" SOURCE="fully_connected_1.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="bound11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U181" BINDMODULE="FC_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U181" RTLNAME="FC_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U181" SOURCE="fully_connected_1.cpp:181" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U182" BINDMODULE="FC_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U182" RTLNAME="FC_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U182" SOURCE="fully_connected_1.cpp:182" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U183" BINDMODULE="FC_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U183" RTLNAME="FC_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U183" SOURCE="fully_connected_1.cpp:183" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_bound"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_2_1_U179" BINDMODULE="FC_CIF_0_1_mul_32s_32s_32_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U179" RTLNAME="FC_CIF_0_1_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="79"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U179" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U179" SOURCE="fully_connected_1.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln101_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_2_1_U180" BINDMODULE="FC_CIF_0_1_mul_32s_32s_32_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U180" RTLNAME="FC_CIF_0_1_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="15"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U180" SOURCE="fully_connected_1.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln101"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31_0_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31_0_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W">
+      <Resources LUT="26"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_25_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_25_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_25_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_26_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_26_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_26_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_26"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_27_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_27_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_27_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_27"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_28_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_28_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_28_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_28"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_29_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_29_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_29_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_29"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_30_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_30_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_30_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_30"/>
+    </RtlModule>
+    <RtlModule CELL="inst/p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_31_U" BINDMODULE="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W" DISPNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_31_U" RTLNAME="FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_31_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_31"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_in_stream_a_U" BINDMODULE="FC_CIF_0_1_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_in_stream_a_U" RTLNAME="FC_CIF_0_1_regslice_both">
+      <Resources FF="132" LUT="76"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_out_stream_U" BINDMODULE="FC_CIF_0_1_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_out_stream_U" RTLNAME="FC_CIF_0_1_regslice_both">
+      <Resources FF="132" LUT="131"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="9.614" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.837" ENDPOINT_PIN="KER_size_0_reg_857_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="62" SLACK="0.411" STARTPOINT_PIN="valIn_a_data_4_reg_817_reg[3]/C">
+      <CELL NAME="valIn_a_data_4_reg_817_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2590"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_0_reg_857_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2366"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.612" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_bound_reg_919_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.413" STARTPOINT_PIN="KER_size_1_reg_914_reg[3]/C">
+      <CELL NAME="KER_size_1_reg_914_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2378"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_bound_reg_919_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2295"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.612" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_size_1_reg_914_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.413" STARTPOINT_PIN="KER_size_0_reg_857_reg[3]/C">
+      <CELL NAME="KER_size_0_reg_857_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2366"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U182/KER_size_1_reg_914_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_1_reg_914_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2378"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.509" DATAPATH_LOGIC_DELAY="4.672" DATAPATH_NET_DELAY="4.837" ENDPOINT_PIN="KER_size_0_reg_857_reg[30]/D" LOGIC_LEVELS="12" MAX_FANOUT="62" SLACK="0.516" STARTPOINT_PIN="valIn_a_data_4_reg_817_reg[3]/C">
+      <CELL NAME="valIn_a_data_4_reg_817_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2590"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U181/KER_size_0_reg_857_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_0_reg_857_reg[30]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2366"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.507" DATAPATH_LOGIC_DELAY="4.672" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_bound_reg_919_reg[30]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.518" STARTPOINT_PIN="KER_size_1_reg_914_reg[3]/C">
+      <CELL NAME="KER_size_1_reg_914_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2378"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U183/KER_bound_reg_919_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_bound_reg_919_reg[30]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="2295"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/FC_CIF_0_1_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/FC_CIF_0_1_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/FC_CIF_0_1_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/FC_CIF_0_1_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/FC_CIF_0_1_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/FC_CIF_0_1_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Oct 28 10:11:19 +0700 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="FC_CIF_0_1"/>
+    <item NAME="Solution" VALUE="solution1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

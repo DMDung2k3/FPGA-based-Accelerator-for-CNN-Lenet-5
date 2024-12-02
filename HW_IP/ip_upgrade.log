@@ -1,0 +1,451 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Oct 31 08:37:32 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'accelerator_structure_LeNet_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of accelerator_structure_LeNet_wrapper_0_0 (xilinx.com:hls:LeNet_wrapper:1.0 (Rev. 2113801812)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Oct 31 08:33:59 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'accelerator_structure_LeNet_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of accelerator_structure_LeNet_wrapper_0_0 (xilinx.com:hls:LeNet_wrapper:1.0) from (Rev. 2113801166) to (Rev. 2113801812)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 22:00:23 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'accelerator_structure_LeNet_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of accelerator_structure_LeNet_wrapper_0_0 (xilinx.com:hls:LeNet_wrapper:1.0) from (Rev. 2113801108) to (Rev. 2113801166)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 20:48:00 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'accelerator_structure_LeNet_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of accelerator_structure_LeNet_wrapper_0_0 (xilinx.com:hls:LeNet_wrapper:1.0) from (Rev. 2113800747) to (Rev. 2113801108)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Oct 29 10:10:05 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CNN_BD_axis_register_slice_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of CNN_BD_axis_register_slice_1_0 (xilinx.com:ip:axis_register_slice:1.1 (Rev. 29)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'FREQ_HZ' is no longer present on the upgraded IP 'CNN_BD_axis_register_slice_1_0', and cannot be set to '100000000'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axis_register_slice:1.1 -user_name CNN_BD_axis_register_slice_1_0
+set_property -dict "\
+  CONFIG.CLKIF.ASSOCIATED_BUSIF {S_AXIS:M_AXIS} \
+  CONFIG.CLKIF.ASSOCIATED_PORT {} \
+  CONFIG.CLKIF.ASSOCIATED_RESET {aresetn} \
+  CONFIG.CLKIF.CLK_DOMAIN {} \
+  CONFIG.CLKIF.FREQ_HZ {100000000} \
+  CONFIG.CLKIF.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.CLKIF.INSERT_VIP {0} \
+  CONFIG.CLKIF.PHASE {0.0} \
+  CONFIG.Component_Name {CNN_BD_axis_register_slice_1_0} \
+  CONFIG.HAS_ACLKEN {0} \
+  CONFIG.HAS_TKEEP {0} \
+  CONFIG.HAS_TLAST {0} \
+  CONFIG.HAS_TREADY {1} \
+  CONFIG.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.CLK_DOMAIN {} \
+  CONFIG.M_AXIS.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS.HAS_TKEEP {0} \
+  CONFIG.M_AXIS.HAS_TLAST {0} \
+  CONFIG.M_AXIS.HAS_TREADY {1} \
+  CONFIG.M_AXIS.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.INSERT_VIP {0} \
+  CONFIG.M_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS.PHASE {0.0} \
+  CONFIG.M_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.M_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS.TID_WIDTH {0} \
+  CONFIG.M_AXIS.TUSER_WIDTH {0} \
+  CONFIG.NUM_SLR_CROSSINGS {0} \
+  CONFIG.PIPELINES_MASTER {0} \
+  CONFIG.PIPELINES_MIDDLE {0} \
+  CONFIG.PIPELINES_SLAVE {0} \
+  CONFIG.REG_CONFIG {1} \
+  CONFIG.RSTIF.INSERT_VIP {0} \
+  CONFIG.RSTIF.POLARITY {ACTIVE_LOW} \
+  CONFIG.S_AXIS.CLK_DOMAIN {} \
+  CONFIG.S_AXIS.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS.HAS_TKEEP {0} \
+  CONFIG.S_AXIS.HAS_TLAST {0} \
+  CONFIG.S_AXIS.HAS_TREADY {1} \
+  CONFIG.S_AXIS.HAS_TSTRB {0} \
+  CONFIG.S_AXIS.INSERT_VIP {0} \
+  CONFIG.S_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS.PHASE {0.0} \
+  CONFIG.S_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.S_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS.TID_WIDTH {0} \
+  CONFIG.S_AXIS.TUSER_WIDTH {0} \
+  CONFIG.TDATA_NUM_BYTES {8} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TUSER_WIDTH {0} " [get_ips CNN_BD_axis_register_slice_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Oct 29 10:02:33 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CNN_BD_axis_register_slice_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of CNN_BD_axis_register_slice_0_1 (xilinx.com:ip:axis_register_slice:1.1 (Rev. 29)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'FREQ_HZ' is no longer present on the upgraded IP 'CNN_BD_axis_register_slice_0_1', and cannot be set to '100000000'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axis_register_slice:1.1 -user_name CNN_BD_axis_register_slice_0_1
+set_property -dict "\
+  CONFIG.CLKIF.ASSOCIATED_BUSIF {S_AXIS:M_AXIS} \
+  CONFIG.CLKIF.ASSOCIATED_PORT {} \
+  CONFIG.CLKIF.ASSOCIATED_RESET {aresetn} \
+  CONFIG.CLKIF.CLK_DOMAIN {} \
+  CONFIG.CLKIF.FREQ_HZ {100000000} \
+  CONFIG.CLKIF.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.CLKIF.INSERT_VIP {0} \
+  CONFIG.CLKIF.PHASE {0.0} \
+  CONFIG.Component_Name {CNN_BD_axis_register_slice_0_1} \
+  CONFIG.HAS_ACLKEN {0} \
+  CONFIG.HAS_TKEEP {0} \
+  CONFIG.HAS_TLAST {0} \
+  CONFIG.HAS_TREADY {1} \
+  CONFIG.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.CLK_DOMAIN {} \
+  CONFIG.M_AXIS.FREQ_HZ {100000000} \
+  CONFIG.M_AXIS.HAS_TKEEP {0} \
+  CONFIG.M_AXIS.HAS_TLAST {0} \
+  CONFIG.M_AXIS.HAS_TREADY {1} \
+  CONFIG.M_AXIS.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.INSERT_VIP {0} \
+  CONFIG.M_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS.PHASE {0.0} \
+  CONFIG.M_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.M_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS.TID_WIDTH {0} \
+  CONFIG.M_AXIS.TUSER_WIDTH {0} \
+  CONFIG.NUM_SLR_CROSSINGS {0} \
+  CONFIG.PIPELINES_MASTER {0} \
+  CONFIG.PIPELINES_MIDDLE {0} \
+  CONFIG.PIPELINES_SLAVE {0} \
+  CONFIG.REG_CONFIG {1} \
+  CONFIG.RSTIF.INSERT_VIP {0} \
+  CONFIG.RSTIF.POLARITY {ACTIVE_LOW} \
+  CONFIG.S_AXIS.CLK_DOMAIN {} \
+  CONFIG.S_AXIS.FREQ_HZ {100000000} \
+  CONFIG.S_AXIS.HAS_TKEEP {0} \
+  CONFIG.S_AXIS.HAS_TLAST {0} \
+  CONFIG.S_AXIS.HAS_TREADY {1} \
+  CONFIG.S_AXIS.HAS_TSTRB {0} \
+  CONFIG.S_AXIS.INSERT_VIP {0} \
+  CONFIG.S_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS.PHASE {0.0} \
+  CONFIG.S_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.S_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS.TID_WIDTH {0} \
+  CONFIG.S_AXIS.TUSER_WIDTH {0} \
+  CONFIG.TDATA_NUM_BYTES {8} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TUSER_WIDTH {0} " [get_ips CNN_BD_axis_register_slice_0_1]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Oct 28 21:46:31 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CNN_BD_axis_register_slice_1_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of CNN_BD_axis_register_slice_1_1 (xilinx.com:ip:axis_register_slice:1.1 (Rev. 29)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'FREQ_HZ' is no longer present on the upgraded IP 'CNN_BD_axis_register_slice_1_1', and cannot be set to '10000000'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axis_register_slice:1.1 -user_name CNN_BD_axis_register_slice_1_1
+set_property -dict "\
+  CONFIG.CLKIF.ASSOCIATED_BUSIF {S_AXIS:M_AXIS} \
+  CONFIG.CLKIF.ASSOCIATED_PORT {} \
+  CONFIG.CLKIF.ASSOCIATED_RESET {aresetn} \
+  CONFIG.CLKIF.CLK_DOMAIN {} \
+  CONFIG.CLKIF.FREQ_HZ {10000000} \
+  CONFIG.CLKIF.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.CLKIF.INSERT_VIP {0} \
+  CONFIG.CLKIF.PHASE {0.0} \
+  CONFIG.Component_Name {CNN_BD_axis_register_slice_1_1} \
+  CONFIG.HAS_ACLKEN {0} \
+  CONFIG.HAS_TKEEP {0} \
+  CONFIG.HAS_TLAST {0} \
+  CONFIG.HAS_TREADY {1} \
+  CONFIG.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.CLK_DOMAIN {} \
+  CONFIG.M_AXIS.FREQ_HZ {10000000} \
+  CONFIG.M_AXIS.HAS_TKEEP {0} \
+  CONFIG.M_AXIS.HAS_TLAST {0} \
+  CONFIG.M_AXIS.HAS_TREADY {1} \
+  CONFIG.M_AXIS.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.INSERT_VIP {0} \
+  CONFIG.M_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS.PHASE {0.0} \
+  CONFIG.M_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.M_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS.TID_WIDTH {0} \
+  CONFIG.M_AXIS.TUSER_WIDTH {0} \
+  CONFIG.NUM_SLR_CROSSINGS {0} \
+  CONFIG.PIPELINES_MASTER {0} \
+  CONFIG.PIPELINES_MIDDLE {0} \
+  CONFIG.PIPELINES_SLAVE {0} \
+  CONFIG.REG_CONFIG {1} \
+  CONFIG.RSTIF.INSERT_VIP {0} \
+  CONFIG.RSTIF.POLARITY {ACTIVE_LOW} \
+  CONFIG.S_AXIS.CLK_DOMAIN {} \
+  CONFIG.S_AXIS.FREQ_HZ {10000000} \
+  CONFIG.S_AXIS.HAS_TKEEP {0} \
+  CONFIG.S_AXIS.HAS_TLAST {0} \
+  CONFIG.S_AXIS.HAS_TREADY {1} \
+  CONFIG.S_AXIS.HAS_TSTRB {0} \
+  CONFIG.S_AXIS.INSERT_VIP {0} \
+  CONFIG.S_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS.PHASE {0.0} \
+  CONFIG.S_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.S_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS.TID_WIDTH {0} \
+  CONFIG.S_AXIS.TUSER_WIDTH {0} \
+  CONFIG.TDATA_NUM_BYTES {8} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TUSER_WIDTH {0} " [get_ips CNN_BD_axis_register_slice_1_1]
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Oct 28 21:46:31 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CNN_BD_axis_register_slice_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of CNN_BD_axis_register_slice_0_1 (xilinx.com:ip:axis_register_slice:1.1 (Rev. 29)) to current project options.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+Parameter 'FREQ_HZ' is no longer present on the upgraded IP 'CNN_BD_axis_register_slice_0_1', and cannot be set to '10000000'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axis_register_slice:1.1 -user_name CNN_BD_axis_register_slice_0_1
+set_property -dict "\
+  CONFIG.CLKIF.ASSOCIATED_BUSIF {S_AXIS:M_AXIS} \
+  CONFIG.CLKIF.ASSOCIATED_PORT {} \
+  CONFIG.CLKIF.ASSOCIATED_RESET {aresetn} \
+  CONFIG.CLKIF.CLK_DOMAIN {} \
+  CONFIG.CLKIF.FREQ_HZ {10000000} \
+  CONFIG.CLKIF.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.CLKIF.INSERT_VIP {0} \
+  CONFIG.CLKIF.PHASE {0.0} \
+  CONFIG.Component_Name {CNN_BD_axis_register_slice_0_1} \
+  CONFIG.HAS_ACLKEN {0} \
+  CONFIG.HAS_TKEEP {0} \
+  CONFIG.HAS_TLAST {0} \
+  CONFIG.HAS_TREADY {1} \
+  CONFIG.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.CLK_DOMAIN {} \
+  CONFIG.M_AXIS.FREQ_HZ {10000000} \
+  CONFIG.M_AXIS.HAS_TKEEP {0} \
+  CONFIG.M_AXIS.HAS_TLAST {0} \
+  CONFIG.M_AXIS.HAS_TREADY {1} \
+  CONFIG.M_AXIS.HAS_TSTRB {0} \
+  CONFIG.M_AXIS.INSERT_VIP {0} \
+  CONFIG.M_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.M_AXIS.PHASE {0.0} \
+  CONFIG.M_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.M_AXIS.TDEST_WIDTH {0} \
+  CONFIG.M_AXIS.TID_WIDTH {0} \
+  CONFIG.M_AXIS.TUSER_WIDTH {0} \
+  CONFIG.NUM_SLR_CROSSINGS {0} \
+  CONFIG.PIPELINES_MASTER {0} \
+  CONFIG.PIPELINES_MIDDLE {0} \
+  CONFIG.PIPELINES_SLAVE {0} \
+  CONFIG.REG_CONFIG {1} \
+  CONFIG.RSTIF.INSERT_VIP {0} \
+  CONFIG.RSTIF.POLARITY {ACTIVE_LOW} \
+  CONFIG.S_AXIS.CLK_DOMAIN {} \
+  CONFIG.S_AXIS.FREQ_HZ {10000000} \
+  CONFIG.S_AXIS.HAS_TKEEP {0} \
+  CONFIG.S_AXIS.HAS_TLAST {0} \
+  CONFIG.S_AXIS.HAS_TREADY {1} \
+  CONFIG.S_AXIS.HAS_TSTRB {0} \
+  CONFIG.S_AXIS.INSERT_VIP {0} \
+  CONFIG.S_AXIS.LAYERED_METADATA {undef} \
+  CONFIG.S_AXIS.PHASE {0.0} \
+  CONFIG.S_AXIS.TDATA_NUM_BYTES {8} \
+  CONFIG.S_AXIS.TDEST_WIDTH {0} \
+  CONFIG.S_AXIS.TID_WIDTH {0} \
+  CONFIG.S_AXIS.TUSER_WIDTH {0} \
+  CONFIG.TDATA_NUM_BYTES {8} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TUSER_WIDTH {0} " [get_ips CNN_BD_axis_register_slice_0_1]
+
+

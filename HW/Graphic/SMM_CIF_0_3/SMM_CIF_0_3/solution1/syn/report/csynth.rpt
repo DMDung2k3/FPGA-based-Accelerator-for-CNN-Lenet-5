@@ -1,0 +1,246 @@
+
+
+================================================================
+== Synthesis Summary Report of 'SMM_CIF_0_3'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 28 14:38:17 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        SMM_CIF_0_3
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+----------+----------+-----------+------------+-----+
+    |                          Modules                          |  Issue |       | Latency |  Latency  | Iteration|         |  Trip |          |          |          |           |            |     |
+    |                          & Loops                          |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM   |    DSP   |     FF    |     LUT    | URAM|
+    +-----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+----------+----------+-----------+------------+-----+
+    |+ SMM_CIF_0_3                                              |  Timing|  -5.29|        -|          -|         -|        -|      -|        no|  50 (17%)|  35 (15%)|  3139 (2%)|  8908 (16%)|    -|
+    | + SMM_CIF_0_3_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2  |  Timing|  -1.07|    51202|  5.120e+05|         -|    51202|      -|        no|         -|         -|  145 (~0%)|    753 (1%)|    -|
+    |  o VITIS_LOOP_104_1_VITIS_LOOP_105_2                      |       -|   7.30|    51200|  5.120e+05|         2|        1|  51200|       yes|         -|         -|          -|           -|    -|
+    | + SMM_CIF_0_3_Pipeline_VITIS_LOOP_187_7                   |       -|   1.57|        -|          -|         -|        -|      -|        no|         -|         -|   99 (~0%)|   140 (~0%)|    -|
+    |  o VITIS_LOOP_187_7                                       |       -|   7.30|        -|          -|         2|        1|      -|       yes|         -|         -|          -|           -|    -|
+    | o VITIS_LOOP_128_3_VITIS_LOOP_136_4                       |       -|   7.30|        -|          -|         -|        -|      -|        no|         -|         -|          -|           -|    -|
+    |  + SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6                  |  Timing|  -0.16|      802|  8.020e+03|         -|      802|      -|        no|         -|         -|   12 (~0%)|    857 (1%)|    -|
+    |   o VITIS_LOOP_140_6                                      |       -|   7.30|      800|  8.000e+03|         1|        1|    800|       yes|         -|         -|          -|           -|    -|
+    |  + SMM_CIF_0_3_Pipeline_L2_L3                             |       -|   0.10|        -|          -|         -|        -|      -|        no|         -|  25 (11%)|  1122 (1%)|    918 (1%)|    -|
+    |   o L2_L3                                                 |       -|   7.30|        -|          -|        10|        1|      -|       yes|         -|         -|          -|           -|    -|
+    +-----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+----------+----------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-------------+-----------+---------------+-------+--------+--------+
+| Interface   | Direction | Register Mode | TDATA | TREADY | TVALID |
++-------------+-----------+---------------+-------+--------+--------+
+| in_stream_a | in        | both          | 64    | 1      | 1      |
+| out_stream  | out       | both          | 64    | 1      | 1      |
++-------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+---------------------+
+| Argument    | Direction | Datatype            |
++-------------+-----------+---------------------+
+| in_stream_a | in        | stream<AXI_VAL, 0>& |
+| out_stream  | out       | stream<AXI_VAL, 0>& |
++-------------+-----------+---------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| in_stream_a | in_stream_a  | interface |
+| out_stream  | out_stream   | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| Name                                                      | DSP | Pragma | Variable     | Op  | Impl      | Latency |
++-----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| + SMM_CIF_0_3                                             | 35  |        |              |     |           |         |
+|   mul_32s_32s_32_2_1_U145                                 | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|   grp_fu_467_p2                                           |     |        | sub149       | add | fabric    | 0       |
+|   sub152_fu_555_p2                                        |     |        | sub152       | add | fabric    | 0       |
+|   sub155_fu_561_p2                                        |     |        | sub155       | add | fabric    | 0       |
+|   mul_32ns_32ns_64_2_1_U144                               | 4   |        | bound11      | mul | auto      | 1       |
+|   add_ln128_fu_595_p2                                     |     |        | add_ln128    | add | fabric    | 0       |
+|   num_imag_2_fu_604_p2                                    |     |        | num_imag_2   | add | fabric    | 0       |
+|   add_ln136_fu_660_p2                                     |     |        | add_ln136    | add | fabric    | 0       |
+|   mul_32s_32s_32_2_1_U146                                 | 3   |        | mul_ln101    | mul | auto      | 1       |
+|   mul_32s_32s_32_2_1_U145                                 | 3   |        | mul_ln101_1  | mul | auto      | 1       |
+|   sub_fu_695_p2                                           |     |        | sub          | add | fabric    | 0       |
+|   grp_fu_467_p2                                           |     |        | sub47        | add | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U147                                 |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U148                                 |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U149                                 |     | yes    | KER_bound    | mul | fabric    | 0       |
+|  + SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6                  | 0   |        |              |     |           |         |
+|    add_ln140_fu_726_p2                                    |     |        | add_ln140    | add | fabric    | 0       |
+|  + SMM_CIF_0_3_Pipeline_L2_L3                             | 25  |        |              |     |           |         |
+|    add_ln156_1_fu_891_p2                                  |     |        | add_ln156_1  | add | fabric    | 0       |
+|    add_ln156_fu_903_p2                                    |     |        | add_ln156    | add | fabric    | 0       |
+|    add_ln163_24_fu_997_p2                                 |     |        | add_ln163_24 | add | fabric    | 0       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U49                     | 1   |        | mul_ln163    | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U31                                 | 1   |        | mul_ln163_1  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U32                                 | 1   |        | mul_ln163_2  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U28                                 | 1   |        | mul_ln163_3  | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U50                     | 1   |        | mul_ln163_4  | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U33                                 | 1   |        | mul_ln163_5  | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U40                      | 1   |        | mul_ln163_6  | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U41                      | 1   |        | mul_ln163_7  | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U42                      | 1   |        | mul_ln163_8  | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U37                      | 1   |        | mul_ln163_9  | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U34                                 | 1   |        | mul_ln163_10 | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U43                      | 1   |        | mul_ln163_11 | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U29                                 | 1   |        | mul_ln163_12 | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U44                      | 1   |        | mul_ln163_13 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U51                     | 1   |        | mul_ln163_14 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U45                     | 1   |        | mul_ln163_15 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U38                      | 1   |        | mul_ln163_16 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U52                     | 1   |        | mul_ln163_17 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U46                     | 1   |        | mul_ln163_18 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U47                     | 1   |        | mul_ln163_19 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U48                      | 1   |        | mul_ln163_20 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U39                      | 1   |        | mul_ln163_21 | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U35                                 | 1   |        | mul_ln163_22 | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U36                                 | 1   |        | mul_ln163_23 | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U30                                 | 1   |        | mul_ln163_24 | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U41                      | 1   |        | add_ln163    | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U51                     | 1   |        | add_ln163_1  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U44                      | 1   |        | add_ln163_2  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U49                     | 1   |        | add_ln163_3  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U38                      | 1   |        | add_ln163_5  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U47                     | 1   |        | add_ln163_6  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U39                      | 1   |        | add_ln163_7  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U45                     | 1   |        | add_ln163_8  | add | dsp_slice | 3       |
+|    add_ln163_9_fu_1249_p2                                 |     |        | add_ln163_9  | add | fabric    | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U40                      | 1   |        | add_ln163_11 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U52                     | 1   |        | add_ln163_12 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U42                      | 1   |        | add_ln163_13 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U50                     | 1   |        | add_ln163_14 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U37                      | 1   |        | add_ln163_16 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32ns_32_4_1_U46                     | 1   |        | add_ln163_17 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U43                      | 1   |        | add_ln163_18 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U48                      | 1   |        | add_ln163_19 | add | dsp_slice | 3       |
+|    add_ln160_fu_935_p2                                    |     |        | add_ln160    | add | fabric    | 0       |
+|    sub_ln166_fu_1323_p2                                   |     |        | sub_ln166    | sub | fabric    | 0       |
+|    sub_ln166_1_fu_1342_p2                                 |     |        | sub_ln166_1  | sub | fabric    | 0       |
+|  + SMM_CIF_0_3_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2 | 0   |        |              |     |           |         |
+|    add_ln104_1_fu_595_p2                                  |     |        | add_ln104_1  | add | fabric    | 0       |
+|    add_ln104_fu_607_p2                                    |     |        | add_ln104    | add | fabric    | 0       |
+|    add_ln105_fu_698_p2                                    |     |        | add_ln105    | add | fabric    | 0       |
+|  + SMM_CIF_0_3_Pipeline_VITIS_LOOP_187_7                  | 0   |        |              |     |           |         |
+|    i_2_fu_69_p2                                           |     |        | i_2          | add | fabric    | 0       |
++-----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++---------------------------------------------------------------+--------+------+------+------+--------+-----------------------------------------------------------+------+---------+------------------+
+| Name                                                          | Usage  | Type | BRAM | URAM | Pragma | Variable                                                  | Impl | Latency | Bitwidth, Depth, |
+|                                                               |        |      |      |      |        |                                                           |      |         | Banks            |
++---------------------------------------------------------------+--------+------+------+------+--------+-----------------------------------------------------------+------+---------+------------------+
+| + SMM_CIF_0_3                                                 |        |      | 50   | 0    |        |                                                           |      |         |                  |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U           | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B           | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17        | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U        | ram_1p |      | 2    |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18        | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_10    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_11    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_12    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_13    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_14    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_15    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_16    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_17    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_18    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_19    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_20    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_21    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_22    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_23    | auto | 1       | 16, 2048, 1      |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U    | ram_1p |      | 2    |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_24    | auto | 1       | 16, 2048, 1      |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U         | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0         | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0       | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U       | ram_1p |      |      |      |        | SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0       | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0  | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U | ram_1p |      |      |      |        | SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0 | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0  | auto | 1       | 16, 32, 1        |
+|   SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U   | ram_1p |      |      |      |        | SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A   | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0  | auto | 1       | 16, 32, 1        |
+|   p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U  | ram_1p |      |      |      |        | p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0  | auto | 1       | 16, 32, 1        |
++---------------------------------------------------------------+--------+------+------+------+--------+-----------------------------------------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+----------------------------------+-------------------------------------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                          | Location                                                          | Messages                                                                   |
++----------+----------------------------------+-------------------------------------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=KER_size_0 core=Mul_LUT | fixed_point_stream_convolution.cpp:184 in smm_cif_0_3, KER_size_0 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT | fixed_point_stream_convolution.cpp:185 in smm_cif_0_3, KER_size_1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT  | fixed_point_stream_convolution.cpp:186 in smm_cif_0_3, KER_bound  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+----------------------------------+-------------------------------------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------------------+-------------------------------------------------------------------+
+| Type            | Options                              | Location                                                          |
++-----------------+--------------------------------------+-------------------------------------------------------------------+
+| interface       | axis port=in_stream_a                | fixed_point_stream_convolution.cpp:38 in smm_cif_0_3, in_stream_a |
+| interface       | axis port=out_stream                 | fixed_point_stream_convolution.cpp:40 in smm_cif_0_3, out_stream  |
+| interface       | ap_ctrl_none port=return             | fixed_point_stream_convolution.cpp:41 in smm_cif_0_3, return      |
+| array_partition | variable=A block factor=FACTOR dim=2 | fixed_point_stream_convolution.cpp:45 in smm_cif_0_3, A           |
+| array_partition | variable=B block factor=FACTOR dim=2 | fixed_point_stream_convolution.cpp:46 in smm_cif_0_3, B           |
+| pipeline        | II=1                                 | fixed_point_stream_convolution.cpp:107 in smm_cif_0_3             |
+| pipeline        | II=1                                 | fixed_point_stream_convolution.cpp:142 in smm_cif_0_3             |
+| pipeline        | II=1                                 | fixed_point_stream_convolution.cpp:161 in smm_cif_0_3             |
+| pipeline        | II=1                                 | fixed_point_stream_convolution.cpp:189 in smm_cif_0_3             |
++-----------------+--------------------------------------+-------------------------------------------------------------------+
+
+

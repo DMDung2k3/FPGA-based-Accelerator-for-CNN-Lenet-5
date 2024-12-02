@@ -1,0 +1,66 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fully_connected_2.cpp, Line: 162, Column: 5 }
+Function:        _Z10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        L4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fully_connected_2.cpp, Line: 36, Column: 0 }
+Function:        _Z10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        L4
+  - String:          ''' ('
+  - LoopLoc:         'fully_connected_2.cpp:162:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          FC_CIF_0_2
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fully_connected_2.cpp, Line: 43, Column: 0 }
+Function:        _Z10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fully_connected_2.cpp, Line: 43, Column: 0 }
+Function:        _Z10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Block
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '16'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

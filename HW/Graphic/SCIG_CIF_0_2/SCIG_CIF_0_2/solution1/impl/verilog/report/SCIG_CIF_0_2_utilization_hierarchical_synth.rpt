@@ -1,0 +1,47 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Oct 28 13:53:18 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/SCIG_CIF_0_2_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                            Instance                           |                                           Module                                           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                  |                                                                                      (top) |       2778 |       2756 |      22 |    0 | 1289 |      8 |      0 |          0 |
+|   bd_0_i                                                      |                                                                                       bd_0 |       2778 |       2756 |      22 |    0 | 1289 |      8 |      0 |          0 |
+|     hls_inst                                                  |                                                                            bd_0_hls_inst_0 |       2778 |       2756 |      22 |    0 | 1289 |      8 |      0 |          0 |
+|       (hls_inst)                                              |                                                                            bd_0_hls_inst_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|       inst                                                    |                                                               bd_0_hls_inst_0_SCIG_CIF_0_2 |       2778 |       2756 |      22 |    0 | 1289 |      8 |      0 |          0 |
+|         (inst)                                                |                                                               bd_0_hls_inst_0_SCIG_CIF_0_2 |          0 |          0 |       0 |    0 |  286 |      0 |      0 |          0 |
+|         grp_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_155_1_fu_103     |                        bd_0_hls_inst_0_SCIG_CIF_0_2_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_155_1 |        534 |        534 |       0 |    0 |  595 |      8 |      0 |          0 |
+|           (grp_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_155_1_fu_103) |                        bd_0_hls_inst_0_SCIG_CIF_0_2_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_155_1 |        339 |        339 |       0 |    0 |  593 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |                      bd_0_hls_inst_0_SCIG_CIF_0_2_flow_control_loop_pipe_sequential_init_3 |         10 |         10 |       0 |    0 |    2 |      0 |      0 |          0 |
+|           inputBuf_U                                          | bd_0_hls_inst_0_SCIG_CIF_0_2_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_155_1_inputBuf_RAM_AUTO_1R1W |        185 |        185 |       0 |    0 |    0 |      8 |      0 |          0 |
+|         grp_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_242_6_fu_94      |                        bd_0_hls_inst_0_SCIG_CIF_0_2_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_242_6 |         64 |         64 |       0 |    0 |   99 |      0 |      0 |          0 |
+|           (grp_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_242_6_fu_94)  |                        bd_0_hls_inst_0_SCIG_CIF_0_2_SCIG_CIF_0_2_Pipeline_VITIS_LOOP_242_6 |          0 |          0 |       0 |    0 |   97 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U            |                        bd_0_hls_inst_0_SCIG_CIF_0_2_flow_control_loop_pipe_sequential_init |         64 |         64 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         inElem_U                                              |                                    bd_0_hls_inst_0_SCIG_CIF_0_2_inElem_RAM_S2P_LUTRAM_1R1W |         22 |          0 |      22 |    0 |   16 |      0 |      0 |          0 |
+|         mul_32s_14ns_32_2_1_U10                               |                                           bd_0_hls_inst_0_SCIG_CIF_0_2_mul_32s_14ns_32_2_1 |        100 |        100 |       0 |    0 |   29 |      0 |      0 |          0 |
+|         mul_32s_32s_32_1_1_U11                                |                                            bd_0_hls_inst_0_SCIG_CIF_0_2_mul_32s_32s_32_1_1 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         mul_32s_32s_32_1_1_U12                                |                                          bd_0_hls_inst_0_SCIG_CIF_0_2_mul_32s_32s_32_1_1_0 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         mul_32s_32s_32_1_1_U13                                |                                          bd_0_hls_inst_0_SCIG_CIF_0_2_mul_32s_32s_32_1_1_1 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         regslice_both_in_r_U                                  |                                                 bd_0_hls_inst_0_SCIG_CIF_0_2_regslice_both |        128 |        128 |       0 |    0 |  132 |      0 |      0 |          0 |
+|         regslice_both_out_r_U                                 |                                               bd_0_hls_inst_0_SCIG_CIF_0_2_regslice_both_2 |         43 |         43 |       0 |    0 |  132 |      0 |      0 |          0 |
++---------------------------------------------------------------+--------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

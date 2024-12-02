@@ -1,0 +1,466 @@
+
+*** Running vivado
+    with args -log accelerator_structure_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source accelerator_structure_wrapper.tcl -notrace
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source accelerator_structure_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 471.305 ; gain = 188.324
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_1/SCIG_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_2/SCIG_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_3/SCIG_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_2/SMM_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_3/SMM_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_2/maxpool_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/stream_mult/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/stream_double/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/simple_sum/simple_sum/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/mult_constant/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/CIFAR_10_wrapper/CIFAR_10_wrapper/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/LeNet_wrapper/LeNet_wrapper/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/downloads/.xinstall/Vivado/2023.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 478.246 ; gain = 6.941
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 516.875 ; gain = 38.629
+Command: link_design -top accelerator_structure_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_LeNet_wrapper_0_0/accelerator_structure_LeNet_wrapper_0_0.dcp' for cell 'accelerator_structure_i/LeNet_wrapper_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.dcp' for cell 'accelerator_structure_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.dcp' for cell 'accelerator_structure_i/axi_dma_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axis_switch_0_0/accelerator_structure_axis_switch_0_0.dcp' for cell 'accelerator_structure_i/axis_switch_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_mult_constant_0_0/accelerator_structure_mult_constant_0_0.dcp' for cell 'accelerator_structure_i/mult_constant_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_proc_sys_reset_0_0/accelerator_structure_proc_sys_reset_0_0.dcp' for cell 'accelerator_structure_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_processing_system7_0_0/accelerator_structure_processing_system7_0_0.dcp' for cell 'accelerator_structure_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_simple_sum_0_0/accelerator_structure_simple_sum_0_0.dcp' for cell 'accelerator_structure_i/simple_sum_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_stream_mult_0_0/accelerator_structure_stream_mult_0_0.dcp' for cell 'accelerator_structure_i/stream_mult_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_xbar_3/accelerator_structure_xbar_3.dcp' for cell 'accelerator_structure_i/axi_interconnect_1/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_pc_0/accelerator_structure_auto_pc_0.dcp' for cell 'accelerator_structure_i/axi_interconnect_1/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0.dcp' for cell 'accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1.dcp' for cell 'accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_xbar_4/accelerator_structure_xbar_4.dcp' for cell 'accelerator_structure_i/axi_interconnect_2/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_pc_1/accelerator_structure_auto_pc_1.dcp' for cell 'accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1103.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8882 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.xdc] for cell 'accelerator_structure_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.xdc:61]
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1.xdc] for cell 'accelerator_structure_i/axi_dma_0/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.xdc] for cell 'accelerator_structure_i/axi_dma_1/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.xdc:61]
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2.xdc] for cell 'accelerator_structure_i/axi_dma_1/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_processing_system7_0_0/accelerator_structure_processing_system7_0_0.xdc] for cell 'accelerator_structure_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_processing_system7_0_0/accelerator_structure_processing_system7_0_0.xdc] for cell 'accelerator_structure_i/processing_system7_0/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_proc_sys_reset_0_0/accelerator_structure_proc_sys_reset_0_0_board.xdc] for cell 'accelerator_structure_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_proc_sys_reset_0_0/accelerator_structure_proc_sys_reset_0_0_board.xdc] for cell 'accelerator_structure_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_proc_sys_reset_0_0/accelerator_structure_proc_sys_reset_0_0.xdc] for cell 'accelerator_structure_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_proc_sys_reset_0_0/accelerator_structure_proc_sys_reset_0_0.xdc] for cell 'accelerator_structure_i/proc_sys_reset_0/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1_clocks.xdc] for cell 'accelerator_structure_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_1/accelerator_structure_axi_dma_0_1_clocks.xdc] for cell 'accelerator_structure_i/axi_dma_0/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2_clocks.xdc] for cell 'accelerator_structure_i/axi_dma_1/U0'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_axi_dma_0_2/accelerator_structure_axi_dma_0_2_clocks.xdc] for cell 'accelerator_structure_i/axi_dma_1/U0'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc] for cell 'accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc:54]
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_0/accelerator_structure_auto_us_0_clocks.xdc] for cell 'accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc] for cell 'accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc:54]
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/accelerator_structure/ip/accelerator_structure_auto_us_1/accelerator_structure_auto_us_1_clocks.xdc] for cell 'accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst'
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: accelerator_structure_i/axis_switch_0/inst/gen_static_router.gen_synch.inst_cdc_handshake/inst_xpm_cdc_handshake 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [E:/downloads/.xinstall/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+INFO: [Project 1-1714] 13 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 30 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2022.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2580 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 128 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 119 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 163 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2170 instances
+
+The system cannot find the path specified.
+43 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:01:29 . Memory (MB): peak = 2022.332 ; gain = 1505.457
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2022.332 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2022.332 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2355.227 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 2355.227 ; gain = 0.000
+Phase 1 Initialization | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 2355.227 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2458.227 ; gain = 103.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 16f14ba2b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2458.227 ; gain = 103.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 18 inverters resulting in an inversion of 164 pins
+INFO: [Opt 31-138] Pushed 6 inverter(s) to 15 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 13837361a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Retarget | Checksum: 13837361a
+INFO: [Opt 31-389] Phase Retarget created 22 cells and removed 153 cells
+INFO: [Opt 31-1021] In phase Retarget, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 8 load pin(s).
+Phase 4 Constant propagation | Checksum: 16f5b8722
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Constant propagation | Checksum: 16f5b8722
+INFO: [Opt 31-389] Phase Constant propagation created 673 cells and removed 2669 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 168a74e34
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Sweep | Checksum: 168a74e34
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 789 cells
+INFO: [Opt 31-1021] In phase Sweep, 98 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 168a74e34
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2458.227 ; gain = 103.000
+BUFG optimization | Checksum: 168a74e34
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][0]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][10]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][11]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][12]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][13]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][14]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][15]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][16]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][17]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][18]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][19]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][1]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][20]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][21]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][22]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][23]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][24]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][25]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][26]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][27]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][28]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][29]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][2]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][30]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][31]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][32]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][33]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][3]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][4]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][5]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][6]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][7]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][8]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/LeNet_wrapper_0/inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_267/pf_connect_5_U/fifo_reg[14][9]_srl15 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_master_slots[0].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/gen_srls[0].gen_rep[1].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_master_slots[1].gen_mi_write.wdata_mux_w/gen_wmux.wmux_aw_fifo/gen_srls[0].gen_rep[1].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[2].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/xbar/inst/gen_samd.crossbar_samd/gen_slave_slots[3].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_primitive_shifter.gen_srls[0].srl_inst due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s01_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_1/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_FIFO.data_srl_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from accelerator_structure_i/axi_interconnect_2/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 168a74e34
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Shift Register Optimization | Checksum: 168a74e34
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1a7d36004
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Post Processing Netlist | Checksum: 1a7d36004
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 33 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 16e5c9b2d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2458.227 ; gain = 103.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 2458.227 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 16e5c9b2d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Phase 9 Finalization | Checksum: 16e5c9b2d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2458.227 ; gain = 103.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              22  |             153  |                                             27  |
+|  Constant propagation         |             673  |            2669  |                                             27  |
+|  Sweep                        |               0  |             789  |                                             98  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             33  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 16e5c9b2d
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 2458.227 ; gain = 103.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.091 . Memory (MB): peak = 2458.227 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 186 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 271 newly gated: 2 Total Ports: 372
+Number of Flops added for Enable Generation: 11
+
+Ending PowerOpt Patch Enables Task | Checksum: 116a1a01a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 116a1a01a
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 3156.199 ; gain = 697.973
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1e577198a
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3156.199 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1e577198a
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 3156.199 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1e577198a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.077 . Memory (MB): peak = 3156.199 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+74 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:47 . Memory (MB): peak = 3156.199 ; gain = 1133.867
+INFO: [runtcl-4] Executing : report_drc -file accelerator_structure_wrapper_drc_opted.rpt -pb accelerator_structure_wrapper_drc_opted.pb -rpx accelerator_structure_wrapper_drc_opted.rpx
+Command: report_drc -file accelerator_structure_wrapper_drc_opted.rpt -pb accelerator_structure_wrapper_drc_opted.pb -rpx accelerator_structure_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/accelerator_structure_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 3156.199 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.650 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.234 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.485 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3156.199 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/accelerator_structure_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 3156.199 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC UTLZ-1] Resource utilization: RAMB18 and RAMB36/FIFO over-utilized in Top Level Design (This design requires more RAMB18 and RAMB36/FIFO cells than are available in the target device. This design requires 370 of such cell types but only 280 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: RAMB36/FIFO over-utilized in Top Level Design (This design requires more RAMB36/FIFO cells than are available in the target device. This design requires 184 of such cell types but only 140 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: RAMB36E1 over-utilized in Top Level Design (This design requires more RAMB36E1 cells than are available in the target device. This design requires 184 of such cell types but only 140 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: Slice LUTs over-utilized in Top Level Design (This design requires more Slice LUTs cells than are available in the target device. This design requires 55839 of such cell types but only 53200 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+INFO: [Vivado_Tcl 4-198] DRC finished with 4 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+88 Infos, 137 Warnings, 0 Critical Warnings and 5 Errors encountered.
+place_design failed
+place_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3156.199 ; gain = 0.000
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 08:16:57 2024...

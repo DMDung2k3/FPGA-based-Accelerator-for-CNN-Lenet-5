@@ -1,0 +1,267 @@
+
+
+================================================================
+== Vitis HLS Report for 'SMM_1u_25u_20u_s'
+================================================================
+* Date:           Sun Nov  3 13:42:20 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  12.592 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------------------------+---------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                    |                                                         |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                              Instance                              |                          Module                         |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +--------------------------------------------------------------------+---------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120                 |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6                 |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+        |grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141                            |SMM_1u_25u_20u_Pipeline_L2_L3                            |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176  |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2  |      510|      510|  5.100 us|  5.100 us|  510|  510|       no|
+        |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200                 |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7                 |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+        +--------------------------------------------------------------------+---------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        +------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_96_3_VITIS_LOOP_102_4  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    152|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|   14|    1510|   5640|    -|
+|Memory           |        7|    -|     112|      7|    -|
+|Multiplexer      |        -|    -|       -|    634|    -|
+|Register         |        -|    -|     641|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        7|   14|    2263|   6433|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    6|       2|     12|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------------------------+---------------------------------------------------------+---------+----+-----+------+-----+
+    |                              Instance                              |                          Module                         | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +--------------------------------------------------------------------+---------------------------------------------------------+---------+----+-----+------+-----+
+    |grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141                            |SMM_1u_25u_20u_Pipeline_L2_L3                            |        0|   4|  672|  1395|    0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120                 |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6                 |        0|   0|   27|   303|    0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200                 |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7                 |        0|   0|   35|   138|    0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176  |SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2  |        0|   0|  281|   528|    0|
+    |mul_32ns_32ns_64_2_1_U104                                           |mul_32ns_32ns_64_2_1                                     |        0|   4|  165|    50|    0|
+    |mul_32s_32s_32_1_1_U107                                             |mul_32s_32s_32_1_1                                       |        0|   0|    0|  1042|    0|
+    |mul_32s_32s_32_1_1_U108                                             |mul_32s_32s_32_1_1                                       |        0|   0|    0|  1042|    0|
+    |mul_32s_32s_32_1_1_U109                                             |mul_32s_32s_32_1_1                                       |        0|   0|    0|  1042|    0|
+    |mul_32s_32s_32_2_1_U105                                             |mul_32s_32s_32_2_1                                       |        0|   3|  165|    50|    0|
+    |mul_32s_32s_32_2_1_U106                                             |mul_32s_32s_32_2_1                                       |        0|   3|  165|    50|    0|
+    +--------------------------------------------------------------------+---------------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                               |                                                         |        0|  14| 1510|  5640|    0|
+    +--------------------------------------------------------------------+---------------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |                                  Memory                                 |                                      Module                                      | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb  |        1|   0|   0|    0|    80|    8|     1|          640|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U  |SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs  |        0|  16|   1|    0|     4|    8|     1|           32|
+    +-------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                                                                    |                                                                                  |        7| 112|   7|    0|   588|  112|    14|         4704|
+    +-------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln96_fu_284_p2                |         +|   0|  0|  71|          64|           1|
+    |ap_block_state12_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state21_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op92_call_state12    |       and|   0|  0|   2|           1|           1|
+    |icmp_ln96_fu_279_p2               |      icmp|   0|  0|  71|          64|          64|
+    |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2                   |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 152|         133|          70|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |                                    Name                                   | LUT | Input Size| Bits| Total Bits|
+    +---------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                                                                  |  113|         25|    1|         25|
+    |ap_done                                                                    |    9|          2|    1|          2|
+    |connect_1_blk_n                                                            |    9|          2|    1|          2|
+    |connect_1_read                                                             |   25|          5|    1|          5|
+    |connect_2_blk_n                                                            |    9|          2|    1|          2|
+    |connect_2_din                                                              |   20|          4|   32|        128|
+    |connect_2_write                                                            |   25|          5|    1|          5|
+    |grp_fu_213_p0                                                              |   14|          3|   32|         96|
+    |grp_fu_213_p1                                                              |   14|          3|   32|         96|
+    |indvar_flatten13_fu_102                                                    |    9|          2|   64|        128|
+    |real_start                                                                 |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_we1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_ce0  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_ce1  |    9|          2|    1|          2|
+    |void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_we1  |    9|          2|    1|          2|
+    +---------------------------------------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                                                      |  634|        139|  209|        575|
+    +---------------------------------------------------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                       Name                                      | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------------------------+----+----+-----+-----------+
+    |B_COL_1                                                                          |  32|   0|   32|          0|
+    |B_ROW_1                                                                          |  32|   0|   32|          0|
+    |KER_bound_reg_398                                                                |  32|   0|   32|          0|
+    |KER_size_0_reg_357                                                               |  32|   0|   32|          0|
+    |KER_size_1_reg_393                                                               |  32|   0|   32|          0|
+    |OFMDim_current_1                                                                 |  32|   0|   32|          0|
+    |ap_CS_fsm                                                                        |  24|   0|   24|          0|
+    |ap_done_reg                                                                      |   1|   0|    1|          0|
+    |ap_predicate_pred542_state8                                                      |   1|   0|    1|          0|
+    |ap_predicate_pred544_state8                                                      |   1|   0|    1|          0|
+    |ap_predicate_pred546_state8                                                      |   1|   0|    1|          0|
+    |bound11_reg_380                                                                  |  64|   0|   64|          0|
+    |grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141_ap_start_reg                            |   1|   0|    1|          0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200_ap_start_reg                 |   1|   0|    1|          0|
+    |grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176_ap_start_reg  |   1|   0|    1|          0|
+    |indvar_flatten13_fu_102                                                          |  64|   0|   64|          0|
+    |mul_ln75_reg_388                                                                 |  32|   0|   32|          0|
+    |reg_221                                                                          |  32|   0|   32|          0|
+    |start_once_reg                                                                   |   1|   0|    1|          0|
+    |tmp_8_reg_375                                                                    |  32|   0|   34|          2|
+    |valIn_a_13_reg_309                                                               |  32|   0|   32|          0|
+    |valIn_a_14_reg_313                                                               |  32|   0|   32|          0|
+    |valIn_a_15_reg_318                                                               |  32|   0|   32|          0|
+    |valIn_a_16_reg_326                                                               |  32|   0|   32|          0|
+    |valIn_a_17_reg_332                                                               |  32|   0|   32|          0|
+    |valIn_a_18_reg_339                                                               |  32|   0|   32|          0|
+    +---------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                            | 641|   0|  643|          2|
+    +---------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++--------------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|start_full_n              |   in|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_continue               |   in|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|start_out                 |  out|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|start_write               |  out|    1|  ap_ctrl_hs|  SMM<1u, 25u, 20u>|  return value|
+|connect_1_dout            |   in|   32|     ap_fifo|          connect_1|       pointer|
+|connect_1_num_data_valid  |   in|    7|     ap_fifo|          connect_1|       pointer|
+|connect_1_fifo_cap        |   in|    7|     ap_fifo|          connect_1|       pointer|
+|connect_1_empty_n         |   in|    1|     ap_fifo|          connect_1|       pointer|
+|connect_1_read            |  out|    1|     ap_fifo|          connect_1|       pointer|
+|connect_2_din             |  out|   32|     ap_fifo|          connect_2|       pointer|
+|connect_2_num_data_valid  |   in|    3|     ap_fifo|          connect_2|       pointer|
+|connect_2_fifo_cap        |   in|    3|     ap_fifo|          connect_2|       pointer|
+|connect_2_full_n          |   in|    1|     ap_fifo|          connect_2|       pointer|
+|connect_2_write           |  out|    1|     ap_fifo|          connect_2|       pointer|
++--------------------------+-----+-----+------------+-------------------+--------------+
+

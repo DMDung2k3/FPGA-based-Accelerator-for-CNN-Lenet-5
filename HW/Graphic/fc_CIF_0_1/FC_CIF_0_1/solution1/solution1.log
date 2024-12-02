@@ -1,0 +1,343 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7k70tfbv676-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_1/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 13.441 seconds; current allocated memory: 0.359 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7k70tfbv676-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_1/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.545 seconds; current allocated memory: 0.559 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_1/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.207 seconds; current allocated memory: 123.188 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully_connected_1.cpp' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_1.cpp:184:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_1.cpp:185:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_1.cpp:186:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.416 seconds; current allocated memory: 125.273 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 859 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 642 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 486 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 457 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 457 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,438 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,100 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,100 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,096 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,035 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,034 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,029 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,029 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,029 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,030 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,094 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'L4' is marked as complete unroll implied by the pipeline pragma (fully_connected_1.cpp:162:5)
+INFO: [HLS 214-186] Unrolling loop 'L4' (fully_connected_1.cpp:162:5) in function 'FC_CIF_0_1' completely with a factor of 32 (fully_connected_1.cpp:36:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A': Block partitioning with factor 32 on dimension 2. (fully_connected_1.cpp:43:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B': Block partitioning with factor 32 on dimension 2. (fully_connected_1.cpp:43:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.161 seconds; current allocated memory: 127.332 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.011 seconds; current allocated memory: 127.344 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.084 seconds; current allocated memory: 135.020 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.435 seconds; current allocated memory: 137.938 MB.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_31' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_30' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_29' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_28' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_27' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_26' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_25' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15' in dimension 3224114 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.9' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.8' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.7' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.6' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.5' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.4' in dimension 517 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.3' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_1(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A' in dimension 1 automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'FC_CIF_0_1' (fully_connected_1.cpp:35)...32 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.104 seconds; current allocated memory: 163.969 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_104_1'(fully_connected_1.cpp:104:21) and 'VITIS_LOOP_105_2'(fully_connected_1.cpp:105:22) in function 'FC_CIF_0_1' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'L2'(fully_connected_1.cpp:156:9) and 'L3'(fully_connected_1.cpp:160:10) in function 'FC_CIF_0_1' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_104_1' (fully_connected_1.cpp:104:21) in function 'FC_CIF_0_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'L2' (fully_connected_1.cpp:156:9) in function 'FC_CIF_0_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_128_3' (fully_connected_1.cpp:128:21) in function 'FC_CIF_0_1'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.61 seconds; current allocated memory: 196.781 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FC_CIF_0_1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_140_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_140_6'
+WARNING: [HLS 200-871] Estimated clock period (7.462 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6' consists of the following:
+	'store' operation 0 bit ('j_write_ln140', fully_connected_1.cpp:140) of constant 0 on local variable 'j', fully_connected_1.cpp:140 [38]  (1.588 ns)
+	'load' operation 11 bit ('j', fully_connected_1.cpp:140) on local variable 'j', fully_connected_1.cpp:140 [41]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln143', fully_connected_1.cpp:143) [53]  (2.552 ns)
+	axis read operation ('in_stream_a_read', fully_connected_1.cpp:144) on port 'in_stream_a' (fully_connected_1.cpp:144) [188]  (1.000 ns)
+	'store' operation 0 bit ('FC_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_write_ln145', fully_connected_1.cpp:145) of variable 'trunc_ln145', fully_connected_1.cpp:145 on array 'p_ZZ10FC_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0' [263]  (2.322 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.571 seconds; current allocated memory: 204.156 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.35 seconds; current allocated memory: 205.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_1_Pipeline_L2_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_23) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_19) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'L2_L3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'L2_L3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.767 seconds; current allocated memory: 207.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 207.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_104_1_VITIS_LOOP_105_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_104_1_VITIS_LOOP_105_2'
+WARNING: [HLS 200-871] Estimated clock period (8.371 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' consists of the following:
+	'load' operation 7 bit ('i_2_load', fully_connected_1.cpp:104) on local variable 'i', fully_connected_1.cpp:104 [59]  (0.000 ns)
+	'add' operation 7 bit ('add_ln104', fully_connected_1.cpp:104) [60]  (1.870 ns)
+	'select' operation 7 bit ('select_ln104_1', fully_connected_1.cpp:104) [65]  (0.993 ns)
+	'icmp' operation 1 bit ('ult', fully_connected_1.cpp:104) [69]  (2.552 ns)
+	'xor' operation 1 bit ('rev', fully_connected_1.cpp:104) [70]  (0.000 ns)
+	'or' operation 1 bit ('or_ln108', fully_connected_1.cpp:108) [111]  (0.978 ns)
+	axis read operation ('in_stream_a_read', fully_connected_1.cpp:109) on port 'in_stream_a' (fully_connected_1.cpp:109) [114]  (1.000 ns)
+	blocking operation 0.978 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.395 seconds; current allocated memory: 211.133 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.188 seconds; current allocated memory: 211.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_187_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_187_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.22 seconds; current allocated memory: 211.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 211.266 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-1015] Estimated delay Estimated delay (12.592ns)  of 'mul' operation 32 bit ('KER_size_0', fully_connected_1.cpp:181) exceeds the target cycle time (target cycle time: 10.000ns, clock uncertainty: 2.700ns, effective cycle time: 7.300ns).
+
+WARNING: [HLS 200-871] Estimated clock period (12.592 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'FC_CIF_0_1' consists of the following:
+	'mul' operation 32 bit ('KER_size_0', fully_connected_1.cpp:181) [164]  (12.592 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.249 seconds; current allocated memory: 211.602 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.164 seconds; current allocated memory: 211.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.316 seconds; current allocated memory: 214.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_1_Pipeline_L2_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_1_Pipeline_L2_L3' pipeline 'L2_L3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 16 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_1_Pipeline_L2_L3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.058 seconds; current allocated memory: 222.238 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' pipeline 'VITIS_LOOP_104_1_VITIS_LOOP_105_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.196 seconds; current allocated memory: 229.250 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7' pipeline 'VITIS_LOOP_187_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.113 seconds; current allocated memory: 233.609 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FC_CIF_0_1/in_stream_a' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FC_CIF_0_1/out_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FC_CIF_0_1' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'B_COL' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'B_ROW' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'OFMDim_current' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_1'.
+INFO: [RTMG 210-278] Implementing memory 'FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.146 seconds; current allocated memory: 238.805 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.039 seconds; current allocated memory: 245.035 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.193 seconds; current allocated memory: 253.840 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for FC_CIF_0_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for FC_CIF_0_1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 79.42 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 4 seconds. Elapsed time: 40.626 seconds; current allocated memory: 131.395 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_1/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 68.841 seconds; current allocated memory: 14.148 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/ip_fc_1
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/ip_fc_1 -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_1/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: export_design -flow syn -rtl verilog -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/ip_fc_1 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file ip_fc_1/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 329.433 seconds; current allocated memory: 9.473 MB.

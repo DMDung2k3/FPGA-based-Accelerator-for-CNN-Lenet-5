@@ -1,0 +1,563 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Sun Nov 03 14:00:20 +0700 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         LeNet_wrapper
+    * Solution:        solution1 (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              31352
+FF:               10516
+DSP:              85
+BRAM:             261
+URAM:             0
+SRL:              65
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was NOT met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 10.267      |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                            | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                            | 31352 | 10516 | 85  | 261  |      |     |        |      |         |          |        |
+|   (inst)                                                                        | 77    |       |     |      |      |     |        |      |         |          |        |
+|   AXI_DMA_MASTER_U0                                                             | 4023  | 579   |     |      |      |     |        |      |         |          |        |
+|     (AXI_DMA_MASTER_U0)                                                         | 3833  | 437   |     |      |      |     |        |      |         |          |        |
+|     grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77                           | 77    | 36    |     |      |      |     |        |      |         |          |        |
+|       (grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77)                       | 3     | 34    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 74    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67                           | 74    | 36    |     |      |      |     |        |      |         |          |        |
+|       (grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67)                       |       | 34    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 74    | 2     |     |      |      |     |        |      |         |          |        |
+|     regslice_both_out_stream_U                                                  | 33    | 70    |     |      |      |     |        |      |         |          |        |
+|   AXI_DMA_SLAVE_U0                                                              | 3976  | 573   |     |      |      |     |        |      |         |          |        |
+|     (AXI_DMA_SLAVE_U0)                                                          | 3768  | 371   |     |      |      |     |        |      |         |          |        |
+|     grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76                            | 66    | 67    |     |      |      |     |        |      |         |          |        |
+|       (grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76)                        |       | 65    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 66    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67                            | 64    | 67    |     |      |      |     |        |      |         |          |        |
+|       (grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67)                        |       | 65    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 64    | 2     |     |      |      |     |        |      |         |          |        |
+|     regslice_both_in_stream_U                                                   | 72    | 68    |     |      |      |     |        |      |         |          |        |
+|   FC_1u_500u_10u_U0                                                             | 2393  | 789   | 10  |      |      |     |        |      |         |          |        |
+|     (FC_1u_500u_10u_U0)                                                         | 1973  | 608   |     |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_500u_10u_Pipeline_L2_fu_89                                        | 62    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_500u_10u_Pipeline_L2_fu_89)                                    | 1     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 61    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106                         | 69    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106)                     | 3     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 66    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96           | 101   | 30    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96)       | 29    | 28    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 72    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82                           | 38    | 13    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82)                       | 13    | 11    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 25    | 2     |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_32ns_64_2_1_U387                                                   | 49    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U388                                                     | 80    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U389                                                     | 18    | 17    | 3   |      |      |     |        |      |         |          |        |
+|   FC_1u_800u_500u_U0                                                            | 2602  | 1034  | 13  | 209  |      |     |        |      |         |          |        |
+|     (FC_1u_800u_500u_U0)                                                        | 1958  | 646   |     |      |      |     |        |      |         |          |        |
+|     A_U                                                                         |       |       |     | 1    |      |     |        |      |         |          |        |
+|     B_U                                                                         | 25    | 4     |     | 208  |      |     |        |      |         |          |        |
+|     grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103                                   | 119   | 142   | 2   |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103)                               | 53    | 140   |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_19s_10ns_10ns_19_4_1_U346                                      | 10    |       | 1   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_16ns_16_4_1_U347                                         | 51    |       | 1   |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126                        | 66    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126)                    | 3     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 63    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114         | 181   | 57    | 1   |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114)     | 60    | 55    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 9     | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_9ns_10ns_10ns_19_4_1_U354                                      | 112   |       | 1   |      |      |     |        |      |         |          |        |
+|     grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94                          | 52    | 45    |     |      |      |     |        |      |         |          |        |
+|       (grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94)                      | 18    | 43    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 34    | 2     |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_11ns_42_2_1_U365                                                   | 51    | 37    |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_32ns_64_2_1_U364                                                   | 49    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U366                                                     | 80    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U367                                                     | 18    | 17    | 3   |      |      |     |        |      |         |          |        |
+|   SCIG_5u_1u_28u_20u_24u_0u_U0                                                  | 2267  | 642   |     | 8    |      |     |        |      |         |          |        |
+|     (SCIG_5u_1u_28u_20u_24u_0u_U0)                                              | 1896  | 268   |     |      |      |     |        |      |         |          |        |
+|     grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67               | 224   | 310   |     | 8    |      |     |        |      |         |          |        |
+|       (grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67)           | 168   | 308   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 13    | 2     |     |      |      |     |        |      |         |          |        |
+|       inputBuf_U                                                                | 43    |       |     | 8    |      |     |        |      |         |          |        |
+|     grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58               | 64    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58)           | 1     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 63    | 2     |     |      |      |     |        |      |         |          |        |
+|     mul_32s_15ns_32_2_1_U24                                                     | 80    | 29    |     |      |      |     |        |      |         |          |        |
+|   SCIG_5u_20u_12u_50u_8u_0u_U0                                                  | 2726  | 880   |     | 8    |      |     |        |      |         |          |        |
+|     (SCIG_5u_20u_12u_50u_8u_0u_U0)                                              | 1895  | 268   |     |      |      |     |        |      |         |          |        |
+|     grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79               | 717   | 540   |     | 8    |      |     |        |      |         |          |        |
+|       (grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79)           | 353   | 538   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 12    | 2     |     |      |      |     |        |      |         |          |        |
+|       inputBuf_U                                                                | 352   |       |     | 8    |      |     |        |      |         |          |        |
+|     grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70               | 65    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70)           | 1     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 64    | 2     |     |      |      |     |        |      |         |          |        |
+|     inElem_U                                                                    | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     mul_32s_12ns_32_2_1_U187                                                    | 34    | 29    |     |      |      |     |        |      |         |          |        |
+|   SMM_1u_25u_20u_U0                                                             | 2738  | 1021  | 16  | 7    |      |     |        |      |         |          |        |
+|     (SMM_1u_25u_20u_U0)                                                         | 1938  | 608   |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141                                    | 330   | 168   | 6   |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141)                                | 232   | 166   |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 5     | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_16s_17_4_1_U58                                           | 16    |       | 2   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_16s_17_4_1_U59                                           | 17    |       | 2   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_17s_17_4_1_U60                                           |       |       | 1   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_17s_17_4_1_U61                                           | 1     |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_4ns_6ns_9_1_1_U41                                                     | 12    |       |     |      |      |     |        |      |         |          |        |
+|       mul_4ns_6ns_9_1_1_U42                                                     |       |       |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_7ns_11_1_1_U43                                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U50                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U51                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U52                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U53                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U54                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|       sparsemux_9_2_8_1_1_U55                                                   | 8     |       |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120                         | 70    | 27    |     |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120)                     | 47    | 25    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 23    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200                         | 70    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200)                     | 4     | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 66    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176          | 124   | 59    |     |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176)      | 64    | 45    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 45    | 2     |     |      |      |     |        |      |         |          |        |
+|       mul_5ns_7ns_11_1_1_U87                                                    |       |       |     |      |      |     |        |      |         |          |        |
+|       urem_5ns_4ns_3_9_1_U88                                                    | 15    | 12    |     |      |      |     |        |      |         |          |        |
+|         (urem_5ns_4ns_3_9_1_U88)                                                | 3     |       |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_32ns_64_2_1_U104                                                   | 49    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U105                                                     | 80    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U106                                                     | 18    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U     | 8     | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U     |       |       |     | 1    |      |     |        |      |         |          |        |
+|   SMM_1u_500u_50u_U0                                                            | 3655  | 1232  | 30  | 22   |      |     |        |      |         |          |        |
+|     (SMM_1u_500u_50u_U0)                                                        | 1940  | 615   |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165                                   | 1022  | 243   | 18  |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165)                               | 539   | 226   | 9   |      |      |     |        |      |         |          |        |
+|       am_addmul_7ns_7ns_9ns_17_4_1_U229                                         | 65    |       | 1   |      |      |     |        |      |         |          |        |
+|       am_addmul_7ns_8ns_10ns_19_4_1_U228                                        | 34    |       | 1   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 4     | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_16s_17_4_1_U230                                          | 120   |       | 2   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_16s_17_4_1_U231                                          | 128   |       | 2   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_17s_17_4_1_U232                                          | 64    |       | 1   |      |      |     |        |      |         |          |        |
+|       mac_muladd_8s_8s_17s_17_4_1_U233                                          | 41    |       | 1   |      |      |     |        |      |         |          |        |
+|       mul_9ns_11ns_19_1_1_U213                                                  | 3     |       | 1   |      |      |     |        |      |         |          |        |
+|       urem_7ns_5ns_4_11_1_U208                                                  | 25    | 15    |     |      |      |     |        |      |         |          |        |
+|         (urem_7ns_5ns_4_11_1_U208)                                              | 4     |       |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136                        | 85    | 45    |     |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136)                    | 39    | 43    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 46    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248                        | 63    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248)                    |       | 33    |     |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 63    | 2     |     |      |      |     |        |      |         |          |        |
+|     grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216         | 178   | 99    | 2   |      |      |     |        |      |         |          |        |
+|       (grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216)     | 58    | 58    | 1   |      |      |     |        |      |         |          |        |
+|       flow_control_loop_pipe_sequential_init_U                                  | 59    | 2     |     |      |      |     |        |      |         |          |        |
+|       mac_muladd_6ns_6ns_6ns_12_4_1_U273                                        | 7     |       | 1   |      |      |     |        |      |         |          |        |
+|       urem_9ns_5ns_4_13_1_U271                                                  | 54    | 39    |     |      |      |     |        |      |         |          |        |
+|         (urem_9ns_5ns_4_13_1_U271)                                              | 4     |       |     |      |      |     |        |      |         |          |        |
+|     mul_32ns_32ns_64_2_1_U294                                                   | 49    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32ns_8ns_39_2_1_U295                                                    | 69    | 39    |     |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U296                                                     | 80    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     mul_32s_32s_32_2_1_U297                                                     | 18    | 17    | 3   |      |      |     |        |      |         |          |        |
+|     p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U  | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U  |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U      | 16    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U      | 16    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U      | 12    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U      | 16    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U        | 16    | 8     |     |      |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U      |       |       |     | 2    |      |     |        |      |         |          |        |
+|     void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U        |       |       |     | 2    |      |     |        |      |         |          |        |
+|   connect_0_U                                                                   | 47    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_1_U                                                                   | 43    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_2_U                                                                   | 39    | 69    |     |      |      |     |        |      |         |          |        |
+|   connect_3_U                                                                   | 44    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_4_U                                                                   | 43    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_5_U                                                                   | 40    | 69    |     |      |      |     |        |      |         |          |        |
+|   connect_6_U                                                                   | 43    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_7_U                                                                   | 35    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   connect_8_U                                                                   | 45    | 29    |     | 1    |      |     |        |      |         |          |        |
+|   pool_2u_20u_24u_U0                                                            | 3331  | 1807  | 8   |      |      |     |        |      |         |          |        |
+|     (pool_2u_20u_24u_U0)                                                        | 1982  | 839   |     |      |      |     |        |      |         |          |        |
+|     acc_U                                                                       | 177   | 64    |     |      |      |     |        |      |         |          |        |
+|     buf_10_U                                                                    | 25    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_11_U                                                                    | 72    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_1_U                                                                     | 24    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_2_U                                                                     | 24    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_3_U                                                                     | 61    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_4_U                                                                     | 24    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_5_U                                                                     | 24    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_6_U                                                                     | 24    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_7_U                                                                     | 69    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_8_U                                                                     | 25    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_9_U                                                                     | 27    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_U                                                                       | 25    | 32    |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384                        | 17    | 7     |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384)                    |       | 5     |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409       | 207   | 180   |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409)   | 201   | 178   |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439                       | 76    | 84    |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439)                   | 57    | 82    |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418     | 274   | 146   |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418) | 269   | 144   |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400                       | 68    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400)                   | 3     | 33    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_32ns_63_2_1_U168                                                   | 56    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32ns_31ns_63_2_1_U169                                                   | 47    | 34    | 4   |      |      |     |        |      |         |          |        |
+|   pool_2u_50u_8u_U0                                                             | 3141  | 1582  | 8   |      |      |     |        |      |         |          |        |
+|     (pool_2u_50u_8u_U0)                                                         | 1983  | 867   |     |      |      |     |        |      |         |          |        |
+|     acc_U                                                                       | 306   | 64    |     |      |      |     |        |      |         |          |        |
+|     buf_1_U                                                                     | 52    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_2_U                                                                     | 44    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_3_U                                                                     | 44    | 32    |     |      |      |     |        |      |         |          |        |
+|     buf_U                                                                       | 68    | 32    |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652                         | 19    | 8     |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652)                     |       | 6     |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669        | 208   | 182   |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669)    | 202   | 180   |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691                        | 74    | 87    |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691)                    | 49    | 85    |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678      | 168   | 143   |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678)  | 163   | 141   |     |      |      |     |        |      |         |          |        |
+|     grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660                        | 68    | 35    |     |      |      |     |        |      |         |          |        |
+|       (grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660)                    | 3     | 33    |     |      |      |     |        |      |         |          |        |
+|     mul_31ns_32ns_63_2_1_U334                                                   | 57    | 34    | 4   |      |      |     |        |      |         |          |        |
+|     mul_32ns_31ns_63_2_1_U335                                                   | 47    | 34    | 4   |      |      |     |        |      |         |          |        |
+|   start_for_AXI_DMA_MASTER_U0_U                                                 | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_FC_1u_500u_10u_U0_U                                                 | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_FC_1u_800u_500u_U0_U                                                | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U                                      | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U                                      | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_SMM_1u_25u_20u_U0_U                                                 | 4     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_SMM_1u_500u_50u_U0_U                                                | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_pool_2u_20u_24u_U0_U                                                | 5     | 4     |     |      |      |     |        |      |         |          |        |
+|   start_for_pool_2u_50u_8u_U0_U                                                 | 5     | 4     |     |      |      |     |        |      |         |          |        |
++---------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 58.93% | OK     |
+| FD                                                        | 50%       | 9.88%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 6.03%  | OK     |
+| MUXF7                                                     | 15%       | 0.10%  | OK     |
+| LUT Combining                                             | 20%       | 5.11%  | OK     |
+| DSP                                                       | 80%       | 38.64% | OK     |
+| RAMB/FIFO                                                 | 80%       | 93.21% | REVIEW |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 65.92% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 335    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 3.29   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was NOT met
++--------+--------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path   |  SLACK | STARTPOINT PIN                                                                                                | ENDPOINT PIN                                                                                                  | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|        |        |                                                                                                               |                                                                                                               |              |            |                |          DELAY |        DELAY |
++--------+--------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]/R  |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path2  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path3  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path4  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path5  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path6  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path7  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path8  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path9  | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
+| Path10 | -0.267 | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]/R |           12 |         32 |          9.659 |          2.861 |        6.798 |
++--------+--------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]                                          | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path6 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path7 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path8 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path9 Cells                                                                                                                                         | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path10 Cells                                                                                                                                        | Primitive Type       |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]                                         | FLOP_LATCH.flop.FDRE |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1                                | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2                                         | LUT.others.LUT3      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1                                     | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1                                    | CARRY.others.CARRY4  |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9         | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4         | LUT.others.LUT5      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6                                        | LUT.others.LUT6      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5                                          | LUT.others.LUT2      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1 | LUT.others.LUT4      |
+    | SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]                                         | FLOP_LATCH.flop.FDRE |
+    +-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+----------------------------------------------------------------------+
+| Report Type              | Report Location                                                      |
++--------------------------+----------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/LeNet_wrapper_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/LeNet_wrapper_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/LeNet_wrapper_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/LeNet_wrapper_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/LeNet_wrapper_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/LeNet_wrapper_utilization_hierarchical_synth.rpt |
++--------------------------+----------------------------------------------------------------------+
+
+

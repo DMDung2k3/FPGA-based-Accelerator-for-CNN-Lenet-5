@@ -1,0 +1,1135 @@
+INFO-FLOW: Workspace D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1 opened at Mon Oct 28 10:46:13 +0700 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/downloads/.xinstall/Vitis_HLS/2023.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/downloads/.xinstall/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 0.876 sec.
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.116 sec.
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.151 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.053 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Command   open_solution done; 1.248 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Command     create_platform done; 0.109 sec.
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.131 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.265 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   source ./maxPool_CIF_0_1/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./maxPool_CIF_0_1/solution1/directives.tcl
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.21 seconds; current allocated memory: 123.074 MB.
+Execute       set_directive_top maxPool_CIF_0_1 -name=maxPool_CIF_0_1 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO: [HLS 200-10] Analyzing design file 'maxPool_1.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling maxPool_1.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang maxPool_1.cpp -foptimization-record-file=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/autopilot -I E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp {-hls-platform-db-name=E:/downloads/.xinstall/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.cpp.clang.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.9 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp {-hls-platform-db-name=E:/downloads/.xinstall/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/clang.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/clang.err.log
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (maxPool_1.cpp:136:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (maxPool_1.cpp:138:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (maxPool_1.cpp:211:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (maxPool_1.cpp:212:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (maxPool_1.cpp:213:9)
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp std=gnu++14 -target fpga  -directive=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/.systemc_flag -fix-errors D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.109 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp std=gnu++14 -target fpga  -directive=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/all.directive.json -fix-errors D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.135 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang-tidy.loop-label.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 2.012 sec.
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/autopilot -I E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.bc {-hls-platform-db-name=E:/downloads/.xinstall/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.492 seconds; current allocated memory: 125.336 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc -args  "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.g.bc"  
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_1.g.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc -args D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc -args D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libhlsm_39.bc E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libhlsm_39.bc E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libhlsmc++_39.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.164 sec.
+Execute       run_link_or_opt -opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=maxPool_CIF_0_1 -reflow-float-conversion 
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=maxPool_CIF_0_1 -reflow-float-conversion -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 1.384 sec.
+Execute       run_link_or_opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc -args D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/llvm-link D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/lib/libfloatconversion_39.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=maxPool_CIF_0_1 
+INFO-FLOW: run_clang exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc > D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: E:/downloads/.xinstall/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=maxPool_CIF_0_1 -mllvm -hls-db-dir -mllvm D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -assume-maxi-align=1 -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -x ir D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=E:/downloads/.xinstall/Vitis_HLS/2023.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg484-1 2> D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 566 Compile/Link D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 566 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 393 Unroll/Inline (step 1) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 393 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 270 Unroll/Inline (step 2) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 270 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 274 Unroll/Inline (step 3) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 274 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 273 Unroll/Inline (step 4) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 273 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 268 Array/Struct (step 1) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 268 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 268 Array/Struct (step 2) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 268 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 268 Array/Struct (step 3) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 268 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 268 Array/Struct (step 4) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 268 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 273 Array/Struct (step 5) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 273 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 273 Performance (step 1) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 273 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 268 Performance (step 2) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 268 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 829 Performance (step 3) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 829 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 585 Performance (step 4) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 585 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 584 HW Transforms (step 1) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 584 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 598 HW Transforms (step 2) D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 598 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_146_3' (maxPool_1.cpp:146:20) in function 'maxPool_CIF_0_1' completely with a factor of 32 (maxPool_1.cpp:77:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_140_2' (maxPool_1.cpp:140:21) in function 'maxPool_CIF_0_1' completely with a factor of 16 (maxPool_1.cpp:77:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_139_1> at maxPool_1.cpp:139:20 
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'buf' due to pipeline pragma (maxPool_1.cpp:135:6)
+INFO: [HLS 214-248] Applying array_partition to 'buf': Complete partitioning on dimension 2. (maxPool_1.cpp:135:6)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.226 seconds; current allocated memory: 127.312 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 127.320 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top maxPool_CIF_0_1 -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -auto-shift-reg-idiom -promote-dbg-pointer -norm-name D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.0.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 133.660 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.1.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.2.prechk.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 135.586 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.g.1.bc to D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.1.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+Command         transform done; 0.188 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.1.tmp.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 159.215 MB.
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dce -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric -cdfg-build D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.2.bc -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_185_11'(maxPool_1.cpp:185:24) and 'VITIS_LOOP_186_12'(maxPool_1.cpp:186:25) in function 'maxPool_CIF_0_1' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_160_8' (maxPool_1.cpp:160:25) in function 'maxPool_CIF_0_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_157_6' (maxPool_1.cpp:157:23) in function 'maxPool_CIF_0_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_185_11' (maxPool_1.cpp:185:24) in function 'maxPool_CIF_0_1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_155_4' (maxPool_1.cpp:155:21) in function 'maxPool_CIF_0_1'.
+Execute           auto_get_db
+Command         transform done; 0.389 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.391 seconds; current allocated memory: 199.363 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.902 sec.
+Command     elaborate done; 18.678 sec.
+Execute     ap_eval exec zip -j D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.225 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'maxPool_CIF_0_1' ...
+Execute       ap_set_top_model maxPool_CIF_0_1 
+Execute       get_model_list maxPool_CIF_0_1 -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model maxPool_CIF_0_1 
+Execute       preproc_iomode -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       preproc_iomode -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       preproc_iomode -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       preproc_iomode -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       preproc_iomode -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       get_model_list maxPool_CIF_0_1 -filter all-wo-channel 
+INFO-FLOW: Model list for configure: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+INFO-FLOW: Configuring Module : maxPool_CIF_0_1 ...
+Execute       set_default_model maxPool_CIF_0_1 
+Execute       apply_spec_resource_limit maxPool_CIF_0_1 
+INFO-FLOW: Model list for preprocess: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 ...
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+INFO-FLOW: Preprocessing Module: maxPool_CIF_0_1 ...
+Execute       set_default_model maxPool_CIF_0_1 
+Execute       cdfg_preprocess -model maxPool_CIF_0_1 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1 
+INFO-FLOW: Model list for synthesis: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       schedule -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_139_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_139_1'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.172 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.645 seconds; current allocated memory: 204.000 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       bind -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 205.211 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       schedule -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_214_13'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_214_13'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.135 seconds; current allocated memory: 205.590 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       bind -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.092 seconds; current allocated memory: 205.645 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       schedule -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_160_8_VITIS_LOOP_161_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_160_8_VITIS_LOOP_161_9'
+WARNING: [HLS 200-871] Estimated clock period (8.592 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' consists of the following:
+	'load' operation 32 bit ('acc_load', maxPool_1.cpp:165) on array 'acc' [36]  (2.322 ns)
+	'select' operation 32 bit ('reuse_select', maxPool_1.cpp:161) [38]  (0.698 ns)
+	'icmp' operation 1 bit ('icmp_ln165', maxPool_1.cpp:165) [39]  (2.552 ns)
+	'select' operation 32 bit ('select_ln165', maxPool_1.cpp:165) [40]  (0.698 ns)
+	'store' operation 0 bit ('acc_addr_write_ln165', maxPool_1.cpp:165) of variable 'select_ln165', maxPool_1.cpp:165 on array 'acc' [41]  (2.322 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.112 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 206.168 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       bind -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 206.207 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       schedule -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_171_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_171_10'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.122 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 207.184 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       bind -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 207.758 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       schedule -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_185_11_VITIS_LOOP_186_12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_185_11_VITIS_LOOP_186_12'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.138 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 209.070 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.
+Execute       set_default_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       bind -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 209.293 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxPool_CIF_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model maxPool_CIF_0_1 
+Execute       schedule -model maxPool_CIF_0_1 
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-1015] Estimated delay Estimated delay (12.592ns)  of 'mul' operation 32 bit ('KER_size_0', maxPool_1.cpp:208) exceeds the target cycle time (target cycle time: 10.000ns, clock uncertainty: 2.700ns, effective cycle time: 7.300ns).
+
+WARNING: [HLS 200-871] Estimated clock period (12.592 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'maxPool_CIF_0_1' consists of the following:
+	'mul' operation 32 bit ('KER_size_0', maxPool_1.cpp:208) [143]  (12.592 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.219 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.328 seconds; current allocated memory: 210.750 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.sched.adb -f 
+INFO-FLOW: Finish scheduling maxPool_CIF_0_1.
+Execute       set_default_model maxPool_CIF_0_1 
+Execute       bind -model maxPool_CIF_0_1 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'acc' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.116 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.194 seconds; current allocated memory: 211.016 MB.
+Execute       syn_report -verbosereport -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.bind.adb -f 
+INFO-FLOW: Finish binding maxPool_CIF_0_1.
+Execute       get_model_list maxPool_CIF_0_1 -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       rtl_gen_preprocess maxPool_CIF_0_1 
+INFO-FLOW: Model list for RTL generation: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -top_prefix maxPool_CIF_0_1_ -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.216 seconds; current allocated memory: 212.688 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+Execute       syn_report -csynth -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.adb 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -top_prefix maxPool_CIF_0_1_ -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13' pipeline 'VITIS_LOOP_214_13' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.842 seconds; current allocated memory: 214.566 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+Execute       syn_report -csynth -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.adb 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -top_prefix maxPool_CIF_0_1_ -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' pipeline 'VITIS_LOOP_160_8_VITIS_LOOP_161_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9'.
+Command       create_rtl_model done; 0.104 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.568 seconds; current allocated memory: 215.203 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+Execute       syn_report -csynth -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.adb 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -top_prefix maxPool_CIF_0_1_ -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10' pipeline 'VITIS_LOOP_171_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10'.
+Command       create_rtl_model done; 0.135 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.394 seconds; current allocated memory: 217.277 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+Execute       syn_report -csynth -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.adb 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -top_prefix maxPool_CIF_0_1_ -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12' pipeline 'VITIS_LOOP_185_11_VITIS_LOOP_186_12' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12'.
+Command       create_rtl_model done; 0.349 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.929 seconds; current allocated memory: 220.031 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       gen_rtl maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+Execute       syn_report -csynth -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.adb 
+Execute       db_write -model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxPool_CIF_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model maxPool_CIF_0_1 -top_prefix  -sub_prefix maxPool_CIF_0_1_ -mg_file D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxPool_CIF_0_1/in_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxPool_CIF_0_1/out_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'maxPool_CIF_0_1' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'IFMCH_curr' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'IFMDim_curr' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_32ns_63_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_31ns_63_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxPool_CIF_0_1'.
+INFO: [RTMG 210-278] Implementing memory 'maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W' using distributed RAMs.
+Command       create_rtl_model done; 0.404 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.08 seconds; current allocated memory: 225.801 MB.
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       gen_rtl maxPool_CIF_0_1 -istop -style xilinx -f -lang vhdl -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/vhdl/maxPool_CIF_0_1 
+Execute       gen_rtl maxPool_CIF_0_1 -istop -style xilinx -f -lang vlog -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/verilog/maxPool_CIF_0_1 
+Execute       syn_report -csynth -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_csynth.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -rtlxml -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/maxPool_CIF_0_1_csynth.xml 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -verbosereport -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.verbose.rpt 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       db_write -model maxPool_CIF_0_1 -f -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.adb 
+Execute       db_write -model maxPool_CIF_0_1 -bindview -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info maxPool_CIF_0_1 -p D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1 
+Execute       export_constraint_db -f -tool general -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+Execute       syn_report -designview -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.design.xml 
+Command       syn_report done; 0.132 sec.
+Execute       syn_report -csynthDesign -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth.rpt -MHOut D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg484-1 
+Execute           ap_family_info -name xc7z020-clg484-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg484-1 -data family 
+Execute       syn_report -wcfg -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model maxPool_CIF_0_1 -o D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.protoinst 
+Execute       sc_get_clocks maxPool_CIF_0_1 
+Execute       sc_get_portdomain maxPool_CIF_0_1 
+INFO-FLOW: Model list for RTL component generation: maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_sparsemux_33_4_32_1_1.
+INFO-FLOW: Append model maxPool_CIF_0_1_sparsemux_33_4_32_1_1
+INFO-FLOW: Found component maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [maxPool_CIF_0_1] ... 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.compgen.tcl 
+INFO-FLOW: Found component maxPool_CIF_0_1_mul_31ns_32ns_63_2_1.
+INFO-FLOW: Append model maxPool_CIF_0_1_mul_31ns_32ns_63_2_1
+INFO-FLOW: Found component maxPool_CIF_0_1_mul_32ns_31ns_63_2_1.
+INFO-FLOW: Append model maxPool_CIF_0_1_mul_32ns_31ns_63_2_1
+INFO-FLOW: Found component maxPool_CIF_0_1_mul_32s_32s_32_1_1.
+INFO-FLOW: Append model maxPool_CIF_0_1_mul_32s_32s_32_1_1
+INFO-FLOW: Found component maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W.
+INFO-FLOW: Append model maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W
+INFO-FLOW: Found component maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W.
+INFO-FLOW: Append model maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W
+INFO-FLOW: Found component maxPool_CIF_0_1_regslice_both.
+INFO-FLOW: Append model maxPool_CIF_0_1_regslice_both
+INFO-FLOW: Found component maxPool_CIF_0_1_regslice_both.
+INFO-FLOW: Append model maxPool_CIF_0_1_regslice_both
+INFO-FLOW: Append model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1
+INFO-FLOW: Append model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13
+INFO-FLOW: Append model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9
+INFO-FLOW: Append model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10
+INFO-FLOW: Append model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12
+INFO-FLOW: Append model maxPool_CIF_0_1
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init maxPool_CIF_0_1_sparsemux_33_4_32_1_1 maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init maxPool_CIF_0_1_mul_31ns_32ns_63_2_1 maxPool_CIF_0_1_mul_32ns_31ns_63_2_1 maxPool_CIF_0_1_mul_32s_32s_32_1_1 maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W maxPool_CIF_0_1_regslice_both maxPool_CIF_0_1_regslice_both maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 maxPool_CIF_0_1
+INFO-FLOW: Generating D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model maxPool_CIF_0_1_sparsemux_33_4_32_1_1
+INFO-FLOW: To file: write model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model maxPool_CIF_0_1_mul_31ns_32ns_63_2_1
+INFO-FLOW: To file: write model maxPool_CIF_0_1_mul_32ns_31ns_63_2_1
+INFO-FLOW: To file: write model maxPool_CIF_0_1_mul_32s_32s_32_1_1
+INFO-FLOW: To file: write model maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W
+INFO-FLOW: To file: write model maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W
+INFO-FLOW: To file: write model maxPool_CIF_0_1_regslice_both
+INFO-FLOW: To file: write model maxPool_CIF_0_1_regslice_both
+INFO-FLOW: To file: write model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1
+INFO-FLOW: To file: write model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13
+INFO-FLOW: To file: write model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9
+INFO-FLOW: To file: write model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10
+INFO-FLOW: To file: write model maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12
+INFO-FLOW: To file: write model maxPool_CIF_0_1
+INFO-FLOW: Generating D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.124 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/vhdl' dstVlogDir='D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/vlog' tclDir='D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db' modelList='maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_sparsemux_33_4_32_1_1
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_mul_31ns_32ns_63_2_1
+maxPool_CIF_0_1_mul_32ns_31ns_63_2_1
+maxPool_CIF_0_1_mul_32s_32s_32_1_1
+maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12
+maxPool_CIF_0_1
+' expOnly='0'
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.compgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.compgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.compgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.compgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.compgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.compgen.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.236 seconds; current allocated memory: 232.605 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='maxPool_CIF_0_1_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 1.3 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_sparsemux_33_4_32_1_1
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_mul_31ns_32ns_63_2_1
+maxPool_CIF_0_1_mul_32ns_31ns_63_2_1
+maxPool_CIF_0_1_mul_32s_32s_32_1_1
+maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12
+maxPool_CIF_0_1
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.compgen.dataonly.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+Execute       sc_get_clocks maxPool_CIF_0_1 
+Execute       source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} report_dict {TOPINST maxPool_CIF_0_1 MODULE2INSTS {maxPool_CIF_0_1 maxPool_CIF_0_1 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603} INST2MODULE {maxPool_CIF_0_1 maxPool_CIF_0_1 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603 maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10} INSTDATA {maxPool_CIF_0_1 {DEPTH 1 CHILDREN {grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603}} grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536 {DEPTH 2 CHILDREN {}} grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556 {DEPTH 2 CHILDREN {}} grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565 {DEPTH 2 CHILDREN {}} grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574 {DEPTH 2 CHILDREN {}} grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603 {DEPTH 2 CHILDREN {}}} MODULEDATA {maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln139_fu_374_p2 SOURCE maxPool_1.cpp:139 VARIABLE add_ln139 LOOP VITIS_LOOP_139_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_2_fu_69_p2 SOURCE maxPool_1.cpp:214 VARIABLE i_2 LOOP VITIS_LOOP_214_13 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln160_fu_143_p2 SOURCE maxPool_1.cpp:160 VARIABLE add_ln160 LOOP VITIS_LOOP_160_8_VITIS_LOOP_161_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln161_fu_180_p2 SOURCE maxPool_1.cpp:161 VARIABLE add_ln161 LOOP VITIS_LOOP_160_8_VITIS_LOOP_161_9 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln171_fu_422_p2 SOURCE maxPool_1.cpp:171 VARIABLE add_ln171 LOOP VITIS_LOOP_171_10 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln185_fu_536_p2 SOURCE maxPool_1.cpp:185 VARIABLE add_ln185 LOOP VITIS_LOOP_185_11_VITIS_LOOP_186_12 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln185_1_fu_557_p2 SOURCE maxPool_1.cpp:185 VARIABLE add_ln185_1 LOOP VITIS_LOOP_185_11_VITIS_LOOP_186_12 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln186_fu_632_p2 SOURCE maxPool_1.cpp:186 VARIABLE add_ln186 LOOP VITIS_LOOP_185_11_VITIS_LOOP_186_12 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} maxPool_CIF_0_1 {BINDINFO {{BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_U SOURCE maxPool_1.cpp:135 VARIABLE buf LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_1_U SOURCE maxPool_1.cpp:135 VARIABLE buf_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_2_U SOURCE maxPool_1.cpp:135 VARIABLE buf_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_3_U SOURCE maxPool_1.cpp:135 VARIABLE buf_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_4_U SOURCE maxPool_1.cpp:135 VARIABLE buf_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_5_U SOURCE maxPool_1.cpp:135 VARIABLE buf_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_6_U SOURCE maxPool_1.cpp:135 VARIABLE buf_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_7_U SOURCE maxPool_1.cpp:135 VARIABLE buf_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_8_U SOURCE maxPool_1.cpp:135 VARIABLE buf_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_9_U SOURCE maxPool_1.cpp:135 VARIABLE buf_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_10_U SOURCE maxPool_1.cpp:135 VARIABLE buf_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_11_U SOURCE maxPool_1.cpp:135 VARIABLE buf_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_12_U SOURCE maxPool_1.cpp:135 VARIABLE buf_12 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_13_U SOURCE maxPool_1.cpp:135 VARIABLE buf_13 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_14_U SOURCE maxPool_1.cpp:135 VARIABLE buf_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME buf_15_U SOURCE maxPool_1.cpp:135 VARIABLE buf_15 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE storage ID {} IMPL lutram LATENCY 1 OPTYPE ram_2p PRAGMA yes RTLNAME acc_U SOURCE maxPool_1.cpp:137 VARIABLE acc LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} STORAGESIZE {32 32 1} STORAGEUSAGE {ram_2p array} DISPNAME {bind_storage ram_2p}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE mul PRAGMA yes RTLNAME mul_32s_32s_32_1_1_U71 SOURCE maxPool_1.cpp:208 VARIABLE KER_size_0 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE mul PRAGMA yes RTLNAME mul_32s_32s_32_1_1_U72 SOURCE maxPool_1.cpp:209 VARIABLE KER_size_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE mul PRAGMA yes RTLNAME mul_32s_32s_32_1_1_U73 SOURCE maxPool_1.cpp:210 VARIABLE KER_bound LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub_fu_745_p2 SOURCE maxPool_1.cpp:90 VARIABLE sub LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub156_fu_750_p2 SOURCE maxPool_1.cpp:154 VARIABLE sub156 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub162_fu_756_p2 SOURCE {} VARIABLE sub162 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_31ns_32ns_63_2_1_U69 SOURCE maxPool_1.cpp:154 VARIABLE mul_ln154 LOOP {} BUNDLEDNAME {} DSP 4 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32ns_31ns_63_2_1_U70 SOURCE maxPool_1.cpp:154 VARIABLE mul_ln154_1 LOOP {} BUNDLEDNAME {} DSP 4 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln155_fu_783_p2 SOURCE maxPool_1.cpp:155 VARIABLE add_ln155 LOOP VITIS_LOOP_155_4_VITIS_LOOP_156_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln155_1_fu_808_p2 SOURCE maxPool_1.cpp:155 VARIABLE add_ln155_1 LOOP VITIS_LOOP_155_4_VITIS_LOOP_156_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln157_fu_849_p2 SOURCE maxPool_1.cpp:157 VARIABLE add_ln157 LOOP VITIS_LOOP_157_6_VITIS_LOOP_158_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln158_fu_872_p2 SOURCE maxPool_1.cpp:158 VARIABLE add_ln158 LOOP VITIS_LOOP_157_6_VITIS_LOOP_158_7 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME yp_1_fu_883_p2 SOURCE maxPool_1.cpp:156 VARIABLE yp_1 LOOP VITIS_LOOP_155_4_VITIS_LOOP_156_5 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add}}} AREA {DSP 8 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.951 seconds; current allocated memory: 238.906 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for maxPool_CIF_0_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for maxPool_CIF_0_1.
+Execute       syn_report -model maxPool_CIF_0_1 -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 79.42 MHz
+Command     autosyn done; 10.847 sec.
+Command   csynth_design done; 29.925 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 29.925 seconds; current allocated memory: 116.312 MB.
+Command ap_source done; 31.518 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1 opened at Mon Oct 28 10:47:51 +0700 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020clg484-1 
+Execute       create_platform xc7z020clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: E:/downloads/.xinstall/Vitis_HLS/2023.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: E:/downloads/.xinstall/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 0.879 sec.
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.113 sec.
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.147 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.054 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1
+Execute     config_export -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=10 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+Execute     config_export -vivado_clock=10 
+Command   open_solution done; 1.271 sec.
+Execute   set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+Execute     create_platform xc7z020clg484-1 -board  
+Command     create_platform done; 0.112 sec.
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.127 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.266 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 -rtl verilog -vivado_clock 10 
+Execute   source ./maxPool_CIF_0_1/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./maxPool_CIF_0_1/solution1/directives.tcl
+Execute   export_design -flow syn -rtl verilog -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 
+INFO: [HLS 200-1510] Running: export_design -flow syn -rtl verilog -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 
+Execute     config_export -flow=syn -format=ip_catalog -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/ip_maxPool_1 -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow syn -format ip_catalog -rtl verilog
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.132 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=maxPool_CIF_0_1 xml_exists=0
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to maxPool_CIF_0_1
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=19 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_sparsemux_33_4_32_1_1
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init
+maxPool_CIF_0_1_mul_31ns_32ns_63_2_1
+maxPool_CIF_0_1_mul_32ns_31ns_63_2_1
+maxPool_CIF_0_1_mul_32s_32s_32_1_1
+maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_regslice_both
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10
+maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12
+maxPool_CIF_0_1
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.compgen.dataonly.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+Execute     sc_get_clocks maxPool_CIF_0_1 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to maxPool_CIF_0_1
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=maxPool_CIF_0_1
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.rtl_wrap.cfg.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+INFO-FLOW: DBG:PUTS:     IP package: exec D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow syn -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow syn -rtl verilog'
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.188 sec.
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.247 sec.
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.constraint.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/maxPool_CIF_0_1.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.121 sec.
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source E:/downloads/.xinstall/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.162 sec.
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog syn exec D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl/verilog/implsyn.bat
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix maxPool_CIF_0_1_ TopModuleNoPrefix maxPool_CIF_0_1 TopModuleWithPrefix maxPool_CIF_0_1' export_design_flow='syn' impl_dir='D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xc7z020-clg484-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0000025F1BD11E44' export_design_flow='syn' export_rpt='D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s ip_maxPool_1/export.zip 
+INFO: [HLS 200-802] Generated output file ip_maxPool_1/export.zip
+Command   export_design done; 333.094 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 333.094 seconds; current allocated memory: 7.840 MB.
+Command ap_source done; 334.75 sec.
+Execute cleanup_all 

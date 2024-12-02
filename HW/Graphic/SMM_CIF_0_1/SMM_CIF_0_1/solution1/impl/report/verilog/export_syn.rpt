@@ -1,0 +1,309 @@
+================================================================
+== Vivado RTL Synthesis Results
+================================================================
++ General Information:
+    * Date:            Mon Oct 28 14:17:21 +0700 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         SMM_CIF_0_1
+    * Solution:        solution1 (Vivado IP Flow Target)
+    * Product family:  zynq
+    * Target device:   xc7z020-clg484-1
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * RTL Synthesis target clock:  10 ns
+    * C-Synthesis target clock:    10 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== RTL Synthesis Resource Summary
+================================================================
+LUT:              3874
+FF:               1857
+DSP:              36
+BRAM:             25
+URAM:             0
+SRL:              45
+
+
+================================================================
+== RTL Synthesis Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 10.000      |
+| Post-Synthesis | 9.589       |
++----------------+-------------+
+
+
+================================================================
+== RTL Synthesis Resources
+================================================================
++-------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                    | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++-------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                    | 3874 | 1857 | 36  | 25   |      |     |        |      |         |          |        |
+|   (inst)                                                                | 208  | 868  |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_U                   | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_U                     | 12   |      |     |      |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U                  |      |      |     | 1    |      |     |        |      |         |          |        |
+|   SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U                     |      |      |     | 1    |      |     |        |      |         |          |        |
+|   grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271                                 | 275  | 303  | 25  |      |      |     |        |      |         |          |        |
+|     (grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271)                             | 266  | 301  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                            | 5    | 2    |     |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U45                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U46                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U47                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U49                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U50                                  | 1    |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U51                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32ns_32_4_1_U52                                  |      |      | 1   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U37                                   | 1    |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U38                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U39                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U40                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U41                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U42                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U43                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U44                                   |      |      | 2   |      |      |     |        |      |         |          |        |
+|     mac_muladd_16s_16s_32s_32_4_1_U48                                   | 2    |      | 2   |      |      |     |        |      |         |          |        |
+|   grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380     | 614  | 225  | 1   |      |      |     |        |      |         |          |        |
+|     (grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380) | 465  | 194  | 1   |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                            | 116  | 2    |     |      |      |     |        |      |         |          |        |
+|     urem_7ns_3ns_7_11_1_U110                                            | 33   | 29   |     |      |      |     |        |      |         |          |        |
+|       (urem_7ns_3ns_7_11_1_U110)                                        | 7    |      |     |      |      |     |        |      |         |          |        |
+|   grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_214                      | 96   | 30   |     |      |      |     |        |      |         |          |        |
+|     (grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_214)                  |      | 28   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                            | 96   | 2    |     |      |      |     |        |      |         |          |        |
+|   grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442                      | 108  | 99   |     |      |      |     |        |      |         |          |        |
+|     (grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442)                  |      | 97   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                            | 108  | 2    |     |      |      |     |        |      |         |          |        |
+|   mul_32ns_32ns_64_2_1_U148                                             | 48   | 34   | 4   |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U151                                               | 629  |      |     |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U152                                               | 629  |      |     |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_1_1_U153                                               | 629  |      |     |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_2_1_U149                                               | 79   | 17   | 3   |      |      |     |        |      |         |          |        |
+|   mul_32s_32s_32_2_1_U150                                               | 15   | 17   | 3   |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_U              | 12   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_U              | 24   |      |     |      |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U              |      |      |     | 1    |      |     |        |      |         |          |        |
+|   regslice_both_in_stream_a_U                                           | 75   | 132  |     |      |      |     |        |      |         |          |        |
+|   regslice_both_out_stream_U                                            | 157  | 132  |     |      |      |     |        |      |         |          |        |
++-------------------------------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== RTL Synthesis Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 7.28%  | OK     |
+| FD                                                        | 50%       | 1.75%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 1.98%  | OK     |
+| MUXF7                                                     | 15%       | 0.00%  | OK     |
+| DSP                                                       | 80%       | 16.36% | OK     |
+| RAMB/FIFO                                                 | 80%       | 8.93%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 12.64% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 998       | 68     | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.66   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.575ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.403ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== RTL Synthesis Timing Paths
+================================================================
+* Timing was met
++-------+-------+---------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                  | ENDPOINT PIN                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                 |                              |              |            |                |          DELAY |        DELAY |
++-------+-------+---------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.411 | valIn_a_data_4_reg_749_reg[3]/C | KER_size_0_reg_789_reg[31]/D |           12 |         62 |          9.614 |          4.777 |        4.837 |
+| Path2 | 0.413 | KER_size_1_reg_846_reg[3]/C     | KER_bound_reg_851_reg[31]/D  |           12 |         57 |          9.612 |          4.777 |        4.835 |
+| Path3 | 0.413 | KER_size_0_reg_789_reg[3]/C     | KER_size_1_reg_846_reg[31]/D |           12 |         57 |          9.612 |          4.777 |        4.835 |
+| Path4 | 0.516 | valIn_a_data_4_reg_749_reg[3]/C | KER_size_0_reg_789_reg[30]/D |           12 |         62 |          9.509 |          4.672 |        4.837 |
+| Path5 | 0.518 | KER_size_1_reg_846_reg[3]/C     | KER_bound_reg_851_reg[30]/D  |           12 |         57 |          9.507 |          4.672 |        4.835 |
++-------+-------+---------------------------------+------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +---------------------------------------------------------+----------------------+
+    | Path1 Cells                                             | Primitive Type       |
+    +---------------------------------------------------------+----------------------+
+    | valIn_a_data_4_reg_749_reg[3]                           | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_0_reg_789_reg[31]                              | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path2 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | KER_size_1_reg_846_reg[3]                              | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_bound_reg_851_reg[31]                              | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------+----------------------+
+    | Path3 Cells                                             | Primitive Type       |
+    +---------------------------------------------------------+----------------------+
+    | KER_size_0_reg_789_reg[3]                               | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U152/KER_size_1_reg_846_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_1_reg_846_reg[31]                              | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------+----------------------+
+    | Path4 Cells                                             | Primitive Type       |
+    +---------------------------------------------------------+----------------------+
+    | valIn_a_data_4_reg_749_reg[3]                           | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U151/KER_size_0_reg_789_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_size_0_reg_789_reg[30]                              | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------+----------------------+
+    | Path5 Cells                                            | Primitive Type       |
+    +--------------------------------------------------------+----------------------+
+    | KER_size_1_reg_846_reg[3]                              | FLOP_LATCH.flop.FDRE |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[8]_i_26      | LUT.others.LUT6      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[8]_i_11  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[21]_i_32 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[25]_i_49 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[25]_i_25     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[25]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[29]_i_11 | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[31]_i_18     | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[31]_i_6  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851[29]_i_2      | LUT.others.LUT3      |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[29]_i_1  | CARRY.others.CARRY4  |
+    | mul_32s_32s_32_1_1_U153/KER_bound_reg_851_reg[31]_i_1  | CARRY.others.CARRY4  |
+    | KER_bound_reg_851_reg[30]                              | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------+----------------------+
+
+
+================================================================
+== RTL Synthesis Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------+
+| Report Type              | Report Location                                                    |
++--------------------------+--------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/SMM_CIF_0_1_design_analysis_synth.rpt          |
+| failfast                 | impl/verilog/report/SMM_CIF_0_1_failfast_synth.rpt                 |
+| timing                   | impl/verilog/report/SMM_CIF_0_1_timing_synth.rpt                   |
+| timing_paths             | impl/verilog/report/SMM_CIF_0_1_timing_paths_synth.rpt             |
+| utilization              | impl/verilog/report/SMM_CIF_0_1_utilization_synth.rpt              |
+| utilization_hierarchical | impl/verilog/report/SMM_CIF_0_1_utilization_hierarchical_synth.rpt |
++--------------------------+--------------------------------------------------------------------+
+
+

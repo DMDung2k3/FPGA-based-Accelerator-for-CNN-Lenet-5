@@ -1,0 +1,57 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 6,901        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 2,513        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 2,063        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 2,024        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 2,014        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 1,940        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 1,938        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 1,938        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 1,938        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 1,979        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 1,976        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 1,938        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 3,314        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 2,994        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             | 3,005        | After hardware transfomations                                                          |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++------------------------------+-------------------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function                     | Location                            | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++------------------------------+-------------------------------------+--------------+---------------+--------------+-------------+---------------+
+| + LeNet_wrapper              | LeNet_wrapper.cpp:3                 | 6,901        | 2,014         | 1,979        | 2,994       | 3,005         |
+|    AXI_DMA_SLAVE             | axi_dma_slave.h:2                   |  318         |   76          |   76         |   74        |   73          |
+|    SCIG<5, 1, 28, 20, 24, 0> | stream_convolution_slideWindow.h:60 |  616         |  136          |  137         |  135        |  135          |
+|    SMM<1, 25, 20>            | fixed_point_stream_convolution.h:7  |  828         |  215          |  216         |  426        |  420          |
+|    pool<2, 20, 24>           | pool.h:58                           |  778         |  208          |  208         |  442        |  442          |
+|    SCIG<5, 20, 12, 50, 8, 0> | stream_convolution_slideWindow.h:60 |  616         |  480          |  481         |  479        |  479          |
+|    SMM<1, 500, 50>           | fixed_point_stream_convolution.h:7  |  828         |  215          |  216         |  662        |  662          |
+|    pool<2, 50, 8>            | pool.h:58                           |  778         |  252          |  252         |  324        |  322          |
+|    FC<1, 800, 500>           | fully_connected.h:6                 |  833         |  152          |  153         |  147        |  147          |
+|    FC<1, 500, 10>            | fully_connected.h:6                 |  833         |  127          |  109         |  104        |  104          |
+|    AXI_DMA_MASTER            | axi_dma_master.h:2                  |  365         |   92          |   92         |   90        |   99          |
++------------------------------+-------------------------------------+--------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

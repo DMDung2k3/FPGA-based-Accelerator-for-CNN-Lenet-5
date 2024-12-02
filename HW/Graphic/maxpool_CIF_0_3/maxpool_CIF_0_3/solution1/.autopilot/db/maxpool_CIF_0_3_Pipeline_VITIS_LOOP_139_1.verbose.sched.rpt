@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'maxpool_CIF_0_3_Pipeline_VITIS_LOOP_139_1'
+================================================================
+* Date:           Mon Oct 28 11:12:01 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        maxpool_CIF_0_3
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.780 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66|  0.660 us|  0.660 us|   66|   66|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_139_1  |       64|       64|         1|          1|          1|    64|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.78>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [maxPool_3.cpp:139]   --->   Operation 4 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_r, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_3, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln139 = store i7 0, i7 %j" [maxPool_3.cpp:139]   --->   Operation 9 'store' 'store_ln139' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_140_2"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%j_1 = load i7 %j" [maxPool_3.cpp:139]   --->   Operation 11 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.87ns)   --->   "%icmp_ln139 = icmp_eq  i7 %j_1, i7 64" [maxPool_3.cpp:139]   --->   Operation 12 'icmp' 'icmp_ln139' <Predicate = true> <Delay = 1.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (1.87ns)   --->   "%add_ln139 = add i7 %j_1, i7 1" [maxPool_3.cpp:139]   --->   Operation 13 'add' 'add_ln139' <Predicate = true> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln139 = br i1 %icmp_ln139, void %VITIS_LOOP_140_2.split, void %for.inc46.exitStub" [maxPool_3.cpp:139]   --->   Operation 14 'br' 'br_ln139' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln139 = zext i7 %j_1" [maxPool_3.cpp:139]   --->   Operation 15 'zext' 'zext_ln139' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln139 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_4" [maxPool_3.cpp:139]   --->   Operation 16 'specpipeline' 'specpipeline_ln139' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln139 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 64, i64 64, i64 64" [maxPool_3.cpp:139]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln139' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln139 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [maxPool_3.cpp:139]   --->   Operation 18 'specloopname' 'specloopname_ln139' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%buf_addr = getelementptr i32 %buf_r, i64 0, i64 %zext_ln139" [maxPool_3.cpp:143]   --->   Operation 19 'getelementptr' 'buf_addr' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%buf_1_addr = getelementptr i32 %buf_1, i64 0, i64 %zext_ln139" [maxPool_3.cpp:143]   --->   Operation 20 'getelementptr' 'buf_1_addr' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%buf_2_addr = getelementptr i32 %buf_2, i64 0, i64 %zext_ln139" [maxPool_3.cpp:143]   --->   Operation 21 'getelementptr' 'buf_2_addr' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%buf_3_addr = getelementptr i32 %buf_3, i64 0, i64 %zext_ln139" [maxPool_3.cpp:143]   --->   Operation 22 'getelementptr' 'buf_3_addr' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (2.32ns)   --->   "%store_ln143 = store i32 0, i6 %buf_addr" [maxPool_3.cpp:143]   --->   Operation 23 'store' 'store_ln143' <Predicate = (!icmp_ln139)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_1 : Operation 24 [1/1] (2.32ns)   --->   "%store_ln143 = store i32 0, i6 %buf_1_addr" [maxPool_3.cpp:143]   --->   Operation 24 'store' 'store_ln143' <Predicate = (!icmp_ln139)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_1 : Operation 25 [1/1] (2.32ns)   --->   "%store_ln143 = store i32 0, i6 %buf_2_addr" [maxPool_3.cpp:143]   --->   Operation 25 'store' 'store_ln143' <Predicate = (!icmp_ln139)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_1 : Operation 26 [1/1] (2.32ns)   --->   "%store_ln143 = store i32 0, i6 %buf_3_addr" [maxPool_3.cpp:143]   --->   Operation 26 'store' 'store_ln143' <Predicate = (!icmp_ln139)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln139 = store i7 %add_ln139, i7 %j" [maxPool_3.cpp:139]   --->   Operation 27 'store' 'store_ln139' <Predicate = (!icmp_ln139)> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln139 = br void %VITIS_LOOP_140_2" [maxPool_3.cpp:139]   --->   Operation 28 'br' 'br_ln139' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (icmp_ln139)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.780ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln139', maxPool_3.cpp:139) of constant 0 on local variable 'j', maxPool_3.cpp:139 [10]  (1.588 ns)
+	'load' operation 7 bit ('j', maxPool_3.cpp:139) on local variable 'j', maxPool_3.cpp:139 [13]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln139', maxPool_3.cpp:139) [14]  (1.870 ns)
+	'store' operation 0 bit ('store_ln143', maxPool_3.cpp:143) of constant 0 on array 'buf_r' [26]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

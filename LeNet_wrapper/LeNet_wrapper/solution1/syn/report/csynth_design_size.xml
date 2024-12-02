@@ -1,0 +1,56 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 6901, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 2513, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 2063, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 2024, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 2014, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 1940, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 1938, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 1938, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 1938, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 1979, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 1976, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 1938, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 3314, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 2994, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, 3005, After hardware transfomations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="LeNet_wrapper" col1="LeNet_wrapper.cpp:3" col2="6901" col3="2014" col4="1979" col5="2994" col6="3005">
+                    <row id="8" col0="AXI_DMA_SLAVE" col1="axi_dma_slave.h:2" col2="318" col3="76" col4="76" col5="74" col6="73"/>
+                    <row id="2" col0="SCIG&lt;5, 1, 28, 20, 24, 0&gt;" col1="stream_convolution_slideWindow.h:60" col2="616" col3="136" col4="137" col5="135" col6="135"/>
+                    <row id="6" col0="SMM&lt;1, 25, 20&gt;" col1="fixed_point_stream_convolution.h:7" col2="828" col3="215" col4="216" col5="426" col6="420"/>
+                    <row id="10" col0="pool&lt;2, 20, 24&gt;" col1="pool.h:58" col2="778" col3="208" col4="208" col5="442" col6="442"/>
+                    <row id="1" col0="SCIG&lt;5, 20, 12, 50, 8, 0&gt;" col1="stream_convolution_slideWindow.h:60" col2="616" col3="480" col4="481" col5="479" col6="479"/>
+                    <row id="9" col0="SMM&lt;1, 500, 50&gt;" col1="fixed_point_stream_convolution.h:7" col2="828" col3="215" col4="216" col5="662" col6="662"/>
+                    <row id="7" col0="pool&lt;2, 50, 8&gt;" col1="pool.h:58" col2="778" col3="252" col4="252" col5="324" col6="322"/>
+                    <row id="3" col0="FC&lt;1, 800, 500&gt;" col1="fully_connected.h:6" col2="833" col3="152" col4="153" col5="147" col6="147"/>
+                    <row id="4" col0="FC&lt;1, 500, 10&gt;" col1="fully_connected.h:6" col2="833" col3="127" col4="109" col5="104" col6="104"/>
+                    <row id="5" col0="AXI_DMA_MASTER" col1="axi_dma_master.h:2" col2="365" col3="92" col4="92" col5="90" col6="99"/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

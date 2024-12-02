@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9'
+================================================================
+* Date:           Mon Oct 28 11:12:04 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        maxpool_CIF_0_3
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.196 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_160_8_VITIS_LOOP_161_9  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    288|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     72|    -|
+|Register         |        -|    -|     211|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     211|    360|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |acc_d1                            |         +|   0|  0|  39|          32|          32|
+    |add_ln160_fu_143_p2               |         +|   0|  0|  40|          33|           1|
+    |add_ln161_fu_176_p2               |         +|   0|  0|  14|           7|           1|
+    |ap_block_pp0_stage0_11001         |       and|   0|  0|   2|           1|           1|
+    |ap_block_state2_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |addr_cmp_fu_165_p2                |      icmp|   0|  0|  71|          64|          64|
+    |icmp_ln160_fu_138_p2              |      icmp|   0|  0|  40|          33|          33|
+    |icmp_ln161_fu_133_p2              |      icmp|   0|  0|  39|          32|          32|
+    |reuse_select_fu_198_p3            |    select|   0|  0|  32|           1|          32|
+    |select_ln160_fu_149_p3            |    select|   0|  0|   7|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 288|         206|         200|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |ch_1_fu_60               |   9|          2|    7|         14|
+    |in_r_TDATA_blk_n         |   9|          2|    1|          2|
+    |indvar_flatten_fu_64     |   9|          2|   33|         66|
+    |reuse_addr_reg_fu_52     |   9|          2|   64|        128|
+    |reuse_reg_fu_56          |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  72|         16|  140|        280|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |acc_addr_reg_263         |   6|   0|    6|          0|
+    |addr_cmp_reg_269         |   1|   0|    1|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |ch_1_fu_60               |   7|   0|    7|          0|
+    |in_r_read_reg_258        |  64|   0|   64|          0|
+    |indvar_flatten_fu_64     |  33|   0|   33|          0|
+    |reuse_addr_reg_fu_52     |  64|   0|   64|          0|
+    |reuse_reg_fu_56          |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 211|   0|  211|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+------------------------------------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |                        Source Object                       |    C Type    |
++-----------------+-----+-----+------------+------------------------------------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9|  return value|
+|in_r_TVALID      |   in|    1|        axis|                                                        in_r|       pointer|
+|in_r_TDATA       |   in|   64|        axis|                                                        in_r|       pointer|
+|in_r_TREADY      |  out|    1|        axis|                                                        in_r|       pointer|
+|IFMCH_curr_load  |   in|   32|     ap_none|                                             IFMCH_curr_load|        scalar|
+|zext_ln154       |   in|   33|     ap_none|                                                  zext_ln154|        scalar|
+|acc_address0     |  out|    6|   ap_memory|                                                         acc|         array|
+|acc_ce0          |  out|    1|   ap_memory|                                                         acc|         array|
+|acc_q0           |   in|   32|   ap_memory|                                                         acc|         array|
+|acc_address1     |  out|    6|   ap_memory|                                                         acc|         array|
+|acc_ce1          |  out|    1|   ap_memory|                                                         acc|         array|
+|acc_we1          |  out|    1|   ap_memory|                                                         acc|         array|
+|acc_d1           |  out|   32|   ap_memory|                                                         acc|         array|
++-----------------+-----+-----+------------+------------------------------------------------------------+--------------+
+

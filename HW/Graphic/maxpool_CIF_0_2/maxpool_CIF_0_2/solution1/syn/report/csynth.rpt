@@ -1,0 +1,168 @@
+
+
+================================================================
+== Synthesis Summary Report of 'maxpool_CIF_0_2'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 28 11:01:38 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        maxpool_CIF_0_2
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+-----------+------------+-----+
+    |                              Modules                             |  Issue |       | Latency | Latency | Iteration|         | Trip |          |      |        |           |            |     |
+    |                              & Loops                             |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |     LUT    | URAM|
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+-----------+------------+-----+
+    |+ maxpool_CIF_0_2                                                 |  Timing|  -5.29|        -|        -|         -|        -|     -|        no|     -|  8 (3%)|  2697 (2%)|  6926 (13%)|    -|
+    | + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_139_1                      |       -|   1.56|       34|  340.000|         -|       34|     -|        no|     -|       -|    8 (~0%)|    55 (~0%)|    -|
+    |  o VITIS_LOOP_139_1                                              |       -|   7.30|       32|  320.000|         1|        1|    32|       yes|     -|       -|          -|           -|    -|
+    | + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_214_13                     |       -|   1.57|        -|        -|         -|        -|     -|        no|     -|       -|   99 (~0%)|   140 (~0%)|    -|
+    |  o VITIS_LOOP_214_13                                             |       -|   7.30|        -|        -|         2|        1|     -|       yes|     -|       -|          -|           -|    -|
+    | o VITIS_LOOP_155_4_VITIS_LOOP_156_5                              |       -|   7.30|        -|        -|         -|        -|     -|        no|     -|       -|          -|           -|    -|
+    |  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12  |       -|   0.03|        -|        -|         -|        -|     -|        no|     -|       -|  212 (~0%)|    573 (1%)|    -|
+    |   o VITIS_LOOP_185_11_VITIS_LOOP_186_12                          |       -|   7.30|        -|        -|         3|        1|     -|       yes|     -|       -|          -|           -|    -|
+    |  o VITIS_LOOP_157_6_VITIS_LOOP_158_7                             |       -|   7.30|        -|        -|         -|        -|     -|        no|     -|       -|          -|           -|    -|
+    |   + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9   |       -|   0.04|        -|        -|         -|        -|     -|        no|     -|       -|  209 (~0%)|   359 (~0%)|    -|
+    |    o VITIS_LOOP_160_8_VITIS_LOOP_161_9                           |       -|   7.30|        -|        -|         2|        1|     -|       yes|     -|       -|          -|           -|    -|
+    |   + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_171_10                   |       -|   0.12|       35|  350.000|         -|       35|     -|        no|     -|       -|  123 (~0%)|   147 (~0%)|    -|
+    |    o VITIS_LOOP_171_10                                           |       -|   7.30|       33|  330.000|         3|        1|    32|       yes|     -|       -|          -|           -|    -|
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+------+--------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+-----------+---------------+-------+--------+--------+
+| Interface | Direction | Register Mode | TDATA | TREADY | TVALID |
++-----------+-----------+---------------+-------+--------+--------+
+| in_r      | in        | both          | 64    | 1      | 1      |
+| out_r     | out       | both          | 64    | 1      | 1      |
++-----------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------+
+| Argument | Direction | Datatype            |
++----------+-----------+---------------------+
+| in       | in        | stream<AXI_VAL, 0>& |
+| out      | out       | stream<AXI_VAL, 0>& |
++----------+-----------+---------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                                            | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-----------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + maxpool_CIF_0_2                                               | 8   |        |             |     |        |         |
+|   mul_32s_32s_32_1_1_U47                                        |     | yes    | KER_size_0  | mul | fabric | 0       |
+|   mul_32s_32s_32_1_1_U48                                        |     | yes    | KER_size_1  | mul | fabric | 0       |
+|   mul_32s_32s_32_1_1_U49                                        |     | yes    | KER_bound   | mul | fabric | 0       |
+|   sub_fu_689_p2                                                 |     |        | sub         | add | fabric | 0       |
+|   sub131_fu_694_p2                                              |     |        | sub131      | add | fabric | 0       |
+|   sub137_fu_700_p2                                              |     |        | sub137      | add | fabric | 0       |
+|   mul_31ns_32ns_63_2_1_U45                                      | 4   |        | mul_ln154   | mul | auto   | 1       |
+|   mul_32ns_31ns_63_2_1_U46                                      | 4   |        | mul_ln154_1 | mul | auto   | 1       |
+|   add_ln155_fu_727_p2                                           |     |        | add_ln155   | add | fabric | 0       |
+|   add_ln155_1_fu_752_p2                                         |     |        | add_ln155_1 | add | fabric | 0       |
+|   add_ln157_fu_793_p2                                           |     |        | add_ln157   | add | fabric | 0       |
+|   add_ln158_fu_816_p2                                           |     |        | add_ln158   | add | fabric | 0       |
+|   yp_1_fu_827_p2                                                |     |        | yp_1        | add | fabric | 0       |
+|  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_139_1                    | 0   |        |             |     |        |         |
+|    add_ln139_fu_212_p2                                          |     |        | add_ln139   | add | fabric | 0       |
+|  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_214_13                   | 0   |        |             |     |        |         |
+|    i_2_fu_69_p2                                                 |     |        | i_2         | add | fabric | 0       |
+|  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9   | 0   |        |             |     |        |         |
+|    add_ln160_fu_143_p2                                          |     |        | add_ln160   | add | fabric | 0       |
+|    add_ln166_fu_205_p2                                          |     |        | add_ln166   | add | fabric | 0       |
+|    add_ln161_fu_176_p2                                          |     |        | add_ln161   | add | fabric | 0       |
+|  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 | 0   |        |             |     |        |         |
+|    add_ln185_fu_366_p2                                          |     |        | add_ln185   | add | fabric | 0       |
+|    add_ln185_1_fu_387_p2                                        |     |        | add_ln185_1 | add | fabric | 0       |
+|    sub_ln189_fu_522_p2                                          |     |        | sub_ln189   | sub | fabric | 0       |
+|    sub_ln189_1_fu_551_p2                                        |     |        | sub_ln189_1 | sub | fabric | 0       |
+|    add_ln186_fu_454_p2                                          |     |        | add_ln186   | add | fabric | 0       |
+|  + maxpool_CIF_0_2_Pipeline_VITIS_LOOP_171_10                   | 0   |        |             |     |        |         |
+|    add_ln171_fu_252_p2                                          |     |        | add_ln171   | add | fabric | 0       |
+|    add_ln178_fu_315_p2                                          |     |        | add_ln178   | add | fabric | 0       |
++-----------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+--------------+------+------+------+--------+----------+--------+---------+------------------+
+| Name              | Usage        | Type | BRAM | URAM | Pragma | Variable | Impl   | Latency | Bitwidth, Depth, |
+|                   |              |      |      |      |        |          |        |         | Banks            |
++-------------------+--------------+------+------+------+--------+----------+--------+---------+------------------+
+| + maxpool_CIF_0_2 |              |      | 0    | 0    |        |          |        |         |                  |
+|   buf_U           | ram_2p array |      |      |      | yes    | buf      | lutram | 1       | 32, 32, 1        |
+|   buf_1_U         | ram_2p array |      |      |      | yes    | buf_1    | lutram | 1       | 32, 32, 1        |
+|   buf_2_U         | ram_2p array |      |      |      | yes    | buf_2    | lutram | 1       | 32, 32, 1        |
+|   buf_3_U         | ram_2p array |      |      |      | yes    | buf_3    | lutram | 1       | 32, 32, 1        |
+|   buf_4_U         | ram_2p array |      |      |      | yes    | buf_4    | lutram | 1       | 32, 32, 1        |
+|   buf_5_U         | ram_2p array |      |      |      | yes    | buf_5    | lutram | 1       | 32, 32, 1        |
+|   buf_6_U         | ram_2p array |      |      |      | yes    | buf_6    | lutram | 1       | 32, 32, 1        |
+|   buf_7_U         | ram_2p array |      |      |      | yes    | buf_7    | lutram | 1       | 32, 32, 1        |
+|   acc_U           | ram_2p array |      |      |      | yes    | acc      | lutram | 1       | 32, 32, 1        |
++-------------------+--------------+------+------+------+--------+----------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+----------------------------------+--------------------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                          | Location                                         | Messages                                                                   |
++----------+----------------------------------+--------------------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=buf core=RAM_2P_LUTRAM  | maxPool_2.cpp:136 in maxpool_cif_0_2, buf        | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=acc core=RAM_2P_LUTRAM  | maxPool_2.cpp:138 in maxpool_cif_0_2, acc        | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT | maxPool_2.cpp:211 in maxpool_cif_0_2, KER_size_0 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT | maxPool_2.cpp:212 in maxpool_cif_0_2, KER_size_1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT  | maxPool_2.cpp:213 in maxpool_cif_0_2, KER_bound  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+----------------------------------+--------------------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+--------------------------+---------------------------------------------+
+| Type      | Options                  | Location                                    |
++-----------+--------------------------+---------------------------------------------+
+| interface | axis port=in             | maxPool_2.cpp:79 in maxpool_cif_0_2, in     |
+| interface | axis port=out            | maxPool_2.cpp:80 in maxpool_cif_0_2, out    |
+| interface | ap_ctrl_none port=return | maxPool_2.cpp:81 in maxpool_cif_0_2, return |
+| unroll    |                          | maxPool_2.cpp:141 in maxpool_cif_0_2        |
+| unroll    |                          | maxPool_2.cpp:147 in maxpool_cif_0_2        |
+| pipeline  | II=1                     | maxPool_2.cpp:162 in maxpool_cif_0_2        |
+| pipeline  | II=1                     | maxPool_2.cpp:172 in maxpool_cif_0_2        |
+| pipeline  | II=1                     | maxPool_2.cpp:187 in maxpool_cif_0_2        |
+| pipeline  | II=1                     | maxPool_2.cpp:215 in maxpool_cif_0_2        |
++-----------+--------------------------+---------------------------------------------+
+
+

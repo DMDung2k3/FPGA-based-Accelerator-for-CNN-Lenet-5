@@ -1,0 +1,607 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 473.625 ; gain = 192.402
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/downloads/.xinstall/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9980
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1343.684 ; gain = 439.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_buf_RAM_2P_LUTRAM_1R1W' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_buf_RAM_2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_buf_RAM_2P_LUTRAM_1R1W' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_buf_RAM_2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_acc_RAM_2P_LUTRAM_1R1W' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_acc_RAM_2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_acc_RAM_2P_LUTRAM_1R1W' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_acc_RAM_2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_139_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_139_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_flow_control_loop_pipe_sequential_init' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_flow_control_loop_pipe_sequential_init' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_139_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_139_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_214_13' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_214_13.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_214_13' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_214_13.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_sparsemux_9_2_32_1_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_sparsemux_9_2_32_1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_sparsemux_9_2_32_1_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_sparsemux_9_2_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_171_10' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_171_10.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_171_10' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_171_10.v:9]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_mul_31ns_32ns_63_2_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_31ns_32ns_63_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_mul_31ns_32ns_63_2_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_31ns_32ns_63_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_mul_32ns_31ns_63_2_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_32ns_31ns_63_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_mul_32ns_31ns_63_2_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_32ns_31ns_63_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_mul_32s_32s_32_1_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_mul_32s_32s_32_1_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'maxpool_CIF_0_3_regslice_both' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3_regslice_both' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'maxpool_CIF_0_3' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port reset in module maxpool_CIF_0_3_mul_32ns_31ns_63_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module maxpool_CIF_0_3_mul_31ns_32ns_63_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[31] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[30] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[29] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[28] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[27] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[26] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[25] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[24] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[23] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[22] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[21] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[20] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[19] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[18] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[17] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[16] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[15] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[14] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[13] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[12] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[11] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module maxpool_CIF_0_3_sparsemux_9_2_32_1_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module maxpool_CIF_0_3_acc_RAM_2P_LUTRAM_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module maxpool_CIF_0_3_buf_RAM_2P_LUTRAM_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1474.539 ; gain = 570.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.539 ; gain = 570.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.539 ; gain = 570.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1474.539 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/maxpool_CIF_0_3_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/maxpool_CIF_0_3_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1566.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1566.086 ; gain = 0.035
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_r_read_reg_258_reg' and it is trimmed from '64' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/f2d6/hdl/verilog/maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9.v:213]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   63 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   2 Input   31 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               63 Bit    Registers := 6     
+	               32 Bit    Registers := 28    
+	               31 Bit    Registers := 7     
+	               30 Bit    Registers := 2     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 47    
++---Multipliers : 
+	              32x33  Multipliers := 2     
+	              32x32  Multipliers := 3     
++---Muxes : 
+	   2 Input   84 Bit        Muxes := 3     
+	  85 Input   84 Bit        Muxes := 1     
+	   2 Input   83 Bit        Muxes := 2     
+	   2 Input   82 Bit        Muxes := 1     
+	   2 Input   81 Bit        Muxes := 1     
+	   2 Input   77 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 4     
+	   2 Input   32 Bit        Muxes := 13    
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 13    
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 65    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_32ns_31ns_63_2_1_U34/tmp_product, operation Mode is: A''*B.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: Generating DSP mul_32ns_31ns_63_2_1_U34/buff0_reg, operation Mode is: (PCIN>>17)+A*B''.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: Generating DSP mul_32ns_31ns_63_2_1_U34/tmp_product, operation Mode is: A2*B''.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/tmp_product.
+DSP Report: Generating DSP mul_32ns_31ns_63_2_1_U34/buff0_reg, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: register mul_32ns_31ns_63_2_1_U34/buff0_reg is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: operator mul_32ns_31ns_63_2_1_U34/tmp_product is absorbed into DSP mul_32ns_31ns_63_2_1_U34/buff0_reg.
+DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U33/tmp_product, operation Mode is: A''*B''.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U33/buff0_reg, operation Mode is: (PCIN>>17)+A2*B''.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register IFMCH_curr_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U33/tmp_product, operation Mode is: A''*B''.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/tmp_product.
+DSP Report: Generating DSP mul_31ns_32ns_63_2_1_U33/buff0_reg, operation Mode is: (PCIN>>17)+A''*B2.
+DSP Report: register IFMCH_curr_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: register mul_31ns_32ns_63_2_1_U33/buff0_reg is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+DSP Report: operator mul_31ns_32ns_63_2_1_U33/tmp_product is absorbed into DSP mul_31ns_32ns_63_2_1_U33/buff0_reg.
+WARNING: [Synth 8-7129] Port in_r_TDATA[63] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[62] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[61] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[60] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[59] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[58] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[57] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[56] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[55] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[54] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[53] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[52] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[51] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[50] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[49] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[48] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[47] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[46] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[45] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[44] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[43] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[42] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[41] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[40] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[39] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[38] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[37] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[36] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[35] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[34] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[33] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_r_TDATA[32] in module maxpool_CIF_0_3_maxpool_CIF_0_3_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[47]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[46]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[45]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[44]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[43]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[42]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[41]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[40]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[39]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[38]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[37]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[36]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[35]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[34]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[33]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[32]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[31]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[30]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[29]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[28]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[27]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[26]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[25]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[24]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[23]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[22]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[21]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[20]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[19]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[18]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[17]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[47]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[46]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[45]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[44]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[43]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[42]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[41]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[40]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[39]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[38]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[37]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[36]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[35]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[34]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[33]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[32]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[31]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[30]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[29]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[28]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[27]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[26]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[25]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[24]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[23]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[22]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[21]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[20]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[19]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[18]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_31ns_63_2_1_U34/buff0_reg[17]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[47]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[46]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[45]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[44]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[43]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[42]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[41]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[40]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[39]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[38]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[37]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[36]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[35]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[34]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[33]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[32]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[31]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[30]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[29]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[28]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[27]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[26]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[25]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[24]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[23]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[22]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[21]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[20]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[19]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[18]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[17]) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[47]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[46]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[45]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[44]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[43]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[42]__0) is unused and will be removed from module maxpool_CIF_0_3.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_32ns_63_2_1_U33/buff0_reg[41]__0) is unused and will be removed from module maxpool_CIF_0_3.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:53 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+ Sort Area is  mul_31ns_32ns_63_2_1_U33/tmp_product_6 : 0 0 : 3173 6051 : Used 1 time 0
+ Sort Area is  mul_31ns_32ns_63_2_1_U33/tmp_product_6 : 0 1 : 2878 6051 : Used 1 time 0
+ Sort Area is  mul_32ns_31ns_63_2_1_U34/tmp_product_0 : 0 0 : 3155 5904 : Used 1 time 0
+ Sort Area is  mul_32ns_31ns_63_2_1_U34/tmp_product_0 : 0 1 : 2749 5904 : Used 1 time 0
+ Sort Area is  mul_32ns_31ns_63_2_1_U34/tmp_product_3 : 0 0 : 2795 5416 : Used 1 time 0
+ Sort Area is  mul_32ns_31ns_63_2_1_U34/tmp_product_3 : 0 1 : 2621 5416 : Used 1 time 0
+ Sort Area is  mul_31ns_32ns_63_2_1_U33/tmp_product_9 : 0 0 : 2700 5337 : Used 1 time 0
+ Sort Area is  mul_31ns_32ns_63_2_1_U33/tmp_product_9 : 0 1 : 2637 5337 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+----------------+----------------------+----------------+
+|Module Name | RTL Object      | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------+----------------+----------------------+----------------+
+|inst        | buf_U/ram_reg   | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_1_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_2_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_3_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | acc_U/ram_reg   | User Attribute | 64 x 32              | RAM64X1D x 32  | 
++------------+-----------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|maxpool_CIF_0_3 | A''*B             | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17)+A*B''  | 16     | 15     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A2*B''            | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17)+A2*B'' | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A''*B''           | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17)+A2*B'' | 16     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A''*B''           | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17)+A''*B2 | 18     | 16     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 1    | 
++----------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:07 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 1566.086 ; gain = 661.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------+----------------+----------------------+----------------+
+|Module Name | RTL Object      | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------+----------------+----------------------+----------------+
+|inst        | buf_U/ram_reg   | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_1_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_2_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | buf_3_U/ram_reg | User Attribute | 64 x 32              | RAM64M x 11    | 
+|inst        | acc_U/ram_reg   | User Attribute | 64 x 32              | RAM64X1D x 32  | 
++------------+-----------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:14 . Memory (MB): peak = 1625.488 ; gain = 720.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|maxpool_CIF_0_3 | A''*B''             | 17     | 14     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17+A''*B'')' | 15     | 14     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A''*B''             | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17+A''*B'')' | 17     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A''*B'              | 17     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17+A'*B'')'  | 15     | 14     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|maxpool_CIF_0_3 | A'*B''              | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|maxpool_CIF_0_3 | (PCIN>>17+A'*B'')'  | 17     | 14     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
++----------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   452|
+|2     |DSP48E1  |     8|
+|7     |LUT1     |   150|
+|8     |LUT2     |   764|
+|9     |LUT3     |   452|
+|10    |LUT4     |   231|
+|11    |LUT5     |   156|
+|12    |LUT6     |  1529|
+|13    |RAM64M   |    44|
+|14    |RAM64X1D |    32|
+|15    |FDRE     |  2118|
+|16    |FDSE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1640.043 ; gain = 735.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:18 . Memory (MB): peak = 1640.043 ; gain = 643.984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 1640.043 ; gain = 735.531
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1652.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 536 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1655.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 44 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 28a9b154
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:33 . Memory (MB): peak = 1655.777 ; gain = 1168.207
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1655.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 78e2679314bd06c5
+INFO: [Coretcl 2-1174] Renamed 23 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1655.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 11:16:01 2024...

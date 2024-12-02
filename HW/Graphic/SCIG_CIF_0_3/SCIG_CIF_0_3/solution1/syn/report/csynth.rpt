@@ -1,0 +1,147 @@
+
+
+================================================================
+== Synthesis Summary Report of 'SCIG_CIF_0_3'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 28 13:56:51 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        SCIG_CIF_0_3
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+------------+-----+
+    |                  Modules                  |  Issue |       | Latency | Latency| Iteration|         | Trip |          |        |         |           |            |     |
+    |                  & Loops                  |  Type  | Slack | (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |     LUT    | URAM|
+    +-------------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+------------+-----+
+    |+ SCIG_CIF_0_3                             |  Timing|  -5.29|        -|       -|         -|        -|     -|        no|  8 (2%)|  2 (~0%)|  1176 (1%)|  6731 (12%)|    -|
+    | + SCIG_CIF_0_3_Pipeline_VITIS_LOOP_242_6  |       -|   1.57|        -|       -|         -|        -|     -|        no|       -|        -|   99 (~0%)|   140 (~0%)|    -|
+    |  o VITIS_LOOP_242_6                       |       -|   7.30|        -|       -|         2|        1|     -|       yes|       -|        -|          -|           -|    -|
+    | + SCIG_CIF_0_3_Pipeline_VITIS_LOOP_155_1  |  Timing|  -0.37|        -|       -|         -|        -|     -|        no|  8 (2%)|        -|  588 (~0%)|   3141 (5%)|    -|
+    |  o VITIS_LOOP_155_1                       |      II|   7.30|        -|       -|        36|       32|     -|       yes|       -|        -|          -|           -|    -|
+    +-------------------------------------------+--------+-------+---------+--------+----------+---------+------+----------+--------+---------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+-----------+---------------+-------+--------+--------+
+| Interface | Direction | Register Mode | TDATA | TREADY | TVALID |
++-----------+-----------+---------------+-------+--------+--------+
+| in_r      | in        | both          | 64    | 1      | 1      |
+| out_r     | out       | both          | 64    | 1      | 1      |
++-----------+-----------+---------------+-------+--------+--------+
+
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| padValue | ap_none | in        | 32       |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------+
+| Argument | Direction | Datatype            |
++----------+-----------+---------------------+
+| in       | in        | stream<AXI_VAL, 0>& |
+| out      | out       | stream<AXI_VAL, 0>& |
+| padValue | in        | ap_uint<32>         |
++----------+-----------+---------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
+| padValue | padValue     | port      |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                                      | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++-------------------------------------------+-----+--------+------------+-----+--------+---------+
+| + SCIG_CIF_0_3                            | 2   |        |            |     |        |         |
+|   mul_32s_32s_32_1_1_U11                  |     | yes    | KER_size_0 | mul | fabric | 0       |
+|   mul_32s_32s_32_1_1_U12                  |     | yes    | KER_size_1 | mul | fabric | 0       |
+|   mul_32s_32s_32_1_1_U13                  |     | yes    | KER_bound  | mul | fabric | 0       |
+|   mul_32s_12ns_32_2_1_U10                 | 2   |        | mul44      | mul | auto   | 1       |
+|  + SCIG_CIF_0_3_Pipeline_VITIS_LOOP_242_6 | 0   |        |            |     |        |         |
+|    i_2_fu_69_p2                           |     |        | i_2        | add | fabric | 0       |
+|  + SCIG_CIF_0_3_Pipeline_VITIS_LOOP_155_1 | 0   |        |            |     |        |         |
+|    i_4_fu_1118_p2                         |     |        | i_4        | add | fabric | 0       |
+|    inp_6_fu_1205_p2                       |     |        | inp_6      | add | fabric | 0       |
+|    inp_j_3_fu_1167_p2                     |     |        | inp_j_3    | add | fabric | 0       |
+|    inp_i_4_fu_1184_p2                     |     |        | inp_i_4    | add | fabric | 0       |
+|    add_ln193_fu_1271_p2                   |     |        | add_ln193  | add | fabric | 0       |
+|    sub_ln193_fu_1297_p2                   |     |        | sub_ln193  | sub | fabric | 0       |
+|    kx_1_fu_1311_p2                        |     |        | kx_1       | add | fabric | 0       |
+|    ky_1_fu_1331_p2                        |     |        | ky_1       | add | fabric | 0       |
+|    ox_1_fu_1356_p2                        |     |        | ox_1       | add | fabric | 0       |
+|    oy_1_fu_1386_p2                        |     |        | oy_1       | add | fabric | 0       |
++-------------------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------------+---------------+------+------+------+--------+----------+--------+---------+------------------+
+| Name                                      | Usage         | Type | BRAM | URAM | Pragma | Variable | Impl   | Latency | Bitwidth, Depth, |
+|                                           |               |      |      |      |        |          |        |         | Banks            |
++-------------------------------------------+---------------+------+------+------+--------+----------+--------+---------+------------------+
+| + SCIG_CIF_0_3                            |               |      | 8    | 0    |        |          |        |         |                  |
+|   inElem_U                                | ram_s2p array |      |      |      | yes    | inElem   | lutram | 1       | 16, 256, 1       |
+|  + SCIG_CIF_0_3_Pipeline_VITIS_LOOP_155_1 |               |      | 8    | 0    |        |          |        |         |                  |
+|    inputBuf_U                             | ram_s2p array |      | 8    |      |        | inputBuf | auto   | 1       | 16, 5120, 1      |
++-------------------------------------------+---------------+------+------+------+--------+----------+--------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+-------------------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                             | Location                                                              | Messages                                                                   |
++----------+-------------------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=IFMPadDimSqrt core=Mul_LUT | stream_convolution_slideWindow.cpp:136 in scig_cif_0_3, IFMPadDimSqrt | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=baseIterBound core=Mul_LUT | stream_convolution_slideWindow.cpp:154 in scig_cif_0_3, baseIterBound | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=inElem core=RAM_S2P_LUTRAM | stream_convolution_slideWindow.cpp:159 in scig_cif_0_3, inElem        | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_0 core=Mul_LUT    | stream_convolution_slideWindow.cpp:239 in scig_cif_0_3, KER_size_0    | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT    | stream_convolution_slideWindow.cpp:240 in scig_cif_0_3, KER_size_1    | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT     | stream_convolution_slideWindow.cpp:241 in scig_cif_0_3, KER_bound     | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+-------------------------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------+--------------------------+---------------------------------------------------------------+
+| Type      | Options                  | Location                                                      |
++-----------+--------------------------+---------------------------------------------------------------+
+| interface | axis port=in             | stream_convolution_slideWindow.cpp:68 in scig_cif_0_3, in     |
+| interface | axis port=out            | stream_convolution_slideWindow.cpp:69 in scig_cif_0_3, out    |
+| interface | ap_ctrl_none port=return | stream_convolution_slideWindow.cpp:70 in scig_cif_0_3, return |
+| pipeline  | II=1                     | stream_convolution_slideWindow.cpp:156 in scig_cif_0_3        |
+| pipeline  | II=1                     | stream_convolution_slideWindow.cpp:243 in scig_cif_0_3        |
++-----------+--------------------------+---------------------------------------------------------------+
+
+

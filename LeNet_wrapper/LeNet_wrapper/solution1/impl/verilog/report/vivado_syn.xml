@@ -1,0 +1,935 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>10.267</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>10.267</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>10.267</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>-0.267</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>-0.267</SLACK_SYNTH>
+  <TIMING_MET>FALSE</TIMING_MET>
+  <TNS_FINAL>-40.513</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>-40.513</TNS_SYNTH>
+  <WNS_FINAL>-0.267</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>-0.267</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>261</BRAM>
+    <CLB>0</CLB>
+    <DSP>85</DSP>
+    <FF>10516</FF>
+    <LATCH>0</LATCH>
+    <LUT>31352</LUT>
+    <SRL>65</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>280</BRAM>
+    <CLB>0</CLB>
+    <DSP>220</DSP>
+    <FF>106400</FF>
+    <LUT>53200</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="LeNet_wrapper" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="28">AXI_DMA_MASTER_U0 AXI_DMA_SLAVE_U0 FC_1u_500u_10u_U0 FC_1u_800u_500u_U0 SCIG_5u_1u_28u_20u_24u_0u_U0 SCIG_5u_20u_12u_50u_8u_0u_U0 SMM_1u_25u_20u_U0 SMM_1u_500u_50u_U0 connect_0_U connect_1_U connect_2_U connect_3_U connect_4_U connect_5_U connect_6_U connect_7_U connect_8_U pool_2u_20u_24u_U0 pool_2u_50u_8u_U0 start_for_AXI_DMA_MASTER_U0_U start_for_FC_1u_500u_10u_U0_U start_for_FC_1u_800u_500u_U0_U start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U start_for_SMM_1u_25u_20u_U0_U start_for_SMM_1u_500u_50u_U0_U start_for_pool_2u_20u_24u_U0_U start_for_pool_2u_50u_8u_U0_U</SubModules>
+    <Resources BRAM="261" DSP="85" FF="10516" LUT="31352" LUTRAM="984" LogicLUT="30303" RAMB18="15" RAMB36="123" SRL="65"/>
+    <LocalResources LUT="77" LogicLUT="77"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_MASTER">
+    <SubModules count="3">grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77 grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67 regslice_both_out_stream_U</SubModules>
+    <Resources FF="579" LUT="4023" LogicLUT="4023"/>
+    <LocalResources FF="437" LUT="3833" LogicLUT="3833"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_MASTER.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="36" LUT="77" LogicLUT="77"/>
+    <LocalResources FF="34" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="74" LogicLUT="74"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_MASTER.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="36" LUT="74" LogicLUT="74"/>
+    <LocalResources FF="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="74" LogicLUT="74"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_MASTER_U0/regslice_both_out_stream_U" BINDMODULE="LeNet_wrapper_regslice_both" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_MASTER.v" ORIG_REF_NAME="LeNet_wrapper_regslice_both">
+    <Resources FF="70" LUT="33" LogicLUT="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_SLAVE">
+    <SubModules count="3">grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76 grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67 regslice_both_in_stream_U</SubModules>
+    <Resources FF="573" LUT="3976" LogicLUT="3976"/>
+    <LocalResources FF="371" LUT="3768" LogicLUT="3768"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_SLAVE.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="67" LUT="66" LogicLUT="66"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="66" LogicLUT="66"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_SLAVE.v" ORIG_REF_NAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="67" LUT="64" LogicLUT="64"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/regslice_both_in_stream_U" BINDMODULE="LeNet_wrapper_regslice_both" DEPTH="2" FILE_NAME="LeNet_wrapper_AXI_DMA_SLAVE.v" ORIG_REF_NAME="LeNet_wrapper_regslice_both">
+    <Resources FF="68" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_500u_10u_s">
+    <SubModules count="7">grp_FC_1u_500u_10u_Pipeline_L2_fu_89 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82 mul_32ns_32ns_64_2_1_U387 mul_32s_32s_32_2_1_U388 mul_32s_32s_32_2_1_U389</SubModules>
+    <Resources DSP="10" FF="789" LUT="2393" LogicLUT="2393"/>
+    <LocalResources FF="608" LUT="1973" LogicLUT="1973"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_L2_fu_89" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_L2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="62" LogicLUT="62"/>
+    <LocalResources FF="33" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_L2_fu_89/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_L2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="61" LogicLUT="61"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="69" LogicLUT="69"/>
+    <LocalResources FF="33" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="66" LogicLUT="66"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="30" LUT="101" LogicLUT="101"/>
+    <LocalResources FF="28" LUT="29" LogicLUT="29"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="72" LogicLUT="72"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="13" LUT="38" LogicLUT="38"/>
+    <LocalResources FF="11" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32ns_32ns_64_2_1_U387" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+    <Resources DSP="4" FF="34" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32s_32s_32_2_1_U388" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32s_32s_32_2_1_U389" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_500u_10u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_s">
+    <SubModules count="10">A_U B_U grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94 mul_32ns_11ns_42_2_1_U365 mul_32ns_32ns_64_2_1_U364 mul_32s_32s_32_2_1_U366 mul_32s_32s_32_2_1_U367</SubModules>
+    <Resources BRAM="209" DSP="13" FF="1034" LUT="2602" LogicLUT="2598" RAMB18="1" RAMB36="104" SRL="4"/>
+    <LocalResources FF="646" LUT="1958" LogicLUT="1958"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/A_U" BINDMODULE="LeNet_wrapper_FC_1u_800u_500u_s_A_RAM_S2P_BRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_s_A_RAM_S2P_BRAM_1R1W">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/B_U" BINDMODULE="LeNet_wrapper_FC_1u_800u_500u_s_B_RAM_S2P_BRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_s_B_RAM_S2P_BRAM_1R1W">
+    <Resources BRAM="208" FF="4" LUT="25" LogicLUT="25" RAMB36="104"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_L2_L3">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_19s_10ns_10ns_19_4_1_U346 mac_muladd_8s_8s_16ns_16_4_1_U347</SubModules>
+    <Resources DSP="2" FF="142" LUT="119" LogicLUT="116" SRL="3"/>
+    <LocalResources FF="140" LUT="53" LogicLUT="50" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/mac_muladd_19s_10ns_10ns_19_4_1_U346" BINDMODULE="LeNet_wrapper_mac_muladd_19s_10ns_10ns_19_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_19s_10ns_10ns_19_4_1">
+    <Resources DSP="1" LUT="10" LogicLUT="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/mac_muladd_8s_8s_16ns_16_4_1_U347" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16ns_16_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_16ns_16_4_1">
+    <Resources DSP="1" LUT="51" LogicLUT="51"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="66" LogicLUT="66"/>
+    <LocalResources FF="33" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="63" LogicLUT="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_9ns_10ns_10ns_19_4_1_U354</SubModules>
+    <Resources DSP="1" FF="57" LUT="181" LogicLUT="180" SRL="1"/>
+    <LocalResources FF="55" LUT="60" LogicLUT="59" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114/mac_muladd_9ns_10ns_10ns_19_4_1_U354" BINDMODULE="LeNet_wrapper_mac_muladd_9ns_10ns_10ns_19_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_9ns_10ns_10ns_19_4_1">
+    <Resources DSP="1" LUT="112" LogicLUT="112"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="45" LUT="52" LogicLUT="52"/>
+    <LocalResources FF="43" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32ns_11ns_42_2_1_U365" BINDMODULE="LeNet_wrapper_mul_32ns_11ns_42_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_11ns_42_2_1">
+    <Resources FF="37" LUT="51" LogicLUT="51"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32ns_32ns_64_2_1_U364" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+    <Resources DSP="4" FF="34" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32s_32s_32_2_1_U366" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32s_32s_32_2_1_U367" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_FC_1u_800u_500u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_s">
+    <SubModules count="3">grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67 grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58 mul_32s_15ns_32_2_1_U24</SubModules>
+    <Resources BRAM="8" FF="642" LUT="2267" LogicLUT="2266" RAMB36="4" SRL="1"/>
+    <LocalResources FF="268" LUT="1896" LogicLUT="1896"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U inputBuf_U</SubModules>
+    <Resources BRAM="8" FF="310" LUT="224" LogicLUT="223" RAMB36="4" SRL="1"/>
+    <LocalResources FF="308" LUT="168" LogicLUT="167" SRL="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="13" LogicLUT="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inputBuf_U" BINDMODULE="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W">
+    <Resources BRAM="8" LUT="43" LogicLUT="43" RAMB36="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="64" LogicLUT="64"/>
+    <LocalResources FF="33" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="63" LogicLUT="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/mul_32s_15ns_32_2_1_U24" BINDMODULE="LeNet_wrapper_mul_32s_15ns_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_15ns_32_2_1">
+    <Resources FF="29" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s">
+    <SubModules count="4">grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79 grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70 inElem_U mul_32s_12ns_32_2_1_U187</SubModules>
+    <Resources BRAM="8" FF="880" LUT="2726" LUTRAM="12" LogicLUT="2714" RAMB36="4"/>
+    <LocalResources FF="268" LUT="1895" LogicLUT="1895"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1">
+    <SubModules count="2">flow_control_loop_pipe_sequential_init_U inputBuf_U</SubModules>
+    <Resources BRAM="8" FF="540" LUT="717" LogicLUT="717" RAMB36="4"/>
+    <LocalResources FF="538" LUT="353" LogicLUT="353"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79/inputBuf_U" BINDMODULE="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W">
+    <Resources BRAM="8" LUT="352" LogicLUT="352" RAMB36="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="65" LogicLUT="65"/>
+    <LocalResources FF="33" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/inElem_U" BINDMODULE="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s_inElem_RAM_S2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s_inElem_RAM_S2P_LUTRAM_1R1W">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/mul_32s_12ns_32_2_1_U187" BINDMODULE="LeNet_wrapper_mul_32s_12ns_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_12ns_32_2_1">
+    <Resources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s">
+    <SubModules count="21">grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176 mul_32ns_32ns_64_2_1_U104 mul_32s_32s_32_2_1_U105 mul_32s_32s_32_2_1_U106 void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U</SubModules>
+    <Resources BRAM="7" DSP="16" FF="1021" LUT="2738" LUTRAM="56" LogicLUT="2662" RAMB18="7" SRL="20"/>
+    <LocalResources FF="608" LUT="1938" LogicLUT="1938"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3">
+    <SubModules count="14">flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_16s_17_4_1_U58 mac_muladd_8s_8s_16s_17_4_1_U59 mac_muladd_8s_8s_17s_17_4_1_U60 mac_muladd_8s_8s_17s_17_4_1_U61 mul_4ns_6ns_9_1_1_U41 mul_4ns_6ns_9_1_1_U42 mul_5ns_7ns_11_1_1_U43 sparsemux_9_2_8_1_1_U50 sparsemux_9_2_8_1_1_U51 sparsemux_9_2_8_1_1_U52 sparsemux_9_2_8_1_1_U53 sparsemux_9_2_8_1_1_U54 sparsemux_9_2_8_1_1_U55</SubModules>
+    <Resources DSP="6" FF="168" LUT="330" LogicLUT="327" SRL="3"/>
+    <LocalResources FF="166" LUT="232" LogicLUT="229" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_16s_17_4_1_U58" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+    <Resources DSP="2" LUT="16" LogicLUT="16"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_16s_17_4_1_U59" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+    <Resources DSP="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_17s_17_4_1_U60" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+    <Resources DSP="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_17s_17_4_1_U61" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+    <Resources DSP="1" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_4ns_6ns_9_1_1_U41" BINDMODULE="LeNet_wrapper_mul_4ns_6ns_9_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mul_4ns_6ns_9_1_1">
+    <Resources LUT="12" LogicLUT="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_4ns_6ns_9_1_1_U42" BINDMODULE="LeNet_wrapper_mul_4ns_6ns_9_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mul_4ns_6ns_9_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_5ns_7ns_11_1_1_U43" BINDMODULE="LeNet_wrapper_mul_5ns_7ns_11_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mul_5ns_7ns_11_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U50" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U51" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U52" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U53" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U54" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U55" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+    <Resources LUT="8" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="27" LUT="70" LogicLUT="70"/>
+    <LocalResources FF="25" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="23" LogicLUT="23"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="70" LogicLUT="70"/>
+    <LocalResources FF="33" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="66" LogicLUT="66"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_5ns_7ns_11_1_1_U87 urem_5ns_4ns_3_9_1_U88</SubModules>
+    <Resources FF="59" LUT="124" LogicLUT="107" SRL="17"/>
+    <LocalResources FF="45" LUT="64" LogicLUT="55" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="45" LogicLUT="45"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/mul_5ns_7ns_11_1_1_U87" BINDMODULE="LeNet_wrapper_mul_5ns_7ns_11_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_mul_5ns_7ns_11_1_1">
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/urem_5ns_4ns_3_9_1_U88" BINDMODULE="LeNet_wrapper_urem_5ns_4ns_3_9_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_urem_5ns_4ns_3_9_1">
+    <Resources FF="12" LUT="15" LogicLUT="7" SRL="8"/>
+    <LocalResources LUT="3" SRL="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32ns_32ns_64_2_1_U104" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+    <Resources DSP="4" FF="34" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32s_32s_32_2_1_U105" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32s_32s_32_2_1_U106" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+    <Resources FF="8" LUT="8" LUTRAM="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_25u_20u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+    <Resources BRAM="1" RAMB18="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s">
+    <SubModules count="30">grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216 mul_32ns_32ns_64_2_1_U294 mul_32ns_8ns_39_2_1_U295 mul_32s_32s_32_2_1_U296 mul_32s_32s_32_2_1_U297 p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U</SubModules>
+    <Resources BRAM="22" DSP="30" FF="1232" LUT="3655" LUTRAM="132" LogicLUT="3483" RAMB36="11" SRL="40"/>
+    <LocalResources FF="615" LUT="1940" LogicLUT="1940"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3">
+    <SubModules count="9">am_addmul_7ns_7ns_9ns_17_4_1_U229 am_addmul_7ns_8ns_10ns_19_4_1_U228 flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_16s_17_4_1_U230 mac_muladd_8s_8s_16s_17_4_1_U231 mac_muladd_8s_8s_17s_17_4_1_U232 mac_muladd_8s_8s_17s_17_4_1_U233 mul_9ns_11ns_19_1_1_U213 urem_7ns_5ns_4_11_1_U208</SubModules>
+    <Resources DSP="18" FF="243" LUT="1022" LogicLUT="1005" SRL="17"/>
+    <LocalResources DSP="9" FF="226" LUT="539" LogicLUT="526" SRL="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/am_addmul_7ns_7ns_9ns_17_4_1_U229" BINDMODULE="LeNet_wrapper_am_addmul_7ns_7ns_9ns_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_am_addmul_7ns_7ns_9ns_17_4_1">
+    <Resources DSP="1" LUT="65" LogicLUT="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/am_addmul_7ns_8ns_10ns_19_4_1_U228" BINDMODULE="LeNet_wrapper_am_addmul_7ns_8ns_10ns_19_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_am_addmul_7ns_8ns_10ns_19_4_1">
+    <Resources DSP="1" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_16s_17_4_1_U230" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+    <Resources DSP="2" LUT="120" LogicLUT="120"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_16s_17_4_1_U231" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+    <Resources DSP="2" LUT="128" LogicLUT="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_17s_17_4_1_U232" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+    <Resources DSP="1" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_17s_17_4_1_U233" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+    <Resources DSP="1" LUT="41" LogicLUT="41"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mul_9ns_11ns_19_1_1_U213" BINDMODULE="LeNet_wrapper_mul_9ns_11ns_19_1_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_mul_9ns_11ns_19_1_1">
+    <Resources DSP="1" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/urem_7ns_5ns_4_11_1_U208" BINDMODULE="LeNet_wrapper_urem_7ns_5ns_4_11_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3.v" ORIG_REF_NAME="LeNet_wrapper_urem_7ns_5ns_4_11_1">
+    <Resources FF="15" LUT="25" LogicLUT="21" SRL="4"/>
+    <LocalResources LUT="4" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="45" LUT="85" LogicLUT="85"/>
+    <LocalResources FF="43" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="46" LogicLUT="46"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="63" LogicLUT="63"/>
+    <LocalResources FF="33"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="63" LogicLUT="63"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2">
+    <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_6ns_6ns_6ns_12_4_1_U273 urem_9ns_5ns_4_13_1_U271</SubModules>
+    <Resources DSP="2" FF="99" LUT="178" LogicLUT="155" SRL="23"/>
+    <LocalResources DSP="1" FF="58" LUT="58" LogicLUT="48" SRL="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="59" LogicLUT="59"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/mac_muladd_6ns_6ns_6ns_12_4_1_U273" BINDMODULE="LeNet_wrapper_mac_muladd_6ns_6ns_6ns_12_4_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_mac_muladd_6ns_6ns_6ns_12_4_1">
+    <Resources DSP="1" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/urem_9ns_5ns_4_13_1_U271" BINDMODULE="LeNet_wrapper_urem_9ns_5ns_4_13_1" DEPTH="3" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2.v" ORIG_REF_NAME="LeNet_wrapper_urem_9ns_5ns_4_13_1">
+    <Resources FF="39" LUT="54" LogicLUT="41" SRL="13"/>
+    <LocalResources LUT="4" SRL="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32ns_32ns_64_2_1_U294" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+    <Resources DSP="4" FF="34" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32ns_8ns_39_2_1_U295" BINDMODULE="LeNet_wrapper_mul_32ns_8ns_39_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_8ns_39_2_1">
+    <Resources FF="39" LUT="69" LogicLUT="69"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32s_32s_32_2_1_U296" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="80" LogicLUT="80"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32s_32s_32_2_1_U297" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+    <Resources DSP="3" FF="17" LUT="18" LogicLUT="18"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="16" LUTRAM="12" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="16" LUTRAM="12" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="12" LUTRAM="12"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="16" LUTRAM="12" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+    <Resources FF="8" LUT="16" LUTRAM="12" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" FILE_NAME="LeNet_wrapper_SMM_1u_500u_50u_s.v" ORIG_REF_NAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_0_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="47" LogicLUT="47" RAMB18="1"/>
+    <LocalResources FF="29" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_1_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="43" LogicLUT="43" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_2_U" BINDMODULE="LeNet_wrapper_fifo_w32_d2_S" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d2_S">
+    <Resources FF="69" LUT="39" LogicLUT="39"/>
+    <LocalResources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_3_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="44" LogicLUT="44" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_4_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="43" LogicLUT="43" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_5_U" BINDMODULE="LeNet_wrapper_fifo_w32_d2_S" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d2_S">
+    <Resources FF="69" LUT="40" LogicLUT="40"/>
+    <LocalResources FF="5" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_6_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="43" LogicLUT="43" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_7_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="35" LogicLUT="35" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/connect_8_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_fifo_w32_d50_A">
+    <Resources BRAM="1" FF="29" LUT="45" LogicLUT="45" RAMB18="1"/>
+    <LocalResources FF="29" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s">
+    <SubModules count="20">acc_U buf_10_U buf_11_U buf_1_U buf_2_U buf_3_U buf_4_U buf_5_U buf_6_U buf_7_U buf_8_U buf_9_U buf_U grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400 mul_31ns_32ns_63_2_1_U168 mul_32ns_31ns_63_2_1_U169</SubModules>
+    <Resources DSP="8" FF="1807" LUT="3331" LUTRAM="416" LogicLUT="2915"/>
+    <LocalResources FF="839" LUT="1982" LogicLUT="1982"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/acc_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_acc_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_acc_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="64" LUT="177" LUTRAM="128" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_10_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="25" LUTRAM="24" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_11_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="72" LUTRAM="24" LogicLUT="48"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_1_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="24" LUTRAM="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_2_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="24" LUTRAM="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_3_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="61" LUTRAM="24" LogicLUT="37"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_4_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="24" LUTRAM="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_5_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="24" LUTRAM="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_6_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="24" LUTRAM="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_7_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="69" LUTRAM="24" LogicLUT="45"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_8_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="25" LUTRAM="24" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_9_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="27" LUTRAM="24" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="25" LUTRAM="24" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="7" LUT="17" LogicLUT="17"/>
+    <LocalResources FF="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="17" LogicLUT="17"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="180" LUT="207" LogicLUT="207"/>
+    <LocalResources FF="178" LUT="201" LogicLUT="201"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="84" LUT="76" LogicLUT="76"/>
+    <LocalResources FF="82" LUT="57" LogicLUT="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="146" LUT="274" LogicLUT="274"/>
+    <LocalResources FF="144" LUT="269" LogicLUT="269"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="68" LogicLUT="68"/>
+    <LocalResources FF="33" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="65" LogicLUT="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/mul_31ns_32ns_63_2_1_U168" BINDMODULE="LeNet_wrapper_mul_31ns_32ns_63_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_31ns_32ns_63_2_1">
+    <Resources DSP="4" FF="34" LUT="56" LogicLUT="56"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_20u_24u_U0/mul_32ns_31ns_63_2_1_U169" BINDMODULE="LeNet_wrapper_mul_32ns_31ns_63_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_20u_24u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_31ns_63_2_1">
+    <Resources DSP="4" FF="34" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s">
+    <SubModules count="12">acc_U buf_1_U buf_2_U buf_3_U buf_U grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660 mul_31ns_32ns_63_2_1_U334 mul_32ns_31ns_63_2_1_U335</SubModules>
+    <Resources DSP="8" FF="1582" LUT="3141" LUTRAM="368" LogicLUT="2773"/>
+    <LocalResources FF="867" LUT="1983" LogicLUT="1983"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/acc_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_acc_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s_acc_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="64" LUT="306" LUTRAM="192" LogicLUT="114"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_1_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="52" LUTRAM="44" LogicLUT="8"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_2_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="44" LUTRAM="44"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_3_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="44" LUTRAM="44"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+    <Resources FF="32" LUT="68" LUTRAM="44" LogicLUT="24"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="8" LUT="19" LogicLUT="19"/>
+    <LocalResources FF="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="19" LogicLUT="19"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="182" LUT="208" LogicLUT="208"/>
+    <LocalResources FF="180" LUT="202" LogicLUT="202"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="6" LogicLUT="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="87" LUT="74" LogicLUT="74"/>
+    <LocalResources FF="85" LUT="49" LogicLUT="49"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="25" LogicLUT="25"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="143" LUT="168" LogicLUT="168"/>
+    <LocalResources FF="141" LUT="163" LogicLUT="163"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="35" LUT="68" LogicLUT="68"/>
+    <LocalResources FF="33" LUT="3" LogicLUT="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13.v" ORIG_REF_NAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="65" LogicLUT="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/mul_31ns_32ns_63_2_1_U334" BINDMODULE="LeNet_wrapper_mul_31ns_32ns_63_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_31ns_32ns_63_2_1">
+    <Resources DSP="4" FF="34" LUT="57" LogicLUT="57"/>
+  </RtlModule>
+  <RtlModule CELL="inst/pool_2u_50u_8u_U0/mul_32ns_31ns_63_2_1_U335" BINDMODULE="LeNet_wrapper_mul_32ns_31ns_63_2_1" DEPTH="2" FILE_NAME="LeNet_wrapper_pool_2u_50u_8u_s.v" ORIG_REF_NAME="LeNet_wrapper_mul_32ns_31ns_63_2_1">
+    <Resources DSP="4" FF="34" LUT="47" LogicLUT="47"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_AXI_DMA_MASTER_U0_U" BINDMODULE="LeNet_wrapper_start_for_AXI_DMA_MASTER_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_AXI_DMA_MASTER_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_FC_1u_500u_10u_U0_U" BINDMODULE="LeNet_wrapper_start_for_FC_1u_500u_10u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_FC_1u_500u_10u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_FC_1u_800u_500u_U0_U" BINDMODULE="LeNet_wrapper_start_for_FC_1u_800u_500u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_FC_1u_800u_500u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SCIG_5u_1u_28u_20u_24u_0u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_SCIG_5u_1u_28u_20u_24u_0u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SCIG_5u_20u_12u_50u_8u_0u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_SCIG_5u_20u_12u_50u_8u_0u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_SMM_1u_25u_20u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SMM_1u_25u_20u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_SMM_1u_25u_20u_U0">
+    <Resources FF="4" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_SMM_1u_500u_50u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SMM_1u_500u_50u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_SMM_1u_500u_50u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_pool_2u_20u_24u_U0_U" BINDMODULE="LeNet_wrapper_start_for_pool_2u_20u_24u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_pool_2u_20u_24u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/start_for_pool_2u_50u_8u_U0_U" BINDMODULE="LeNet_wrapper_start_for_pool_2u_50u_8u_U0" DEPTH="1" FILE_NAME="LeNet_wrapper.v" ORIG_REF_NAME="LeNet_wrapper_start_for_pool_2u_50u_8u_U0">
+    <Resources FF="4" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/LeNet_wrapper_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/LeNet_wrapper_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/LeNet_wrapper_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/LeNet_wrapper_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/LeNet_wrapper_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/LeNet_wrapper_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

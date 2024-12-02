@@ -1,0 +1,1115 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Oct 28 14:12:54 2024
+# Process ID: 17444
+# Current directory: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: XoiXoi, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 12766 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 471.383 ; gain = 189.188
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/downloads/.xinstall/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17176
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1345.242 ; gain = 439.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W.dat' is read successfully [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W.dat' is read successfully [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_flow_control_loop_pipe_sequential_init' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_flow_control_loop_pipe_sequential_init' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mul_16s_16s_32_1_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mul_16s_16s_32_1_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_16s_16s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_urem_7ns_3ns_7_11_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_urem_7ns_3ns_7_11_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:68]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mul_7ns_9ns_15_1_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_7ns_9ns_15_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mul_7ns_9ns_15_1_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_7ns_9ns_15_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mul_32ns_32ns_64_2_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32ns_32ns_64_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mul_32ns_32ns_64_2_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32ns_32ns_64_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mul_32s_32s_32_2_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mul_32s_32s_32_2_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_mul_32s_32s_32_1_1' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_mul_32s_32s_32_1_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mul_32s_32s_32_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'SMM_CIF_0_1_regslice_both' [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1_regslice_both' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'SMM_CIF_0_1' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element loop[6].divisor_tmp_reg[7] was removed.  [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:52]
+WARNING: [Synth 8-6014] Unused sequential element quot_reg was removed.  [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:122]
+WARNING: [Synth 8-7129] Port reset in module SMM_CIF_0_1_mul_32s_32s_32_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module SMM_CIF_0_1_mul_32ns_32ns_64_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[63] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[62] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[61] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[60] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[59] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[58] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[57] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[56] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[55] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[54] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[53] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[52] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[51] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[50] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[49] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[48] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[47] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[46] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[45] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[44] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[43] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[42] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[41] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[40] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[39] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[38] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[37] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[36] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[35] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[34] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[33] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[32] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[31] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[30] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[29] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[28] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[27] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[26] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[25] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[24] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[23] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[22] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[21] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[20] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[19] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[18] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[17] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[16] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module SMM_CIF_0_1_SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1495.406 ; gain = 590.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.406 ; gain = 590.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1495.406 ; gain = 590.023
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.246 . Memory (MB): peak = 1495.406 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/SMM_CIF_0_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/SMM_CIF_0_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1591.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 1591.105 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[5].remd_tmp_reg[6]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[4].remd_tmp_reg[5]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[3].remd_tmp_reg[4]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[2].remd_tmp_reg[3]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[1].remd_tmp_reg[2]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'loop[0].remd_tmp_reg[1]' and it is trimmed from '7' to '6' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_urem_7ns_3ns_7_11_1.v:51]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   34 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 4     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 7     
+	   2 Input    7 Bit       Adders := 3     
+	   4 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 8     
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 37    
+	               31 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               18 Bit    Registers := 16    
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 79    
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 20    
+	                6 Bit    Registers := 18    
+	                5 Bit    Registers := 21    
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 156   
++---Multipliers : 
+	              33x33  Multipliers := 1     
+	              32x32  Multipliers := 5     
++---RAMs : 
+	               1K Bit	(96 X 16 bit)          RAMs := 25    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   31 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 3     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 27    
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 8     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 40    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '32' bits. [d:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/2fd7/hdl/verilog/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v:34]
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_load_reg_1942_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_load_reg_1947_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_23_reg_2172_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U36/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U51/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_load_reg_1962_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_load_reg_1967_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_1_reg_2147_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U31/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U49/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_load_reg_1842_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_load_reg_1847_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_12_reg_2097_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U29/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U47/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_load_reg_1862_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_load_reg_1867_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_3_reg_2092_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U28/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U45/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_43_reg_2002_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_B_44_reg_2007_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_10_reg_2162_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U34/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U52/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_load_reg_2022_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_load_reg_2027_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_5_reg_2157_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U33/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U50/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_49_reg_2052_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_B_50_reg_2057_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_22_reg_2167_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U35/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_load_reg_1882_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_load_reg_1887_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_24_reg_2102_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U30/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/m is absorbed into DSP mac_muladd_16s_16s_32ns_32_4_1_U46/SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (PCIN+(A2*B2)')'.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_53_reg_2072_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register SMM_CIF_0_1_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_B_54_reg_2077_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mul_ln163_2_reg_2152_reg is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mul_16s_16s_32_1_1_U32/tmp_product is absorbed into DSP mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP trunc_ln_reg_974_reg, operation Mode is: ((A:0xab)*B)'.
+DSP Report: register trunc_ln_reg_974_reg is absorbed into DSP trunc_ln_reg_974_reg.
+DSP Report: operator mul_7ns_9ns_15_1_1_U111/tmp_product is absorbed into DSP trunc_ln_reg_974_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U150/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U150/buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U150/buff0_reg is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U150/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: register mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U150/buff0_reg, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register mul_32s_32s_32_2_1_U150/buff0_reg is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: register mul_32s_32s_32_2_1_U150/buff0_reg is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U150/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U150/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U149/tmp_product, operation Mode is: A*B.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U149/buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U149/buff0_reg is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U149/tmp_product, operation Mode is: A*B.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/tmp_product.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/tmp_product.
+DSP Report: Generating DSP mul_32s_32s_32_2_1_U149/buff0_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32s_32s_32_2_1_U149/buff0_reg is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: operator mul_32s_32s_32_2_1_U149/tmp_product is absorbed into DSP mul_32s_32s_32_2_1_U149/buff0_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U148/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U148/buff0_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register reg_468_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/buff0_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U148/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U148/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register reg_468_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/buff0_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U148/buff0_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U148/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U148/buff0_reg.
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[63] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[62] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[61] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[60] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[59] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[58] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[57] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[56] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[55] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[54] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[53] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[52] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[51] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[50] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[49] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[48] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[47] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[46] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[45] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[44] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[43] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[42] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[41] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[40] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[39] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[38] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[37] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[36] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[35] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[34] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[33] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[32] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[31] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[30] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[29] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[28] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[27] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[26] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[25] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[24] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[23] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[22] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[21] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[20] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_a_TDATA[19] in module SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[47]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[46]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[45]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[44]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[43]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[42]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[41]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[40]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[39]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[38]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[37]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[36]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[35]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[34]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[33]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[32]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[31]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[30]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[29]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[28]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[27]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[26]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[25]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[24]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[23]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[22]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[21]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[20]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[19]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[18]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[17]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[16]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[15]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[47]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[46]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[45]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[44]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[43]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[42]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[41]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[40]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[39]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[38]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[37]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[36]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[35]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[34]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[33]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[32]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[31]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[30]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[29]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[28]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[27]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[26]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[25]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[24]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[23]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[22]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[21]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[20]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[19]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[18]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U150/buff0_reg[17]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[47]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[46]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[45]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[44]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[43]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[42]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[41]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[40]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[39]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[38]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[37]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[36]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[35]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[34]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[33]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[32]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[31]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[30]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[29]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[28]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[27]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[26]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[25]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[24]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[23]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[22]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[21]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[20]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[19]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[18]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[17]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[16]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[15]) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[47]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[46]__0) is unused and will be removed from module SMM_CIF_0_1.
+WARNING: [Synth 8-3332] Sequential element (mul_32s_32s_32_2_1_U149/buff0_reg[45]__0) is unused and will be removed from module SMM_CIF_0_1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:01:14 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_3 : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_3 : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U37/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_3 : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_9 : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_9 : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U38/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_9 : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_8 : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_8 : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U39/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_8 : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_7 : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_7 : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U40/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_7 : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_b : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_b : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U41/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_b : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_6 : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_6 : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U42/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_6 : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_a : 0 0 : 2330 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_a : 0 1 : 2128 6915 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U44/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_a : 0 2 : 2457 6915 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U148/tmp_product_19 : 0 0 : 3137 5997 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U148/tmp_product_19 : 0 1 : 2860 5997 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U150/tmp_product_e : 0 0 : 3137 5856 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U150/tmp_product_e : 0 1 : 2719 5856 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U148/tmp_product_1b : 0 0 : 2777 5500 : Used 1 time 0
+ Sort Area is  mul_32ns_32ns_64_2_1_U148/tmp_product_1b : 0 1 : 2723 5500 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U150/tmp_product_11 : 0 0 : 2652 5185 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U150/tmp_product_11 : 0 1 : 2533 5185 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U149/tmp_product_14 : 0 0 : 2701 4912 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U149/tmp_product_14 : 0 1 : 2211 4912 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U149/tmp_product_17 : 0 0 : 2158 4691 : Used 1 time 0
+ Sort Area is  mul_32s_32s_32_2_1_U149/tmp_product_17 : 0 1 : 2533 4691 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_5 : 0 0 : 2330 4458 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U43/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_5 : 0 1 : 2128 4458 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_0 : 0 0 : 2330 4458 : Used 1 time 0
+ Sort Area is  mac_muladd_16s_16s_32s_32_4_1_U48/SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0_U/m_reg_reg_0 : 0 1 : 2128 4458 : Used 1 time 0
+ Sort Area is  trunc_ln_reg_974_reg_c : 0 0 : 253 253 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U/ram_reg        | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name | RTL Object                                                       | Inference      | Size (Depth x Width) | Primitives  | 
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_U/ram_reg        | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                        | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A2*B2)')' | 17     | 17     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A2*B2)'         | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A2*B2)')' | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2 | ((A:0xab)*B)'    | 8      | 9      | -      | -      | 14     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|SMM_CIF_0_1                                                        | A2*B             | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A2*B  | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A*B              | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A*B   | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A*B   | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A*B2  | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17)+A2*B2 | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:29 . Memory (MB): peak = 1591.105 ; gain = 685.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:01:35 . Memory (MB): peak = 1608.070 ; gain = 702.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U/ram_reg        | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U/ram_reg     | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U/ram_reg | 96 x 16(READ_FIRST)    | W |   | 96 x 16(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name | RTL Object                                                       | Inference      | Size (Depth x Width) | Primitives  | 
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_U/ram_reg        | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_U/ram_reg      | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
+|inst        | p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_U/ram_reg | User Attribute | 4 x 16               | RAM32M x 3  | 
++------------+------------------------------------------------------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:41 . Memory (MB): peak = 1670.074 ; gain = 764.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:50 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:50 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:50 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:50 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:51 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:51 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271/icmp_ln160_1_reg_1577_pp0_iter9_reg_reg[0]                                                                                    | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271/icmp_ln160_reg_1562_pp0_iter8_reg_reg[0]                                                                                      | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271/valOut_last_reg_1581_pp0_iter9_reg_reg[0]                                                                                     | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271/ap_loop_exit_ready_pp0_iter9_reg_reg                                                                                          | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_7ns_3ns_7_11_1_U110/SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider_u/loop[1].dividend_tmp_reg[2][6] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_7ns_3ns_7_11_1_U110/SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider_u/loop[2].dividend_tmp_reg[3][6] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_7ns_3ns_7_11_1_U110/SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider_u/loop[3].dividend_tmp_reg[4][6] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_7ns_3ns_7_11_1_U110/SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider_u/loop[4].dividend_tmp_reg[5][6] | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_7ns_3ns_7_11_1_U110/SMM_CIF_0_1_urem_7ns_3ns_7_11_1_divider_u/loop[5].dividend_tmp_reg[6][6] | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/select_ln104_1_reg_954_pp0_iter10_reg_reg[5]                                                      | 11     | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/urem_ln105_reg_1016_reg[6]                                                                        | 3      | 7     | NO           | NO                 | YES               | 7      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/trunc_ln_reg_974_pp0_iter9_reg_reg[4]                                                             | 8      | 5     | NO           | NO                 | YES               | 5      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/or_ln108_reg_978_pp0_iter9_reg_reg[0]                                                             | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/trunc_ln110_reg_987_pp0_iter10_reg_reg[15]                                                        | 10     | 16    | NO           | NO                 | YES               | 16     | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/ap_loop_exit_ready_pp0_iter10_reg_reg                                                             | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|SMM_CIF_0_1 | grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380/trunc_ln104_reg_959_pp0_iter10_reg_reg[0]                                                         | 11     | 4     | NO           | NO                 | YES               | 4      | 0       | 
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                        | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32ns_32_4_1_DSP48_1                 | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0                  | (A'*B'')'         | 30     | 18     | -      | -      | 0      | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_L2_L3                             | (PCIN+(A'*B'')')' | 30     | 18     | -      | -      | 32     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2 | ((A*B)')'         | 7      | 8      | -      | -      | 14     | 0    | 0    | -    | -    | -     | 1    | 1    | 
+|SMM_CIF_0_1                                                        | A'*B'             | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17+A'*B')' | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17+A'*B')' | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | (A*B)'            | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A*B               | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17+A*B)'   | 0      | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | (A'*B')'          | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|SMM_CIF_0_1                                                        | A'*B'             | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|SMM_CIF_0_1                                                        | (PCIN>>17+A'*B')' | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   457|
+|2     |DSP48E1  |    36|
+|10    |LUT1     |   184|
+|11    |LUT2     |  1183|
+|12    |LUT3     |   629|
+|13    |LUT4     |   356|
+|14    |LUT5     |   237|
+|15    |LUT6     |  1338|
+|16    |RAM32M   |    75|
+|17    |RAMB18E1 |    25|
+|18    |SRL16E   |    45|
+|19    |FDRE     |  1856|
+|20    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:51 . Memory (MB): peak = 1684.875 ; gain = 779.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 277 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:39 . Memory (MB): peak = 1684.875 ; gain = 683.793
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:01:51 . Memory (MB): peak = 1684.875 ; gain = 779.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.228 . Memory (MB): peak = 1696.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 593 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1700.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 75 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 75 instances
+
+Synth Design complete | Checksum: 45db387
+INFO: [Common 17-83] Releasing license: Synthesis
+91 Infos, 247 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:02:04 . Memory (MB): peak = 1700.582 ; gain = 1215.066
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1700.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = e492e8c95e1e72b0
+INFO: [Coretcl 2-1174] Renamed 101 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1700.582 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 14:15:21 2024...

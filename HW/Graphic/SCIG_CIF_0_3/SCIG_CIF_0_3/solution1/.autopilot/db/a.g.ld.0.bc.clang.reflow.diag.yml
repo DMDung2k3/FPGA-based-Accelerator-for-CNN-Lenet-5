@@ -1,0 +1,112 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 169, 
+                   Column: 24 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_169_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 162, 
+                   Column: 24 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_162_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 176, 
+                   Column: 23 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_176_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 197, 
+                   Column: 23 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_197_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 66, 
+                   Column: 0 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_169_3
+  - String:          ''' ('
+  - LoopLoc:         'stream_convolution_slideWindow.cpp:169:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          SCIG_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 66, 
+                   Column: 0 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_162_2
+  - String:          ''' ('
+  - LoopLoc:         'stream_convolution_slideWindow.cpp:162:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          SCIG_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 66, 
+                   Column: 0 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_176_4
+  - String:          ''' ('
+  - LoopLoc:         'stream_convolution_slideWindow.cpp:176:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          SCIG_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: stream_convolution_slideWindow.cpp, Line: 66, 
+                   Column: 0 }
+Function:        _Z12SCIG_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_7ap_uintILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_197_5
+  - String:          ''' ('
+  - LoopLoc:         'stream_convolution_slideWindow.cpp:197:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          SCIG_CIF_0_3
+  - String:          ''' completely with a factor of '
+  - Factor:          '32'
+...

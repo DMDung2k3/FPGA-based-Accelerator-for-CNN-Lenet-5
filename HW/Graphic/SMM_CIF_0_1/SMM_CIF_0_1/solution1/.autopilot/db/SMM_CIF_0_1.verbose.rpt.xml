@@ -1,0 +1,391 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'SMM_CIF_0_1'" level="0">
+<item name = "Date">Mon Oct 28 14:09:58 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">SMM_CIF_0_1</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 12.592 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_214">SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6, 77, 77, 0.770 us, 0.770 us, 77, 77, no</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271">SMM_CIF_0_1_Pipeline_L2_L3, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380">SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2, 2412, 2412, 24.491 us, 24.491 us, 2412, 2412, no</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442">SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7, ?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_128_3_VITIS_LOOP_136_4">?, ?, ?, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 682, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 35, 2412, 6025, -</column>
+<column name="Memory">25, -, 800, 25, -</column>
+<column name="Multiplexer">-, -, -, 1623, -</column>
+<column name="Register">-, -, 868, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">8, 15, 3, 15, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271">SMM_CIF_0_1_Pipeline_L2_L3, 0, 25, 1096, 881, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380">SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2, 0, 0, 692, 1122, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_214">SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6, 0, 0, 30, 606, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442">SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7, 0, 0, 99, 140, 0</column>
+<column name="mul_32ns_32ns_64_2_1_U148">mul_32ns_32ns_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_32_1_1_U151">mul_32s_32s_32_1_1, 0, 0, 0, 1042, 0</column>
+<column name="mul_32s_32s_32_1_1_U152">mul_32s_32s_32_1_1, 0, 0, 0, 1042, 0</column>
+<column name="mul_32s_32s_32_1_1_U153">mul_32s_32s_32_1_1, 0, 0, 0, 1042, 0</column>
+<column name="mul_32s_32s_32_2_1_U149">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
+<column name="mul_32s_32s_32_2_1_U150">mul_32s_32s_32_2_1, 0, 3, 165, 50, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_RAM_S2P_LUTRAM_1R1W, 0, 32, 1, 0, 3, 16, 1, 48</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U">SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_S2P_BRAM_1R1W, 1, 0, 0, 0, 96, 16, 1, 1536</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln128_fu_611_p2">+, 0, 0, 71, 64, 1</column>
+<column name="add_ln136_fu_676_p2">+, 0, 0, 38, 31, 1</column>
+<column name="grp_fu_473_p2">+, 0, 0, 39, 32, 2</column>
+<column name="num_imag_2_fu_620_p2">+, 0, 0, 39, 32, 1</column>
+<column name="sub151_fu_561_p2">+, 0, 0, 39, 32, 2</column>
+<column name="sub154_fu_567_p2">+, 0, 0, 39, 32, 2</column>
+<column name="sub_fu_711_p2">+, 0, 0, 39, 32, 2</column>
+<column name="bound4_fu_584_p2">-, 0, 0, 41, 34, 34</column>
+<column name="ap_block_state13_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op174_call_state13">and, 0, 0, 2, 1, 1</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442_out_stream_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="cmp155_not27_fu_631_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="cmp155_not_mid1_fu_626_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln128_fu_606_p2">icmp, 0, 0, 71, 64, 64</column>
+<column name="icmp_ln136_fu_600_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="icmp_ln168_fu_664_p2">icmp, 0, 0, 39, 32, 32</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln168_fu_670_p2">or, 0, 0, 2, 1, 1</column>
+<column name="iter_3_fu_682_p3">select, 0, 0, 31, 1, 31</column>
+<column name="select_ln128_1_fu_644_p3">select, 0, 0, 31, 1, 31</column>
+<column name="select_ln128_2_fu_656_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln128_fu_636_p3">select, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_we1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_ce0">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_ce1">9, 2, 1, 2</column>
+<column name="SMM_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_we1">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">125, 28, 1, 28</column>
+<column name="grp_fu_455_p0">14, 3, 32, 96</column>
+<column name="grp_fu_455_p1">14, 3, 32, 96</column>
+<column name="in_stream_a_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="in_stream_a_TREADY_int_regslice">25, 5, 1, 5</column>
+<column name="indvar_flatten13_fu_196">9, 2, 64, 128</column>
+<column name="iter_fu_188">9, 2, 31, 62</column>
+<column name="num_imag_fu_192">9, 2, 32, 64</column>
+<column name="out_stream_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="out_stream_TDATA_int_regslice">25, 5, 64, 320</column>
+<column name="out_stream_TVALID_int_regslice">25, 5, 1, 5</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_12_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_22_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_we1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_ce0">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_ce1">9, 2, 1, 2</column>
+<column name="p_ZZ11SMM_CIF_0_1RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_we1">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="B_COL">32, 0, 32, 0</column>
+<column name="B_ROW">32, 0, 32, 0</column>
+<column name="B_ROW_load_load_fu_553_p1">32, 0, 32, 0</column>
+<column name="KER_bound_reg_851">32, 0, 32, 0</column>
+<column name="KER_size_0_reg_789">32, 0, 32, 0</column>
+<column name="KER_size_1_reg_846">32, 0, 32, 0</column>
+<column name="OFMDim_current">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">27, 0, 27, 0</column>
+<column name="ap_predicate_pred1250_state9">1, 0, 1, 0</column>
+<column name="ap_predicate_pred1252_state9">1, 0, 1, 0</column>
+<column name="ap_predicate_pred1254_state9">1, 0, 1, 0</column>
+<column name="bound11_reg_823">64, 0, 64, 0</column>
+<column name="bound4_reg_818">34, 0, 34, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_L2_L3_fu_271_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_380_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_140_6_fu_214_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SMM_CIF_0_1_Pipeline_VITIS_LOOP_187_7_fu_442_ap_start_reg">1, 0, 1, 0</column>
+<column name="indvar_flatten13_fu_196">64, 0, 64, 0</column>
+<column name="iter_fu_188">31, 0, 31, 0</column>
+<column name="mul_ln101_reg_836">32, 0, 32, 0</column>
+<column name="num_imag_fu_192">32, 0, 32, 0</column>
+<column name="or_ln168_reg_831">1, 0, 1, 0</column>
+<column name="reg_468">32, 0, 32, 0</column>
+<column name="reg_480">32, 0, 32, 0</column>
+<column name="sub151_reg_807">32, 0, 32, 0</column>
+<column name="sub154_reg_812">32, 0, 32, 0</column>
+<column name="sub_reg_841">32, 0, 32, 0</column>
+<column name="valIn_a_data_1_reg_729">32, 0, 32, 0</column>
+<column name="valIn_a_data_2_reg_735">32, 0, 32, 0</column>
+<column name="valIn_a_data_3_reg_743">32, 0, 32, 0</column>
+<column name="valIn_a_data_4_reg_749">32, 0, 32, 0</column>
+<column name="valIn_a_data_5_reg_757">32, 0, 32, 0</column>
+<column name="valIn_a_data_reg_725">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, SMM_CIF_0_1, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, SMM_CIF_0_1, return value</column>
+<column name="in_stream_a_TDATA">in, 64, axis, in_stream_a, pointer</column>
+<column name="in_stream_a_TVALID">in, 1, axis, in_stream_a, pointer</column>
+<column name="in_stream_a_TREADY">out, 1, axis, in_stream_a, pointer</column>
+<column name="out_stream_TDATA">out, 64, axis, out_stream, pointer</column>
+<column name="out_stream_TVALID">out, 1, axis, out_stream, pointer</column>
+<column name="out_stream_TREADY">in, 1, axis, out_stream, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,303 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>9.587</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>9.587</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>9.587</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>0.413</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.413</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>0.413</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>0.413</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>8</DSP>
+      <FF>2477</FF>
+      <LATCH>0</LATCH>
+      <LUT>3606</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="maxPool_CIF_0_1" DISPNAME="inst" RTLNAME="maxPool_CIF_0_1">
+      <SubModules count="29">acc_U buf_10_U buf_11_U buf_12_U buf_13_U buf_14_U buf_15_U buf_1_U buf_2_U buf_3_U buf_4_U buf_5_U buf_6_U buf_7_U buf_8_U buf_9_U buf_U grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574 grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556 mul_31ns_32ns_63_2_1_U69 mul_32ns_31ns_63_2_1_U70 mul_32s_32s_32_1_1_U71 mul_32s_32s_32_1_1_U72 mul_32s_32s_32_1_1_U73 regslice_both_in_r_U regslice_both_out_r_U</SubModules>
+      <Resources DSP="8" FF="2477" LUT="3606"/>
+      <LocalResources FF="1108" LUT="207"/>
+    </RtlModule>
+    <RtlModule CELL="inst/acc_U" BINDMODULE="maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="acc_RAM_2P_LUTRAM_1R1W" DISPNAME="acc_U" RTLNAME="maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="64" LUT="93"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="acc_U" SOURCE="maxPool_1.cpp:137" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="acc"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_10_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_10_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_10_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_11_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_11_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="56"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_11_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_12_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_12_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_12_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_13_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_13_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_13_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_14_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_14_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_14_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_15_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_15_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="56"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_15_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_1_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_1_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_1_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_2_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_2_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_2_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_3_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_3_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="56"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_3_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_4_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_4_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_4_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_5_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_5_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_5_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_6_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_6_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_6_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_7_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_7_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="56"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_7_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_8_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_8_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_8_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_9_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_9_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_9_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/buf_U" BINDMODULE="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W" DEPTH="1" TYPE="resource" MODULENAME="buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_U" RTLNAME="maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_U" SOURCE="maxPool_1.cpp:135" STORAGESIZE="32 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536" DEPTH="1" TYPE="function" MODULENAME="maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1" DISPNAME="grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536" RTLNAME="maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="8" LUT="19"/>
+      <LocalResources FF="6" LUT="2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536/flow_control_loop_pipe_sequential_init_U" BINDMODULE="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565" DEPTH="1" TYPE="function" MODULENAME="maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9" DISPNAME="grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565" RTLNAME="maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="120" LUT="182"/>
+      <LocalResources FF="118" LUT="155"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565/flow_control_loop_pipe_sequential_init_U" BINDMODULE="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="27"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603" DEPTH="1" TYPE="function" MODULENAME="maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10" DISPNAME="grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603" RTLNAME="maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="85" LUT="118"/>
+      <LocalResources FF="83" LUT="71"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603/flow_control_loop_pipe_sequential_init_U" BINDMODULE="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="47"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574" DEPTH="1" TYPE="function" MODULENAME="maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12" DISPNAME="grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574" RTLNAME="maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="149" LUT="278"/>
+      <LocalResources FF="147" LUT="272"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574/flow_control_loop_pipe_sequential_init_U" BINDMODULE="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556" DEPTH="1" TYPE="function" MODULENAME="maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13" DISPNAME="grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556" RTLNAME="maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="99" LUT="66"/>
+      <LocalResources FF="97"/>
+    </RtlModule>
+    <RtlModule CELL="inst/grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556/flow_control_loop_pipe_sequential_init_U" BINDMODULE="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init" DEPTH="2" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="66"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_31ns_32ns_63_2_1_U69" BINDMODULE="maxPool_CIF_0_1_mul_31ns_32ns_63_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_31ns_32ns_63_2_1" DISPNAME="mul_31ns_32ns_63_2_1_U69" RTLNAME="maxPool_CIF_0_1_mul_31ns_32ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="53"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32ns_63_2_1_U69" SOURCE="maxPool_1.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln154"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32ns_31ns_63_2_1_U70" BINDMODULE="maxPool_CIF_0_1_mul_32ns_31ns_63_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32ns_31ns_63_2_1" DISPNAME="mul_32ns_31ns_63_2_1_U70" RTLNAME="maxPool_CIF_0_1_mul_32ns_31ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="46"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_31ns_63_2_1_U70" SOURCE="maxPool_1.cpp:154" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln154_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U71" BINDMODULE="maxPool_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U71" RTLNAME="maxPool_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U71" SOURCE="maxPool_1.cpp:208" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U72" BINDMODULE="maxPool_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U72" RTLNAME="maxPool_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U72" SOURCE="maxPool_1.cpp:209" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_32_1_1_U73" BINDMODULE="maxPool_CIF_0_1_mul_32s_32s_32_1_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_32_1_1" DISPNAME="mul_32s_32s_32_1_1_U73" RTLNAME="maxPool_CIF_0_1_mul_32s_32s_32_1_1">
+      <Resources LUT="629"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U73" SOURCE="maxPool_1.cpp:210" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_bound"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_in_r_U" BINDMODULE="maxPool_CIF_0_1_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_in_r_U" RTLNAME="maxPool_CIF_0_1_regslice_both">
+      <Resources FF="132" LUT="100"/>
+    </RtlModule>
+    <RtlModule CELL="inst/regslice_both_out_r_U" BINDMODULE="maxPool_CIF_0_1_regslice_both" DEPTH="1" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_out_r_U" RTLNAME="maxPool_CIF_0_1_regslice_both">
+      <Resources FF="132" LUT="45"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="9.612" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_bound_reg_1000_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.413" STARTPOINT_PIN="KER_size_1_reg_995_reg[3]/C">
+      <CELL NAME="KER_size_1_reg_995_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1434"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_bound_reg_1000_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1084"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.612" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_size_0_reg_942_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="58" SLACK="0.413" STARTPOINT_PIN="valIn_data_4_reg_924_reg[3]/C">
+      <CELL NAME="valIn_data_4_reg_924_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1658"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_0_reg_942_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1422"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.612" DATAPATH_LOGIC_DELAY="4.777" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_size_1_reg_995_reg[31]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.413" STARTPOINT_PIN="KER_size_0_reg_942_reg[3]/C">
+      <CELL NAME="KER_size_0_reg_942_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1422"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U72/KER_size_1_reg_995_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_1_reg_995_reg[31]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1434"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.507" DATAPATH_LOGIC_DELAY="4.672" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_bound_reg_1000_reg[30]/D" LOGIC_LEVELS="12" MAX_FANOUT="57" SLACK="0.518" STARTPOINT_PIN="KER_size_1_reg_995_reg[3]/C">
+      <CELL NAME="KER_size_1_reg_995_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1434"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U73/KER_bound_reg_1000_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_bound_reg_1000_reg[30]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1084"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.507" DATAPATH_LOGIC_DELAY="4.672" DATAPATH_NET_DELAY="4.835" ENDPOINT_PIN="KER_size_0_reg_942_reg[30]/D" LOGIC_LEVELS="12" MAX_FANOUT="58" SLACK="0.518" STARTPOINT_PIN="valIn_data_4_reg_924_reg[3]/C">
+      <CELL NAME="valIn_data_4_reg_924_reg[3]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1658"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[8]_i_26" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[8]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[21]_i_32" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_49" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[25]_i_25" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[25]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_11" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[31]_i_18" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_6" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942[29]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[29]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="mul_32s_32s_32_1_1_U71/KER_size_0_reg_942_reg[31]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="30"/>
+      <CELL NAME="KER_size_0_reg_942_reg[30]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1422"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/maxPool_CIF_0_1_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/maxPool_CIF_0_1_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/maxPool_CIF_0_1_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/maxPool_CIF_0_1_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/maxPool_CIF_0_1_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/maxPool_CIF_0_1_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Oct 28 10:53:25 +0700 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="maxPool_CIF_0_1"/>
+    <item NAME="Solution" VALUE="solution1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

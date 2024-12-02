@@ -1,0 +1,162 @@
+status is 1 
+batch_size is 1 
+Ker_DIM is 3 
+In_CH is 1 
+In_DIM is 8 
+Out_CH is 1 
+Out_DIM is 8 
+PadDim is 1 
+result is 1, last signal is 0 
+result is 2, last signal is 0 
+result is 3, last signal is 0 
+result is 4, last signal is 0 
+result is 5, last signal is 0 
+result is 6, last signal is 0 
+result is 7, last signal is 0 
+result is 8, last signal is 0 
+result is 9, last signal is 0 
+9 results received 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 17
+
+D:\Downloads\vivado2014.4\PYNQ_acc\HW\Graphic\fc_CIF_0_1\FC_CIF_0_1\solution1\sim\verilog>set PATH= 
+
+D:\Downloads\vivado2014.4\PYNQ_acc\HW\Graphic\fc_CIF_0_1\FC_CIF_0_1\solution1\sim\verilog>call E:/downloads/.xinstall/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_FC_CIF_0_1_top glbl -Oenable_linking_all_libraries  -prj FC_CIF_0_1.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s FC_CIF_0_1  
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/downloads/.xinstall/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_FC_CIF_0_1_top glbl -Oenable_linking_all_libraries -prj FC_CIF_0_1.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s FC_CIF_0_1 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_axi_s_in_stream_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_stream_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_axi_s_out_stream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_stream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_deadlock_idx3_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx3_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_deadlock_idx4_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx4_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_FC_CIF_0_1_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_Pipeline_L2_L3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_Pipeline_L2_L3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_140_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_Pipeline_VITIS_LOOP_187_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_FC_CIF_0_1_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mac_muladd_16s_16s_32s_32_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_mul_16s_16s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mul_16s_16s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_mul_32ns_32ns_64_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mul_32ns_32ns_64_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_mul_32s_32s_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mul_32s_32s_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_mul_32s_32s_32_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_mul_32s_32s_32_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_regslice_both
+INFO: [VRFC 10-311] analyzing module FC_CIF_0_1_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_stream_AXI...
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_stream_AXI...
+Compiling module xil_defaultlib.FC_CIF_0_1_flow_control_loop_pip...
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_Pipeline_V...
+Compiling module xil_defaultlib.FC_CIF_0_1_mul_16s_16s_32_1_1(NU...
+Compiling module xil_defaultlib.FC_CIF_0_1_mac_muladd_16s_16s_32...
+Compiling module xil_defaultlib.FC_CIF_0_1_mac_muladd_16s_16s_32...
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_Pipeline_L...
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_Pipeline_V...
+Compiling module xil_defaultlib.FC_CIF_0_1_FC_CIF_0_1_Pipeline_V...
+Compiling module xil_defaultlib.FC_CIF_0_1_mul_32ns_32ns_64_2_1(...
+Compiling module xil_defaultlib.FC_CIF_0_1_mul_32s_32s_32_2_1(NU...
+Compiling module xil_defaultlib.FC_CIF_0_1_mul_32s_32s_32_1_1(NU...
+Compiling module xil_defaultlib.FC_CIF_0_1_regslice_both(DataWid...
+Compiling module xil_defaultlib.FC_CIF_0_1
+Compiling module xil_defaultlib.fifo(DEPTH=17,WIDTH=64)
+Compiling module xil_defaultlib.AESL_axi_s_in_stream_a
+Compiling module xil_defaultlib.AESL_axi_s_out_stream
+Compiling module xil_defaultlib.AESL_deadlock_idx3_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx4_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=27)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_FC_CIF_0_1_top
+Compiling module work.glbl
+Built simulation snapshot FC_CIF_0_1
+ECHO is off.
+ECHO is off.
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/FC_CIF_0_1/xsim_script.tcl
+# xsim {FC_CIF_0_1} -autoloadwcfg -tclbatch {FC_CIF_0_1.tcl}
+Time resolution is 1 ps
+source FC_CIF_0_1.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "375000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 435 ns : File "D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1/sim/verilog/FC_CIF_0_1.autotb.v" Line 196
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 28 10:04:41 2024...
+status is 1 
+batch_size is 1 
+Ker_DIM is 3 
+In_CH is 1 
+In_DIM is 8 
+Out_CH is 1 
+Out_DIM is 8 
+PadDim is 1 
+result is 1, last signal is 0 
+result is 2, last signal is 0 
+result is 3, last signal is 0 
+result is 4, last signal is 0 
+result is 5, last signal is 0 
+result is 6, last signal is 0 
+result is 7, last signal is 0 
+result is 8, last signal is 0 
+result is 9, last signal is 0 
+9 results received 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 17

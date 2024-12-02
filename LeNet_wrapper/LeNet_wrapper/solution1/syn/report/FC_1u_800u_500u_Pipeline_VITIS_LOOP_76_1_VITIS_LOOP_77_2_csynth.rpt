@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vitis HLS Report for 'FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2'
+================================================================
+* Date:           Sun Nov  3 13:42:51 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.162 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
+    +---------+---------+----------+----------+--------+--------+---------+
+    |   400004|   400004|  4.000 ms|  4.000 ms|  400004|  400004|       no|
+    +---------+---------+----------+----------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- VITIS_LOOP_76_1_VITIS_LOOP_77_2  |   400002|   400002|         4|          1|          1|  400000|       yes|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    1|       -|      -|    -|
+|Expression       |        -|    -|       0|    201|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     86|    -|
+|Register         |        -|    -|     131|     32|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    1|     131|    319|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|   ~0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    +--------------------------------------+---------------------------------+--------------+
+    |               Instance               |              Module             |  Expression  |
+    +--------------------------------------+---------------------------------+--------------+
+    |mac_muladd_9ns_10ns_10ns_19_4_1_U354  |mac_muladd_9ns_10ns_10ns_19_4_1  |  i0 * i1 + i2|
+    +--------------------------------------+---------------------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln76_1_fu_150_p2              |         +|   0|  0|  26|          19|           1|
+    |add_ln76_fu_162_p2                |         +|   0|  0|  14|           9|           1|
+    |add_ln77_fu_230_p2                |         +|   0|  0|  13|          10|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln76_fu_144_p2               |      icmp|   0|  0|  26|          19|          18|
+    |icmp_ln77_fu_168_p2               |      icmp|   0|  0|  13|          10|           9|
+    |icmp_ln79_fu_213_p2               |      icmp|   0|  0|  39|          32|          32|
+    |ult_fu_198_p2                     |      icmp|   0|  0|  39|          32|          32|
+    |ap_block_state5_pp0_stage0_iter4  |        or|   0|  0|   2|           1|           1|
+    |or_ln79_fu_224_p2                 |        or|   0|  0|   2|           1|           1|
+    |select_ln76_1_fu_182_p3           |    select|   0|  0|   9|           1|           9|
+    |select_ln76_fu_174_p3             |    select|   0|  0|  10|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |rev_fu_203_p2                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln79_fu_218_p2                |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 201|         139|         113|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |B_d1                     |  14|          3|    8|         24|
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2  |   9|          2|    1|          2|
+    |connect_6_blk_n          |   9|          2|    1|          2|
+    |connect_7_blk_n          |   9|          2|    1|          2|
+    |i_14_fu_74               |   9|          2|    9|         18|
+    |indvar_flatten_fu_78     |   9|          2|   19|         38|
+    |j_fu_70                  |   9|          2|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  86|         19|   51|        110|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |i_14_fu_74                         |   9|   0|    9|          0|
+    |indvar_flatten_fu_78               |  19|   0|   19|          0|
+    |j_fu_70                            |  10|   0|   10|          0|
+    |or_ln79_reg_317                    |   1|   0|    1|          0|
+    |select_ln76_reg_307                |  10|   0|   10|          0|
+    |select_ln76_reg_307_pp0_iter2_reg  |  10|   0|   10|          0|
+    |or_ln79_reg_317                    |  64|  32|    1|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 131|  32|   68|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |                        Source Object                        |    C Type    |
++--------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  FC<1u, 800u, 500u>_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2|  return value|
+|connect_6_dout            |   in|   32|     ap_fifo|                                                    connect_6|       pointer|
+|connect_6_num_data_valid  |   in|    7|     ap_fifo|                                                    connect_6|       pointer|
+|connect_6_fifo_cap        |   in|    7|     ap_fifo|                                                    connect_6|       pointer|
+|connect_6_empty_n         |   in|    1|     ap_fifo|                                                    connect_6|       pointer|
+|connect_6_read            |  out|    1|     ap_fifo|                                                    connect_6|       pointer|
+|connect_7_din             |  out|   32|     ap_fifo|                                                    connect_7|       pointer|
+|connect_7_num_data_valid  |   in|    7|     ap_fifo|                                                    connect_7|       pointer|
+|connect_7_fifo_cap        |   in|    7|     ap_fifo|                                                    connect_7|       pointer|
+|connect_7_full_n          |   in|    1|     ap_fifo|                                                    connect_7|       pointer|
+|connect_7_write           |  out|    1|     ap_fifo|                                                    connect_7|       pointer|
+|valIn_a_41                |   in|   32|     ap_none|                                                   valIn_a_41|        scalar|
+|mul_ln73_1                |   in|   32|     ap_none|                                                   mul_ln73_1|        scalar|
+|B_address1                |  out|   19|   ap_memory|                                                            B|         array|
+|B_ce1                     |  out|    1|   ap_memory|                                                            B|         array|
+|B_we1                     |  out|    1|   ap_memory|                                                            B|         array|
+|B_d1                      |  out|    8|   ap_memory|                                                            B|         array|
++--------------------------+-----+-----+------------+-------------------------------------------------------------+--------------+
+

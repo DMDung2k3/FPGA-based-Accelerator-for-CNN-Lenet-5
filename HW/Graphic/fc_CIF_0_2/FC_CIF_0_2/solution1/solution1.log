@@ -1,0 +1,377 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_2/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 4.212 seconds; current allocated memory: 0.340 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_2/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 8.891 seconds; current allocated memory: 0.488 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_2/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.213 seconds; current allocated memory: 123.254 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully_connected_2.cpp' ... 
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_2.cpp:184:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_2.cpp:185:9)
+WARNING: [HLS 207-5536] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (fully_connected_2.cpp:186:9)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 14.159 seconds; current allocated memory: 125.324 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 859 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 450 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 326 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 313 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 313 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,294 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 636 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 636 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 632 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 603 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 602 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 597 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 597 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 597 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 598 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 662 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'L4' is marked as complete unroll implied by the pipeline pragma (fully_connected_2.cpp:162:5)
+INFO: [HLS 214-186] Unrolling loop 'L4' (fully_connected_2.cpp:162:5) in function 'FC_CIF_0_2' completely with a factor of 16 (fully_connected_2.cpp:36:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A': Block partitioning with factor 16 on dimension 2. (fully_connected_2.cpp:43:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B': Block partitioning with factor 16 on dimension 2. (fully_connected_2.cpp:43:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.245 seconds; current allocated memory: 127.508 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 127.508 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.968 seconds; current allocated memory: 134.434 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.815 seconds; current allocated memory: 136.738 MB.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_14' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_12' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11' in dimension 3224114 automatically.
+INFO: [XFORM 203-102] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.9' in dimension 460 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.8' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.7' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.6' in dimension 3224114 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.5' in dimension 460 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.4' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.3' in dimension 460 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.2' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.1' in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A' in dimension 1 automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_14.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_12.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.9.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.8.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.7.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.6.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.5.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.4.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.3.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.2.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.1.0' completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.0' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_14.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_12.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.9.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.8.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.7.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.6.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.5.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.4.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.3.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.2.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.1.0' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'FC_CIF_0_2(stream<AXI_VAL, 0>&, stream<AXI_VAL, 0>&)A.0' in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'FC_CIF_0_2' (fully_connected_2.cpp:35)...16 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.289 seconds; current allocated memory: 162.477 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_104_1'(fully_connected_2.cpp:104:21) and 'VITIS_LOOP_105_2'(fully_connected_2.cpp:105:22) in function 'FC_CIF_0_2' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'L2'(fully_connected_2.cpp:156:9) and 'L3'(fully_connected_2.cpp:160:10) in function 'FC_CIF_0_2' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_104_1' (fully_connected_2.cpp:104:21) in function 'FC_CIF_0_2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'L2' (fully_connected_2.cpp:156:9) in function 'FC_CIF_0_2'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_128_3' (fully_connected_2.cpp:128:21) in function 'FC_CIF_0_2'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.4 seconds; current allocated memory: 198.520 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'FC_CIF_0_2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_140_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_140_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_140_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.117 seconds; current allocated memory: 208.910 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.432 seconds; current allocated memory: 210.086 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_2_Pipeline_L2_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln163) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'L2_L3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'L2_L3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.593 seconds; current allocated memory: 210.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 211.176 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_104_1_VITIS_LOOP_105_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_104_1_VITIS_LOOP_105_2'
+WARNING: [HLS 200-871] Estimated clock period (9.990 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' consists of the following:
+	'store' operation 0 bit ('j_write_ln105', fully_connected_2.cpp:105) of constant 0 on local variable 'j', fully_connected_2.cpp:105 [34]  (1.588 ns)
+	'load' operation 7 bit ('j_load', fully_connected_2.cpp:105) on local variable 'j', fully_connected_2.cpp:105 [42]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln105', fully_connected_2.cpp:105) [47]  (1.870 ns)
+	'select' operation 4 bit ('select_ln104_1', fully_connected_2.cpp:104) [49]  (1.024 ns)
+	'icmp' operation 1 bit ('ult', fully_connected_2.cpp:104) [52]  (2.552 ns)
+	'xor' operation 1 bit ('rev', fully_connected_2.cpp:104) [53]  (0.000 ns)
+	'or' operation 1 bit ('or_ln108', fully_connected_2.cpp:108) [78]  (0.978 ns)
+	axis read operation ('in_stream_a_read', fully_connected_2.cpp:109) on port 'in_stream_a' (fully_connected_2.cpp:109) [81]  (1.000 ns)
+	blocking operation 0.978 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.333 seconds; current allocated memory: 211.832 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 211.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_187_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_187_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.186 seconds; current allocated memory: 211.945 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 211.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FC_CIF_0_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-1015] Estimated delay Estimated delay (12.592ns)  of 'mul' operation 32 bit ('KER_size_0', fully_connected_2.cpp:181) exceeds the target cycle time (target cycle time: 10.000ns, clock uncertainty: 2.700ns, effective cycle time: 7.300ns).
+
+WARNING: [HLS 200-871] Estimated clock period (12.592 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+WARNING: [HLS 200-1016] The critical path in module 'FC_CIF_0_2' consists of the following:
+	'mul' operation 32 bit ('KER_size_0', fully_connected_2.cpp:181) [180]  (12.592 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.032 seconds; current allocated memory: 212.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.182 seconds; current allocated memory: 212.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_140_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_2_Pipeline_VITIS_LOOP_140_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.314 seconds; current allocated memory: 215.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_2_Pipeline_L2_L3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_2_Pipeline_L2_L3' pipeline 'L2_L3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_4_2_16_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_2_Pipeline_L2_L3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 2.062 seconds; current allocated memory: 224.562 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2' pipeline 'VITIS_LOOP_104_1_VITIS_LOOP_105_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.945 seconds; current allocated memory: 229.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7' pipeline 'VITIS_LOOP_187_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.812 seconds; current allocated memory: 231.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FC_CIF_0_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'FC_CIF_0_2/in_stream_a' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'FC_CIF_0_2/out_stream' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'FC_CIF_0_2' to 'ap_ctrl_none'.
+WARNING: [RTGEN 206-101] Register 'B_COL' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'B_ROW' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'OFMDim_current' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_0_s' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_1_s' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_2_s' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_3_s' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'FC_CIF_0_2_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_3' is power-on initialization.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_32ns_64_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FC_CIF_0_2'.
+INFO: [RTMG 210-278] Implementing memory 'FC_CIF_0_2_FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.322 seconds; current allocated memory: 236.078 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.133 seconds; current allocated memory: 242.082 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.598 seconds; current allocated memory: 248.871 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for FC_CIF_0_2.
+INFO: [VLOG 209-307] Generating Verilog RTL for FC_CIF_0_2.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 79.42 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 5 seconds. Elapsed time: 48.004 seconds; current allocated memory: 126.438 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/ip_fc_2
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/ip_fc_2 -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: source ./FC_CIF_0_2/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: export_design -flow syn -rtl verilog -format ip_catalog -output D:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/ip_fc_2 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO: [HLS 200-802] Generated output file ip_fc_2/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 285.494 seconds; current allocated memory: 8.656 MB.

@@ -1,0 +1,150 @@
+
+
+================================================================
+== Vitis HLS Report for 'pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13'
+================================================================
+* Date:           Sun Nov  3 13:42:21 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.215 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_194_13  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     84|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     54|    -|
+|Register         |        -|    -|      35|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      35|    138|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |i_4_fu_68_p2                      |         +|   0|  0|  39|          32|           1|
+    |ap_block_pp0_stage0_01001         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln194_fu_62_p2               |      icmp|   0|  0|  39|          32|          32|
+    |ap_block_state2_pp0_stage0_iter1  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  84|          67|          37|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_3     |   9|          2|   32|         64|
+    |connect_2_blk_n          |   9|          2|    1|          2|
+    |connect_3_blk_n          |   9|          2|    1|          2|
+    |i_fu_30                  |   9|          2|   32|         64|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   68|        136|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |i_fu_30                  |  32|   0|   32|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  35|   0|   35|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |                 Source Object                 |    C Type    |
++--------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  pool<2u, 20u, 24u>_Pipeline_VITIS_LOOP_194_13|  return value|
+|connect_2_dout            |   in|   32|     ap_fifo|                                      connect_2|       pointer|
+|connect_2_num_data_valid  |   in|    3|     ap_fifo|                                      connect_2|       pointer|
+|connect_2_fifo_cap        |   in|    3|     ap_fifo|                                      connect_2|       pointer|
+|connect_2_empty_n         |   in|    1|     ap_fifo|                                      connect_2|       pointer|
+|connect_2_read            |  out|    1|     ap_fifo|                                      connect_2|       pointer|
+|connect_3_din             |  out|   32|     ap_fifo|                                      connect_3|       pointer|
+|connect_3_num_data_valid  |   in|    7|     ap_fifo|                                      connect_3|       pointer|
+|connect_3_fifo_cap        |   in|    7|     ap_fifo|                                      connect_3|       pointer|
+|connect_3_full_n          |   in|    1|     ap_fifo|                                      connect_3|       pointer|
+|connect_3_write           |  out|    1|     ap_fifo|                                      connect_3|       pointer|
+|KER_bound                 |   in|   32|     ap_none|                                      KER_bound|        scalar|
++--------------------------+-----+-----+------------+-----------------------------------------------+--------------+
+

@@ -1,0 +1,1098 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>10.267</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>10.267</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>10.267</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>-0.267</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>-0.267</SLACK_SYNTH>
+    <TIMING_MET>FALSE</TIMING_MET>
+    <TNS_FINAL>-40.513</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>-40.513</TNS_SYNTH>
+    <WNS_FINAL>-0.267</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>-0.267</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>261</BRAM>
+      <CLB>0</CLB>
+      <DSP>85</DSP>
+      <FF>10516</FF>
+      <LATCH>0</LATCH>
+      <LUT>31352</LUT>
+      <SRL>65</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>280</BRAM>
+      <CLB>0</CLB>
+      <DSP>220</DSP>
+      <FF>106400</FF>
+      <LUT>53200</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="LeNet_wrapper" DISPNAME="inst" RTLNAME="LeNet_wrapper">
+      <SubModules count="28">AXI_DMA_MASTER_U0 AXI_DMA_SLAVE_U0 FC_1u_500u_10u_U0 FC_1u_800u_500u_U0 SCIG_5u_1u_28u_20u_24u_0u_U0 SCIG_5u_20u_12u_50u_8u_0u_U0 SMM_1u_25u_20u_U0 SMM_1u_500u_50u_U0 connect_0_U connect_1_U connect_2_U connect_3_U connect_4_U connect_5_U connect_6_U connect_7_U connect_8_U pool_2u_20u_24u_U0 pool_2u_50u_8u_U0 start_for_AXI_DMA_MASTER_U0_U start_for_FC_1u_500u_10u_U0_U start_for_FC_1u_800u_500u_U0_U start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U start_for_SMM_1u_25u_20u_U0_U start_for_SMM_1u_500u_50u_U0_U start_for_pool_2u_20u_24u_U0_U start_for_pool_2u_50u_8u_U0_U</SubModules>
+      <Resources BRAM="261" DSP="85" FF="10516" LUT="31352"/>
+      <LocalResources LUT="77"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0" DEPTH="1" TYPE="function" MODULENAME="AXI_DMA_MASTER" DISPNAME="AXI_DMA_MASTER_U0" RTLNAME="LeNet_wrapper_AXI_DMA_MASTER">
+      <SubModules count="3">grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77 grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67 regslice_both_out_stream_U</SubModules>
+      <Resources FF="579" LUT="4023"/>
+      <LocalResources FF="437" LUT="3833"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77" DEPTH="2" TYPE="function" MODULENAME="AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1" DISPNAME="grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77" RTLNAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="36" LUT="77"/>
+      <LocalResources FF="34" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_58_1_fu_77/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="74"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67" DEPTH="2" TYPE="function" MODULENAME="AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2" DISPNAME="grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67" RTLNAME="LeNet_wrapper_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="36" LUT="74"/>
+      <LocalResources FF="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0/grp_AXI_DMA_MASTER_Pipeline_VITIS_LOOP_74_2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="74"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_MASTER_U0/regslice_both_out_stream_U" BINDMODULE="LeNet_wrapper_regslice_both" DEPTH="2" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_out_stream_U" RTLNAME="LeNet_wrapper_regslice_both">
+      <Resources FF="70" LUT="33"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0" DEPTH="1" TYPE="function" MODULENAME="AXI_DMA_SLAVE" DISPNAME="AXI_DMA_SLAVE_U0" RTLNAME="LeNet_wrapper_AXI_DMA_SLAVE">
+      <SubModules count="3">grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76 grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67 regslice_both_in_stream_U</SubModules>
+      <Resources FF="573" LUT="3976"/>
+      <LocalResources FF="371" LUT="3768"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76" DEPTH="2" TYPE="function" MODULENAME="AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1" DISPNAME="grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76" RTLNAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="67" LUT="66"/>
+      <LocalResources FF="65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_49_1_fu_76/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="66"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67" DEPTH="2" TYPE="function" MODULENAME="AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2" DISPNAME="grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67" RTLNAME="LeNet_wrapper_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="67" LUT="64"/>
+      <LocalResources FF="65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/grp_AXI_DMA_SLAVE_Pipeline_VITIS_LOOP_63_2_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/AXI_DMA_SLAVE_U0/regslice_both_in_stream_U" BINDMODULE="LeNet_wrapper_regslice_both" DEPTH="2" TYPE="rtl" MODULENAME="regslice_both" DISPNAME="regslice_both_in_stream_U" RTLNAME="LeNet_wrapper_regslice_both">
+      <Resources FF="68" LUT="72"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0" DEPTH="1" TYPE="function" MODULENAME="FC_1u_500u_10u_s" DISPNAME="FC_1u_500u_10u_U0" RTLNAME="LeNet_wrapper_FC_1u_500u_10u_s">
+      <SubModules count="7">grp_FC_1u_500u_10u_Pipeline_L2_fu_89 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96 grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82 mul_32ns_32ns_64_2_1_U387 mul_32s_32s_32_2_1_U388 mul_32s_32s_32_2_1_U389</SubModules>
+      <Resources DSP="10" FF="789" LUT="2393"/>
+      <LocalResources FF="608" LUT="1973"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_L2_fu_89" DEPTH="2" TYPE="function" MODULENAME="FC_1u_500u_10u_Pipeline_L2" DISPNAME="grp_FC_1u_500u_10u_Pipeline_L2_fu_89" RTLNAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_L2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="62"/>
+      <LocalResources FF="33" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_L2_fu_89/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="61"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106" DEPTH="2" TYPE="function" MODULENAME="FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7" DISPNAME="grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106" RTLNAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="69"/>
+      <LocalResources FF="33" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_136_7_fu_106/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="66"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96" DEPTH="2" TYPE="function" MODULENAME="FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2" DISPNAME="grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96" RTLNAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="30" LUT="101"/>
+      <LocalResources FF="28" LUT="29"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_96/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="72"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82" DEPTH="2" TYPE="function" MODULENAME="FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6" DISPNAME="grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82" RTLNAME="LeNet_wrapper_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="13" LUT="38"/>
+      <LocalResources FF="11" LUT="13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/grp_FC_1u_500u_10u_Pipeline_VITIS_LOOP_99_6_fu_82/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32ns_32ns_64_2_1_U387" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U387" RTLNAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="49"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U387" SOURCE="./../hw_library/fully_connected.h:31" STORAGESUBTYPE="" URAM="0" VARIABLE="bound4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32s_32s_32_2_1_U388" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U388" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="80"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U388" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U388" SOURCE="./../hw_library/fully_connected.h:73" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln73_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_500u_10u_U0/mul_32s_32s_32_2_1_U389" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U389" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U389" SOURCE="./../hw_library/fully_connected.h:73" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln73"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0" DEPTH="1" TYPE="function" MODULENAME="FC_1u_800u_500u_s" DISPNAME="FC_1u_800u_500u_U0" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_s">
+      <SubModules count="10">A_U B_U grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114 grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94 mul_32ns_11ns_42_2_1_U365 mul_32ns_32ns_64_2_1_U364 mul_32s_32s_32_2_1_U366 mul_32s_32s_32_2_1_U367</SubModules>
+      <Resources BRAM="209" DSP="13" FF="1034" LUT="2602"/>
+      <LocalResources FF="646" LUT="1958"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/A_U" BINDMODULE="LeNet_wrapper_FC_1u_800u_500u_s_A_RAM_S2P_BRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="FC_1u_800u_500u_s_A_RAM_S2P_BRAM_1R1W" DISPNAME="A_U" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_s_A_RAM_S2P_BRAM_1R1W">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="A_U" SOURCE="" STORAGESIZE="8 800 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="A"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/B_U" BINDMODULE="LeNet_wrapper_FC_1u_800u_500u_s_B_RAM_S2P_BRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="FC_1u_800u_500u_s_B_RAM_S2P_BRAM_1R1W" DISPNAME="B_U" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_s_B_RAM_S2P_BRAM_1R1W">
+      <Resources BRAM="208" FF="4" LUT="25"/>
+      <BindNode BINDTYPE="storage" BRAM="256" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="B_U" SOURCE="" STORAGESIZE="8 400000 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="B"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103" DEPTH="2" TYPE="function" MODULENAME="FC_1u_800u_500u_Pipeline_L2_L3" DISPNAME="grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_L2_L3">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_19s_10ns_10ns_19_4_1_U346 mac_muladd_8s_8s_16ns_16_4_1_U347</SubModules>
+      <Resources DSP="2" FF="142" LUT="119"/>
+      <LocalResources FF="140" LUT="53"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/mac_muladd_19s_10ns_10ns_19_4_1_U346" BINDMODULE="LeNet_wrapper_mac_muladd_19s_10ns_10ns_19_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_19s_10ns_10ns_19_4_1" DISPNAME="mac_muladd_19s_10ns_10ns_19_4_1_U346" RTLNAME="LeNet_wrapper_mac_muladd_19s_10ns_10ns_19_4_1">
+      <Resources DSP="1" LUT="10"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_19s_10ns_10ns_19_4_1_U346" SOURCE="./../hw_library/fully_connected.h:117" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln117_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_19s_10ns_10ns_19_4_1_U346" SOURCE="./../hw_library/fully_connected.h:117" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln117"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_L2_L3_fu_103/mac_muladd_8s_8s_16ns_16_4_1_U347" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16ns_16_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_16ns_16_4_1" DISPNAME="mac_muladd_8s_8s_16ns_16_4_1_U347" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_16ns_16_4_1">
+      <Resources DSP="1" LUT="51"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16ns_16_4_1_U347" SOURCE="./../hw_library/fully_connected.h:117" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln117"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16ns_16_4_1_U347" SOURCE="./../hw_library/fully_connected.h:117" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126" DEPTH="2" TYPE="function" MODULENAME="FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7" DISPNAME="grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="66"/>
+      <LocalResources FF="33" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_136_7_fu_126/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114" DEPTH="2" TYPE="function" MODULENAME="FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2" DISPNAME="grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U mac_muladd_9ns_10ns_10ns_19_4_1_U354</SubModules>
+      <Resources DSP="1" FF="57" LUT="181"/>
+      <LocalResources FF="55" LUT="60"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_76_1_VITIS_LOOP_77_2_fu_114/mac_muladd_9ns_10ns_10ns_19_4_1_U354" BINDMODULE="LeNet_wrapper_mac_muladd_9ns_10ns_10ns_19_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_9ns_10ns_10ns_19_4_1" DISPNAME="mac_muladd_9ns_10ns_10ns_19_4_1_U354" RTLNAME="LeNet_wrapper_mac_muladd_9ns_10ns_10ns_19_4_1">
+      <Resources DSP="1" LUT="112"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_76_1_VITIS_LOOP_77_2" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_9ns_10ns_10ns_19_4_1_U354" SOURCE="./../hw_library/fully_connected.h:81" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln81"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_76_1_VITIS_LOOP_77_2" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_9ns_10ns_10ns_19_4_1_U354" SOURCE="./../hw_library/fully_connected.h:81" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln81"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94" DEPTH="2" TYPE="function" MODULENAME="FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6" DISPNAME="grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94" RTLNAME="LeNet_wrapper_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="45" LUT="52"/>
+      <LocalResources FF="43" LUT="18"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/grp_FC_1u_800u_500u_Pipeline_VITIS_LOOP_99_6_fu_94/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="34"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32ns_11ns_42_2_1_U365" BINDMODULE="LeNet_wrapper_mul_32ns_11ns_42_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_11ns_42_2_1" DISPNAME="mul_32ns_11ns_42_2_1_U365" RTLNAME="LeNet_wrapper_mul_32ns_11ns_42_2_1">
+      <Resources FF="37" LUT="51"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_11ns_42_2_1_U365" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32ns_32ns_64_2_1_U364" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U364" RTLNAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="49"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U364" SOURCE="./../hw_library/fully_connected.h:31" STORAGESUBTYPE="" URAM="0" VARIABLE="bound11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32s_32s_32_2_1_U366" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U366" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="80"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U366" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U366" SOURCE="./../hw_library/fully_connected.h:73" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln73_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/FC_1u_800u_500u_U0/mul_32s_32s_32_2_1_U367" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U367" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U367" SOURCE="./../hw_library/fully_connected.h:73" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln73"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0" DEPTH="1" TYPE="function" MODULENAME="SCIG_5u_1u_28u_20u_24u_0u_s" DISPNAME="SCIG_5u_1u_28u_20u_24u_0u_U0" RTLNAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_s">
+      <SubModules count="3">grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67 grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58 mul_32s_15ns_32_2_1_U24</SubModules>
+      <Resources BRAM="8" FF="642" LUT="2267"/>
+      <LocalResources FF="268" LUT="1896"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67" DEPTH="2" TYPE="function" MODULENAME="SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1" DISPNAME="grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67" RTLNAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U inputBuf_U</SubModules>
+      <Resources BRAM="8" FF="310" LUT="224"/>
+      <LocalResources FF="308" LUT="168"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inputBuf_U" BINDMODULE="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DEPTH="3" TYPE="resource" MODULENAME="SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DISPNAME="inputBuf_U" RTLNAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W">
+      <Resources BRAM="8" LUT="43"/>
+      <BindNode BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="inputBuf_U" SOURCE="./../hw_library/stream_convolution_slideWindow.h:107" STORAGESIZE="8 10500 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="inputBuf"/>
+      <BindNode BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="inputBuf_U" SOURCE="./../hw_library/stream_convolution_slideWindow.h:107" STORAGESIZE="8 10500 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="inputBuf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58" DEPTH="2" TYPE="function" MODULENAME="SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6" DISPNAME="grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58" RTLNAME="LeNet_wrapper_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="64"/>
+      <LocalResources FF="33" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_189_6_fu_58/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_1u_28u_20u_24u_0u_U0/mul_32s_15ns_32_2_1_U24" BINDMODULE="LeNet_wrapper_mul_32s_15ns_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_15ns_32_2_1" DISPNAME="mul_32s_15ns_32_2_1_U24" RTLNAME="LeNet_wrapper_mul_32s_15ns_32_2_1">
+      <Resources FF="29" LUT="80"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_15ns_32_2_1_U24" SOURCE="./../hw_library/stream_convolution_slideWindow.h:72" STORAGESUBTYPE="" URAM="0" VARIABLE="mul36"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0" DEPTH="1" TYPE="function" MODULENAME="SCIG_5u_20u_12u_50u_8u_0u_s" DISPNAME="SCIG_5u_20u_12u_50u_8u_0u_U0" RTLNAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s">
+      <SubModules count="4">grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79 grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70 inElem_U mul_32s_12ns_32_2_1_U187</SubModules>
+      <Resources BRAM="8" FF="880" LUT="2726"/>
+      <LocalResources FF="268" LUT="1895"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79" DEPTH="2" TYPE="function" MODULENAME="SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1" DISPNAME="grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79" RTLNAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1">
+      <SubModules count="2">flow_control_loop_pipe_sequential_init_U inputBuf_U</SubModules>
+      <Resources BRAM="8" FF="540" LUT="717"/>
+      <LocalResources FF="538" LUT="353"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_fu_79/inputBuf_U" BINDMODULE="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DEPTH="3" TYPE="resource" MODULENAME="SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W" DISPNAME="inputBuf_U" RTLNAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_123_1_inputBuf_RAM_AUTO_1R1W">
+      <Resources BRAM="8" LUT="352"/>
+      <BindNode BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="inputBuf_U" SOURCE="./../hw_library/stream_convolution_slideWindow.h:107" STORAGESIZE="8 10500 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="inputBuf"/>
+      <BindNode BINDTYPE="storage" BRAM="8" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="inputBuf_U" SOURCE="./../hw_library/stream_convolution_slideWindow.h:107" STORAGESIZE="8 10500 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="inputBuf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70" DEPTH="2" TYPE="function" MODULENAME="SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6" DISPNAME="grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70" RTLNAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="65"/>
+      <LocalResources FF="33" LUT="1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/grp_SCIG_5u_20u_12u_50u_8u_0u_Pipeline_VITIS_LOOP_189_6_fu_70/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/inElem_U" BINDMODULE="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s_inElem_RAM_S2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="SCIG_5u_20u_12u_50u_8u_0u_s_inElem_RAM_S2P_LUTRAM_1R1W" DISPNAME="inElem_U" RTLNAME="LeNet_wrapper_SCIG_5u_20u_12u_50u_8u_0u_s_inElem_RAM_S2P_LUTRAM_1R1W">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="yes" RTLNAME="inElem_U" SOURCE="" STORAGESIZE="8 256 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="inElem"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SCIG_5u_20u_12u_50u_8u_0u_U0/mul_32s_12ns_32_2_1_U187" BINDMODULE="LeNet_wrapper_mul_32s_12ns_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_12ns_32_2_1" DISPNAME="mul_32s_12ns_32_2_1_U187" RTLNAME="LeNet_wrapper_mul_32s_12ns_32_2_1">
+      <Resources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_12ns_32_2_1_U187" SOURCE="./../hw_library/stream_convolution_slideWindow.h:72" STORAGESUBTYPE="" URAM="0" VARIABLE="mul36"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0" DEPTH="1" TYPE="function" MODULENAME="SMM_1u_25u_20u_s" DISPNAME="SMM_1u_25u_20u_U0" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s">
+      <SubModules count="21">grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200 grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176 mul_32ns_32ns_64_2_1_U104 mul_32s_32s_32_2_1_U105 mul_32s_32s_32_2_1_U106 void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U</SubModules>
+      <Resources BRAM="7" DSP="16" FF="1021" LUT="2738"/>
+      <LocalResources FF="608" LUT="1938"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_25u_20u_Pipeline_L2_L3" DISPNAME="grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_L2_L3">
+      <SubModules count="14">flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_16s_17_4_1_U58 mac_muladd_8s_8s_16s_17_4_1_U59 mac_muladd_8s_8s_17s_17_4_1_U60 mac_muladd_8s_8s_17s_17_4_1_U61 mul_4ns_6ns_9_1_1_U41 mul_4ns_6ns_9_1_1_U42 mul_5ns_7ns_11_1_1_U43 sparsemux_9_2_8_1_1_U50 sparsemux_9_2_8_1_1_U51 sparsemux_9_2_8_1_1_U52 sparsemux_9_2_8_1_1_U53 sparsemux_9_2_8_1_1_U54 sparsemux_9_2_8_1_1_U55</SubModules>
+      <Resources DSP="6" FF="168" LUT="330"/>
+      <LocalResources FF="166" LUT="232"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_16s_17_4_1_U58" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_16s_17_4_1" DISPNAME="mac_muladd_8s_8s_16s_17_4_1_U58" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+      <Resources DSP="2" LUT="16"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U58" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U58" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_16s_17_4_1_U59" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_16s_17_4_1" DISPNAME="mac_muladd_8s_8s_16s_17_4_1_U59" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+      <Resources DSP="2" LUT="17"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U59" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_10"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U59" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_17s_17_4_1_U60" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_17s_17_4_1" DISPNAME="mac_muladd_8s_8s_17s_17_4_1_U60" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+      <Resources DSP="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U60" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U60" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mac_muladd_8s_8s_17s_17_4_1_U61" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_17s_17_4_1" DISPNAME="mac_muladd_8s_8s_17s_17_4_1_U61" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+      <Resources DSP="1" LUT="1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U61" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_8"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U61" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_4ns_6ns_9_1_1_U41" BINDMODULE="LeNet_wrapper_mul_4ns_6ns_9_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_4ns_6ns_9_1_1" DISPNAME="mul_4ns_6ns_9_1_1_U41" RTLNAME="LeNet_wrapper_mul_4ns_6ns_9_1_1">
+      <Resources LUT="12"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_4ns_6ns_9_1_1_U41" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_4ns_6ns_9_1_1_U42" BINDMODULE="LeNet_wrapper_mul_4ns_6ns_9_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_4ns_6ns_9_1_1" DISPNAME="mul_4ns_6ns_9_1_1_U42" RTLNAME="LeNet_wrapper_mul_4ns_6ns_9_1_1">
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_4ns_6ns_9_1_1_U42" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/mul_5ns_7ns_11_1_1_U43" BINDMODULE="LeNet_wrapper_mul_5ns_7ns_11_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_5ns_7ns_11_1_1" DISPNAME="mul_5ns_7ns_11_1_1_U43" RTLNAME="LeNet_wrapper_mul_5ns_7ns_11_1_1">
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_5ns_7ns_11_1_1_U43" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U50" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U50" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U51" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U51" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U52" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U52" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U53" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U53" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U54" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U54" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_L2_L3_fu_141/sparsemux_9_2_8_1_1_U55" BINDMODULE="LeNet_wrapper_sparsemux_9_2_8_1_1" DEPTH="3" TYPE="rtl" MODULENAME="sparsemux_9_2_8_1_1" DISPNAME="sparsemux_9_2_8_1_1_U55" RTLNAME="LeNet_wrapper_sparsemux_9_2_8_1_1">
+      <Resources LUT="8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6" DISPNAME="grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="27" LUT="70"/>
+      <LocalResources FF="25" LUT="47"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6_fu_120/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="23"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7" DISPNAME="grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="70"/>
+      <LocalResources FF="33" LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_149_7_fu_200/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="66"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2" DISPNAME="grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U mul_5ns_7ns_11_1_1_U87 urem_5ns_4ns_3_9_1_U88</SubModules>
+      <Resources FF="59" LUT="124"/>
+      <LocalResources FF="45" LUT="64"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="45"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/mul_5ns_7ns_11_1_1_U87" BINDMODULE="LeNet_wrapper_mul_5ns_7ns_11_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_5ns_7ns_11_1_1" DISPNAME="mul_5ns_7ns_11_1_1_U87" RTLNAME="LeNet_wrapper_mul_5ns_7ns_11_1_1">
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_78_1_VITIS_LOOP_79_2" OPTYPE="mul" PRAGMA="" RTLNAME="mul_5ns_7ns_11_1_1_U87" SOURCE="./../hw_library/fixed_point_stream_convolution.h:79" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln79"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/grp_SMM_1u_25u_20u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_176/urem_5ns_4ns_3_9_1_U88" BINDMODULE="LeNet_wrapper_urem_5ns_4ns_3_9_1" DEPTH="3" TYPE="rtl" MODULENAME="urem_5ns_4ns_3_9_1" DISPNAME="urem_5ns_4ns_3_9_1_U88" RTLNAME="LeNet_wrapper_urem_5ns_4ns_3_9_1">
+      <Resources FF="12" LUT="15"/>
+      <LocalResources LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32ns_32ns_64_2_1_U104" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U104" RTLNAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="49"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U104" SOURCE="./../hw_library/fixed_point_stream_convolution.h:30" STORAGESUBTYPE="" URAM="0" VARIABLE="bound11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32s_32s_32_2_1_U105" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U105" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="80"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U105" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U105" SOURCE="./../hw_library/fixed_point_stream_convolution.h:75" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln75_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/mul_32s_32s_32_2_1_U106" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U106" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U106" SOURCE="./../hw_library/fixed_point_stream_convolution.h:75" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln75"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intibs">
+      <Resources FF="8" LUT="8"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_U" SOURCE="" STORAGESIZE="8 4 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_12"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_13"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_15"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_25u_20u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U" BINDMODULE="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U" RTLNAME="LeNet_wrapper_SMM_1u_25u_20u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_intbkb">
+      <Resources BRAM="1"/>
+      <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16_U" SOURCE="" STORAGESIZE="8 80 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_16"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0" DEPTH="1" TYPE="function" MODULENAME="SMM_1u_500u_50u_s" DISPNAME="SMM_1u_500u_50u_U0" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s">
+      <SubModules count="30">grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248 grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216 mul_32ns_32ns_64_2_1_U294 mul_32ns_8ns_39_2_1_U295 mul_32s_32s_32_2_1_U296 mul_32s_32s_32_2_1_U297 p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U</SubModules>
+      <Resources BRAM="22" DSP="30" FF="1232" LUT="3655"/>
+      <LocalResources FF="615" LUT="1940"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_500u_50u_Pipeline_L2_L3" DISPNAME="grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_L2_L3">
+      <SubModules count="9">am_addmul_7ns_7ns_9ns_17_4_1_U229 am_addmul_7ns_8ns_10ns_19_4_1_U228 flow_control_loop_pipe_sequential_init_U mac_muladd_8s_8s_16s_17_4_1_U230 mac_muladd_8s_8s_16s_17_4_1_U231 mac_muladd_8s_8s_17s_17_4_1_U232 mac_muladd_8s_8s_17s_17_4_1_U233 mul_9ns_11ns_19_1_1_U213 urem_7ns_5ns_4_11_1_U208</SubModules>
+      <Resources DSP="18" FF="243" LUT="1022"/>
+      <LocalResources DSP="9" FF="226" LUT="539"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/am_addmul_7ns_7ns_9ns_17_4_1_U229" BINDMODULE="LeNet_wrapper_am_addmul_7ns_7ns_9ns_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="am_addmul_7ns_7ns_9ns_17_4_1" DISPNAME="am_addmul_7ns_7ns_9ns_17_4_1_U229" RTLNAME="LeNet_wrapper_am_addmul_7ns_7ns_9ns_17_4_1">
+      <Resources DSP="1" LUT="65"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_7ns_7ns_9ns_17_4_1_U229" SOURCE="./../hw_library/fixed_point_stream_convolution.h:123" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln123_4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_7ns_7ns_9ns_17_4_1_U229" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/am_addmul_7ns_8ns_10ns_19_4_1_U228" BINDMODULE="LeNet_wrapper_am_addmul_7ns_8ns_10ns_19_4_1" DEPTH="3" TYPE="resource" MODULENAME="am_addmul_7ns_8ns_10ns_19_4_1" DISPNAME="am_addmul_7ns_8ns_10ns_19_4_1_U228" RTLNAME="LeNet_wrapper_am_addmul_7ns_8ns_10ns_19_4_1">
+      <Resources DSP="1" LUT="34"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="am_addmul_7ns_8ns_10ns_19_4_1_U228" SOURCE="./../hw_library/fixed_point_stream_convolution.h:123" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln123_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="am_addmul_7ns_8ns_10ns_19_4_1_U228" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_16s_17_4_1_U230" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_16s_17_4_1" DISPNAME="mac_muladd_8s_8s_16s_17_4_1_U230" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+      <Resources DSP="2" LUT="120"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U230" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U230" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_16s_17_4_1_U231" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_16s_17_4_1" DISPNAME="mac_muladd_8s_8s_16s_17_4_1_U231" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_16s_17_4_1">
+      <Resources DSP="2" LUT="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U231" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_16s_17_4_1_U231" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_17s_17_4_1_U232" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_17s_17_4_1" DISPNAME="mac_muladd_8s_8s_17s_17_4_1_U232" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+      <Resources DSP="1" LUT="64"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U232" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U232" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mac_muladd_8s_8s_17s_17_4_1_U233" BINDMODULE="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_8s_8s_17s_17_4_1" DISPNAME="mac_muladd_8s_8s_17s_17_4_1_U233" RTLNAME="LeNet_wrapper_mac_muladd_8s_8s_17s_17_4_1">
+      <Resources DSP="1" LUT="41"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U233" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_8s_8s_17s_17_4_1_U233" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln127_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/mul_9ns_11ns_19_1_1_U213" BINDMODULE="LeNet_wrapper_mul_9ns_11ns_19_1_1" DEPTH="3" TYPE="resource" MODULENAME="mul_9ns_11ns_19_1_1" DISPNAME="mul_9ns_11ns_19_1_1_U213" RTLNAME="LeNet_wrapper_mul_9ns_11ns_19_1_1">
+      <Resources DSP="1" LUT="3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_9ns_11ns_19_1_1_U213" SOURCE="./../hw_library/fixed_point_stream_convolution.h:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln127_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_L2_L3_fu_165/urem_7ns_5ns_4_11_1_U208" BINDMODULE="LeNet_wrapper_urem_7ns_5ns_4_11_1" DEPTH="3" TYPE="rtl" MODULENAME="urem_7ns_5ns_4_11_1" DISPNAME="urem_7ns_5ns_4_11_1_U208" RTLNAME="LeNet_wrapper_urem_7ns_5ns_4_11_1">
+      <Resources FF="15" LUT="25"/>
+      <LocalResources LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6" DISPNAME="grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="45" LUT="85"/>
+      <LocalResources FF="43" LUT="39"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_105_6_fu_136/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="46"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7" DISPNAME="grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="63"/>
+      <LocalResources FF="33"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_149_7_fu_248/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="63"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216" DEPTH="2" TYPE="function" MODULENAME="SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2" DISPNAME="grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2">
+      <SubModules count="3">flow_control_loop_pipe_sequential_init_U mac_muladd_6ns_6ns_6ns_12_4_1_U273 urem_9ns_5ns_4_13_1_U271</SubModules>
+      <Resources DSP="2" FF="99" LUT="178"/>
+      <LocalResources DSP="1" FF="58" LUT="58"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="59"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/mac_muladd_6ns_6ns_6ns_12_4_1_U273" BINDMODULE="LeNet_wrapper_mac_muladd_6ns_6ns_6ns_12_4_1" DEPTH="3" TYPE="resource" MODULENAME="mac_muladd_6ns_6ns_6ns_12_4_1" DISPNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U273" RTLNAME="LeNet_wrapper_mac_muladd_6ns_6ns_6ns_12_4_1">
+      <Resources DSP="1" LUT="7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_78_1_VITIS_LOOP_79_2" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U273" SOURCE="./../hw_library/fixed_point_stream_convolution.h:84" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln84"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_78_1_VITIS_LOOP_79_2" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_6ns_6ns_6ns_12_4_1_U273" SOURCE="./../hw_library/fixed_point_stream_convolution.h:84" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln84"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/grp_SMM_1u_500u_50u_Pipeline_VITIS_LOOP_78_1_VITIS_LOOP_79_2_fu_216/urem_9ns_5ns_4_13_1_U271" BINDMODULE="LeNet_wrapper_urem_9ns_5ns_4_13_1" DEPTH="3" TYPE="rtl" MODULENAME="urem_9ns_5ns_4_13_1" DISPNAME="urem_9ns_5ns_4_13_1_U271" RTLNAME="LeNet_wrapper_urem_9ns_5ns_4_13_1">
+      <Resources FF="39" LUT="54"/>
+      <LocalResources LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32ns_32ns_64_2_1_U294" BINDMODULE="LeNet_wrapper_mul_32ns_32ns_64_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_32ns_64_2_1" DISPNAME="mul_32ns_32ns_64_2_1_U294" RTLNAME="LeNet_wrapper_mul_32ns_32ns_64_2_1">
+      <Resources DSP="4" FF="34" LUT="49"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U294" SOURCE="./../hw_library/fixed_point_stream_convolution.h:30" STORAGESUBTYPE="" URAM="0" VARIABLE="bound11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32ns_8ns_39_2_1_U295" BINDMODULE="LeNet_wrapper_mul_32ns_8ns_39_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_8ns_39_2_1" DISPNAME="mul_32ns_8ns_39_2_1_U295" RTLNAME="LeNet_wrapper_mul_32ns_8ns_39_2_1">
+      <Resources FF="39" LUT="69"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="2" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_8ns_39_2_1_U295" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="bound4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32s_32s_32_2_1_U296" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U296" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="80"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U296" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U296" SOURCE="./../hw_library/fixed_point_stream_convolution.h:75" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln75_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/mul_32s_32s_32_2_1_U297" BINDMODULE="LeNet_wrapper_mul_32s_32s_32_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32s_32s_32_2_1" DISPNAME="mul_32s_32s_32_2_1_U297" RTLNAME="LeNet_wrapper_mul_32s_32s_32_2_1">
+      <Resources DSP="3" FF="17" LUT="18"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U297" SOURCE="./../hw_library/fixed_point_stream_convolution.h:75" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln75"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1A_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="p_ZZ3SMMILj1ELj500ELj50EEvRN3hls6streamI6ap_intILi32EELi0EEES5_jjiE1B_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="12"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inAem">
+      <Resources FF="8" LUT="16"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_U" SOURCE="" STORAGESIZE="8 46 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/SMM_1u_500u_50u_U0/void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U" BINDMODULE="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DEPTH="2" TYPE="resource" MODULENAME="SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA" DISPNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U" RTLNAME="LeNet_wrapper_SMM_1u_500u_50u_s_void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_inpcA">
+      <Resources BRAM="2"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="pragma" RTLNAME="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B_U" SOURCE="" STORAGESIZE="8 2300 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p" URAM="0" VARIABLE="void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_B"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_0_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_0_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="47"/>
+      <LocalResources FF="29" LUT="35"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_0_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_0"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_1_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_1_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="43"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_1_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_2_U" BINDMODULE="LeNet_wrapper_fifo_w32_d2_S" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d2_S" DISPNAME="connect_2_U" RTLNAME="LeNet_wrapper_fifo_w32_d2_S">
+      <Resources FF="69" LUT="39"/>
+      <LocalResources FF="5" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_2_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_3_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_3_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="44"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_3_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_4_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_4_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="43"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_4_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_5_U" BINDMODULE="LeNet_wrapper_fifo_w32_d2_S" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d2_S" DISPNAME="connect_5_U" RTLNAME="LeNet_wrapper_fifo_w32_d2_S">
+      <Resources FF="69" LUT="40"/>
+      <LocalResources FF="5" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_5_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 2 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_6_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_6_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="43"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_6_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_7_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_7_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="35"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_7_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/connect_8_U" BINDMODULE="LeNet_wrapper_fifo_w32_d50_A" DEPTH="1" TYPE="resource" MODULENAME="fifo_w32_d50_A" DISPNAME="connect_8_U" RTLNAME="LeNet_wrapper_fifo_w32_d50_A">
+      <Resources BRAM="1" FF="29" LUT="45"/>
+      <LocalResources FF="29" LUT="34"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="memory" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="connect_8_U" SOURCE="LeNet_wrapper.cpp:13" STORAGESIZE="32 50 1" STORAGESUBTYPE="stream" STORAGEUSAGE="fifo channel" URAM="0" VARIABLE="connect_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0" DEPTH="1" TYPE="function" MODULENAME="pool_2u_20u_24u_s" DISPNAME="pool_2u_20u_24u_U0" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s">
+      <SubModules count="20">acc_U buf_10_U buf_11_U buf_1_U buf_2_U buf_3_U buf_4_U buf_5_U buf_6_U buf_7_U buf_8_U buf_9_U buf_U grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418 grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400 mul_31ns_32ns_63_2_1_U168 mul_32ns_31ns_63_2_1_U169</SubModules>
+      <Resources DSP="8" FF="1807" LUT="3331"/>
+      <LocalResources FF="839" LUT="1982"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/acc_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_acc_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_acc_RAM_2P_LUTRAM_1R1W" DISPNAME="acc_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_acc_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="64" LUT="177"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="acc_U" SOURCE="./../hw_library/pool.h:121" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="acc"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="acc_U" SOURCE="./../hw_library/pool.h:121" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="acc"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_10_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_10_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="25"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_10_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_10"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_11_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_11_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="72"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_11_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_11"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_1_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_1_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_1_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_1_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_2_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_2_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_2_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_2_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_3_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_3_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="61"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_3_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_3_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_4_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_4_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_4_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_5_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_5_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_5_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_6_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_6_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="24"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_6_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_7_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_7_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="69"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_7_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_8_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_8_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="25"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_8_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_8"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_9_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_9_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="27"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_9_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_9"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/buf_U" BINDMODULE="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_U" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="25"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384" DEPTH="2" TYPE="function" MODULENAME="pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1" DISPNAME="grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="7" LUT="17"/>
+      <LocalResources FF="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_123_1_fu_384/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="17"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409" DEPTH="2" TYPE="function" MODULENAME="pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9" DISPNAME="grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="180" LUT="207"/>
+      <LocalResources FF="178" LUT="201"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_409/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439" DEPTH="2" TYPE="function" MODULENAME="pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10" DISPNAME="grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="84" LUT="76"/>
+      <LocalResources FF="82" LUT="57"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_153_10_fu_439/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418" DEPTH="2" TYPE="function" MODULENAME="pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12" DISPNAME="grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="146" LUT="274"/>
+      <LocalResources FF="144" LUT="269"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_418/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400" DEPTH="2" TYPE="function" MODULENAME="pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13" DISPNAME="grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400" RTLNAME="LeNet_wrapper_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="68"/>
+      <LocalResources FF="33" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/grp_pool_2u_20u_24u_Pipeline_VITIS_LOOP_194_13_fu_400/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/mul_31ns_32ns_63_2_1_U168" BINDMODULE="LeNet_wrapper_mul_31ns_32ns_63_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_31ns_32ns_63_2_1" DISPNAME="mul_31ns_32ns_63_2_1_U168" RTLNAME="LeNet_wrapper_mul_31ns_32ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="56"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32ns_63_2_1_U168" SOURCE="./../hw_library/pool.h:138" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln138"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_20u_24u_U0/mul_32ns_31ns_63_2_1_U169" BINDMODULE="LeNet_wrapper_mul_32ns_31ns_63_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_31ns_63_2_1" DISPNAME="mul_32ns_31ns_63_2_1_U169" RTLNAME="LeNet_wrapper_mul_32ns_31ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="47"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_31ns_63_2_1_U169" SOURCE="./../hw_library/pool.h:138" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln138_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0" DEPTH="1" TYPE="function" MODULENAME="pool_2u_50u_8u_s" DISPNAME="pool_2u_50u_8u_U0" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s">
+      <SubModules count="12">acc_U buf_1_U buf_2_U buf_3_U buf_U grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678 grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660 mul_31ns_32ns_63_2_1_U334 mul_32ns_31ns_63_2_1_U335</SubModules>
+      <Resources DSP="8" FF="1582" LUT="3141"/>
+      <LocalResources FF="867" LUT="1983"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/acc_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_acc_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_50u_8u_s_acc_RAM_2P_LUTRAM_1R1W" DISPNAME="acc_U" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s_acc_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="64" LUT="306"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="acc_U" SOURCE="./../hw_library/pool.h:121" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="acc"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="acc_U" SOURCE="./../hw_library/pool.h:121" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="acc"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_1_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_1_U" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="52"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_1_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_1"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_1_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_2_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_2_U" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="44"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_2_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_2_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_3_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_3_U" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="44"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_3_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_3"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_3_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf_3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/buf_U" BINDMODULE="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DEPTH="2" TYPE="resource" MODULENAME="pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W" DISPNAME="buf_U" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_s_buf_RAM_2P_LUTRAM_1R1W">
+      <Resources FF="32" LUT="68"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 20 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="lutram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="buf_U" SOURCE="./../hw_library/pool.h:119" STORAGESIZE="32 50 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p array" URAM="0" VARIABLE="buf"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652" DEPTH="2" TYPE="function" MODULENAME="pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1" DISPNAME="grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="8" LUT="19"/>
+      <LocalResources FF="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1_fu_652/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="19"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669" DEPTH="2" TYPE="function" MODULENAME="pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9" DISPNAME="grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="182" LUT="208"/>
+      <LocalResources FF="180" LUT="202"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_144_8_VITIS_LOOP_145_9_fu_669/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="6"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691" DEPTH="2" TYPE="function" MODULENAME="pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10" DISPNAME="grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="87" LUT="74"/>
+      <LocalResources FF="85" LUT="49"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_153_10_fu_691/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="25"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678" DEPTH="2" TYPE="function" MODULENAME="pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12" DISPNAME="grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="143" LUT="168"/>
+      <LocalResources FF="141" LUT="163"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_167_11_VITIS_LOOP_168_12_fu_678/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660" DEPTH="2" TYPE="function" MODULENAME="pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13" DISPNAME="grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660" RTLNAME="LeNet_wrapper_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13">
+      <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+      <Resources FF="35" LUT="68"/>
+      <LocalResources FF="33" LUT="3"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/grp_pool_2u_50u_8u_Pipeline_VITIS_LOOP_194_13_fu_660/flow_control_loop_pipe_sequential_init_U" BINDMODULE="LeNet_wrapper_flow_control_loop_pipe_sequential_init" DEPTH="3" TYPE="rtl" MODULENAME="flow_control_loop_pipe_sequential_init" DISPNAME="flow_control_loop_pipe_sequential_init_U" RTLNAME="LeNet_wrapper_flow_control_loop_pipe_sequential_init">
+      <Resources FF="2" LUT="65"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/mul_31ns_32ns_63_2_1_U334" BINDMODULE="LeNet_wrapper_mul_31ns_32ns_63_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_31ns_32ns_63_2_1" DISPNAME="mul_31ns_32ns_63_2_1_U334" RTLNAME="LeNet_wrapper_mul_31ns_32ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="57"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_31ns_32ns_63_2_1_U334" SOURCE="./../hw_library/pool.h:138" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln138"/>
+    </RtlModule>
+    <RtlModule CELL="inst/pool_2u_50u_8u_U0/mul_32ns_31ns_63_2_1_U335" BINDMODULE="LeNet_wrapper_mul_32ns_31ns_63_2_1" DEPTH="2" TYPE="resource" MODULENAME="mul_32ns_31ns_63_2_1" DISPNAME="mul_32ns_31ns_63_2_1_U335" RTLNAME="LeNet_wrapper_mul_32ns_31ns_63_2_1">
+      <Resources DSP="4" FF="34" LUT="47"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_31ns_63_2_1_U335" SOURCE="./../hw_library/pool.h:138" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln138_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_AXI_DMA_MASTER_U0_U" BINDMODULE="LeNet_wrapper_start_for_AXI_DMA_MASTER_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_AXI_DMA_MASTER_U0" DISPNAME="start_for_AXI_DMA_MASTER_U0_U" RTLNAME="LeNet_wrapper_start_for_AXI_DMA_MASTER_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_FC_1u_500u_10u_U0_U" BINDMODULE="LeNet_wrapper_start_for_FC_1u_500u_10u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_FC_1u_500u_10u_U0" DISPNAME="start_for_FC_1u_500u_10u_U0_U" RTLNAME="LeNet_wrapper_start_for_FC_1u_500u_10u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_FC_1u_800u_500u_U0_U" BINDMODULE="LeNet_wrapper_start_for_FC_1u_800u_500u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_FC_1u_800u_500u_U0" DISPNAME="start_for_FC_1u_800u_500u_U0_U" RTLNAME="LeNet_wrapper_start_for_FC_1u_800u_500u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SCIG_5u_1u_28u_20u_24u_0u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_SCIG_5u_1u_28u_20u_24u_0u_U0" DISPNAME="start_for_SCIG_5u_1u_28u_20u_24u_0u_U0_U" RTLNAME="LeNet_wrapper_start_for_SCIG_5u_1u_28u_20u_24u_0u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SCIG_5u_20u_12u_50u_8u_0u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_SCIG_5u_20u_12u_50u_8u_0u_U0" DISPNAME="start_for_SCIG_5u_20u_12u_50u_8u_0u_U0_U" RTLNAME="LeNet_wrapper_start_for_SCIG_5u_20u_12u_50u_8u_0u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_SMM_1u_25u_20u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SMM_1u_25u_20u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_SMM_1u_25u_20u_U0" DISPNAME="start_for_SMM_1u_25u_20u_U0_U" RTLNAME="LeNet_wrapper_start_for_SMM_1u_25u_20u_U0">
+      <Resources FF="4" LUT="4"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_SMM_1u_500u_50u_U0_U" BINDMODULE="LeNet_wrapper_start_for_SMM_1u_500u_50u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_SMM_1u_500u_50u_U0" DISPNAME="start_for_SMM_1u_500u_50u_U0_U" RTLNAME="LeNet_wrapper_start_for_SMM_1u_500u_50u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_pool_2u_20u_24u_U0_U" BINDMODULE="LeNet_wrapper_start_for_pool_2u_20u_24u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_pool_2u_20u_24u_U0" DISPNAME="start_for_pool_2u_20u_24u_U0_U" RTLNAME="LeNet_wrapper_start_for_pool_2u_20u_24u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/start_for_pool_2u_50u_8u_U0_U" BINDMODULE="LeNet_wrapper_start_for_pool_2u_50u_8u_U0" DEPTH="1" TYPE="rtl" MODULENAME="start_for_pool_2u_50u_8u_U0" DISPNAME="start_for_pool_2u_50u_8u_U0_U" RTLNAME="LeNet_wrapper_start_for_pool_2u_50u_8u_U0">
+      <Resources FF="4" LUT="5"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[0]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[10]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[11]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[13]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[14]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[15]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[16]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[17]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="9.659" DATAPATH_LOGIC_DELAY="2.861" DATAPATH_NET_DELAY="6.798" ENDPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]/R" LOGIC_LEVELS="12" MAX_FANOUT="32" SLACK="-0.267" STARTPOINT_PIN="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]/C">
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[9]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="300"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_3" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln126_reg_627[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[3]_i_2" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="641"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[3]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[7]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[11]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76_reg[15]_i_1" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_9" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/icmp_ln153_reg_639_pp0_iter2_reg_reg[0]_srl2_i_4" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/inp_fu_76[31]_i_6" PRIMITIVE_TYPE="LUT.others.LUT6" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/ky_fu_68[0]_i_5" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="163"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/flow_control_loop_pipe_sequential_init_U/kx_fu_80[0]_i_1" PRIMITIVE_TYPE="LUT.others.LUT4" LINE_NUMBER="69"/>
+      <CELL NAME="SCIG_5u_1u_28u_20u_24u_0u_U0/grp_SCIG_5u_1u_28u_20u_24u_0u_Pipeline_VITIS_LOOP_123_1_fu_67/kx_fu_80_reg[18]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="327"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/LeNet_wrapper_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/LeNet_wrapper_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/LeNet_wrapper_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/LeNet_wrapper_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/LeNet_wrapper_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/LeNet_wrapper_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sun Nov 03 14:00:20 +0700 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="LeNet_wrapper"/>
+    <item NAME="Solution" VALUE="solution1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="zynq"/>
+    <item NAME="Target device" VALUE="xc7z020-clg484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

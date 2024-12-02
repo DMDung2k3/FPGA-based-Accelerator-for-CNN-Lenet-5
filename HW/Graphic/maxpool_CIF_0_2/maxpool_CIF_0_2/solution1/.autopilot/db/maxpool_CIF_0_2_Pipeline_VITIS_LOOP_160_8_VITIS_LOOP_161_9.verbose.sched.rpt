@@ -1,0 +1,178 @@
+
+
+================================================================
+== Vitis HLS Report for 'maxpool_CIF_0_2_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9'
+================================================================
+* Date:           Mon Oct 28 11:01:33 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        maxpool_CIF_0_2
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.260 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_160_8_VITIS_LOOP_161_9  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%reuse_addr_reg = alloca i32 1"   --->   Operation 5 'alloca' 'reuse_addr_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%reuse_reg = alloca i32 1"   --->   Operation 6 'alloca' 'reuse_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ch_1 = alloca i32 1" [maxPool_2.cpp:161]   --->   Operation 7 'alloca' 'ch_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 8 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %acc, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %in_r, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln154_read = read i33 @_ssdm_op_Read.ap_auto.i33, i33 %zext_ln154"   --->   Operation 11 'read' 'zext_ln154_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%IFMCH_curr_load_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %IFMCH_curr_load"   --->   Operation 12 'read' 'IFMCH_curr_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%store_ln0 = store i33 0, i33 %indvar_flatten"   --->   Operation 13 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 14 [1/1] (1.58ns)   --->   "%store_ln161 = store i6 0, i6 %ch_1" [maxPool_2.cpp:161]   --->   Operation 14 'store' 'store_ln161' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 15 [1/1] (1.58ns)   --->   "%store_ln0 = store i32 0, i32 %reuse_reg"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg"   --->   Operation 16 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc83"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.26>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%ch = load i6 %ch_1" [maxPool_2.cpp:161]   --->   Operation 18 'load' 'ch' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i33 %indvar_flatten" [maxPool_2.cpp:160]   --->   Operation 19 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln161_1 = zext i6 %ch" [maxPool_2.cpp:161]   --->   Operation 20 'zext' 'zext_ln161_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (2.55ns)   --->   "%icmp_ln161 = icmp_eq  i32 %zext_ln161_1, i32 %IFMCH_curr_load_read" [maxPool_2.cpp:161]   --->   Operation 21 'icmp' 'icmp_ln161' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (2.59ns)   --->   "%icmp_ln160 = icmp_eq  i33 %indvar_flatten_load, i33 %zext_ln154_read" [maxPool_2.cpp:160]   --->   Operation 22 'icmp' 'icmp_ln160' <Predicate = true> <Delay = 2.59> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (2.59ns)   --->   "%add_ln160 = add i33 %indvar_flatten_load, i33 1" [maxPool_2.cpp:160]   --->   Operation 23 'add' 'add_ln160' <Predicate = true> <Delay = 2.59> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%br_ln160 = br i1 %icmp_ln160, void %for.inc86.loopexit, void %VITIS_LOOP_171_10.exitStub" [maxPool_2.cpp:160]   --->   Operation 24 'br' 'br_ln160' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (1.18ns)   --->   "%select_ln160 = select i1 %icmp_ln161, i6 0, i6 %ch" [maxPool_2.cpp:160]   --->   Operation 25 'select' 'select_ln160' <Predicate = (!icmp_ln160)> <Delay = 1.18> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.18> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln161 = zext i6 %select_ln160" [maxPool_2.cpp:161]   --->   Operation 26 'zext' 'zext_ln161' <Predicate = (!icmp_ln160)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.axis.volatile.i64P128A, i64 %in_r" [maxPool_2.cpp:164]   --->   Operation 27 'read' 'in_r_read' <Predicate = (!icmp_ln160)> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%acc_addr = getelementptr i32 %acc, i64 0, i64 %zext_ln161" [maxPool_2.cpp:166]   --->   Operation 28 'getelementptr' 'acc_addr' <Predicate = (!icmp_ln160)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%reuse_addr_reg_load = load i64 %reuse_addr_reg"   --->   Operation 29 'load' 'reuse_addr_reg_load' <Predicate = (!icmp_ln160)> <Delay = 0.00>
+ST_2 : Operation 30 [2/2] (2.32ns)   --->   "%acc_load = load i5 %acc_addr" [maxPool_2.cpp:166]   --->   Operation 30 'load' 'acc_load' <Predicate = (!icmp_ln160)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_2 : Operation 31 [1/1] (3.52ns)   --->   "%addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln161" [maxPool_2.cpp:161]   --->   Operation 31 'icmp' 'addr_cmp' <Predicate = (!icmp_ln160)> <Delay = 3.52> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (1.58ns)   --->   "%store_ln161 = store i64 %zext_ln161, i64 %reuse_addr_reg" [maxPool_2.cpp:161]   --->   Operation 32 'store' 'store_ln161' <Predicate = (!icmp_ln160)> <Delay = 1.58>
+ST_2 : Operation 33 [1/1] (1.82ns)   --->   "%add_ln161 = add i6 %select_ln160, i6 1" [maxPool_2.cpp:161]   --->   Operation 33 'add' 'add_ln161' <Predicate = (!icmp_ln160)> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/1] (1.58ns)   --->   "%store_ln160 = store i33 %add_ln160, i33 %indvar_flatten" [maxPool_2.cpp:160]   --->   Operation 34 'store' 'store_ln160' <Predicate = (!icmp_ln160)> <Delay = 1.58>
+ST_2 : Operation 35 [1/1] (1.58ns)   --->   "%store_ln161 = store i6 %add_ln161, i6 %ch_1" [maxPool_2.cpp:161]   --->   Operation 35 'store' 'store_ln161' <Predicate = (!icmp_ln160)> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 46 'ret' 'ret_ln0' <Predicate = (icmp_ln160)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.19>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_160_8_VITIS_LOOP_161_9_str"   --->   Operation 36 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%specpipeline_ln162 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_4" [maxPool_2.cpp:162]   --->   Operation 37 'specpipeline' 'specpipeline_ln162' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node add_ln166)   --->   "%valIn_data = trunc i64 %in_r_read" [maxPool_2.cpp:164]   --->   Operation 38 'trunc' 'valIn_data' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%reuse_reg_load = load i32 %reuse_reg"   --->   Operation 39 'load' 'reuse_reg_load' <Predicate = (addr_cmp)> <Delay = 0.00>
+ST_3 : Operation 40 [1/2] (2.32ns)   --->   "%acc_load = load i5 %acc_addr" [maxPool_2.cpp:166]   --->   Operation 40 'load' 'acc_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_3 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node add_ln166)   --->   "%reuse_select = select i1 %addr_cmp, i32 %reuse_reg_load, i32 %acc_load" [maxPool_2.cpp:161]   --->   Operation 41 'select' 'reuse_select' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 42 [1/1] (2.55ns) (out node of the LUT)   --->   "%add_ln166 = add i32 %reuse_select, i32 %valIn_data" [maxPool_2.cpp:166]   --->   Operation 42 'add' 'add_ln166' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (2.32ns)   --->   "%store_ln166 = store i32 %add_ln166, i5 %acc_addr" [maxPool_2.cpp:166]   --->   Operation 43 'store' 'store_ln166' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 32> <RAM>
+ST_3 : Operation 44 [1/1] (1.58ns)   --->   "%store_ln166 = store i32 %add_ln166, i32 %reuse_reg" [maxPool_2.cpp:166]   --->   Operation 44 'store' 'store_ln166' <Predicate = true> <Delay = 1.58>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%br_ln161 = br void %for.inc83" [maxPool_2.cpp:161]   --->   Operation 45 'br' 'br_ln161' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.588ns
+The critical path consists of the following:
+	'alloca' operation 33 bit ('indvar_flatten') [8]  (0.000 ns)
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [13]  (1.588 ns)
+
+ <State 2>: 7.260ns
+The critical path consists of the following:
+	'load' operation 6 bit ('ch', maxPool_2.cpp:161) on local variable 'ch', maxPool_2.cpp:161 [19]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln161', maxPool_2.cpp:161) [22]  (2.552 ns)
+	'select' operation 6 bit ('select_ln160', maxPool_2.cpp:160) [28]  (1.188 ns)
+	'icmp' operation 1 bit ('addr_cmp', maxPool_2.cpp:161) [37]  (3.520 ns)
+
+ <State 3>: 7.196ns
+The critical path consists of the following:
+	'load' operation 32 bit ('acc_load', maxPool_2.cpp:166) on array 'acc' [36]  (2.322 ns)
+	'select' operation 32 bit ('reuse_select', maxPool_2.cpp:161) [38]  (0.000 ns)
+	'add' operation 32 bit ('add_ln166', maxPool_2.cpp:166) [39]  (2.552 ns)
+	'store' operation 0 bit ('store_ln166', maxPool_2.cpp:166) of variable 'add_ln166', maxPool_2.cpp:166 on array 'acc' [40]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

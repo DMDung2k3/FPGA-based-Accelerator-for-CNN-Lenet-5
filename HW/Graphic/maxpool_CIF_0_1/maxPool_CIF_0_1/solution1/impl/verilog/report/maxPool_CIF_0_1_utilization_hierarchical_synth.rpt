@@ -1,0 +1,71 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Oct 28 10:53:01 2024
+| Host         : XoiXoi running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file ./report/maxPool_CIF_0_1_utilization_hierarchical_synth.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                                       Instance                                      |                                            Module                                            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| bd_0_wrapper                                                                        |                                                                                        (top) |       3606 |       3158 |     448 |    0 | 2477 |      0 |      0 |          8 |
+|   bd_0_i                                                                            |                                                                                         bd_0 |       3606 |       3158 |     448 |    0 | 2477 |      0 |      0 |          8 |
+|     hls_inst                                                                        |                                                                              bd_0_hls_inst_0 |       3606 |       3158 |     448 |    0 | 2477 |      0 |      0 |          8 |
+|       inst                                                                          |                                                              bd_0_hls_inst_0_maxPool_CIF_0_1 |       3606 |       3158 |     448 |    0 | 2477 |      0 |      0 |          8 |
+|         (inst)                                                                      |                                                              bd_0_hls_inst_0_maxPool_CIF_0_1 |        207 |        207 |       0 |    0 | 1108 |      0 |      0 |          0 |
+|         acc_U                                                                       |                                       bd_0_hls_inst_0_maxPool_CIF_0_1_acc_RAM_2P_LUTRAM_1R1W |         93 |         29 |      64 |    0 |   64 |      0 |      0 |          0 |
+|         buf_10_U                                                                    |                                       bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_11_U                                                                    |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_0 |         56 |         32 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_12_U                                                                    |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_1 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_13_U                                                                    |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_2 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_14_U                                                                    |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_3 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_15_U                                                                    |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_4 |         56 |         32 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_1_U                                                                     |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_5 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_2_U                                                                     |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_6 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_3_U                                                                     |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_7 |         56 |         32 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_4_U                                                                     |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_8 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_5_U                                                                     |                                     bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_9 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_6_U                                                                     |                                    bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_10 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_7_U                                                                     |                                    bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_11 |         56 |         32 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_8_U                                                                     |                                    bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_12 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_9_U                                                                     |                                    bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_13 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         buf_U                                                                       |                                    bd_0_hls_inst_0_maxPool_CIF_0_1_buf_RAM_2P_LUTRAM_1R1W_14 |         24 |          0 |      24 |    0 |   32 |      0 |      0 |          0 |
+|         grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536                        |                    bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 |         19 |         19 |       0 |    0 |    8 |      0 |      0 |          0 |
+|           (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1_fu_536)                    |                    bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_139_1 |          2 |          2 |       0 |    0 |    6 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                                  |                    bd_0_hls_inst_0_maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init_21 |         17 |         17 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565       |   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 |        182 |        182 |       0 |    0 |  120 |      0 |      0 |          0 |
+|           (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9_fu_565)   |   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_160_8_VITIS_LOOP_161_9 |        155 |        155 |       0 |    0 |  118 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                                  |                    bd_0_hls_inst_0_maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init_20 |         27 |         27 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603                       |                   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 |        118 |        118 |       0 |    0 |   85 |      0 |      0 |          0 |
+|           (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10_fu_603)                   |                   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_171_10 |         71 |         71 |       0 |    0 |   83 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                                  |                    bd_0_hls_inst_0_maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init_19 |         47 |         47 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574     | bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 |        278 |        278 |       0 |    0 |  149 |      0 |      0 |          0 |
+|           (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12_fu_574) | bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_185_11_VITIS_LOOP_186_12 |        272 |        272 |       0 |    0 |  147 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                                  |                    bd_0_hls_inst_0_maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init_18 |          6 |          6 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556                       |                   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 |         66 |         66 |       0 |    0 |   99 |      0 |      0 |          0 |
+|           (grp_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13_fu_556)                   |                   bd_0_hls_inst_0_maxPool_CIF_0_1_maxPool_CIF_0_1_Pipeline_VITIS_LOOP_214_13 |          0 |          0 |       0 |    0 |   97 |      0 |      0 |          0 |
+|           flow_control_loop_pipe_sequential_init_U                                  |                       bd_0_hls_inst_0_maxPool_CIF_0_1_flow_control_loop_pipe_sequential_init |         66 |         66 |       0 |    0 |    2 |      0 |      0 |          0 |
+|         mul_31ns_32ns_63_2_1_U69                                                    |                                         bd_0_hls_inst_0_maxPool_CIF_0_1_mul_31ns_32ns_63_2_1 |         53 |         53 |       0 |    0 |   34 |      0 |      0 |          4 |
+|         mul_32ns_31ns_63_2_1_U70                                                    |                                         bd_0_hls_inst_0_maxPool_CIF_0_1_mul_32ns_31ns_63_2_1 |         46 |         46 |       0 |    0 |   34 |      0 |      0 |          4 |
+|         mul_32s_32s_32_1_1_U71                                                      |                                           bd_0_hls_inst_0_maxPool_CIF_0_1_mul_32s_32s_32_1_1 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         mul_32s_32s_32_1_1_U72                                                      |                                        bd_0_hls_inst_0_maxPool_CIF_0_1_mul_32s_32s_32_1_1_15 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         mul_32s_32s_32_1_1_U73                                                      |                                        bd_0_hls_inst_0_maxPool_CIF_0_1_mul_32s_32s_32_1_1_16 |        629 |        629 |       0 |    0 |    0 |      0 |      0 |          0 |
+|         regslice_both_in_r_U                                                        |                                                bd_0_hls_inst_0_maxPool_CIF_0_1_regslice_both |        100 |        100 |       0 |    0 |  132 |      0 |      0 |          0 |
+|         regslice_both_out_r_U                                                       |                                             bd_0_hls_inst_0_maxPool_CIF_0_1_regslice_both_17 |         45 |         45 |       0 |    0 |  132 |      0 |      0 |          0 |
++-------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

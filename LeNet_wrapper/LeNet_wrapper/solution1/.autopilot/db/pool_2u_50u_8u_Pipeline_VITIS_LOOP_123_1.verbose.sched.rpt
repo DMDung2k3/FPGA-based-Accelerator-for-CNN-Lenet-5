@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vitis HLS Report for 'pool_2u_50u_8u_Pipeline_VITIS_LOOP_123_1'
+================================================================
+* Date:           Sun Nov  3 13:41:50 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.735 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       52|       52|  0.520 us|  0.520 us|   52|   52|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_123_1  |       50|       50|         1|          1|          1|    50|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.73>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [./../hw_library/pool.h:123]   --->   Operation 4 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_r, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 5 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 6 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %buf_3, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.58ns)   --->   "%store_ln123 = store i6 0, i6 %j" [./../hw_library/pool.h:123]   --->   Operation 9 'store' 'store_ln123' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_124_2"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%j_1 = load i6 %j" [./../hw_library/pool.h:123]   --->   Operation 11 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (1.82ns)   --->   "%icmp_ln123 = icmp_eq  i6 %j_1, i6 50" [./../hw_library/pool.h:123]   --->   Operation 12 'icmp' 'icmp_ln123' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (1.82ns)   --->   "%add_ln123 = add i6 %j_1, i6 1" [./../hw_library/pool.h:123]   --->   Operation 13 'add' 'add_ln123' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln123 = br i1 %icmp_ln123, void %VITIS_LOOP_124_2.split, void %for.inc58.exitStub" [./../hw_library/pool.h:123]   --->   Operation 14 'br' 'br_ln123' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln123 = zext i6 %j_1" [./../hw_library/pool.h:123]   --->   Operation 15 'zext' 'zext_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln123 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_3" [./../hw_library/pool.h:123]   --->   Operation 16 'specpipeline' 'specpipeline_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln123 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 50, i64 50, i64 50" [./../hw_library/pool.h:123]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln123 = specloopname void @_ssdm_op_SpecLoopName, void @empty_38" [./../hw_library/pool.h:123]   --->   Operation 18 'specloopname' 'specloopname_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%buf_addr = getelementptr i32 %buf_r, i64 0, i64 %zext_ln123" [./../hw_library/pool.h:126]   --->   Operation 19 'getelementptr' 'buf_addr' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%buf_1_addr = getelementptr i32 %buf_1, i64 0, i64 %zext_ln123" [./../hw_library/pool.h:126]   --->   Operation 20 'getelementptr' 'buf_1_addr' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%buf_2_addr = getelementptr i32 %buf_2, i64 0, i64 %zext_ln123" [./../hw_library/pool.h:126]   --->   Operation 21 'getelementptr' 'buf_2_addr' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%buf_3_addr = getelementptr i32 %buf_3, i64 0, i64 %zext_ln123" [./../hw_library/pool.h:126]   --->   Operation 22 'getelementptr' 'buf_3_addr' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (2.32ns)   --->   "%store_ln126 = store i32 4293967297, i6 %buf_addr" [./../hw_library/pool.h:126]   --->   Operation 23 'store' 'store_ln126' <Predicate = (!icmp_ln123)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_1 : Operation 24 [1/1] (2.32ns)   --->   "%store_ln126 = store i32 4293967297, i6 %buf_1_addr" [./../hw_library/pool.h:126]   --->   Operation 24 'store' 'store_ln126' <Predicate = (!icmp_ln123)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_1 : Operation 25 [1/1] (2.32ns)   --->   "%store_ln126 = store i32 4293967297, i6 %buf_2_addr" [./../hw_library/pool.h:126]   --->   Operation 25 'store' 'store_ln126' <Predicate = (!icmp_ln123)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_1 : Operation 26 [1/1] (2.32ns)   --->   "%store_ln126 = store i32 4293967297, i6 %buf_3_addr" [./../hw_library/pool.h:126]   --->   Operation 26 'store' 'store_ln126' <Predicate = (!icmp_ln123)> <Delay = 2.32> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 90 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 50> <RAM>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln123 = store i6 %add_ln123, i6 %j" [./../hw_library/pool.h:123]   --->   Operation 27 'store' 'store_ln123' <Predicate = (!icmp_ln123)> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln123 = br void %VITIS_LOOP_124_2" [./../hw_library/pool.h:123]   --->   Operation 28 'br' 'br_ln123' <Predicate = (!icmp_ln123)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (icmp_ln123)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.735ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln123', ./../hw_library/pool.h:123) of constant 0 on local variable 'j', ./../hw_library/pool.h:123 [10]  (1.588 ns)
+	'load' operation 6 bit ('j', ./../hw_library/pool.h:123) on local variable 'j', ./../hw_library/pool.h:123 [13]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln123', ./../hw_library/pool.h:123) [14]  (1.825 ns)
+	'store' operation 0 bit ('store_ln126', ./../hw_library/pool.h:126) of constant 4293967297 on array 'buf_r' [26]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

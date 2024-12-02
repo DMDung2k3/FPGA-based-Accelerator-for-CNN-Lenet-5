@@ -1,0 +1,794 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg484-1</Part>
+        <TopModelName>SMM_CIF_0_3</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>12.592</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                <Slack>7.30</Slack>
+                <TripCount>undef</TripCount>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <IterationLatency>undef</IterationLatency>
+                <InstanceList/>
+            </VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>Timing Violation</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>fixed_point_stream_convolution.cpp:35</SourceLocation>
+            <SummaryOfLoopViolations>
+                <VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                    <Name>VITIS_LOOP_128_3_VITIS_LOOP_136_4</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:136</SourceLocation>
+                </VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>50</BRAM_18K>
+            <DSP>35</DSP>
+            <FF>3139</FF>
+            <LUT>8908</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>SMM_CIF_0_3</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>SMM_CIF_0_3</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_a_TDATA</name>
+            <Object>in_stream_a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_a_TVALID</name>
+            <Object>in_stream_a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_a_TREADY</name>
+            <Object>in_stream_a</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_TDATA</name>
+            <Object>out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_TVALID</name>
+            <Object>out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_TREADY</name>
+            <Object>out_stream</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>SMM_CIF_0_3</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6_fu_208</InstName>
+                    <ModuleName>SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>208</ID>
+                    <BindInstances>add_ln140_fu_726_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_SMM_CIF_0_3_Pipeline_L2_L3_fu_265</InstName>
+                    <ModuleName>SMM_CIF_0_3_Pipeline_L2_L3</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>265</ID>
+                    <BindInstances>add_ln156_1_fu_891_p2 add_ln156_fu_903_p2 add_ln163_24_fu_997_p2 mac_muladd_16s_16s_32ns_32_4_1_U49 mul_16s_16s_32_1_1_U31 mul_16s_16s_32_1_1_U32 mul_16s_16s_32_1_1_U28 mac_muladd_16s_16s_32ns_32_4_1_U50 mul_16s_16s_32_1_1_U33 mac_muladd_16s_16s_32s_32_4_1_U40 mac_muladd_16s_16s_32s_32_4_1_U41 mac_muladd_16s_16s_32s_32_4_1_U42 mac_muladd_16s_16s_32s_32_4_1_U37 mul_16s_16s_32_1_1_U34 mac_muladd_16s_16s_32s_32_4_1_U43 mul_16s_16s_32_1_1_U29 mac_muladd_16s_16s_32s_32_4_1_U44 mac_muladd_16s_16s_32ns_32_4_1_U51 mac_muladd_16s_16s_32ns_32_4_1_U45 mac_muladd_16s_16s_32s_32_4_1_U38 mac_muladd_16s_16s_32ns_32_4_1_U52 mac_muladd_16s_16s_32ns_32_4_1_U46 mac_muladd_16s_16s_32ns_32_4_1_U47 mac_muladd_16s_16s_32s_32_4_1_U48 mac_muladd_16s_16s_32s_32_4_1_U39 mul_16s_16s_32_1_1_U35 mul_16s_16s_32_1_1_U36 mul_16s_16s_32_1_1_U30 mac_muladd_16s_16s_32s_32_4_1_U41 mac_muladd_16s_16s_32ns_32_4_1_U51 mac_muladd_16s_16s_32s_32_4_1_U44 mac_muladd_16s_16s_32ns_32_4_1_U49 mac_muladd_16s_16s_32s_32_4_1_U38 mac_muladd_16s_16s_32ns_32_4_1_U47 mac_muladd_16s_16s_32s_32_4_1_U39 mac_muladd_16s_16s_32ns_32_4_1_U45 add_ln163_9_fu_1249_p2 mac_muladd_16s_16s_32s_32_4_1_U40 mac_muladd_16s_16s_32ns_32_4_1_U52 mac_muladd_16s_16s_32s_32_4_1_U42 mac_muladd_16s_16s_32ns_32_4_1_U50 mac_muladd_16s_16s_32s_32_4_1_U37 mac_muladd_16s_16s_32ns_32_4_1_U46 mac_muladd_16s_16s_32s_32_4_1_U43 mac_muladd_16s_16s_32s_32_4_1_U48 add_ln160_fu_935_p2 sub_ln166_fu_1323_p2 sub_ln166_1_fu_1342_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_SMM_CIF_0_3_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2_fu_374</InstName>
+                    <ModuleName>SMM_CIF_0_3_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>374</ID>
+                    <BindInstances>add_ln104_1_fu_595_p2 add_ln104_fu_607_p2 add_ln105_fu_698_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_SMM_CIF_0_3_Pipeline_VITIS_LOOP_187_7_fu_436</InstName>
+                    <ModuleName>SMM_CIF_0_3_Pipeline_VITIS_LOOP_187_7</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>436</ID>
+                    <BindInstances>i_2_fu_69_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>mul_32s_32s_32_2_1_U145 grp_fu_467_p2 sub152_fu_555_p2 sub155_fu_561_p2 mul_32ns_32ns_64_2_1_U144 add_ln128_fu_595_p2 num_imag_2_fu_604_p2 add_ln136_fu_660_p2 mul_32s_32s_32_2_1_U146 mul_32s_32s_32_2_1_U145 sub_fu_695_p2 grp_fu_467_p2 mul_32s_32s_32_1_1_U147 mul_32s_32s_32_1_1_U148 mul_32s_32s_32_1_1_U149 SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6</Name>
+            <Loops>
+                <VITIS_LOOP_140_6/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.462</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>802</Best-caseLatency>
+                    <Average-caseLatency>802</Average-caseLatency>
+                    <Worst-caseLatency>802</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>8.020 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>8.020 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>8.020 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>802</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_140_6>
+                        <Name>VITIS_LOOP_140_6</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>800</TripCount>
+                        <Latency>800</Latency>
+                        <AbsoluteTimeLatency>8.000 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_140_6>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:140</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_140_6>
+                            <Name>VITIS_LOOP_140_6</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fixed_point_stream_convolution.cpp:140</SourceLocation>
+                        </VITIS_LOOP_140_6>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>12</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>857</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln140_fu_726_p2" SOURCE="fixed_point_stream_convolution.cpp:140" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln140"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>SMM_CIF_0_3_Pipeline_L2_L3</Name>
+            <Loops>
+                <L2_L3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.196</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <L2_L3>
+                        <Name>L2_L3</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>10</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </L2_L3>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:159</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <L2_L3>
+                            <Name>L2_L3</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fixed_point_stream_convolution.cpp:156</SourceLocation>
+                        </L2_L3>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>25</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>11</UTIL_DSP>
+                    <FF>1122</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>918</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln156_1_fu_891_p2" SOURCE="fixed_point_stream_convolution.cpp:156" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln156_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln156_fu_903_p2" SOURCE="fixed_point_stream_convolution.cpp:156" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln156"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln163_24_fu_997_p2" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U49" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U31" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U32" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U28" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U50" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U33" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U40" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U41" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U42" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U37" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U34" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U43" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U29" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U44" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U51" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U45" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_15"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U38" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U52" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U46" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U47" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U48" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U39" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_21"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U35" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U36" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="L2_L3" OPTYPE="mul" PRAGMA="" RTLNAME="mul_16s_16s_32_1_1_U30" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln163_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U41" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U51" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U44" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U49" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U38" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U47" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U39" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_7"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U45" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln163_9_fu_1249_p2" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_9"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U40" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U52" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U42" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_13"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U50" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U37" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32ns_32_4_1_U46" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U43" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_32s_32_4_1_U48" SOURCE="fixed_point_stream_convolution.cpp:163" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln163_19"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln160_fu_935_p2" SOURCE="fixed_point_stream_convolution.cpp:160" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln160"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln166_fu_1323_p2" SOURCE="fixed_point_stream_convolution.cpp:166" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln166"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="L2_L3" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln166_1_fu_1342_p2" SOURCE="fixed_point_stream_convolution.cpp:166" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln166_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>SMM_CIF_0_3_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2</Name>
+            <Loops>
+                <VITIS_LOOP_104_1_VITIS_LOOP_105_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>8.371</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>51202</Best-caseLatency>
+                    <Average-caseLatency>51202</Average-caseLatency>
+                    <Worst-caseLatency>51202</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.512 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.512 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.512 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>51202</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_104_1_VITIS_LOOP_105_2>
+                        <Name>VITIS_LOOP_104_1_VITIS_LOOP_105_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>51200</TripCount>
+                        <Latency>51200</Latency>
+                        <AbsoluteTimeLatency>0.512 ms</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_104_1_VITIS_LOOP_105_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:105</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_104_1_VITIS_LOOP_105_2>
+                            <Name>VITIS_LOOP_104_1_VITIS_LOOP_105_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fixed_point_stream_convolution.cpp:104</SourceLocation>
+                        </VITIS_LOOP_104_1_VITIS_LOOP_105_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>145</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>753</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_104_1_VITIS_LOOP_105_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln104_1_fu_595_p2" SOURCE="fixed_point_stream_convolution.cpp:104" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln104_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_104_1_VITIS_LOOP_105_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln104_fu_607_p2" SOURCE="fixed_point_stream_convolution.cpp:104" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln104"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_104_1_VITIS_LOOP_105_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln105_fu_698_p2" SOURCE="fixed_point_stream_convolution.cpp:105" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln105"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>SMM_CIF_0_3_Pipeline_VITIS_LOOP_187_7</Name>
+            <Loops>
+                <VITIS_LOOP_187_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.728</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_187_7>
+                        <Name>VITIS_LOOP_187_7</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_187_7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:187</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_187_7>
+                            <Name>VITIS_LOOP_187_7</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fixed_point_stream_convolution.cpp:187</SourceLocation>
+                        </VITIS_LOOP_187_7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>99</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>140</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_187_7" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_69_p2" SOURCE="fixed_point_stream_convolution.cpp:187" STORAGESUBTYPE="" URAM="0" VARIABLE="i_2"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>SMM_CIF_0_3</Name>
+            <Loops>
+                <VITIS_LOOP_128_3_VITIS_LOOP_136_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>12.592</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                        <Name>VITIS_LOOP_128_3_VITIS_LOOP_136_4</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>undef</IterationLatency>
+                        <PipelineDepth>undef</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_SMM_CIF_0_3_Pipeline_VITIS_LOOP_140_6_fu_208</Instance>
+                            <Instance>grp_SMM_CIF_0_3_Pipeline_L2_L3_fu_265</Instance>
+                        </InstanceList>
+                    </VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fixed_point_stream_convolution.cpp:35</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                            <Name>VITIS_LOOP_128_3_VITIS_LOOP_136_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fixed_point_stream_convolution.cpp:136</SourceLocation>
+                        </VITIS_LOOP_128_3_VITIS_LOOP_136_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>50</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>17</UTIL_BRAM>
+                    <DSP>35</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>15</UTIL_DSP>
+                    <FF>3139</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>8908</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>16</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U145" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="A_COL_ITER"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_467_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="sub149"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub152_fu_555_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="sub152"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub155_fu_561_p2" SOURCE="fixed_point_stream_convolution.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="sub155"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32ns_32ns_64_2_1_U144" SOURCE="fixed_point_stream_convolution.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="bound11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_128_3_VITIS_LOOP_136_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln128_fu_595_p2" SOURCE="fixed_point_stream_convolution.cpp:128" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln128"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_128_3_VITIS_LOOP_136_4" OPTYPE="add" PRAGMA="" RTLNAME="num_imag_2_fu_604_p2" SOURCE="fixed_point_stream_convolution.cpp:128" STORAGESUBTYPE="" URAM="0" VARIABLE="num_imag_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_128_3_VITIS_LOOP_136_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln136_fu_660_p2" SOURCE="fixed_point_stream_convolution.cpp:136" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln136"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U146" SOURCE="fixed_point_stream_convolution.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln101"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U145" SOURCE="fixed_point_stream_convolution.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln101_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_695_p2" SOURCE="fixed_point_stream_convolution.cpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="sub"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="grp_fu_467_p2" SOURCE="fixed_point_stream_convolution.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="sub47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U147" SOURCE="fixed_point_stream_convolution.cpp:181" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_0"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U148" SOURCE="fixed_point_stream_convolution.cpp:182" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_size_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32s_32s_32_1_1_U149" SOURCE="fixed_point_stream_convolution.cpp:183" STORAGESUBTYPE="" URAM="0" VARIABLE="KER_bound"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_10"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_11"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_12"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_13"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_14"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_15"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_16_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_16"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_17_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_17"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_18_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_18"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_19_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_19"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_20_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_20"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_21_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_21"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_22_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_22"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_23_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_23"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_24_U" SOURCE="" STORAGESIZE="16 2048 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1B_24"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_1_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_2_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_3_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_4_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_5_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_6_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_7_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_8_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_stream_AXI_VAL_0_stream_AXI_VAL_0_A_9_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_10_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_11_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_13_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_14_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_15_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_16_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_17_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_18_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_19_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_20_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_21_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="SMM_CIF_0_3_hls_stream_AXI_VAL_0_hls_stream_AXI_VAL_0_A"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_23_0"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0_U" SOURCE="" STORAGESIZE="16 32 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="p_ZZ11SMM_CIF_0_3RN3hls6streamI7AXI_VALLi0EEES3_E1A_24_0"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="in_stream_a" index="0" direction="in" srcType="stream&lt;AXI_VAL, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="in_stream_a" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_stream" index="1" direction="out" srcType="stream&lt;AXI_VAL, 0&gt;&amp;" srcSize="64">
+            <hwRefs>
+                <hwRef type="interface" interface="out_stream" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">in_stream_a:out_stream</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_stream_a" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="64" portPrefix="in_stream_a_">
+            <ports>
+                <port>in_stream_a_TDATA</port>
+                <port>in_stream_a_TREADY</port>
+                <port>in_stream_a_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in_stream_a"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_stream" type="axi4stream" busTypeName="axis" mode="master" dataWidth="64" portPrefix="out_stream_">
+            <ports>
+                <port>out_stream_TDATA</port>
+                <port>out_stream_TREADY</port>
+                <port>out_stream_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out_stream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="6">Interface, Direction, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="in_stream_a">in, both, 64, 1, 1</column>
+                    <column name="out_stream">out, both, 64, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in_stream_a">in, stream&lt;AXI_VAL 0&gt;&amp;</column>
+                    <column name="out_stream">out, stream&lt;AXI_VAL 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="in_stream_a">in_stream_a, interface</column>
+                    <column name="out_stream">out_stream, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="interface" location="fixed_point_stream_convolution.cpp:38" status="valid" parentFunction="smm_cif_0_3" variable="in_stream_a" isDirective="0" options="axis port=in_stream_a"/>
+        <Pragma type="interface" location="fixed_point_stream_convolution.cpp:40" status="valid" parentFunction="smm_cif_0_3" variable="out_stream" isDirective="0" options="axis port=out_stream"/>
+        <Pragma type="interface" location="fixed_point_stream_convolution.cpp:41" status="valid" parentFunction="smm_cif_0_3" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="array_partition" location="fixed_point_stream_convolution.cpp:45" status="valid" parentFunction="smm_cif_0_3" variable="A" isDirective="0" options="variable=A block factor=FACTOR dim=2"/>
+        <Pragma type="array_partition" location="fixed_point_stream_convolution.cpp:46" status="valid" parentFunction="smm_cif_0_3" variable="B" isDirective="0" options="variable=B block factor=FACTOR dim=2"/>
+        <Pragma type="pipeline" location="fixed_point_stream_convolution.cpp:107" status="valid" parentFunction="smm_cif_0_3" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="fixed_point_stream_convolution.cpp:142" status="valid" parentFunction="smm_cif_0_3" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="fixed_point_stream_convolution.cpp:161" status="valid" parentFunction="smm_cif_0_3" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="resource" location="fixed_point_stream_convolution.cpp:184" status="warning" parentFunction="smm_cif_0_3" variable="KER_size_0" isDirective="0" options="variable=KER_size_0 core=Mul_LUT">
+            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        </Pragma>
+        <Pragma type="resource" location="fixed_point_stream_convolution.cpp:185" status="warning" parentFunction="smm_cif_0_3" variable="KER_size_1" isDirective="0" options="variable=KER_size_1 core=Mul_LUT">
+            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        </Pragma>
+        <Pragma type="resource" location="fixed_point_stream_convolution.cpp:186" status="warning" parentFunction="smm_cif_0_3" variable="KER_bound" isDirective="0" options="variable=KER_bound core=Mul_LUT">
+            <Msg msg_id="207-5536" msg_severity="WARNING" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead"/>
+        </Pragma>
+        <Pragma type="pipeline" location="fixed_point_stream_convolution.cpp:189" status="valid" parentFunction="smm_cif_0_3" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+

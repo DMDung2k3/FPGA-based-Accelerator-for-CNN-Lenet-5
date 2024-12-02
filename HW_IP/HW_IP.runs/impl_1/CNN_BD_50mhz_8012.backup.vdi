@@ -1,0 +1,754 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Oct 30 12:53:30 2024
+# Process ID: 8012
+# Current directory: D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1
+# Command line: vivado.exe -log CNN_BD_50mhz.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CNN_BD_50mhz.tcl -notrace
+# Log file: D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz.vdi
+# Journal file: D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1\vivado.jou
+# Running On: XoiXoi, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 12766 MB
+#-----------------------------------------------------------
+source CNN_BD_50mhz.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 473.207 ; gain = 190.578
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_1/SCIG_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_1/SMM_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_1/maxPool_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_2/SCIG_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SCIG_CIF_0_3/SCIG_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_2/SMM_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/SMM_CIF_0_3/SMM_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_1/FC_CIF_0_1/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/fc_CIF_0_2/FC_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_2/maxpool_CIF_0_2/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/Graphic/maxpool_CIF_0_3/maxpool_CIF_0_3/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/stream_mult/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/stream_double/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/simple_sum/simple_sum/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/HW/utils/mult_constant/solution1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Downloads/vivado2014.4/PYNQ_acc/CIFAR_10_wrapper/CIFAR_10_wrapper/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/downloads/.xinstall/Vivado/2023.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 478.129 ; gain = 4.922
+Command: link_design -top CNN_BD_50mhz -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_FC_CIF_0_1_0_1/CNN_BD_50mhz_FC_CIF_0_1_0_1.dcp' for cell 'FC_CIF_0_1_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_FC_CIF_0_2_0_1/CNN_BD_50mhz_FC_CIF_0_2_0_1.dcp' for cell 'FC_CIF_0_2_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_SCIG_CIF_0_1_0_1/CNN_BD_50mhz_SCIG_CIF_0_1_0_1.dcp' for cell 'SCIG_CIF_0_1_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_SCIG_CIF_0_2_0_1/CNN_BD_50mhz_SCIG_CIF_0_2_0_1.dcp' for cell 'SCIG_CIF_0_2_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_SMM_CIF_0_1_0_1/CNN_BD_50mhz_SMM_CIF_0_1_0_1.dcp' for cell 'SMM_CIF_0_1_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_SMM_CIF_0_2_0_1/CNN_BD_50mhz_SMM_CIF_0_2_0_1.dcp' for cell 'SMM_CIF_0_2_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_0_1/CNN_BD_50mhz_axis_register_slice_0_1.dcp' for cell 'axis_register_slice_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_1_1/CNN_BD_50mhz_axis_register_slice_1_1.dcp' for cell 'axis_register_slice_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_2_1/CNN_BD_50mhz_axis_register_slice_2_1.dcp' for cell 'axis_register_slice_2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_1/CNN_BD_50mhz_axis_register_slice_3_1.dcp' for cell 'axis_register_slice_3'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_2/CNN_BD_50mhz_axis_register_slice_3_2.dcp' for cell 'axis_register_slice_4'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_3/CNN_BD_50mhz_axis_register_slice_3_3.dcp' for cell 'axis_register_slice_5'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_4/CNN_BD_50mhz_axis_register_slice_3_4.dcp' for cell 'axis_register_slice_6'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_maxPool_CIF_0_1_0_1/CNN_BD_50mhz_maxPool_CIF_0_1_0_1.dcp' for cell 'maxPool_CIF_0_1_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_maxpool_CIF_0_2_0_1/CNN_BD_50mhz_maxpool_CIF_0_2_0_1.dcp' for cell 'maxpool_CIF_0_2_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.874 . Memory (MB): peak = 1001.609 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5162 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_0_1/CNN_BD_50mhz_axis_register_slice_0_1_clocks.xdc] for cell 'axis_register_slice_0/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_0_1/CNN_BD_50mhz_axis_register_slice_0_1_clocks.xdc] for cell 'axis_register_slice_0/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_1_1/CNN_BD_50mhz_axis_register_slice_1_1_clocks.xdc] for cell 'axis_register_slice_1/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_1_1/CNN_BD_50mhz_axis_register_slice_1_1_clocks.xdc] for cell 'axis_register_slice_1/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_2_1/CNN_BD_50mhz_axis_register_slice_2_1_clocks.xdc] for cell 'axis_register_slice_2/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_2_1/CNN_BD_50mhz_axis_register_slice_2_1_clocks.xdc] for cell 'axis_register_slice_2/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_1/CNN_BD_50mhz_axis_register_slice_3_1_clocks.xdc] for cell 'axis_register_slice_3/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_1/CNN_BD_50mhz_axis_register_slice_3_1_clocks.xdc] for cell 'axis_register_slice_3/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_2/CNN_BD_50mhz_axis_register_slice_3_2_clocks.xdc] for cell 'axis_register_slice_4/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_2/CNN_BD_50mhz_axis_register_slice_3_2_clocks.xdc] for cell 'axis_register_slice_4/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_3/CNN_BD_50mhz_axis_register_slice_3_3_clocks.xdc] for cell 'axis_register_slice_5/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_3/CNN_BD_50mhz_axis_register_slice_3_3_clocks.xdc] for cell 'axis_register_slice_5/inst'
+Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_4/CNN_BD_50mhz_axis_register_slice_3_4_clocks.xdc] for cell 'axis_register_slice_6/inst'
+Finished Parsing XDC File [d:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.gen/sources_1/bd/CNN_BD_50mhz/ip/CNN_BD_50mhz_axis_register_slice_3_4/CNN_BD_50mhz_axis_register_slice_3_4_clocks.xdc] for cell 'axis_register_slice_6/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1188.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1228 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 198 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 112 instances
+  RAM32X1S => RAM32X1S (RAMS32): 912 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 5 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 1 instance 
+
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1188.570 ; gain = 698.410
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1216.875 ; gain = 28.305
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1811.043 ; gain = 594.168
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1aa450860
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 8 inverters resulting in an inversion of 136 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[0]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[10]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[11]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[12]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[13]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[14]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[15]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[1]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[2]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[3]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[4]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[5]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[6]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[7]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[8]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[9]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[0]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[10]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[11]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[12]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[13]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[14]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[15]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[1]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[2]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[3]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[4]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[5]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[6]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[7]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[8]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[9]
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 3fe7e2fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Retarget | Checksum: 3fe7e2fd
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 8 cells
+
+Phase 4 Constant propagation
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[0]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[10]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[11]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[12]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[13]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[14]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[15]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[1]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[2]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[3]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[4]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[5]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[6]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[7]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[8]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_1_0/inst/empty_reg_196_reg[9]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[0]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[10]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[11]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[12]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[13]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[14]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[15]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[1]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[2]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[3]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[4]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[5]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[6]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[7]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[8]
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:SCIG_CIF_0_2_0/inst/empty_reg_196_reg[9]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: bdc20c1b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Constant propagation | Checksum: bdc20c1b
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 21 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 9ec5597a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Sweep | Checksum: 9ec5597a
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG clk_in_IBUF_BUFG_inst to drive 17983 load(s) on clock net clk_in_IBUF_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 7f82052a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2191.180 ; gain = 0.000
+BUFG optimization | Checksum: 7f82052a
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 7f82052a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Shift Register Optimization | Checksum: 7f82052a
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 7f82052a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Post Processing Netlist | Checksum: 7f82052a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.246 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Phase 9 Finalization | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2191.180 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               8  |                                              0  |
+|  Constant propagation         |               0  |              21  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2191.180 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2191.180 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 110 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 220
+Ending PowerOpt Patch Enables Task | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.637 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 2605.531 ; gain = 414.352
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 15ea794c6
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 1 Warnings, 64 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 2605.531 ; gain = 1416.961
+INFO: [runtcl-4] Executing : report_drc -file CNN_BD_50mhz_drc_opted.rpt -pb CNN_BD_50mhz_drc_opted.pb -rpx CNN_BD_50mhz_drc_opted.rpx
+Command: report_drc -file CNN_BD_50mhz_drc_opted.rpt -pb CNN_BD_50mhz_drc_opted.pb -rpx CNN_BD_50mhz_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.230 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 85a19b00
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:01 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: be8a9c06
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1bddf6ba3
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+WARNING: [Place 46-29] Timing had been disabled during Placer and, therefore, physical synthesis in Placer will be skipped.
+Phase 2.4 Global Placement Core | Checksum: c6bc3a87
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 2 Global Placement | Checksum: c6bc3a87
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: c6bc3a87
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: a927533f
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: ee34161e
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1795db3ec
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1410e5606
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1410e5606
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:01:05 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                2x2|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 166ec7989
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18caf5630
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:07 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Ending Placer Task | Checksum: f780cab7
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:07 . Memory (MB): peak = 2605.531 ; gain = 0.000
+83 Infos, 2 Warnings, 64 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:12 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file CNN_BD_50mhz_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.317 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file CNN_BD_50mhz_utilization_placed.rpt -pb CNN_BD_50mhz_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file CNN_BD_50mhz_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.261 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+report_design_analysis: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Vivado_Tcl 4-235] No timing constraint found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+91 Infos, 2 Warnings, 64 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.281 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2605.531 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2605.531 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: a8292daa ConstDB: 0 ShapeSum: 4f579d0d RouteDB: 0
+Post Restoration Checksum: NetGraph: b7c87e5a | NumContArr: 7fb4502 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 24515b896
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 24515b896
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2605.531 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 24515b896
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2605.531 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 51139
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 51139
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 22a478a62
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 22a478a62
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2d84d1efd
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2641.547 ; gain = 36.016
+Phase 3 Initial Routing | Checksum: 2d84d1efd
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3549
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+Phase 4 Rip-up And Reroute | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+Phase 6 Post Hold Fix | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.68727 %
+  Global Horizontal Routing Utilization  = 12.5156 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 53.1532%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 50.4505%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 64.7059%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 61.7647%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2b3e0a2f8
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2c1ccce53
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 2641.547 ; gain = 36.016
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 10 Post-Route Event Processing
+Phase 10 Post-Route Event Processing | Checksum: 1f22de336
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 2641.547 ; gain = 36.016
+Ending Routing Task | Checksum: 1f22de336
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:13 . Memory (MB): peak = 2641.547 ; gain = 36.016
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+101 Infos, 2 Warnings, 64 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 2641.547 ; gain = 36.016
+INFO: [runtcl-4] Executing : report_drc -file CNN_BD_50mhz_drc_routed.rpt -pb CNN_BD_50mhz_drc_routed.pb -rpx CNN_BD_50mhz_drc_routed.rpx
+Command: report_drc -file CNN_BD_50mhz_drc_routed.rpt -pb CNN_BD_50mhz_drc_routed.pb -rpx CNN_BD_50mhz_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2692.902 ; gain = 51.355
+INFO: [runtcl-4] Executing : report_methodology -file CNN_BD_50mhz_methodology_drc_routed.rpt -pb CNN_BD_50mhz_methodology_drc_routed.pb -rpx CNN_BD_50mhz_methodology_drc_routed.rpx
+Command: report_methodology -file CNN_BD_50mhz_methodology_drc_routed.rpt -pb CNN_BD_50mhz_methodology_drc_routed.pb -rpx CNN_BD_50mhz_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 2801.715 ; gain = 108.812
+INFO: [runtcl-4] Executing : report_power -file CNN_BD_50mhz_power_routed.rpt -pb CNN_BD_50mhz_power_summary_routed.pb -rpx CNN_BD_50mhz_power_routed.rpx
+Command: report_power -file CNN_BD_50mhz_power_routed.rpt -pb CNN_BD_50mhz_power_summary_routed.pb -rpx CNN_BD_50mhz_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+111 Infos, 3 Warnings, 64 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2812.961 ; gain = 11.246
+INFO: [runtcl-4] Executing : report_route_status -file CNN_BD_50mhz_route_status.rpt -pb CNN_BD_50mhz_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file CNN_BD_50mhz_timing_summary_routed.rpt -pb CNN_BD_50mhz_timing_summary_routed.pb -rpx CNN_BD_50mhz_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file CNN_BD_50mhz_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file CNN_BD_50mhz_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2816.977 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file CNN_BD_50mhz_bus_skew_routed.rpt -pb CNN_BD_50mhz_bus_skew_routed.pb -rpx CNN_BD_50mhz_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.229 . Memory (MB): peak = 2834.148 ; gain = 4.410
+Wrote PlaceDB: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2842.020 ; gain = 12.281
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2842.020 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2842.020 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 2842.020 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2842.020 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2842.020 ; gain = 12.281
+INFO: [Common 17-1381] The checkpoint 'D:/Downloads/vivado2014.4/PYNQ_acc/HW_IP/HW_IP.runs/impl_1/CNN_BD_50mhz_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2842.020 ; gain = 25.043
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 13:00:11 2024...

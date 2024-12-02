@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Oct 30 14:08:16 2024
+# Process ID: 2516
+# Current directory: D:/Downloads/vivado2014.4/PYNQ_acc/ACC_IP_HW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7724 D:\Downloads\vivado2014.4\PYNQ_acc\ACC_IP_HW\ACC_IP_HW.xpr
+# Log file: D:/Downloads/vivado2014.4/PYNQ_acc/ACC_IP_HW/vivado.log
+# Journal file: D:/Downloads/vivado2014.4/PYNQ_acc/ACC_IP_HW\vivado.jou
+# Running On: XoiXoi, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 12766 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Downloads/vivado2014.4/PYNQ_acc/ACC_IP_HW/ACC_IP_HW.xpr
+update_compile_order -fileset sources_1
+close_project
+create_project CNN_LENET_5 D:/Downloads/vivado2014.4/PYNQ_acc/CNN_LENET_5 -part xc7z020clg484-1
+create_bd_design "CNN_LN5"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  D:/Downloads/vivado2014.4/PYNQ_acc/LeNet_wrapper/LeNet_wrapper/solution1 [current_project]
+update_ip_catalog

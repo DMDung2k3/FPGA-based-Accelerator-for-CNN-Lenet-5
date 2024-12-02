@@ -1,0 +1,256 @@
+
+
+================================================================
+== Vitis HLS Report for 'SCIG_5u_1u_28u_20u_24u_0u_s'
+================================================================
+* Date:           Sun Nov  3 13:41:27 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  12.592 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 14
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 13 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+13 --> 14 
+14 --> 12 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.16>
+ST_1 : Operation 15 [1/1] (3.58ns)   --->   "%valIn_30 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:68]   --->   Operation 15 'read' 'valIn_30' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_1 : Operation 16 [1/1] (3.58ns)   --->   "%write_ln70 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_30" [./../hw_library/stream_convolution_slideWindow.h:70]   --->   Operation 16 'write' 'write_ln70' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_1 : Operation 17 [1/1] (2.55ns)   --->   "%icmp_ln100 = icmp_eq  i32 %valIn_30, i32 0" [./../hw_library/stream_convolution_slideWindow.h:100]   --->   Operation 17 'icmp' 'icmp_ln100' <Predicate = true> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.16>
+ST_2 : Operation 18 [1/1] (3.58ns)   --->   "%valIn_31 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:72]   --->   Operation 18 'read' 'valIn_31' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_2 : Operation 19 [1/1] (3.58ns)   --->   "%write_ln74 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_31" [./../hw_library/stream_convolution_slideWindow.h:74]   --->   Operation 19 'write' 'write_ln74' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 3 <SV = 2> <Delay = 7.16>
+ST_3 : Operation 20 [1/1] (3.58ns)   --->   "%valIn_32 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:76]   --->   Operation 20 'read' 'valIn_32' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_3 : Operation 21 [1/1] (3.58ns)   --->   "%write_ln78 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_32" [./../hw_library/stream_convolution_slideWindow.h:78]   --->   Operation 21 'write' 'write_ln78' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 4 <SV = 3> <Delay = 7.16>
+ST_4 : Operation 22 [1/1] (3.58ns)   --->   "%valIn_33 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:80]   --->   Operation 22 'read' 'valIn_33' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_4 : Operation 23 [1/1] (3.58ns)   --->   "%write_ln82 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_33" [./../hw_library/stream_convolution_slideWindow.h:82]   --->   Operation 23 'write' 'write_ln82' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 5 <SV = 4> <Delay = 7.16>
+ST_5 : Operation 24 [1/1] (3.58ns)   --->   "%valIn = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:84]   --->   Operation 24 'read' 'valIn' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_5 : Operation 25 [1/1] (3.58ns)   --->   "%write_ln86 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn" [./../hw_library/stream_convolution_slideWindow.h:86]   --->   Operation 25 'write' 'write_ln86' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 6 <SV = 5> <Delay = 7.16>
+ST_6 : Operation 26 [1/1] (3.58ns)   --->   "%valIn_34 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:88]   --->   Operation 26 'read' 'valIn_34' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_6 : Operation 27 [1/1] (3.58ns)   --->   "%write_ln90 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_34" [./../hw_library/stream_convolution_slideWindow.h:90]   --->   Operation 27 'write' 'write_ln90' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 7 <SV = 6> <Delay = 7.16>
+ST_7 : Operation 28 [1/1] (3.58ns)   --->   "%valIn_28 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:92]   --->   Operation 28 'read' 'valIn_28' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_7 : Operation 29 [1/1] (3.58ns)   --->   "%write_ln94 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_28" [./../hw_library/stream_convolution_slideWindow.h:94]   --->   Operation 29 'write' 'write_ln94' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+
+State 8 <SV = 7> <Delay = 12.5>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %connect_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %connect_0, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (3.58ns)   --->   "%valIn_29 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_0" [./../hw_library/stream_convolution_slideWindow.h:96]   --->   Operation 32 'read' 'valIn_29' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_8 : Operation 33 [1/1] (3.58ns)   --->   "%write_ln98 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %connect_1, i32 %valIn_29" [./../hw_library/stream_convolution_slideWindow.h:98]   --->   Operation 33 'write' 'write_ln98' <Predicate = true> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln100 = br i1 %icmp_ln100, void %fpga_resource_hint.if.else129.14, void %if.then" [./../hw_library/stream_convolution_slideWindow.h:100]   --->   Operation 34 'br' 'br_ln100' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (12.5ns)   --->   "%KER_size_0 = mul i32 %valIn_34, i32 %valIn_32" [./../hw_library/stream_convolution_slideWindow.h:183]   --->   Operation 35 'mul' 'KER_size_0' <Predicate = (!icmp_ln100)> <Delay = 12.5> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 12.5> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specfucore_ln186 = specfucore void @_ssdm_op_SpecFUCore, i32 %KER_size_0, i64 12, i64 4, i64 18446744073709551615" [./../hw_library/stream_convolution_slideWindow.h:186]   --->   Operation 36 'specfucore' 'specfucore_ln186' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%empty_189 = wait i32 @_ssdm_op_Wait"   --->   Operation 37 'wait' 'empty_189' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_8 : Operation 38 [2/2] (6.91ns)   --->   "%mul36 = mul i32 %valIn_31, i32 14568" [./../hw_library/stream_convolution_slideWindow.h:72]   --->   Operation 38 'mul' 'mul36' <Predicate = (icmp_ln100)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 39 'wait' 'empty' <Predicate = (icmp_ln100)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 12.5>
+ST_9 : Operation 40 [1/1] (12.5ns)   --->   "%KER_size_1 = mul i32 %valIn_32, i32 %KER_size_0" [./../hw_library/stream_convolution_slideWindow.h:184]   --->   Operation 40 'mul' 'KER_size_1' <Predicate = true> <Delay = 12.5> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 12.5> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 41 [1/1] (0.00ns)   --->   "%specfucore_ln187 = specfucore void @_ssdm_op_SpecFUCore, i32 %KER_size_1, i64 12, i64 4, i64 18446744073709551615" [./../hw_library/stream_convolution_slideWindow.h:187]   --->   Operation 41 'specfucore' 'specfucore_ln187' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 12.5>
+ST_10 : Operation 42 [1/1] (12.5ns)   --->   "%KER_bound = mul i32 %valIn_33, i32 %KER_size_1" [./../hw_library/stream_convolution_slideWindow.h:185]   --->   Operation 42 'mul' 'KER_bound' <Predicate = true> <Delay = 12.5> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 12.5> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 43 [1/1] (0.00ns)   --->   "%specfucore_ln188 = specfucore void @_ssdm_op_SpecFUCore, i32 %KER_bound, i64 12, i64 4, i64 18446744073709551615" [./../hw_library/stream_convolution_slideWindow.h:188]   --->   Operation 43 'specfucore' 'specfucore_ln188' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 4.14>
+ST_11 : Operation 44 [2/2] (4.14ns)   --->   "%call_ln185 = call void @SCIG<5u, 1u, 28u, 20u, 24u, 0u>_Pipeline_VITIS_LOOP_189_6, i32 %KER_bound, i32 %connect_0, i32 %connect_1" [./../hw_library/stream_convolution_slideWindow.h:185]   --->   Operation 44 'call' 'call_ln185' <Predicate = true> <Delay = 4.14> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 45 [1/1] (0.00ns)   --->   "%rbegin9 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_27" [./../hw_library/stream_convolution_slideWindow.h:183]   --->   Operation 45 'specregionbegin' 'rbegin9' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 46 [1/1] (0.00ns)   --->   "%rend10 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_27, i32 %rbegin9" [./../hw_library/stream_convolution_slideWindow.h:183]   --->   Operation 46 'specregionend' 'rend10' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 47 [1/1] (0.00ns)   --->   "%rbegin7 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_28" [./../hw_library/stream_convolution_slideWindow.h:184]   --->   Operation 47 'specregionbegin' 'rbegin7' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 48 [1/1] (0.00ns)   --->   "%rend8 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_28, i32 %rbegin7" [./../hw_library/stream_convolution_slideWindow.h:184]   --->   Operation 48 'specregionend' 'rend8' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 49 [1/1] (0.00ns)   --->   "%rbegin = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_31" [./../hw_library/stream_convolution_slideWindow.h:185]   --->   Operation 49 'specregionbegin' 'rbegin' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 50 [1/1] (0.00ns)   --->   "%rend = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_31, i32 %rbegin" [./../hw_library/stream_convolution_slideWindow.h:185]   --->   Operation 50 'specregionend' 'rend' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 51 [1/2] (0.00ns)   --->   "%call_ln185 = call void @SCIG<5u, 1u, 28u, 20u, 24u, 0u>_Pipeline_VITIS_LOOP_189_6, i32 %KER_bound, i32 %connect_0, i32 %connect_1" [./../hw_library/stream_convolution_slideWindow.h:185]   --->   Operation 51 'call' 'call_ln185' <Predicate = (!icmp_ln100)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end142"   --->   Operation 52 'br' 'br_ln0' <Predicate = (!icmp_ln100)> <Delay = 0.00>
+ST_12 : Operation 53 [1/1] (0.00ns)   --->   "%ret_ln195 = ret" [./../hw_library/stream_convolution_slideWindow.h:195]   --->   Operation 53 'ret' 'ret_ln195' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 8> <Delay = 6.91>
+ST_13 : Operation 54 [1/2] (6.91ns)   --->   "%mul36 = mul i32 %valIn_31, i32 14568" [./../hw_library/stream_convolution_slideWindow.h:72]   --->   Operation 54 'mul' 'mul36' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 55 [2/2] (0.00ns)   --->   "%call_ln72 = call void @SCIG<5u, 1u, 28u, 20u, 24u, 0u>_Pipeline_VITIS_LOOP_123_1, i32 %mul36, i32 %connect_0, i32 %connect_1" [./../hw_library/stream_convolution_slideWindow.h:72]   --->   Operation 55 'call' 'call_ln72' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 9> <Delay = 0.00>
+ST_14 : Operation 56 [1/2] (0.00ns)   --->   "%call_ln72 = call void @SCIG<5u, 1u, 28u, 20u, 24u, 0u>_Pipeline_VITIS_LOOP_123_1, i32 %mul36, i32 %connect_0, i32 %connect_1" [./../hw_library/stream_convolution_slideWindow.h:72]   --->   Operation 56 'call' 'call_ln72' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_14 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end142"   --->   Operation 57 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:68) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:68) [5]  (3.581 ns)
+	fifo write operation ('write_ln70', ./../hw_library/stream_convolution_slideWindow.h:70) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:70) [6]  (3.581 ns)
+
+ <State 2>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:72) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:72) [7]  (3.581 ns)
+	fifo write operation ('write_ln74', ./../hw_library/stream_convolution_slideWindow.h:74) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:74) [8]  (3.581 ns)
+
+ <State 3>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:76) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:76) [9]  (3.581 ns)
+	fifo write operation ('write_ln78', ./../hw_library/stream_convolution_slideWindow.h:78) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:78) [10]  (3.581 ns)
+
+ <State 4>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:80) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:80) [11]  (3.581 ns)
+	fifo write operation ('write_ln82', ./../hw_library/stream_convolution_slideWindow.h:82) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:82) [12]  (3.581 ns)
+
+ <State 5>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:84) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:84) [13]  (3.581 ns)
+	fifo write operation ('write_ln86', ./../hw_library/stream_convolution_slideWindow.h:86) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:86) [14]  (3.581 ns)
+
+ <State 6>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:88) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:88) [15]  (3.581 ns)
+	fifo write operation ('write_ln90', ./../hw_library/stream_convolution_slideWindow.h:90) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:90) [16]  (3.581 ns)
+
+ <State 7>: 7.162ns
+The critical path consists of the following:
+	fifo read operation ('valIn', ./../hw_library/stream_convolution_slideWindow.h:92) on port 'connect_0' (./../hw_library/stream_convolution_slideWindow.h:92) [17]  (3.581 ns)
+	fifo write operation ('write_ln94', ./../hw_library/stream_convolution_slideWindow.h:94) on port 'connect_1' (./../hw_library/stream_convolution_slideWindow.h:94) [18]  (3.581 ns)
+
+ <State 8>: 12.592ns
+The critical path consists of the following:
+	'mul' operation 32 bit ('KER_size_0', ./../hw_library/stream_convolution_slideWindow.h:183) [25]  (12.592 ns)
+
+ <State 9>: 12.592ns
+The critical path consists of the following:
+	'mul' operation 32 bit ('KER_size_1', ./../hw_library/stream_convolution_slideWindow.h:184) [29]  (12.592 ns)
+
+ <State 10>: 12.592ns
+The critical path consists of the following:
+	'mul' operation 32 bit ('KER_bound', ./../hw_library/stream_convolution_slideWindow.h:185) [33]  (12.592 ns)
+
+ <State 11>: 4.140ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln185', ./../hw_library/stream_convolution_slideWindow.h:185) to 'SCIG<5u, 1u, 28u, 20u, 24u, 0u>_Pipeline_VITIS_LOOP_189_6' [37]  (4.140 ns)
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 32 bit ('mul36', ./../hw_library/stream_convolution_slideWindow.h:72) [40]  (6.912 ns)
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

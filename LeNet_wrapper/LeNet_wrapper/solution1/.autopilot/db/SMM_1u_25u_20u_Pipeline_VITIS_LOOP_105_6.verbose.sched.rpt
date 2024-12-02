@@ -1,0 +1,208 @@
+
+
+================================================================
+== Vitis HLS Report for 'SMM_1u_25u_20u_Pipeline_VITIS_LOOP_105_6'
+================================================================
+* Date:           Sun Nov  3 13:41:28 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        LeNet_wrapper
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.951 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_105_6  |       25|       25|         2|          1|          1|    25|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.95>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%phi_urem = alloca i32 1"   --->   Operation 5 'alloca' 'phi_urem' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%phi_mul = alloca i32 1"   --->   Operation 6 'alloca' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%j_2 = alloca i32 1" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 7 'alloca' 'j_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16, i64 666, i64 27, i64 18446744073709551615"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %connect_1, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%B_ROW_5_load_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %B_ROW_5_load" [./../hw_library/fixed_point_stream_convolution.h:17]   --->   Operation 16 'read' 'B_ROW_5_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%store_ln105 = store i5 0, i5 %j_2" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 17 'store' 'store_ln105' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (1.58ns)   --->   "%store_ln0 = store i10 0, i10 %phi_mul"   --->   Operation 18 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 19 [1/1] (1.58ns)   --->   "%store_ln0 = store i5 0, i5 %phi_urem"   --->   Operation 19 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body64"   --->   Operation 20 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%phi_urem_load = load i5 %phi_urem" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 21 'load' 'phi_urem_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%j = load i5 %j_2" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 22 'load' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.78ns)   --->   "%icmp_ln105 = icmp_eq  i5 %j, i5 25" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 23 'icmp' 'icmp_ln105' <Predicate = true> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (1.78ns)   --->   "%add_ln105 = add i5 %j, i5 1" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 24 'add' 'add_ln105' <Predicate = true> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln105 = br i1 %icmp_ln105, void %for.body64.split, void %L4.preheader.exitStub" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 25 'br' 'br_ln105' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln105 = zext i5 %j" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 26 'zext' 'zext_ln105' <Predicate = (!icmp_ln105)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln105 = trunc i5 %phi_urem_load" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 27 'trunc' 'trunc_ln105' <Predicate = (!icmp_ln105)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (2.55ns)   --->   "%icmp_ln108 = icmp_ult  i32 %zext_ln105, i32 %B_ROW_5_load_read" [./../hw_library/fixed_point_stream_convolution.h:108]   --->   Operation 28 'icmp' 'icmp_ln108' <Predicate = (!icmp_ln105)> <Delay = 2.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%br_ln108 = br i1 %icmp_ln108, void %if.else73, void %if.then66" [./../hw_library/fixed_point_stream_convolution.h:108]   --->   Operation 29 'br' 'br_ln108' <Predicate = (!icmp_ln105)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (1.87ns)   --->   "%switch_ln113 = switch i3 %trunc_ln105, void %arrayidx783.case.6, i3 0, void %arrayidx783.case.0, i3 1, void %arrayidx783.case.1, i3 2, void %arrayidx783.case.2, i3 3, void %arrayidx783.case.3, i3 4, void %arrayidx783.case.4, i3 5, void %arrayidx783.case.5" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 30 'switch' 'switch_ln113' <Predicate = (!icmp_ln105 & !icmp_ln108)> <Delay = 1.87>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc80"   --->   Operation 31 'br' 'br_ln0' <Predicate = (!icmp_ln105 & !icmp_ln108)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (1.87ns)   --->   "%switch_ln110 = switch i3 %trunc_ln105, void %arrayidx724.case.6, i3 0, void %arrayidx724.case.0, i3 1, void %arrayidx724.case.1, i3 2, void %arrayidx724.case.2, i3 3, void %arrayidx724.case.3, i3 4, void %arrayidx724.case.4, i3 5, void %arrayidx724.case.5" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 32 'switch' 'switch_ln110' <Predicate = (!icmp_ln105 & icmp_ln108)> <Delay = 1.87>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln111 = br void %for.inc80" [./../hw_library/fixed_point_stream_convolution.h:111]   --->   Operation 33 'br' 'br_ln111' <Predicate = (!icmp_ln105 & icmp_ln108)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (1.78ns)   --->   "%add_ln105_4 = add i5 %phi_urem_load, i5 1" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 34 'add' 'add_ln105_4' <Predicate = (!icmp_ln105)> <Delay = 1.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (1.78ns)   --->   "%icmp_ln105_2 = icmp_ult  i5 %add_ln105_4, i5 7" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 35 'icmp' 'icmp_ln105_2' <Predicate = (!icmp_ln105)> <Delay = 1.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (1.21ns)   --->   "%select_ln105 = select i1 %icmp_ln105_2, i5 %add_ln105_4, i5 0" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 36 'select' 'select_ln105' <Predicate = (!icmp_ln105)> <Delay = 1.21> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (1.58ns)   --->   "%store_ln105 = store i5 %add_ln105, i5 %j_2" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 37 'store' 'store_ln105' <Predicate = (!icmp_ln105)> <Delay = 1.58>
+ST_1 : Operation 38 [1/1] (1.58ns)   --->   "%store_ln105 = store i5 %select_ln105, i5 %phi_urem" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 38 'store' 'store_ln105' <Predicate = (!icmp_ln105)> <Delay = 1.58>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 85 'ret' 'ret_ln0' <Predicate = (icmp_ln105)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.90>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%phi_mul_load = load i10 %phi_mul" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 39 'load' 'phi_mul_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%specpipeline_ln107 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_3" [./../hw_library/fixed_point_stream_convolution.h:107]   --->   Operation 40 'specpipeline' 'specpipeline_ln107' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%speclooptripcount_ln105 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 25, i64 25, i64 25" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 41 'speclooptripcount' 'speclooptripcount_ln105' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%specloopname_ln105 = specloopname void @_ssdm_op_SpecLoopName, void @empty_34" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 42 'specloopname' 'specloopname_ln105' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (1.73ns)   --->   "%add_ln105_3 = add i10 %phi_mul_load, i10 37" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 43 'add' 'add_ln105_3' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%tmp = partselect i2 @_ssdm_op_PartSelect.i2.i10.i32.i32, i10 %phi_mul_load, i32 8, i32 9" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 44 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%zext_ln105_2 = zext i2 %tmp" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 45 'zext' 'zext_ln105_2' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 46 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 47 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 48 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 49 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 50 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 51 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_addr = getelementptr i8 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10, i64 0, i64 %zext_ln105_2" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 52 'getelementptr' 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 53 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 5)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 54 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 5)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 55 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 4)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 56 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 4)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 57 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 3)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 58 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 3)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 59 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 2)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 60 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 2)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 61 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 1)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 62 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 1)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 63 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 0)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 64 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 0)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (2.32ns)   --->   "%store_ln113 = store i8 0, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_addr" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 65 'store' 'store_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 7) | (!icmp_ln108 & trunc_ln105 == 6)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%br_ln113 = br void %arrayidx783.exit" [./../hw_library/fixed_point_stream_convolution.h:113]   --->   Operation 66 'br' 'br_ln113' <Predicate = (!icmp_ln108 & trunc_ln105 == 7) | (!icmp_ln108 & trunc_ln105 == 6)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (3.58ns)   --->   "%valIn_a = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %connect_1" [./../hw_library/fixed_point_stream_convolution.h:109]   --->   Operation 67 'read' 'valIn_a' <Predicate = (icmp_ln108)> <Delay = 3.58> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.58> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 50> <FIFO>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%trunc_ln110 = trunc i32 %valIn_a" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 68 'trunc' 'trunc_ln110' <Predicate = (icmp_ln108)> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_11_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 69 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 5)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 70 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 5)> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_12_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 71 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 4)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 72 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 4)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_13_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 73 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 3)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 74 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 3)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 75 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 2)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 76 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 2)> <Delay = 0.00>
+ST_2 : Operation 77 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_15_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 77 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 1)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 78 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 78 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 1)> <Delay = 0.00>
+ST_2 : Operation 79 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_16_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 79 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 0)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 80 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 0)> <Delay = 0.00>
+ST_2 : Operation 81 [1/1] (2.32ns)   --->   "%store_ln110 = store i8 %trunc_ln110, i2 %void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_10_addr" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 81 'store' 'store_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 7) | (icmp_ln108 & trunc_ln105 == 6)> <Delay = 2.32> <CoreInst = "RAM_S2P_LUTRAM">   --->   Core 92 'RAM_S2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 4> <RAM>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%br_ln110 = br void %arrayidx724.exit" [./../hw_library/fixed_point_stream_convolution.h:110]   --->   Operation 82 'br' 'br_ln110' <Predicate = (icmp_ln108 & trunc_ln105 == 7) | (icmp_ln108 & trunc_ln105 == 6)> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (1.58ns)   --->   "%store_ln105 = store i10 %add_ln105_3, i10 %phi_mul" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 83 'store' 'store_ln105' <Predicate = true> <Delay = 1.58>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%br_ln105 = br void %for.body64" [./../hw_library/fixed_point_stream_convolution.h:105]   --->   Operation 84 'br' 'br_ln105' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.951ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'phi_urem' [24]  (1.588 ns)
+	'load' operation 5 bit ('phi_urem_load', ./../hw_library/fixed_point_stream_convolution.h:105) on local variable 'phi_urem' [27]  (0.000 ns)
+	'add' operation 5 bit ('add_ln105_4', ./../hw_library/fixed_point_stream_convolution.h:105) [104]  (1.780 ns)
+	'icmp' operation 1 bit ('icmp_ln105_2', ./../hw_library/fixed_point_stream_convolution.h:105) [105]  (1.780 ns)
+	'select' operation 5 bit ('select_ln105', ./../hw_library/fixed_point_stream_convolution.h:105) [106]  (1.215 ns)
+	'store' operation 0 bit ('store_ln105', ./../hw_library/fixed_point_stream_convolution.h:105) of variable 'select_ln105', ./../hw_library/fixed_point_stream_convolution.h:105 on local variable 'phi_urem' [109]  (1.588 ns)
+
+ <State 2>: 5.903ns
+The critical path consists of the following:
+	fifo read operation ('valIn_a', ./../hw_library/fixed_point_stream_convolution.h:109) on port 'connect_1' (./../hw_library/fixed_point_stream_convolution.h:109) [77]  (3.581 ns)
+	'store' operation 0 bit ('store_ln110', ./../hw_library/fixed_point_stream_convolution.h:110) of variable 'trunc_ln110', ./../hw_library/fixed_point_stream_convolution.h:110 on array 'void_SMM_stream_stream_ap_int_32_0_unsigned_int_unsigned_int_int_A_14' [90]  (2.322 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

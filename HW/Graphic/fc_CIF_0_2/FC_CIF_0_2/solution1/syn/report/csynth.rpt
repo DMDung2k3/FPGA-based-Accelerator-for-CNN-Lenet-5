@@ -1,0 +1,196 @@
+
+
+================================================================
+== Synthesis Summary Report of 'FC_CIF_0_2'
+================================================================
++ General Information: 
+    * Date:           Mon Oct 28 10:35:14 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        FC_CIF_0_2
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+    |                          Modules                         |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |      |          |           |            |     |
+    |                          & Loops                         |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |    DSP   |     FF    |     LUT    | URAM|
+    +----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+    |+ FC_CIF_0_2                                              |  Timing|  -5.29|        -|          -|         -|        -|     -|        no|     -|  26 (11%)|  3954 (3%)|  7929 (14%)|    -|
+    | + FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2  |  Timing|  -2.69|      642|  6.420e+03|         -|      642|     -|        no|     -|         -|  123 (~0%)|    601 (1%)|    -|
+    |  o VITIS_LOOP_104_1_VITIS_LOOP_105_2                     |       -|   7.30|      640|  6.400e+03|         2|        1|   640|       yes|     -|         -|          -|           -|    -|
+    | + FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7                   |       -|   1.57|        -|          -|         -|        -|     -|        no|     -|         -|   99 (~0%)|   140 (~0%)|    -|
+    |  o VITIS_LOOP_187_7                                      |       -|   7.30|        -|          -|         2|        1|     -|       yes|     -|         -|          -|           -|    -|
+    | o VITIS_LOOP_128_3_VITIS_LOOP_136_4                      |       -|   7.30|        -|          -|         -|        -|     -|        no|     -|         -|          -|           -|    -|
+    |  + FC_CIF_0_2_Pipeline_VITIS_LOOP_140_6                  |       -|   0.57|       66|    660.000|         -|       66|     -|        no|     -|         -|    9 (~0%)|   1036 (1%)|    -|
+    |   o VITIS_LOOP_140_6                                     |       -|   7.30|       64|    640.000|         1|        1|    64|       yes|     -|         -|          -|           -|    -|
+    |  + FC_CIF_0_2_Pipeline_L2_L3                             |       -|   0.52|        -|          -|         -|        -|     -|        no|     -|   16 (7%)|  1082 (1%)|   1210 (2%)|    -|
+    |   o L2_L3                                                |       -|   7.30|        -|          -|         9|        1|     -|       yes|     -|         -|          -|           -|    -|
+    +----------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+------+----------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-------------+-----------+---------------+-------+--------+--------+
+| Interface   | Direction | Register Mode | TDATA | TREADY | TVALID |
++-------------+-----------+---------------+-------+--------+--------+
+| in_stream_a | in        | both          | 64    | 1      | 1      |
+| out_stream  | out       | both          | 64    | 1      | 1      |
++-------------+-----------+---------------+-------+--------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------+-----------+---------------------+
+| Argument    | Direction | Datatype            |
++-------------+-----------+---------------------+
+| in_stream_a | in        | stream<AXI_VAL, 0>& |
+| out_stream  | out       | stream<AXI_VAL, 0>& |
++-------------+-----------+---------------------+
+
+* SW-to-HW Mapping
++-------------+--------------+-----------+
+| Argument    | HW Interface | HW Type   |
++-------------+--------------+-----------+
+| in_stream_a | in_stream_a  | interface |
+| out_stream  | out_stream   | interface |
++-------------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| Name                                                     | DSP | Pragma | Variable     | Op  | Impl      | Latency |
++----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+| + FC_CIF_0_2                                             | 26  |        |              |     |           |         |
+|   mul_32s_32s_32_2_1_U212                                | 3   |        | A_COL_ITER   | mul | auto      | 1       |
+|   grp_fu_647_p2                                          |     |        | sub148       | add | fabric    | 0       |
+|   sub151_fu_735_p2                                       |     |        | sub151       | add | fabric    | 0       |
+|   sub154_fu_741_p2                                       |     |        | sub154       | add | fabric    | 0       |
+|   mul_32ns_32ns_64_2_1_U211                              | 4   |        | bound11      | mul | auto      | 1       |
+|   add_ln128_fu_775_p2                                    |     |        | add_ln128    | add | fabric    | 0       |
+|   num_imag_2_fu_784_p2                                   |     |        | num_imag_2   | add | fabric    | 0       |
+|   add_ln136_fu_840_p2                                    |     |        | add_ln136    | add | fabric    | 0       |
+|   mul_32s_32s_32_2_1_U213                                | 3   |        | mul_ln101    | mul | auto      | 1       |
+|   mul_32s_32s_32_2_1_U212                                | 3   |        | mul_ln101_1  | mul | auto      | 1       |
+|   sub_fu_875_p2                                          |     |        | sub          | add | fabric    | 0       |
+|   grp_fu_647_p2                                          |     |        | sub47        | add | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U214                                |     | yes    | KER_size_0   | mul | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U215                                |     | yes    | KER_size_1   | mul | fabric    | 0       |
+|   mul_32s_32s_32_1_1_U216                                |     | yes    | KER_bound    | mul | fabric    | 0       |
+|  + FC_CIF_0_2_Pipeline_VITIS_LOOP_140_6                  | 0   |        |              |     |           |         |
+|    add_ln140_fu_240_p2                                   |     |        | add_ln140    | add | fabric    | 0       |
+|  + FC_CIF_0_2_Pipeline_L2_L3                             | 16  |        |              |     |           |         |
+|    add_ln156_1_fu_505_p2                                 |     |        | add_ln156_1  | add | fabric    | 0       |
+|    add_ln156_fu_517_p2                                   |     |        | add_ln156    | add | fabric    | 0       |
+|    add_ln163_15_fu_561_p2                                |     |        | add_ln163_15 | add | fabric    | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U95                     | 1   |        | mul_ln163    | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U83                                | 1   |        | mul_ln163_1  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U84                                | 1   |        | mul_ln163_2  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U87                                | 1   |        | mul_ln163_3  | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U91                     | 1   |        | mul_ln163_4  | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U92                     | 1   |        | mul_ln163_5  | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U88                                | 1   |        | mul_ln163_6  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U85                                | 1   |        | mul_ln163_7  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U86                                | 1   |        | mul_ln163_8  | mul | auto      | 0       |
+|    mul_16s_16s_32_1_1_U89                                | 1   |        | mul_ln163_9  | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U93                     | 1   |        | mul_ln163_10 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U96                     | 1   |        | mul_ln163_11 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U97                     | 1   |        | mul_ln163_12 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U94                     | 1   |        | mul_ln163_13 | mul | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U98                     | 1   |        | mul_ln163_14 | mul | dsp_slice | 3       |
+|    mul_16s_16s_32_1_1_U90                                | 1   |        | mul_ln163_15 | mul | auto      | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U98                     | 1   |        | add_ln163    | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U95                     | 1   |        | add_ln163_1  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U94                     | 1   |        | add_ln163_3  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U92                     | 1   |        | add_ln163_4  | add | dsp_slice | 3       |
+|    add_ln163_5_fu_1249_p2                                |     |        | add_ln163_5  | add | fabric    | 0       |
+|    mac_muladd_16s_16s_32s_32_4_1_U96                     | 1   |        | add_ln163_7  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U97                     | 1   |        | add_ln163_8  | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U91                     | 1   |        | add_ln163_10 | add | dsp_slice | 3       |
+|    mac_muladd_16s_16s_32s_32_4_1_U93                     | 1   |        | add_ln163_11 | add | dsp_slice | 3       |
+|    add_ln163_12_fu_1253_p2                               |     |        | add_ln163_12 | add | fabric    | 0       |
+|    add_ln160_fu_571_p2                                   |     |        | add_ln160    | add | fabric    | 0       |
+|    sub_ln166_fu_1318_p2                                  |     |        | sub_ln166    | sub | fabric    | 0       |
+|    sub_ln166_1_fu_1337_p2                                |     |        | sub_ln166_1  | sub | fabric    | 0       |
+|  + FC_CIF_0_2_Pipeline_VITIS_LOOP_104_1_VITIS_LOOP_105_2 | 0   |        |              |     |           |         |
+|    add_ln104_1_fu_431_p2                                 |     |        | add_ln104_1  | add | fabric    | 0       |
+|    add_ln104_fu_443_p2                                   |     |        | add_ln104    | add | fabric    | 0       |
+|    add_ln105_fu_533_p2                                   |     |        | add_ln105    | add | fabric    | 0       |
+|  + FC_CIF_0_2_Pipeline_VITIS_LOOP_187_7                  | 0   |        |              |     |           |         |
+|    i_2_fu_69_p2                                          |     |        | i_2          | add | fabric    | 0       |
++----------------------------------------------------------+-----+--------+--------------+-----+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------------------------------+--------+------+------+------+--------+-------------------------------------------------------+------+---------+------------------+
+| Name                                                      | Usage  | Type | BRAM | URAM | Pragma | Variable                                              | Impl | Latency | Bitwidth, Depth, |
+|                                                           |        |      |      |      |        |                                                       |      |         | Banks            |
++-----------------------------------------------------------+--------+------+------+------+--------+-------------------------------------------------------+------+---------+------------------+
+| + FC_CIF_0_2                                              |        |      | 0    | 0    |        |                                                       |      |         |                  |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_U        | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B        | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_10     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_11     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_12     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_13     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_14     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_15     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_16     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_17     | auto | 1       | 16, 40, 1        |
+|   FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18_U     | ram_1p |      |      |      |        | FC_CIF_0_2_stream_AXI_VAL_0_stream_AXI_VAL_0_B_18     | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_10_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_10 | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_11_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_11 | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_12_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_12 | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_13_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_13 | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_14_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_14 | auto | 1       | 16, 40, 1        |
+|   p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_15_U | ram_1p |      |      |      |        | p_ZZ10FC_CIF_0_2RN3hls6streamI7AXI_VALLi0EEES3_E1B_15 | auto | 1       | 16, 40, 1        |
++-----------------------------------------------------------+--------+------+------+------+--------+-------------------------------------------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+----------------------------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                          | Location                                            | Messages                                                                   |
++----------+----------------------------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+| resource | variable=KER_size_0 core=Mul_LUT | fully_connected_2.cpp:184 in fc_cif_0_2, KER_size_0 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_size_1 core=Mul_LUT | fully_connected_2.cpp:185 in fc_cif_0_2, KER_size_1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| resource | variable=KER_bound core=Mul_LUT  | fully_connected_2.cpp:186 in fc_cif_0_2, KER_bound  | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+----------------------------------+-----------------------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------------------+-----------------------------------------------------+
+| Type            | Options                              | Location                                            |
++-----------------+--------------------------------------+-----------------------------------------------------+
+| interface       | axis port=in_stream_a                | fully_connected_2.cpp:38 in fc_cif_0_2, in_stream_a |
+| interface       | axis port=out_stream                 | fully_connected_2.cpp:40 in fc_cif_0_2, out_stream  |
+| interface       | ap_ctrl_none port=return             | fully_connected_2.cpp:41 in fc_cif_0_2, return      |
+| array_partition | variable=A block factor=FACTOR dim=2 | fully_connected_2.cpp:45 in fc_cif_0_2, A           |
+| array_partition | variable=B block factor=FACTOR dim=2 | fully_connected_2.cpp:46 in fc_cif_0_2, B           |
+| pipeline        | II=1                                 | fully_connected_2.cpp:107 in fc_cif_0_2             |
+| pipeline        | II=1                                 | fully_connected_2.cpp:142 in fc_cif_0_2             |
+| pipeline        | II=1                                 | fully_connected_2.cpp:161 in fc_cif_0_2             |
+| pipeline        | II=1                                 | fully_connected_2.cpp:189 in fc_cif_0_2             |
++-----------------+--------------------------------------+-----------------------------------------------------+
+
+
